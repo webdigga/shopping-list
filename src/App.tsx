@@ -1,6 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import styles from './App.module.css';
+import Spinner from './components/spinner/Spinner';
+import Error from './components/error/Error';
 
 // API Gateway - https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/
 // PUT/POST - "Content-Type: application/json" -d "{\"id\": \"abcdef234\", \"price\": 12345, \"name\": \"myitem\"}" https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items
@@ -19,24 +20,51 @@ import './App.css';
 // TODO - Deploy App
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+	// Set state
+	const [items, setItems] = useState( [] );
+	const [isLoaded, setIsLoaded] = useState( false );
+	const [isError, setIsError] = useState( false );
+	const [errorMessage, setErrorMessage] = useState( '' );
+
+	// Fetch the data for all shopping list items
+	function fetchData () {
+		fetch( 'https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items' )
+			.then( res => res.json() )
+			.then( ( result ) => {
+				setItems( result.Items );
+				setIsLoaded( true );
+			}, ( error ) => {
+				setIsLoaded( true );
+				setIsError( true );
+				setErrorMessage( error );
+			});
+	}
+
+	// Runs fetchData after first render lifecycle
+	React.useEffect( () => {
+		fetchData();
+	}, []);
+
+	if ( !isLoaded ) {
+		return (
+			<div className={ styles.posts }>
+				<Spinner />
+			</div>
+		);
+	} else if ( isError ) {
+		return (
+			<>
+				<Error message = { errorMessage } />
+			</>
+		)
+	} else {
+		return (
+			<>
+				<p>Call the ingredient list component here</p>
+			</>
+		)
+	}
 }
 
 export default App;
