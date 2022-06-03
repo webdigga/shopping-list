@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from './App.module.css';
 import Spinner from './components/spinner/Spinner';
 import Error from './components/error/Error';
+import IngredientsList from './components/ingredients-list/IngredientsList';
 
 // API Gateway - https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/
 // PUT/POST - "Content-Type: application/json" -d "{\"id\": \"abcdef234\", \"price\": 12345, \"name\": \"myitem\"}" https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items
@@ -11,6 +12,7 @@ import Error from './components/error/Error';
 
 // TODO - list all items
 // TODO - Add new item
+// TODO - Typescript checking
 // TODO - Edit item
 // TODO - Delete item
 // TODO - Mark item as ticked
@@ -61,7 +63,7 @@ function App() {
 	} else {
 		return (
 			<>
-				<p>Call the ingredient list component here</p>
+				<IngredientsList Items = { items } />
 			</>
 		)
 	}
