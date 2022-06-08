@@ -3,7 +3,7 @@ interface Props {
 		id: number;
 		name: string;
 	}[]
-}
+};
 
 const IngredientsList: React.FC<Props> = ({ Items }) => {
 	return (

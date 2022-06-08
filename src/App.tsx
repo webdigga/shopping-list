@@ -3,6 +3,7 @@ import styles from './App.module.css';
 import Spinner from './components/spinner/Spinner';
 import Error from './components/error/Error';
 import IngredientsList from './components/ingredients-list/IngredientsList';
+import AddIngredient from './components/add-ingredient/AddIngredient';
 
 // API Gateway - https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/
 // PUT/POST - "Content-Type: application/json" -d "{\"id\": \"abcdef234\", \"price\": 12345, \"name\": \"myitem\"}" https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items
@@ -12,6 +13,8 @@ import IngredientsList from './components/ingredients-list/IngredientsList';
 
 // TODO - list all items
 // TODO - Add new item
+// TODO - Make POST request
+// TODO - fix keys on Items array list
 // TODO - Typescript checking
 // TODO - Edit item
 // TODO - Delete item
@@ -21,7 +24,7 @@ import IngredientsList from './components/ingredients-list/IngredientsList';
 // TODO - Unit tests
 // TODO - Deploy App
 
-function App() {
+const App = () => {
 
 	// Set state
 	const [items, setItems] = useState( [] );
@@ -63,6 +66,7 @@ function App() {
 	} else {
 		return (
 			<>
+				<AddIngredient Items = { items } />
 				<IngredientsList Items = { items } />
 			</>
 		)
