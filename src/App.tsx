@@ -11,11 +11,9 @@ import AddIngredient from './components/add-ingredient/AddIngredient';
 // GET item - https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items/1
 // DELETE item - https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items/1
 
-// TODO - list all items
-// TODO - Add new item
-// TODO - Make POST request
-// TODO - fix keys on Items array list
-// TODO - Typescript checking
+// TODO - Fix keys on Items array list
+// TODO - Update state when new item added
+// TODO - Error handling on PUT item
 // TODO - Edit item
 // TODO - Delete item
 // TODO - Mark item as ticked

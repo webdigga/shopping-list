@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 interface Props {
 	Items: {
@@ -13,8 +14,6 @@ const AddIngredient: React.FC<Props> = ({ Items }) => {
 	const handleClick = (e: React.FormEvent<EventTarget>): void => {
 		e.preventDefault();
 
-		console.log( ingredient );
-
 		let xhr = new XMLHttpRequest();
 		xhr.open("PUT", "https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items");
 
@@ -24,7 +23,8 @@ const AddIngredient: React.FC<Props> = ({ Items }) => {
 		xhr.onload = () => console.log(xhr.responseText);
 
 		let data = `{
-			"Name": ${ ingredient },
+			"id": "${ uuidv4() }",
+			"name": "${ ingredient }"
 		}`;
 
 		xhr.send( data );
