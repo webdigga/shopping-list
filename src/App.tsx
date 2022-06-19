@@ -12,7 +12,6 @@ import AddIngredient from './components/add-ingredient/AddIngredient';
 // DELETE item - https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items/1
 
 // TODO - Fix keys on Items array list
-// TODO - Update state when new item added
 // TODO - Error handling on PUT item
 // TODO - Edit item
 // TODO - Delete item
@@ -49,6 +48,10 @@ const App = () => {
 		fetchData();
 	}, []);
 
+	function updateItems( newItems: [] ) {
+		setItems( [...newItems] );
+	}
+
 	if ( !isLoaded ) {
 		return (
 			<div className={ styles.posts }>
@@ -64,7 +67,7 @@ const App = () => {
 	} else {
 		return (
 			<>
-				<AddIngredient Items = { items } />
+				<AddIngredient Items = { items } updateItems = { updateItems } />
 				<IngredientsList Items = { items } />
 			</>
 		)

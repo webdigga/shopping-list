@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4, V4Options } from 'uuid';
 
 interface Props {
 	Items: {
-		id: number;
+		id: string;
 		name: string;
-	}[]
+	}[];
+	updateItems: Function;
 };
 
-const AddIngredient: React.FC<Props> = ({ Items }) => {
+const AddIngredient: React.FC<Props> = ({ Items, updateItems }) => {
 	const [ingredient, setIngredient] = useState( '' );
 
 	const handleClick = (e: React.FormEvent<EventTarget>): void => {
@@ -22,12 +23,21 @@ const AddIngredient: React.FC<Props> = ({ Items }) => {
 
 		xhr.onload = () => console.log(xhr.responseText);
 
-		let data = `{
+		const dataForDynamoDB = `{
 			"id": "${ uuidv4() }",
 			"name": "${ ingredient }"
 		}`;
 
-		xhr.send( data );
+		const dataForStateUpdate = {
+			id: uuidv4(),
+			name: ingredient
+		};
+
+		xhr.send( dataForDynamoDB );
+
+		Items.push( dataForStateUpdate );
+
+		updateItems( Items );
 	}
 	
 	const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
