@@ -11,10 +11,9 @@ import AddIngredient from './components/add-ingredient/AddIngredient';
 // GET item - https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items/1
 // DELETE item - https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items/1
 
-// TODO - Fix keys on Items array list
+// TODO - Change add ingredient to use fetch
 // TODO - Error handling on PUT item
 // TODO - Edit item
-// TODO - Delete item
 // TODO - Mark item as ticked
 // TODO - Ability to untick all items
 // TODO - Cypress integration tests
@@ -68,7 +67,7 @@ const App = () => {
 		return (
 			<>
 				<AddIngredient Items = { items } updateItems = { updateItems } />
-				<IngredientsList Items = { items } />
+				<IngredientsList Items = { items } updateItems = { updateItems } />
 			</>
 		)
 	}
