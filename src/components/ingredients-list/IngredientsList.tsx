@@ -13,7 +13,7 @@ const IngredientsList: React.FC<Props> = ({ Items }) => {
 			<ul>
 				{
 					Items.map( ( item ) => {
-						return <li>{ item.name }</li>
+						return <li key={ item.id }>{ item.name }</li>
 					})
 				}
 			</ul>
