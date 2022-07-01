@@ -3,6 +3,7 @@ import styles from './App.module.css';
 import Spinner from './components/spinner/Spinner';
 import Error from './components/error/Error';
 import IngredientsList from './components/ingredients-list/IngredientsList';
+import CompletedIngredientsList from './components/completed-ingredients-list/CompletedIngredientsList';
 import AddIngredient from './components/add-ingredient/AddIngredient';
 
 // API Gateway - https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/
@@ -14,8 +15,8 @@ import AddIngredient from './components/add-ingredient/AddIngredient';
 // TODO - Change add ingredient to use fetch
 // TODO - Error handling on PUT item
 // TODO - Edit item
-// TODO - Mark item as ticked
 // TODO - Ability to untick all items
+// TODO - Add the styling
 // TODO - Cypress integration tests
 // TODO - Unit tests
 // TODO - Deploy App
@@ -24,6 +25,7 @@ const App = () => {
 
 	// Set state
 	const [items, setItems] = useState( [] );
+	const [completedItems, setCompletedItems] = useState( [] );
 	const [isLoaded, setIsLoaded] = useState( false );
 	const [isError, setIsError] = useState( false );
 	const [errorMessage, setErrorMessage] = useState( '' );
@@ -51,6 +53,10 @@ const App = () => {
 		setItems( [...newItems] );
 	}
 
+	function updateCompletedItems( newItems: [] ) {
+		setCompletedItems( [...newItems] );
+	}
+
 	if ( !isLoaded ) {
 		return (
 			<div className={ styles.posts }>
@@ -66,8 +72,24 @@ const App = () => {
 	} else {
 		return (
 			<>
-				<AddIngredient Items = { items } updateItems = { updateItems } />
-				<IngredientsList Items = { items } updateItems = { updateItems } />
+				<AddIngredient
+					Items = { items }
+					updateItems = { updateItems }
+				/>
+
+				<IngredientsList
+					Items = { items }
+					CompletedItems = { completedItems }
+					updateItems = { updateItems }
+					updateCompletedItems = { updateCompletedItems }
+				/>
+
+				<CompletedIngredientsList
+					Items = { items }
+					CompletedItems = { completedItems }
+					updateItems = { updateItems }
+					updateCompletedItems = { updateCompletedItems }
+				/>
 			</>
 		)
 	}
