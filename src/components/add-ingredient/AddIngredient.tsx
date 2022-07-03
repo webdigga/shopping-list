@@ -15,29 +15,28 @@ const AddIngredient: React.FC<Props> = ({ Items, updateItems }) => {
 	const handleClick = (e: React.FormEvent<EventTarget>): void => {
 		e.preventDefault();
 
-		let xhr = new XMLHttpRequest();
-		xhr.open("PUT", "https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items");
-
-		xhr.setRequestHeader("Accept", "application/json");
-		xhr.setRequestHeader("Content-Type", "application/json");
-
-		xhr.onload = () => console.log(xhr.responseText);
-
-		const dataForDynamoDB = `{
-			"id": "${ uuidv4() }",
-			"name": "${ ingredient }"
-		}`;
-
-		const dataForStateUpdate = {
+		const data = {
 			id: uuidv4(),
 			name: ingredient
 		};
 
-		xhr.send( dataForDynamoDB );
+		fetch('https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items', {
+			method: 'PUT',
+			body: JSON.stringify( data ),
+			headers: {
+				'Content-type': 'application/json; charset=UTF-8',
+				'Accept': 'application/json'
+			}
+		})
+		.then((response) => { 
+			return response.json()
+		})
+		.then(() => {
+			Items.push( data );
 
-		Items.push( dataForStateUpdate );
-
-		updateItems( Items );
+			updateItems( Items );
+		})
+		.catch(( error ) => console.error('Error:', error));	
 	}
 	
 	const handleChange = (e: React.FormEvent<HTMLInputElement>) => {

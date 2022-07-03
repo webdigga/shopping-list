@@ -12,8 +12,6 @@ import AddIngredient from './components/add-ingredient/AddIngredient';
 // GET item - https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items/1
 // DELETE item - https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items/1
 
-// TODO - Change add ingredient to use fetch
-// TODO - Error handling on PUT item
 // TODO - Edit item
 // TODO - Ability to untick all items
 // TODO - Add the styling
