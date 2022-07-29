@@ -1,5 +1,5 @@
 import React from 'react';
-import { convertTypeAcquisitionFromJson } from 'typescript';
+import styles from './CompletedIngredientsList.module.css';
 
 interface Props {
 	Items: {
@@ -39,13 +39,14 @@ const IngredientsList: React.FC<Props> = ({ Items, updateItems, CompletedItems, 
 
 	return (
 		<>
-			<ul>
+			<ul className={styles.list}>
 				{
 					CompletedItems.map( ( item ) => {
 						return (
-							<li key={ item.id }>
-								{ item.name }
-								<button onClick={() => markItemIncomplete( item.id )}>Mark as incomplete</button>
+							<li key={ item.id } className={styles.listItem}>
+								<div className={styles.name}>{ item.name }</div>
+								<button className={styles.markIncomplete} onClick={() => markItemIncomplete( item.id )}>
+								<i className="fas fa-arrow-rotate-left"></i>								</button>
 							</li>
 						)
 					})

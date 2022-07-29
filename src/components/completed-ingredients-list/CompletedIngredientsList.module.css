@@ -1,0 +1,20 @@
+.list {
+	margin-top: var(--spacing);
+	border-top: 1px solid var(--dark-grey);
+    padding-top: var(--spacing);
+}
+
+.listItem {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: var(--spacing-half);
+}
+
+.listItem:not(:last-child) {
+	border-bottom: 1px solid var(--light-grey);
+    padding-bottom: var(--spacing-half);
+}
+
+.name {
+	margin-right: auto;
+}

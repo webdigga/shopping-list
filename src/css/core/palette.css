@@ -1,4 +1,6 @@
 :root {
-	--grey: #cccccc;
-	--black: #222222;
+	--grey: #ccc;
+	--light-grey: #ddd;
+	--dark-grey: #bbb;
+	--black: #222;
 }

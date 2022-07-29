@@ -1,4 +1,5 @@
 body {
 	color: var(--black);
 	font-family: Georgia, 'Times New Roman', Times, serif;
+	padding: var(--spacing);
 }

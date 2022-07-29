@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './IngredientsList.module.css';
 
 interface Props {
 	Items: {
@@ -55,14 +56,18 @@ const IngredientsList: React.FC<Props> = ({ Items, updateItems, CompletedItems, 
 
 	return (
 		<>
-			<ul>
+			<ul className={styles.list}>
 				{
 					Items.map( ( item ) => {
 						return (
-							<li key={ item.id }>
-								{ item.name }
-								<button onClick={() => markItemComplete( item.id )}>Mark as complete</button>
-								<button onClick={() => deleteItem( item.id )}>Delete</button>
+							<li key={ item.id } className={styles.listItem}>
+								<div className={styles.name}>{ item.name }</div>
+								<button className={styles.markComplete} onClick={() => markItemComplete( item.id )}>
+									<i className="fas fa-check"></i>	
+								</button>
+								<button onClick={() => deleteItem( item.id )}>
+									<i className="fas fa-trash"></i>
+								</button>
 							</li>
 						)
 					})

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import styles from './AddIngredient.module.css';
 
 interface Props {
 	Items: {
@@ -47,7 +48,10 @@ const AddIngredient: React.FC<Props> = ({ Items, updateItems }) => {
 		<>
 			<form>
 				<input type="text" name="ingredient" onChange={ handleChange } />
-				<input type="submit" onClick={ handleClick } />
+
+				<button className={styles.submit} type="submit" onClick={ handleClick }>
+					<i className="fas fa-plus"></i>
+				</button>
 			</form>
 			
 		</>
