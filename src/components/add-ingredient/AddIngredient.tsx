@@ -47,10 +47,10 @@ const AddIngredient: React.FC<Props> = ({ Items, updateItems }) => {
 	return (
 		<>
 			<form>
-				<input type="text" name="ingredient" onChange={ handleChange } />
+				<input className={styles.input} type="text" name="ingredient" onChange={ handleChange } />
 
 				<button className={styles.submit} type="submit" onClick={ handleClick }>
-					<i className="fas fa-plus"></i>
+					<i className="fas fa-plus fa-fw fa-xl"></i>
 				</button>
 			</form>
 			

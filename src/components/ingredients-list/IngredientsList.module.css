@@ -3,6 +3,7 @@
 }
 
 .listItem {
+	align-items: baseline;
 	display: flex;
 	justify-content: flex-end;
 	margin-bottom: var(--spacing-half);
@@ -17,6 +18,19 @@
 	margin-right: auto;
 }
 
-.markComplete {
+.buttonComplete {
+	background-color: var(--positive);
+	border-color: transparent;
+	margin-left: var(--spacing-half);
+	min-height: 40px;
+	min-width: 40px;
 	margin-right: var(--spacing-half);
+}
+
+.buttonDelete {
+	background-color: var(--negative);
+	border-color: transparent;
+	margin-left: var(--spacing-half);
+	min-height: 40px;
+	min-width: 40px;
 }

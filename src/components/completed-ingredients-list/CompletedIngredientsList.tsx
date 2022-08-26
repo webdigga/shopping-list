@@ -2,28 +2,28 @@ import React from 'react';
 import styles from './CompletedIngredientsList.module.css';
 
 interface Props {
-	Items: {
+	items: {
 		id: number;
 		name: string;
 	}[];
-	CompletedItems: {
+	completedItems: {
 		id: number;
 		name: string;
 	}[];
 	updateItems: Function;
 	updateCompletedItems: Function;
 };
-const IngredientsList: React.FC<Props> = ({ Items, updateItems, CompletedItems, updateCompletedItems }) => {
+const IngredientsList: React.FC<Props> = ({ items, updateItems, completedItems, updateCompletedItems }) => {
 
 	const markItemIncomplete = ( id: number ) => {
 
 		// Get the incompleted item
-		const incompletedItem = CompletedItems.filter(function( obj ) {
+		const incompletedItem = completedItems.filter(function( obj ) {
 			return obj.id === id;
 		});
 
 		// Remove the completed items from array
-		const newCompletedItems = CompletedItems.filter(function( obj ) {
+		const newCompletedItems = completedItems.filter(function( obj ) {
 			return obj.id !== id;
 		});
 
@@ -31,22 +31,23 @@ const IngredientsList: React.FC<Props> = ({ Items, updateItems, CompletedItems, 
 		updateCompletedItems( newCompletedItems );
 		
 		// Add the item back to the items array
-		Items.push( ...incompletedItem );
+		items.push( ...incompletedItem );
 
 		// Update state
-		updateItems( Items );
+		updateItems( items );
 	}
 
 	return (
 		<>
 			<ul className={styles.list}>
 				{
-					CompletedItems.map( ( item ) => {
+					completedItems.map( ( item ) => {
 						return (
 							<li key={ item.id } className={styles.listItem}>
 								<div className={styles.name}>{ item.name }</div>
-								<button className={styles.markIncomplete} onClick={() => markItemIncomplete( item.id )}>
-								<i className="fas fa-arrow-rotate-left"></i>								</button>
+								<button className={styles.buttonInComplete} onClick={() => markItemIncomplete( item.id )}>
+									<i className="fas fa-arrow-rotate-left fa-fw fa-xl"></i>
+								</button>
 							</li>
 						)
 					})

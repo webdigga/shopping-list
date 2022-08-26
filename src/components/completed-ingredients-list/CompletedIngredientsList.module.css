@@ -18,3 +18,11 @@
 .name {
 	margin-right: auto;
 }
+
+.buttonInComplete {
+	background-color: var(--positive);
+	border-color: transparent;
+	margin-left: var(--spacing-half);
+	min-height: 40px;
+	min-width: 40px;
+}

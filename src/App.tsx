@@ -5,6 +5,7 @@ import Error from './components/error/Error';
 import IngredientsList from './components/ingredients-list/IngredientsList';
 import CompletedIngredientsList from './components/completed-ingredients-list/CompletedIngredientsList';
 import AddIngredient from './components/add-ingredient/AddIngredient';
+import ClearAllIngredients from './components/clear-all-ingredients/ClearAllIngredients';
 
 // API Gateway - https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/
 // PUT/POST - "Content-Type: application/json" -d "{\"id\": \"abcdef234\", \"price\": 12345, \"name\": \"myitem\"}" https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items
@@ -12,8 +13,7 @@ import AddIngredient from './components/add-ingredient/AddIngredient';
 // GET item - https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items/1
 // DELETE item - https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items/1
 
-// TODO - Ability to untick all items
-// TODO - Add the styling
+// TODO - Add authentication
 // TODO - Cypress integration tests
 // TODO - Unit tests
 // TODO - Deploy App
@@ -54,6 +54,10 @@ const App = () => {
 		setCompletedItems( [...newItems] );
 	}
 
+	function clearAllItems( newItems: [] ) {
+		setCompletedItems( [...newItems] );
+	}
+
 	if ( !isLoaded ) {
 		return (
 			<div className={ styles.posts }>
@@ -69,21 +73,30 @@ const App = () => {
 	} else {
 		return (
 			<>
-				<AddIngredient
-					Items = { items }
-					updateItems = { updateItems }
-				/>
+				<div className={styles.form}>
+					<AddIngredient
+						Items = { items }
+						updateItems = { updateItems }
+					/>
+
+					<ClearAllIngredients
+						clearAllItems = { clearAllItems }
+						updateItems = { updateItems }
+						items = { items }
+						completedItems = { completedItems }
+					/>
+				</div>
 
 				<IngredientsList
-					Items = { items }
-					CompletedItems = { completedItems }
+					items = { items }
+					completedItems = { completedItems }
 					updateItems = { updateItems }
 					updateCompletedItems = { updateCompletedItems }
 				/>
 
 				<CompletedIngredientsList
-					Items = { items }
-					CompletedItems = { completedItems }
+					items = { items }
+					completedItems = { completedItems }
 					updateItems = { updateItems }
 					updateCompletedItems = { updateCompletedItems }
 				/>
