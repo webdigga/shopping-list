@@ -13,6 +13,7 @@ interface Props {
 	updateItems: Function;
 	updateCompletedItems: Function;
 };
+
 const IngredientsList: React.FC<Props> = ({ items, updateItems, completedItems, updateCompletedItems }) => {
 
 	const deleteItem = ( id: number ) => {
