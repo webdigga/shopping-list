@@ -16,6 +16,9 @@ const AddIngredient: React.FC<Props> = ({ Items, updateItems }) => {
 	const handleClick = (e: React.FormEvent<EventTarget>): void => {
 		e.preventDefault();
 
+		// If there is nothing in the input field then don't try to add a new ingredient
+		if( !ingredient ) return;
+
 		const data = {
 			id: uuidv4(),
 			name: ingredient
@@ -30,11 +33,14 @@ const AddIngredient: React.FC<Props> = ({ Items, updateItems }) => {
 			}
 		})
 		.then((response) => { 
-			return response.json()
+			console.log('foo');
+			return response.json();
 		})
 		.then(() => {
+			console.log('bar');
 			Items.push( data );
-
+			setIngredient( '' );
+			console.log('SUCCESS');
 			updateItems( Items );
 		})
 		.catch(( error ) => console.error('Error:', error));	
@@ -47,13 +53,20 @@ const AddIngredient: React.FC<Props> = ({ Items, updateItems }) => {
 	return (
 		<>
 			<form>
-				<input className={styles.input} type="text" name="ingredient" onChange={ handleChange } />
+				<input
+					className={styles.input}
+					type="text"
+					name="ingredient"
+					onChange={ handleChange }
+					placeholder="Add a new ingredient..."
+					autoFocus
+					value={ingredient}
+				/>
 
 				<button className={styles.submit} type="submit" onClick={ handleClick }>
 					<i className="fas fa-plus fa-fw fa-xl"></i>
 				</button>
 			</form>
-			
 		</>
 	);
 };

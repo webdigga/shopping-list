@@ -14,7 +14,6 @@ import ClearAllIngredients from './components/clear-all-ingredients/ClearAllIngr
 // DELETE item - https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items/1
 
 // TODO - Add authentication
-// TODO - Cypress integration tests
 // TODO - Unit tests
 // TODO - Deploy App
 
