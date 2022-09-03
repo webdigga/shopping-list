@@ -17,9 +17,11 @@ interface Props {
 const ClearAllIngredients: React.FC<Props> = ({ items, completedItems, clearAllItems, updateItems }) => {
 
     function clearAllItemsEvent() {
-        const newItems = [...items, ...completedItems];
-        clearAllItems([]);
-        updateItems(newItems); 
+		console.log( completedItems );
+		if ( completedItems.length ) {
+			clearAllItems([]);
+        	updateItems( [...items, ...completedItems] ); 
+		}
     }
 
     return (

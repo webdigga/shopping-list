@@ -33,14 +33,11 @@ const AddIngredient: React.FC<Props> = ({ Items, updateItems }) => {
 			}
 		})
 		.then((response) => { 
-			console.log('foo');
 			return response.json();
 		})
 		.then(() => {
-			console.log('bar');
 			Items.push( data );
 			setIngredient( '' );
-			console.log('SUCCESS');
 			updateItems( Items );
 		})
 		.catch(( error ) => console.error('Error:', error));	
