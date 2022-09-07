@@ -13,6 +13,7 @@ interface Props {
 	updateItems: Function;
 	updateCompletedItems: Function;
 };
+
 const IngredientsList: React.FC<Props> = ({ items, updateItems, completedItems, updateCompletedItems }) => {
 
 	const markItemIncomplete = ( id: number ) => {
@@ -37,24 +38,29 @@ const IngredientsList: React.FC<Props> = ({ items, updateItems, completedItems, 
 		updateItems( items );
 	}
 
-	return (
-		<>
-			<ul className={styles.list}>
-				{
-					completedItems.map( ( item ) => {
-						return (
-							<li key={ item.id } className={styles.listItem}>
-								<div className={styles.name}>{ item.name }</div>
-								<button className={styles.buttonInComplete} onClick={() => markItemIncomplete( item.id )}>
-									<i className="fas fa-arrow-rotate-left fa-fw fa-xl"></i>
-								</button>
-							</li>
-						)
-					})
-				}
-			</ul>
-		</>
-	)
+	if( completedItems && completedItems.length ) {
+		return (
+			<>
+				<ul className={styles.list}>
+					{
+						completedItems.map( ( item ) => {
+							return (
+								<li key={ item.id } className={styles.listItem}>
+									<div className={styles.name}>{ item.name }</div>
+									<button className={styles.buttonInComplete} onClick={() => markItemIncomplete( item.id )}>
+										<i className="fas fa-arrow-rotate-left fa-fw fa-xl"></i>
+									</button>
+								</li>
+							)
+						})
+					}
+				</ul>
+			</>
+		);
+	} else {
+		return null;
+	}
+	
 }
 
 export default IngredientsList;
