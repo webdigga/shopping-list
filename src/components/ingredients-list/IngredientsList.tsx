@@ -20,7 +20,7 @@ const IngredientsList: React.FC<Props> = ({ items, updateItems, completedItems, 
 		fetch('https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items/' + id, {
   			method: 'DELETE',
 		})
-		.then(res => res.text()) // or res.json()
+		.then(res => res.json())
 		.then( () => {
 
 			// Remove the item from array
@@ -30,7 +30,8 @@ const IngredientsList: React.FC<Props> = ({ items, updateItems, completedItems, 
 
 			// Update state
 			updateItems( newItems );
-		});
+		})
+		.catch(( error ) => console.error('Error:', error));;
 	}
 
 	const markItemComplete = ( id: number ) => {
@@ -55,27 +56,31 @@ const IngredientsList: React.FC<Props> = ({ items, updateItems, completedItems, 
 		updateItems( newItems );
 	}
 
-	return (
-		<>
-			<ul className={styles.list}>
-				{
-					items.map( ( item ) => {
-						return (
-							<li key={ item.id } className={styles.listItem}>
-								<div className={styles.name}>{ item.name }</div>
-								<button className={styles.buttonComplete} onClick={() => markItemComplete( item.id )}>
-									<i className="fas fa-check fa-fw fa-xl"></i>
-								</button>
-								<button className={styles.buttonDelete} onClick={() => deleteItem( item.id )}>
-									<i className="fas fa-trash fa-fw fa-xl"></i>
-								</button>
-							</li>
-						)
-					})
-				}
-			</ul>
-		</>
-	)
+	if( items && items.length ) {
+		return (
+			<>
+				<ul className={styles.list}>
+					{
+						items.map( ( item, index ) => {
+							return (
+								<li key={ item.id } className={styles.listItem}>
+									<div className={styles.name}>{ item.name }</div>
+									<button data-testid={"markIncomplete" + index} className={styles.buttonComplete} onClick={() => markItemComplete( item.id )}>
+										<i className="fas fa-check fa-fw fa-xl"></i>
+									</button>
+									<button data-testid={"delete" + index} className={styles.buttonDelete} onClick={() => deleteItem( item.id )}>
+										<i className="fas fa-trash fa-fw fa-xl"></i>
+									</button>
+								</li>
+							)
+						})
+					}
+				</ul>
+			</>
+		)
+	} else {
+		return null;
+	}
 }
 
 export default IngredientsList;

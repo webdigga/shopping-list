@@ -6,7 +6,7 @@ interface Props {
 
 const Error: React.FC<Props> = ( props ) => {
 	return (
-		<div className={ styles.error } data-test="error">{ props.message }</div>
+		<div className={ styles.error }>{ props.message }</div>
 	);
 }
 

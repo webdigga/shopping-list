@@ -11,12 +11,12 @@ beforeAll(() => {
         Promise.resolve({
             json: () => Promise.resolve([]),
         })
-})
+});
 
 // Using the afterAll() jest hook and calling the global.fetch function to cleanup mock test
 afterAll(() => {
     global.fetch = unmockedFetch
-})
+});
 
 const mockedUpdateItems = jest.fn();
 
