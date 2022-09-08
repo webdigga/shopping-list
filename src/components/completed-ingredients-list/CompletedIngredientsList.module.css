@@ -5,9 +5,11 @@
 }
 
 .listItem {
+	align-items: baseline;
 	display: flex;
 	justify-content: flex-end;
 	margin-bottom: var(--spacing-half);
+	text-decoration: line-through;
 }
 
 .listItem:not(:last-child) {
@@ -22,6 +24,8 @@
 .buttonInComplete {
 	background-color: var(--positive);
 	border-color: transparent;
+	border-radius: var(--spacing-quarter);
+	color: var(--white);
 	margin-left: var(--spacing-half);
 	min-height: 40px;
 	min-width: 40px;

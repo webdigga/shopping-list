@@ -2,7 +2,8 @@
 	--grey: #ccc;
 	--light-grey: #ddd;
 	--dark-grey: #bbb;
+	--white: #fff;
 	--black: #222;
-	--positive: greenyellow;
+	--positive: rgb(51, 153, 255);
 	--negative: tomato;
 }

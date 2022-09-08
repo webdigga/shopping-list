@@ -21,6 +21,8 @@
 .buttonComplete {
 	background-color: var(--positive);
 	border-color: transparent;
+	border-radius: var(--spacing-quarter);
+	color: var(--white);
 	margin-left: var(--spacing-half);
 	min-height: 40px;
 	min-width: 40px;
@@ -30,6 +32,8 @@
 .buttonDelete {
 	background-color: var(--negative);
 	border-color: transparent;
+	border-radius: var(--spacing-quarter);
+	color: var(--white);
 	margin-left: var(--spacing-half);
 	min-height: 40px;
 	min-width: 40px;
