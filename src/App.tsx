@@ -13,9 +13,6 @@ import ClearAllIngredients from './components/clear-all-ingredients/ClearAllIngr
 // GET item - https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items/1
 // DELETE item - https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items/1
 
-// TODO - Add authentication
-// TODO - Deploy App
-
 const App = () => {
 
 	// Set state
