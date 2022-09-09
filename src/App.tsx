@@ -14,10 +14,6 @@ import ClearAllIngredients from './components/clear-all-ingredients/ClearAllIngr
 // DELETE item - https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items/1
 
 
-// TODO
-// https://blog.cloudthat.com/step-by-step-guide-to-deploy-reactjs-app-on-aws-s3/
-// https://aws.amazon.com/premiumsupport/knowledge-center/block-s3-traffic-vpc-ip/
-
 const App = () => {
 
 	// Set state
