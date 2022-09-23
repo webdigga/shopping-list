@@ -13,6 +13,11 @@ import ClearAllIngredients from './components/clear-all-ingredients/ClearAllIngr
 // GET item - https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items/1
 // DELETE item - https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items/1
 
+type item = {
+	id: number;
+	name: string;
+	completed?: boolean;
+};
 
 const App = () => {
 
@@ -27,8 +32,16 @@ const App = () => {
 	function fetchData () {
 		fetch( 'https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items' )
 			.then( res => res.json() )
-			.then( ( result ) => {
-				setItems( result.Items );
+			.then( ( data ) => {
+				const [complete, incomplete] = data.Items
+					.reduce((result: any, item: item) => {
+						result[item.completed === true ? 0 : 1].push( item ); // Determine and push to complete/incomplete array
+						return result;
+					},
+					[[], []]);
+
+				setItems( incomplete );
+				setCompletedItems( complete );
 				setIsLoaded( true );
 			}, ( error ) => {
 				setIsLoaded( true );

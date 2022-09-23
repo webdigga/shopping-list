@@ -5,10 +5,12 @@ interface Props {
 	items: {
 		id: number;
 		name: string;
+		completed: boolean;
 	}[];
 	completedItems: {
 		id: number;
 		name: string;
+		completed: boolean;
 	}[];
 	updateItems: Function;
 	updateCompletedItems: Function;
@@ -19,7 +21,7 @@ const IngredientsList: React.FC<Props> = ({ items, updateItems, completedItems, 
 	const markItemIncomplete = ( id: number ) => {
 
 		// Get the incompleted item
-		const incompletedItem = completedItems.filter(function( obj ) {
+		const incompletedItem: any = completedItems.filter(function( obj ) {
 			return obj.id === id;
 		});
 
@@ -28,14 +30,32 @@ const IngredientsList: React.FC<Props> = ({ items, updateItems, completedItems, 
 			return obj.id !== id;
 		});
 
-		// Update state
-		updateCompletedItems( newCompletedItems );
-		
-		// Add the item back to the items array
-		items.push( ...incompletedItem );
+		// Add the state to the incompleted item
+		incompletedItem.completed = false;
 
-		// Update state
-		updateItems( items );
+		// Update the state of the item in the DB
+		fetch(`https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items/` + id, {
+			method: 'PUT',
+			body: JSON.stringify( incompletedItem ),
+			headers: {
+				'Content-type': 'application/json; charset=UTF-8',
+				'Accept': 'application/json'
+			}
+		})
+		.then(( response ) => {
+			return response.json();
+		})
+		.then(() => {
+			// Update state
+			updateCompletedItems( newCompletedItems );
+
+			// Add the item back to the items array
+			items.push( ...incompletedItem );
+
+			// Update state
+			updateItems( items );
+		})
+		.catch(( error ) => console.error('Error:', error));
 	}
 
 	if( completedItems && completedItems.length ) {

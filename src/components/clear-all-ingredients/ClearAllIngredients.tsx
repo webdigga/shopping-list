@@ -5,10 +5,12 @@ interface Props {
     items: {
 		id: number;
 		name: string;
+		completed: boolean;
 	}[];
     completedItems: {
 		id: number;
 		name: string;
+		completed: boolean;
 	}[];
 	clearAllItems: Function;
     updateItems: Function;

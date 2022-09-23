@@ -6,6 +6,7 @@ interface Props {
 	Items: {
 		id: string;
 		name: string;
+		completed: boolean;
 	}[];
 	updateItems: Function;
 };
@@ -21,7 +22,8 @@ const AddIngredient: React.FC<Props> = ({ Items, updateItems }) => {
 
 		const data = {
 			id: uuidv4(),
-			name: ingredient
+			name: ingredient,
+			completed: false
 		};
 
 		fetch('https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items', {
