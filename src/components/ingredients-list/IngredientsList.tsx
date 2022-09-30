@@ -33,7 +33,7 @@ const IngredientsList: React.FC<Props> = ({ items, updateItems, completedItems, 
 			// Update state
 			updateItems( newItems );
 		})
-		.catch(( error ) => console.error('Error:', error));;
+		.catch(( error ) => console.error('Error:', error));
 	}
 
 	const markItemComplete = ( id: number ) => {
