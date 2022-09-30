@@ -26,8 +26,10 @@ const AddIngredient: React.FC<Props> = ({ Items, updateItems }) => {
 			completed: false
 		};
 
+		console.log( JSON.stringify( data ) );
+
 		fetch('https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items', {
-			method: 'PUT',
+			method: 'POST',
 			body: JSON.stringify( data ),
 			headers: {
 				'Content-type': 'application/json; charset=UTF-8',
