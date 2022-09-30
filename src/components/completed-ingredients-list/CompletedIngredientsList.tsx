@@ -33,6 +33,11 @@ const IngredientsList: React.FC<Props> = ({ items, updateItems, completedItems, 
 		// Add the state to the incompleted item
 		incompletedItem.completed = false;
 
+		// TODO - need to flatten the array here before we post
+
+
+		console.log( JSON.stringify( incompletedItem ) );
+
 		// Update the state of the item in the DB
 		fetch(`https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items/` + id, {
 			method: 'PUT',

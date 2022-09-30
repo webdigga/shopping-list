@@ -18,6 +18,9 @@ interface Props {
 
 const ClearAllIngredients: React.FC<Props> = ({ items, completedItems, clearAllItems, updateItems }) => {
 
+
+	// TODO - need to persist this in the DB
+
     function clearAllItemsEvent() {
 		if ( completedItems.length ) {
 			clearAllItems([]);
