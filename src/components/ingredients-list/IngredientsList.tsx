@@ -46,8 +46,6 @@ const IngredientsList: React.FC<Props> = ({ items, updateItems, completedItems, 
 		// Add the state to the completed item
 		completedItem.completed = true;
 
-		console.log( JSON.stringify( completedItem ) );
-
 		// Update the state of the item in the DB
 		fetch(`https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items/` + id, {
 			method: 'PUT',
