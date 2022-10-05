@@ -55,7 +55,26 @@ const App = () => {
 		fetchData();
 	}, []);
 
-	function updateItems( newItems: [] ) {
+	function updateItems( newItems: [], shouldClear: boolean ) {
+		if ( shouldClear ) {
+			newItems.forEach(( item: item ) => {
+				item.completed = false;
+
+				// Update the state of the item in the DB
+				fetch(`https://ary9mw0hd0.execute-api.eu-west-2.amazonaws.com/items/` + item.id, {
+					method: 'PUT',
+					body: JSON.stringify( item ),
+					headers: {
+						'Content-type': 'application/json; charset=UTF-8',
+						'Accept': 'application/json'
+					}
+				})
+				.then(( response ) => {
+					return response.json();
+				})
+			});
+		}
+
 		setItems( [...newItems] );
 	}
 
