@@ -1,0 +1,120 @@
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
+
+/* Swipe action backgrounds */
+.actionsLeft,
+.actionsRight {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0 var(--space-4);
+  color: white;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.actionsLeft {
+  left: 0;
+  background: var(--color-complete);
+}
+
+.actionsRight {
+  right: 0;
+  background: var(--color-delete);
+  flex-direction: row-reverse;
+}
+
+/* Main item */
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface);
+  min-height: 56px;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: pan-y;
+  z-index: 1;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+/* Checkbox */
+.checkbox {
+  width: 26px;
+  height: 26px;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all var(--transition-base);
+  color: transparent;
+}
+
+.checkbox:hover {
+  border-color: var(--color-complete);
+}
+
+.item.completed .checkbox {
+  background: var(--color-complete);
+  border-color: var(--color-complete);
+  color: white;
+}
+
+/* Item name */
+.name {
+  flex: 1;
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  transition: all var(--transition-base);
+  word-break: break-word;
+}
+
+.item.completed .name {
+  color: var(--color-text-muted);
+  text-decoration: line-through;
+}
+
+/* Delete button - visible on desktop, tap on mobile */
+.deleteButton {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+  transition: all var(--transition-base);
+  opacity: 0;
+}
+
+.item:hover .deleteButton,
+.deleteButton:focus {
+  opacity: 1;
+}
+
+.deleteButton:hover {
+  color: var(--color-delete);
+  background: var(--color-delete-bg);
+}
+
+/* Always show delete on touch devices */
+@media (hover: none) {
+  .deleteButton {
+    opacity: 1;
+  }
+}

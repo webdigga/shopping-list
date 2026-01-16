@@ -1,9 +1,0 @@
-body {
-	color: var(--black);
-	font-family: Roboto, Helvetica, Arial, sans-serif;
-	padding: var(--spacing);
-}
-
-input {
-	font-family: inherit;
-}

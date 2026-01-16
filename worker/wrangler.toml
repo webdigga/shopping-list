@@ -1,0 +1,15 @@
+name = "shopping-list-api"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+account_id = "749e8e915104c226e492df9c5bb31444"
+
+# D1 Database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "shopping-list-db"
+database_id = "805afbf3-e8ec-43cb-8d54-ad6fa7bdd3f5"
+
+[vars]
+ENVIRONMENT = "production"
+ALLOWED_ORIGIN = "https://shopping-list-2my.pages.dev"
