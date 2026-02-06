@@ -24,6 +24,24 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const checkStatus = async () => {
     try {
+      // Check if there's an existing token
+      const existingToken = api.getAuthToken()
+
+      if (existingToken) {
+        // Try to use the existing token by making a test request
+        try {
+          await api.fetchItems()
+          // Token is valid
+          setIsAuthenticated(true)
+          setIsLoading(false)
+          return
+        } catch {
+          // Token invalid, clear it
+          api.setAuthToken(null)
+        }
+      }
+
+      // No valid token, check if PIN is configured
       const { pinConfigured } = await api.checkAuthStatus()
       setNeedsSetup(!pinConfigured)
     } catch (error) {

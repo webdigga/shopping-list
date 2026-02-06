@@ -37,7 +37,7 @@ export async function handleAuthSetup(request: Request, env: Env): Promise<Respo
     ).bind('pin_hash', hashedPin).run()
 
     // Create session and return token
-    const token = createSession()
+    const token = await createSession(env)
     return json({ success: true, token }, 201, env)
   } catch (error) {
     console.error('Auth setup error:', error)
@@ -68,7 +68,7 @@ export async function handleAuthVerify(request: Request, env: Env): Promise<Resp
     const hashedPin = await hashPin(pin)
 
     if (hashedPin === stored.value) {
-      const token = createSession()
+      const token = await createSession(env)
       return json({ valid: true, token }, 200, env)
     }
 

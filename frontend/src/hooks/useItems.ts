@@ -10,6 +10,7 @@ interface UseItemsReturn {
   addItem: (name: string) => Promise<void>
   toggleItem: (id: string) => Promise<void>
   deleteItem: (id: string) => Promise<void>
+  clearAll: () => Promise<void>
   refresh: () => Promise<void>
 }
 
@@ -87,6 +88,15 @@ export function useItems(): UseItemsReturn {
     }
   }, [])
 
+  const clearAll = useCallback(async () => {
+    try {
+      await sync.clearAllOfflineFirst()
+      setItems([])
+    } catch (err) {
+      setError(String(err))
+    }
+  }, [])
+
   const refresh = useCallback(async () => {
     await fetchItems()
   }, [])
@@ -99,6 +109,7 @@ export function useItems(): UseItemsReturn {
     addItem,
     toggleItem,
     deleteItem,
+    clearAll,
     refresh
   }
 }

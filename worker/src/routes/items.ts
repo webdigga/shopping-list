@@ -130,6 +130,17 @@ export async function handleItemById(request: Request, env: Env, itemId: string,
   }
 }
 
+// DELETE /api/items - Clear all items
+export async function handleClearAll(request: Request, env: Env): Promise<Response> {
+  try {
+    await env.DB.prepare('DELETE FROM items').run()
+    return json({ success: true }, 200, env)
+  } catch (error) {
+    console.error('Clear all error:', error)
+    return json({ error: 'Internal error' }, 500, env)
+  }
+}
+
 // POST /api/items/sync - Bulk sync offline changes
 export async function handleSync(request: Request, env: Env): Promise<Response> {
   try {

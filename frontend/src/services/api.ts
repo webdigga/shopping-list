@@ -5,10 +5,39 @@ const API_BASE = import.meta.env.PROD
   ? 'https://shopping-list-api.webdigga42.workers.dev/api'
   : '/api'
 
-let authToken: string | null = null
+const TOKEN_KEY = 'shopping-list-auth'
+
+// 30-day expiry (matches server session duration)
+const TOKEN_EXPIRY_MS = 30 * 24 * 60 * 60 * 1000
+
+function loadToken(): string | null {
+  try {
+    const stored = localStorage.getItem(TOKEN_KEY)
+    if (!stored) return null
+    const { token, expires } = JSON.parse(stored)
+    if (Date.now() > expires) {
+      localStorage.removeItem(TOKEN_KEY)
+      return null
+    }
+    return token
+  } catch {
+    localStorage.removeItem(TOKEN_KEY)
+    return null
+  }
+}
+
+let authToken: string | null = loadToken()
 
 export function setAuthToken(token: string | null) {
   authToken = token
+  if (token) {
+    localStorage.setItem(TOKEN_KEY, JSON.stringify({
+      token,
+      expires: Date.now() + TOKEN_EXPIRY_MS
+    }))
+  } else {
+    localStorage.removeItem(TOKEN_KEY)
+  }
 }
 
 export function getAuthToken(): string | null {
@@ -90,6 +119,12 @@ export async function updateItem(
 
 export async function deleteItem(id: string): Promise<{ success: boolean }> {
   return request(`/items/${id}`, {
+    method: 'DELETE'
+  })
+}
+
+export async function clearAllItems(): Promise<{ success: boolean }> {
+  return request('/items', {
     method: 'DELETE'
   })
 }

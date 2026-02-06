@@ -30,6 +30,10 @@
   flex-direction: row-reverse;
 }
 
+.actionsRight.actionsToggle {
+  background: var(--color-complete);
+}
+
 /* Main item */
 .item {
   position: relative;

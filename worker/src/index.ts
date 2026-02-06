@@ -1,4 +1,4 @@
-import { handleItems, handleItemById, handleSync } from './routes/items'
+import { handleItems, handleItemById, handleSync, handleClearAll } from './routes/items'
 import { handleAuthSetup, handleAuthVerify, handleAuthCheck } from './routes/auth'
 import { authMiddleware } from './middleware/auth'
 import { json, cors, corsHeaders } from './utils/response'
@@ -48,6 +48,9 @@ export default {
       }
       if (request.method === 'POST') {
         return handleItems(request, env, 'POST')
+      }
+      if (request.method === 'DELETE') {
+        return handleClearAll(request, env)
       }
     }
 

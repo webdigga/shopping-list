@@ -13,8 +13,14 @@ export function SwipeableItem({ item, onToggle, onDelete }: SwipeableItemProps) 
   const { ref, handlers } = useSwipeGesture({
     threshold: 0.3,
     onSwipeRight: () => onToggle(item.id),
-    onSwipeLeft: () => onDelete(item.id)
+    onSwipeLeft: () => onToggle(item.id)
   })
+
+  const handleDelete = () => {
+    if (window.confirm(`Delete "${item.name}"?`)) {
+      onDelete(item.id)
+    }
+  }
 
   return (
     <div className={styles.wrapper}>
@@ -27,9 +33,13 @@ export function SwipeableItem({ item, onToggle, onDelete }: SwipeableItemProps) 
         )}
         <span>{item.completed ? 'Undo' : 'Done'}</span>
       </div>
-      <div className={styles.actionsRight}>
-        <Trash2 size={20} />
-        <span>Delete</span>
+      <div className={`${styles.actionsRight} ${styles.actionsToggle}`}>
+        {item.completed ? (
+          <RotateCcw size={20} />
+        ) : (
+          <Check size={20} />
+        )}
+        <span>{item.completed ? 'Undo' : 'Done'}</span>
       </div>
 
       {/* Main item content */}
@@ -50,7 +60,7 @@ export function SwipeableItem({ item, onToggle, onDelete }: SwipeableItemProps) 
 
         <button
           className={styles.deleteButton}
-          onClick={() => onDelete(item.id)}
+          onClick={handleDelete}
           aria-label="Delete item"
         >
           <Trash2 size={18} />

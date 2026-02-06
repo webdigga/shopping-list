@@ -1,23 +1,33 @@
 import type { Env } from '../index'
 import { json } from '../utils/response'
 
-// Simple session store (in production, use KV or D1)
-const sessions = new Map<string, { expires: number }>()
+// 30-day session expiry
+const SESSION_DURATION_MS = 30 * 24 * 60 * 60 * 1000
 
-export function createSession(): string {
+export async function createSession(env: Env): Promise<string> {
   const token = crypto.randomUUID()
-  // Session expires in 24 hours
-  sessions.set(token, { expires: Date.now() + 24 * 60 * 60 * 1000 })
+  const expiresAt = new Date(Date.now() + SESSION_DURATION_MS).toISOString()
+
+  await env.DB.prepare(
+    'INSERT INTO sessions (token, expires_at) VALUES (?, ?)'
+  ).bind(token, expiresAt).run()
+
   return token
 }
 
-export function validateSession(token: string): boolean {
-  const session = sessions.get(token)
+async function validateSession(token: string, env: Env): Promise<boolean> {
+  const session = await env.DB.prepare(
+    'SELECT expires_at FROM sessions WHERE token = ?'
+  ).bind(token).first<{ expires_at: string }>()
+
   if (!session) return false
-  if (Date.now() > session.expires) {
-    sessions.delete(token)
+
+  if (new Date(session.expires_at) < new Date()) {
+    // Expired - clean it up
+    await env.DB.prepare('DELETE FROM sessions WHERE token = ?').bind(token).run()
     return false
   }
+
   return true
 }
 
@@ -30,7 +40,7 @@ export async function authMiddleware(request: Request, env: Env): Promise<Respon
 
   const token = authHeader.replace('Bearer ', '')
 
-  if (!validateSession(token)) {
+  if (!(await validateSession(token, env))) {
     return json({ error: 'Unauthorized', message: 'Invalid or expired session' }, 401, env)
   }
 

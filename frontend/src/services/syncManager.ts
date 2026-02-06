@@ -82,14 +82,27 @@ export async function syncPendingChanges(): Promise<{ success: boolean; error?: 
   }
 }
 
-// Fetch items - tries online first, falls back to local
+// Fetch items - syncs pending changes first, then tries online, falls back to local
 export async function fetchItemsWithFallback(): Promise<{ items: Item[]; fromCache: boolean }> {
   if (isOnline) {
     try {
+      // CRITICAL: Sync any pending offline changes before fetching.
+      // Without this, a server fetch would overwrite local state and
+      // pending changes (from expired sessions, offline edits, etc.) would be lost.
+      const pendingChanges = await db.getQueuedChanges()
+      if (pendingChanges.length > 0) {
+        const syncResult = await syncPendingChanges()
+        if (!syncResult.success) {
+          // Sync failed - use local data to avoid losing pending changes
+          const items = await db.getAllItems()
+          return { items, fromCache: true }
+        }
+      }
+
       const result = await api.fetchItems()
       const items = result.items.map(mapApiItem)
 
-      // Update local cache
+      // Update local cache with server state
       await db.clearItems()
       await db.saveItems(items)
 
@@ -189,6 +202,23 @@ export async function updateItemOfflineFirst(
   }
 
   return updated
+}
+
+// Clear all items - removes locally and from server
+export async function clearAllOfflineFirst(): Promise<boolean> {
+  // Clear local items and any pending changes
+  await db.clearItems()
+  await db.clearQueuedChanges()
+
+  if (isOnline) {
+    try {
+      await api.clearAllItems()
+    } catch (error) {
+      console.error('Failed to clear on server:', error)
+    }
+  }
+
+  return true
 }
 
 // Delete item - removes locally and queues for sync if offline

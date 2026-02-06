@@ -87,7 +87,10 @@ export function PinEntry({ mode, onSubmit }: PinEntryProps) {
         </p>
 
         <form onSubmit={handleSubmit} className={styles.form}>
-          <div className={styles.pinDisplay}>
+          <div
+            className={styles.pinDisplay}
+            onClick={() => inputRef.current?.focus()}
+          >
             {[0, 1, 2, 3, 4, 5].map(i => (
               <div
                 key={i}
@@ -98,7 +101,7 @@ export function PinEntry({ mode, onSubmit }: PinEntryProps) {
 
           <input
             ref={inputRef}
-            type="tel"
+            type="text"
             inputMode="numeric"
             pattern="[0-9]*"
             value={currentPin}

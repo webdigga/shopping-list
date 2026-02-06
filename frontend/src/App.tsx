@@ -7,7 +7,14 @@ import { OfflineIndicator } from '@/components/OfflineIndicator/OfflineIndicator
 import styles from './App.module.css'
 
 function ShoppingList() {
-  const { items, loading, error, isOffline, addItem, toggleItem, deleteItem } = useItems()
+  const { items, loading, error, isOffline, addItem, toggleItem, deleteItem, clearAll } = useItems()
+
+  const handleClearAll = () => {
+    if (items.length === 0) return
+    if (window.confirm('Are you sure you want to clear all items? This cannot be undone.')) {
+      clearAll()
+    }
+  }
 
   if (loading) {
     return (
@@ -43,6 +50,12 @@ function ShoppingList() {
           onToggle={toggleItem}
           onDelete={deleteItem}
         />
+
+        {items.length > 0 && (
+          <button className={styles.clearAll} onClick={handleClearAll}>
+            Clear All
+          </button>
+        )}
       </main>
     </div>
   )
