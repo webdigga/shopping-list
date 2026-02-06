@@ -20,7 +20,7 @@ function ShoppingList() {
     return (
       <div className={styles.loading}>
         <div className={styles.spinner} />
-        <p>Loading your list...</p>
+        <p>Loading list...</p>
       </div>
     )
   }
