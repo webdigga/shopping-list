@@ -90,8 +90,8 @@ export function useItems(): UseItemsReturn {
 
   const clearAll = useCallback(async () => {
     try {
-      await sync.clearAllOfflineFirst()
-      setItems([])
+      const updatedItems = await sync.uncheckAllOfflineFirst()
+      setItems(updatedItems)
     } catch (err) {
       setError(String(err))
     }

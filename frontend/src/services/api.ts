@@ -123,12 +123,6 @@ export async function deleteItem(id: string): Promise<{ success: boolean }> {
   })
 }
 
-export async function clearAllItems(): Promise<{ success: boolean }> {
-  return request('/items', {
-    method: 'DELETE'
-  })
-}
-
 export async function syncChanges(changes: SyncChange[]): Promise<{
   applied: string[]
   errors: { itemId: string; error: string }[]

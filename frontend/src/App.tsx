@@ -9,9 +9,10 @@ import styles from './App.module.css'
 function ShoppingList() {
   const { items, loading, error, isOffline, addItem, toggleItem, deleteItem, clearAll } = useItems()
 
+  const hasCompleted = items.some(i => i.completed)
+
   const handleClearAll = () => {
-    if (items.length === 0) return
-    if (window.confirm('Are you sure you want to clear all items? This cannot be undone.')) {
+    if (window.confirm('Uncheck all completed items?')) {
       clearAll()
     }
   }
@@ -37,6 +38,12 @@ function ShoppingList() {
           </span>
         </header>
 
+        {hasCompleted && (
+          <button className={styles.clearAll} onClick={handleClearAll}>
+            Uncheck All
+          </button>
+        )}
+
         <AddItem onAdd={addItem} />
 
         {error && (
@@ -51,11 +58,6 @@ function ShoppingList() {
           onDelete={deleteItem}
         />
 
-        {items.length > 0 && (
-          <button className={styles.clearAll} onClick={handleClearAll}>
-            Clear All
-          </button>
-        )}
       </main>
     </div>
   )

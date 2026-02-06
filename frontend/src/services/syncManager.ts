@@ -204,21 +204,18 @@ export async function updateItemOfflineFirst(
   return updated
 }
 
-// Clear all items - removes locally and from server
-export async function clearAllOfflineFirst(): Promise<boolean> {
-  // Clear local items and any pending changes
-  await db.clearItems()
-  await db.clearQueuedChanges()
+// Mark all items as not completed
+export async function uncheckAllOfflineFirst(): Promise<Item[]> {
+  const items = await db.getAllItems()
+  const completed = items.filter(i => i.completed)
+  const updated: Item[] = []
 
-  if (isOnline) {
-    try {
-      await api.clearAllItems()
-    } catch (error) {
-      console.error('Failed to clear on server:', error)
-    }
+  for (const item of completed) {
+    const result = await updateItemOfflineFirst(item.id, { completed: false })
+    if (result) updated.push(result)
   }
 
-  return true
+  return await db.getAllItems()
 }
 
 // Delete item - removes locally and queues for sync if offline
