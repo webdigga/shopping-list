@@ -13,8 +13,11 @@ export default defineConfig({
                 name: 'Meal Plan',
                 short_name: 'Meal Plan',
                 description: "David's 3-week meal plan",
-                theme_color: '#2f6f4f',
-                background_color: '#f6f5f1',
+                // Android paints the installed app's navigation bar with background_color, and a manifest
+                // can't follow light/dark mode, so use the dark page colour: the system buttons stay
+                // visible in both modes. The status bar follows the theme-color meta tags in index.html.
+                theme_color: '#151715',
+                background_color: '#151715',
                 display: 'standalone',
                 icons: [
                     {
