@@ -9,6 +9,8 @@
 }
 
 html {
+  /* Paints the safe areas (home indicator, gesture bar) in the page colour, not white. */
+  background-color: var(--color-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-size-adjust: 100%;
