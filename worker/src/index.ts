@@ -1,4 +1,4 @@
-import { handleState, handleTicks, handleStock, handleTasks } from './routes/mealPlan'
+import { handleState, handleTicks } from './routes/mealPlan'
 import { handleAuthSetup, handleAuthVerify, handleAuthCheck } from './routes/auth'
 import { authMiddleware } from './middleware/auth'
 import { json, cors, corsHeaders } from './utils/response'
@@ -48,16 +48,6 @@ export default {
     const ticksMatch = path.match(/^\/api\/mp\/ticks\/([^/]+)(?:\/([^/]+))?$/)
     if (ticksMatch) {
       return handleTicks(request, env, decodeURIComponent(ticksMatch[1]), ticksMatch[2] ?? null)
-    }
-
-    const stockMatch = path.match(/^\/api\/mp\/stock(?:\/([^/]+))?$/)
-    if (stockMatch) {
-      return handleStock(request, env, stockMatch[1] ?? null)
-    }
-
-    const tasksMatch = path.match(/^\/api\/mp\/tasks(?:\/([^/]+)\/([^/]+))?$/)
-    if (tasksMatch) {
-      return handleTasks(request, env, tasksMatch[1] ?? null, tasksMatch[2] ?? null)
     }
 
     // 404 for unknown routes

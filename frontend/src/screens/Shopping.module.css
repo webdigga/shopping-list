@@ -6,6 +6,7 @@
 .pick {
   flex: 1;
   min-height: 56px;
+  padding: var(--space-2) var(--space-3);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,42 +36,4 @@
 .detail {
   font-size: var(--font-size-sm);
   color: var(--color-text-secondary);
-}
-
-.needToBuy {
-  color: var(--color-primary);
-}
-
-.staple {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
-  padding: var(--space-3) var(--space-4);
-}
-
-.stapleHead {
-  display: flex;
-  flex-direction: column;
-}
-
-.have {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  font-size: var(--font-size-lg);
-}
-
-.haveInput {
-  width: 96px;
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-.stapleBuy {
-  padding: var(--space-2) 0 0;
-  min-height: 0;
-}
-
-.enough {
-  color: var(--color-text-muted);
 }

@@ -29,7 +29,6 @@ export function WeekScreen({ week: requested }: { week: number | null }) {
             className={`${styles.pick} ${w === week ? styles.picked : ''}`}
           >
             Week {w}
-            {running?.week === w && <span className={styles.badge}>now</span>}
           </a>
         ))}
       </div>

@@ -17,7 +17,6 @@ const START_MAX_OFFSET = 7
 const INSTANCE_RE = /^W[123]:\d{4}-\d{2}-\d{2}$/
 const ID_RE = /^[a-z0-9-]{1,64}$/
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/
-const TASK_KEY_RE = /^[a-z0-9]{1,32}$/
 
 async function readState(env: Env): Promise<PlanState | null> {
   const rows = await env.DB.prepare('SELECT key, value FROM mp_state').all<{ key: string; value: string }>()
@@ -161,81 +160,6 @@ export async function handleTicks(
     return json({ error: 'Method not allowed' }, 405, env)
   } catch (error) {
     console.error('Ticks error:', error)
-    return json({ error: 'Internal error' }, 500, env)
-  }
-}
-
-// GET /api/mp/stock
-// PUT /api/mp/stock/:ingredient  { qty }  (null clears it)
-export async function handleStock(request: Request, env: Env, ingredient: string | null): Promise<Response> {
-  try {
-    if (!ingredient && request.method === 'GET') {
-      const rows = await env.DB.prepare('SELECT ingredient_id, qty FROM mp_stock').all<{ ingredient_id: string; qty: number }>()
-      const stock: Record<string, number> = {}
-      for (const r of rows.results ?? []) stock[r.ingredient_id] = r.qty
-      return json({ stock }, 200, env)
-    }
-
-    if (ingredient && request.method === 'PUT') {
-      if (!ID_RE.test(ingredient)) return json({ error: 'Invalid ingredient' }, 400, env)
-      const { qty } = await request.json() as { qty?: unknown }
-      if (qty === null) {
-        await env.DB.prepare('DELETE FROM mp_stock WHERE ingredient_id = ?').bind(ingredient).run()
-        return json({ success: true }, 200, env)
-      }
-      if (typeof qty !== 'number' || !Number.isFinite(qty) || qty < 0) {
-        return json({ error: 'qty must be a number of 0 or more' }, 400, env)
-      }
-      await env.DB.prepare(
-        `INSERT INTO mp_stock (ingredient_id, qty, updated_at) VALUES (?, ?, datetime('now'))
-         ON CONFLICT(ingredient_id) DO UPDATE SET qty = excluded.qty, updated_at = excluded.updated_at`
-      ).bind(ingredient, qty).run()
-      return json({ success: true }, 200, env)
-    }
-
-    return json({ error: 'Method not allowed' }, 405, env)
-  } catch (error) {
-    console.error('Stock error:', error)
-    return json({ error: 'Internal error' }, 500, env)
-  }
-}
-
-// GET /api/mp/tasks?from=YYYY-MM-DD&to=YYYY-MM-DD
-// PUT /api/mp/tasks/:date/:taskKey  { done }
-export async function handleTasks(
-  request: Request,
-  env: Env,
-  date: string | null,
-  taskKey: string | null
-): Promise<Response> {
-  try {
-    if (!date && request.method === 'GET') {
-      const url = new URL(request.url)
-      const from = url.searchParams.get('from') ?? ''
-      const to = url.searchParams.get('to') ?? ''
-      if (!DATE_RE.test(from) || !DATE_RE.test(to)) return json({ error: 'from and to are required' }, 400, env)
-      const rows = await env.DB.prepare(
-        'SELECT date, task_key FROM mp_task_ticks WHERE date BETWEEN ? AND ? AND done = 1'
-      ).bind(from, to).all<{ date: string; task_key: string }>()
-      const tasks: Record<string, Record<string, true>> = {}
-      for (const r of rows.results ?? []) (tasks[r.date] ??= {})[r.task_key] = true
-      return json({ tasks }, 200, env)
-    }
-
-    if (date && taskKey && request.method === 'PUT') {
-      if (!DATE_RE.test(date) || !TASK_KEY_RE.test(taskKey)) return json({ error: 'Invalid task' }, 400, env)
-      const { done } = await request.json() as { done?: unknown }
-      if (typeof done !== 'boolean') return json({ error: 'done must be true or false' }, 400, env)
-      await env.DB.prepare(
-        `INSERT INTO mp_task_ticks (date, task_key, done) VALUES (?, ?, ?)
-         ON CONFLICT(date, task_key) DO UPDATE SET done = excluded.done`
-      ).bind(date, taskKey, done ? 1 : 0).run()
-      return json({ success: true }, 200, env)
-    }
-
-    return json({ error: 'Method not allowed' }, 405, env)
-  } catch (error) {
-    console.error('Tasks error:', error)
     return json({ error: 'Internal error' }, 500, env)
   }
 }

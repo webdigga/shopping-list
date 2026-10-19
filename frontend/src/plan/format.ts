@@ -104,6 +104,7 @@ const slotLabels: Record<string, string> = {
   dinner: 'Dinner',
   snack: 'Snack',
   'pre-run': 'Pre-run',
+  batch: 'Batch cook',
 }
 
 export function slotLabel(slot: string): string {

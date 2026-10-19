@@ -131,11 +131,3 @@ export async function pausePlan(): Promise<StateResponse> {
 export function ticksPath(instance: string): string {
   return `/mp/ticks/${encodeURIComponent(instance)}`
 }
-
-export function stockPath(): string {
-  return '/mp/stock'
-}
-
-export function tasksPath(from: string, to: string): string {
-  return `/mp/tasks?from=${from}&to=${to}`
-}

@@ -2,23 +2,15 @@ import { ChevronRight, Dumbbell } from 'lucide-react'
 import type { Day } from '@shared/planTypes'
 import { getRecipe, plan } from '@/plan/data'
 import { slotLabel } from '@/plan/format'
-import { taskKey } from '@/plan/taskKey'
 import ui from '@/styles/ui.module.css'
 import styles from './DayPlan.module.css'
 
-interface PrepTicks {
-  done: Record<string, true>
-  onToggle: (key: string, done: boolean) => void
-}
-
 interface DayPlanProps {
   day: Day
-  /** Pass ticks for a dated day; leave out when browsing another week read-only. */
-  prepTicks?: PrepTicks
   prepTitle?: string
 }
 
-export function DayPlan({ day, prepTicks, prepTitle = 'Prep' }: DayPlanProps) {
+export function DayPlan({ day, prepTitle = 'Prep' }: DayPlanProps) {
   return (
     <>
       <section className={`${ui.card} ${styles.training}`} data-testid="training">
@@ -44,9 +36,11 @@ export function DayPlan({ day, prepTicks, prepTitle = 'Prep' }: DayPlanProps) {
                   {recipe ? (
                     <>
                       <span className={styles.mealName}>{recipe.name}</span>
-                      <span className={styles.macros}>
-                        {recipe.macros.protein}g protein · {recipe.macros.carbs}g carbs · {recipe.macros.kcal} kcal
-                      </span>
+                      {recipe.macros && (
+                        <span className={styles.macros}>
+                          {recipe.macros.protein}g protein · {recipe.macros.carbs}g carbs · {recipe.macros.kcal} kcal
+                        </span>
+                      )}
                     </>
                   ) : (
                     <span className={styles.mealName}>Free: try to include some protein</span>
@@ -74,21 +68,18 @@ export function DayPlan({ day, prepTicks, prepTitle = 'Prep' }: DayPlanProps) {
         <section className={ui.section} aria-labelledby={`prep-${day.day}`}>
           <h2 id={`prep-${day.day}`} className={ui.sectionTitle}>{prepTitle}</h2>
           <ul className={ui.list}>
-            {day.prep.map(task => {
-              const key = taskKey(task)
-              if (!prepTicks) {
-                return <li key={key} className={`${ui.check} ${styles.prepStatic}`}>{task}</li>
-              }
-              const done = !!prepTicks.done[key]
-              return (
-                <li key={key}>
-                  <label className={`${ui.check} ${done ? ui.checkDone : ''}`}>
-                    <input type="checkbox" checked={done} onChange={e => prepTicks.onToggle(key, e.target.checked)} />
-                    <span className={ui.checkBody}><span className={ui.checkMain}>{task}</span></span>
-                  </label>
+            {day.prep.map(task =>
+              typeof task === 'string' ? (
+                <li key={task} className={styles.prep}>{task}</li>
+              ) : (
+                <li key={task.text}>
+                  <a href={`#/recipe/${task.recipe}`} className={`${styles.prep} ${styles.prepLink}`}>
+                    <span>{task.text}</span>
+                    <ChevronRight size={20} className={styles.chevron} aria-hidden />
+                  </a>
                 </li>
               )
-            })}
+            )}
           </ul>
         </section>
       )}

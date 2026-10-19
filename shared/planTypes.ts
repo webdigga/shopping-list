@@ -24,6 +24,7 @@ export interface Ingredient {
   fridgeDays: number | null
   openedDays: number | null
   stockTracked: boolean
+  store: string
   note: string | null
 }
 
@@ -43,7 +44,8 @@ export interface Recipe {
   method: string[]
   prepAhead?: string | null
   batchCookedOn?: DayKey | null
-  macros: Macros
+  /** Left out on batch-cook recipes, which are eaten through other meals. */
+  macros?: Macros
   tags: string[]
 }
 
@@ -54,13 +56,16 @@ export interface Meal {
   free: boolean
 }
 
+/** A prep line; batch cooks link to the recipe that explains them. */
+export type PrepTask = string | { text: string; recipe: string }
+
 export interface Day {
   day: DayKey
   dayName: string
   dayIndex: number
   training: { label: string; carbTarget: CarbTarget }
   meals: Meal[]
-  prep: string[]
+  prep: PrepTask[]
   totals: Macros
   note?: string | null
 }

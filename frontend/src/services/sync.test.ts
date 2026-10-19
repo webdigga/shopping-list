@@ -64,7 +64,7 @@ describe('write queue', () => {
     mockFetch(() => new Response(JSON.stringify({ error: 'Invalid' }), { status: 400 }))
     const sync = await import('./sync')
 
-    sync.enqueue({ method: 'PUT', path: '/mp/stock/eggs', body: { qty: -1 } })
+    sync.enqueue({ method: 'PUT', path: '/mp/ticks/bad/eggs', body: { ticked: 'yes' } })
     await vi.waitFor(() => expect(sync.hasPendingWrites()).toBe(false))
   })
 
@@ -72,7 +72,7 @@ describe('write queue', () => {
     mockFetch(() => new Response(JSON.stringify({ error: 'Unauthorized' }), { status: 401 }))
     const sync = await import('./sync')
 
-    sync.enqueue({ method: 'PUT', path: '/mp/stock/eggs', body: { qty: 6 } })
+    sync.enqueue({ method: 'PUT', path: '/mp/ticks/W1%3A2026-10-23/eggs', body: { ticked: true } })
     await sync.flush()
     expect(sync.hasPendingWrites()).toBe(true)
   })

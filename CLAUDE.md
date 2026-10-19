@@ -4,7 +4,7 @@
 
 Meal plan rebuild from `SPEC.md` is built; not yet deployed.
 
-1. Apply the D1 migration: `npm run db:migrate:remote -w worker`
+1. Apply the D1 migrations (0002 and 0003 drop the unused `mp_stock` and `mp_task_ticks`): `npm run db:migrate:remote -w worker`
 2. Deploy (push to `main`; GitHub Actions deploys Pages and the worker)
 3. Open the app, set Week and start Friday, check it on the phone
 

@@ -1779,6 +1779,46 @@
       "openedDays": null,
       "note": null,
       "stockTracked": false
+    },
+    {
+      "id": "kimchi",
+      "name": "Kimchi",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 30,
+        "protein": 1.5,
+        "carbs": 4,
+        "fat": 0.4
+      },
+      "packSize": 400,
+      "packUnit": "g",
+      "store": "Sainsbury's",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": "400g jar; an opened jar lasts more than a week",
+      "stockTracked": false
+    },
+    {
+      "id": "sauerkraut",
+      "name": "Sauerkraut",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 20,
+        "protein": 1,
+        "carbs": 3,
+        "fat": 0.1
+      },
+      "packSize": 400,
+      "packUnit": "g",
+      "store": "Sainsbury's",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": "400g jar; an opened jar lasts more than a week",
+      "stockTracked": false
     }
   ],
   "recipes": [
@@ -1880,7 +1920,7 @@
     },
     {
       "id": "eggs-salmon",
-      "name": "Eggs & smoked salmon",
+      "name": "Scrambled eggs, smoked salmon & sauerkraut",
       "meal": "breakfast",
       "servingsCooked": 1,
       "cookMinutes": 10,
@@ -1896,8 +1936,8 @@
           "unit": "g"
         },
         {
-          "ingredient": "spinach",
-          "qty": 80,
+          "ingredient": "sauerkraut",
+          "qty": 50,
           "unit": "g"
         },
         {
@@ -1918,17 +1958,16 @@
       ],
       "method": [
         "Toast 1 slice of sourdough from frozen.",
-        "Warm 80g frozen spinach in a pan with 5ml olive oil until wilted; season.",
-        "Scramble 3 eggs gently over low heat.",
-        "Serve eggs on the toast with spinach and 100g smoked salmon. Glass of kefir (175ml) on the side."
+        "Scramble 3 eggs gently in 5ml olive oil over a low heat.",
+        "Serve the eggs on the toast with 100g smoked salmon and 50g sauerkraut on the side. Glass of kefir (175ml) on the side."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 665,
-        "protein": 55,
-        "carbs": 28,
-        "fat": 36
+        "kcal": 657,
+        "protein": 53,
+        "carbs": 29,
+        "fat": 35
       }
     },
     {
@@ -2100,7 +2139,7 @@
     },
     {
       "id": "chicken-rice-white",
-      "name": "Chicken & white rice bowl",
+      "name": "Chicken, white rice & kimchi bowl",
       "meal": "lunch",
       "servingsCooked": 1,
       "cookMinutes": 5,
@@ -2109,7 +2148,7 @@
           "ingredient": "chicken",
           "qty": 150,
           "unit": "g",
-          "note": "batch-cooked"
+          "note": "steamed on Monday"
         },
         {
           "ingredient": "riceW",
@@ -2117,49 +2156,29 @@
           "unit": "pouch"
         },
         {
-          "ingredient": "pepper",
-          "qty": 0.6,
-          "unit": "each"
-        },
-        {
-          "ingredient": "courgette",
-          "qty": 0.5,
-          "unit": "each"
-        },
-        {
-          "ingredient": "redonion",
-          "qty": 0.25,
-          "unit": "each"
-        },
-        {
-          "ingredient": "oil",
-          "qty": 5,
+          "ingredient": "kimchi",
+          "qty": 80,
           "unit": "g"
-        },
-        {
-          "ingredient": "paprika",
-          "qty": 1,
-          "unit": "tsp"
         }
       ],
       "method": [
-        "Uses chicken and roasted veg batch-cooked on Monday evening.",
-        "Reheat 150g chicken and the roasted veg in a pan until piping hot.",
-        "Tip 1 white basmati pouch on top, straight from the pouch (cold is fine)."
+        "Uses chicken steamed on Monday evening.",
+        "Warm the chicken in a pan until piping hot, or eat it cold.",
+        "Tip 1 white basmati pouch into a bowl, straight from the pouch. Add the chicken and top with 80g kimchi."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 620,
-        "protein": 46,
-        "carbs": 84,
-        "fat": 12
+        "kcal": 546,
+        "protein": 45,
+        "carbs": 78,
+        "fat": 6
       },
       "batchCookedOn": "mon"
     },
     {
       "id": "chicken-rice-brown",
-      "name": "Chicken & brown rice bowl",
+      "name": "Chicken, brown rice & kimchi bowl",
       "meal": "lunch",
       "servingsCooked": 1,
       "cookMinutes": 5,
@@ -2168,7 +2187,7 @@
           "ingredient": "chicken",
           "qty": 150,
           "unit": "g",
-          "note": "batch-cooked"
+          "note": "steamed on Monday"
         },
         {
           "ingredient": "riceB",
@@ -2176,43 +2195,23 @@
           "unit": "pouch"
         },
         {
-          "ingredient": "pepper",
-          "qty": 0.6,
-          "unit": "each"
-        },
-        {
-          "ingredient": "courgette",
-          "qty": 0.5,
-          "unit": "each"
-        },
-        {
-          "ingredient": "redonion",
-          "qty": 0.25,
-          "unit": "each"
-        },
-        {
-          "ingredient": "oil",
-          "qty": 5,
+          "ingredient": "kimchi",
+          "qty": 80,
           "unit": "g"
-        },
-        {
-          "ingredient": "paprika",
-          "qty": 1,
-          "unit": "tsp"
         }
       ],
       "method": [
-        "Uses chicken and roasted veg batch-cooked on Monday evening.",
-        "Reheat 150g chicken and the roasted veg in a pan until piping hot.",
-        "Tip half a brown basmati pouch on top, straight from the pouch (cold is fine). The other half is for tonight's dinner."
+        "Uses chicken steamed on Monday evening.",
+        "Warm the chicken in a pan until piping hot, or eat it cold.",
+        "Tip half a brown basmati pouch into a bowl (the other half is for tonight's dinner), straight from the pouch. Add the chicken and top with 80g kimchi."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 439,
-        "protein": 42,
-        "carbs": 44,
-        "fat": 10
+        "kcal": 364,
+        "protein": 41,
+        "carbs": 38,
+        "fat": 5
       },
       "batchCookedOn": "mon"
     },
@@ -3049,7 +3048,7 @@
     },
     {
       "id": "souvlaki-white",
-      "name": "Chicken souvlaki bowl with white rice",
+      "name": "Lemon-oregano chicken, white rice & sauerkraut",
       "meal": "lunch",
       "servingsCooked": 1,
       "cookMinutes": 5,
@@ -3058,7 +3057,7 @@
           "ingredient": "chicken",
           "qty": 162,
           "unit": "g",
-          "note": "batch-cooked"
+          "note": "steamed on Monday"
         },
         {
           "ingredient": "riceW",
@@ -3066,14 +3065,9 @@
           "unit": "pouch"
         },
         {
-          "ingredient": "cucumber",
-          "qty": 0.5,
-          "unit": "each"
-        },
-        {
-          "ingredient": "tomatoes",
-          "qty": 1,
-          "unit": "each"
+          "ingredient": "sauerkraut",
+          "qty": 80,
+          "unit": "g"
         },
         {
           "ingredient": "skyr",
@@ -3081,14 +3075,9 @@
           "unit": "g"
         },
         {
-          "ingredient": "garlic",
+          "ingredient": "lemon",
           "qty": 0.5,
-          "unit": "clove"
-        },
-        {
-          "ingredient": "driedmint",
-          "qty": 0.5,
-          "unit": "tsp"
+          "unit": "each"
         },
         {
           "ingredient": "oregano",
@@ -3096,34 +3085,29 @@
           "unit": "tsp"
         },
         {
-          "ingredient": "lemon",
-          "qty": 0.5,
-          "unit": "each"
-        },
-        {
-          "ingredient": "oil",
-          "qty": 5,
-          "unit": "g"
+          "ingredient": "garlic",
+          "qty": 0.25,
+          "unit": "clove"
         }
       ],
       "method": [
-        "Uses chicken batch-cooked on Monday evening (marinated in lemon, oregano, garlic and 5ml oil, then grilled or roasted).",
-        "Tzatziki: 75g skyr, 40g grated cucumber (squeezed), a little garlic and dried mint.",
-        "Serve with 1 white basmati pouch (straight from the pouch), chicken, chopped cucumber and tomato, and the tzatziki."
+        "Uses chicken steamed on Monday evening with lemon, oregano and garlic.",
+        "Tip 1 white basmati pouch into a bowl, straight from the pouch.",
+        "Add the chicken, 80g sauerkraut and a dollop of skyr (75g)."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 660,
-        "protein": 56,
-        "carbs": 83,
-        "fat": 12
+        "kcal": 597,
+        "protein": 55,
+        "carbs": 80,
+        "fat": 7
       },
       "batchCookedOn": "mon"
     },
     {
       "id": "souvlaki-brown",
-      "name": "Chicken souvlaki bowl with brown rice",
+      "name": "Lemon-oregano chicken, brown rice & sauerkraut",
       "meal": "lunch",
       "servingsCooked": 1,
       "cookMinutes": 5,
@@ -3132,7 +3116,7 @@
           "ingredient": "chicken",
           "qty": 163,
           "unit": "g",
-          "note": "batch-cooked"
+          "note": "steamed on Monday"
         },
         {
           "ingredient": "riceB",
@@ -3140,14 +3124,9 @@
           "unit": "pouch"
         },
         {
-          "ingredient": "cucumber",
-          "qty": 0.5,
-          "unit": "each"
-        },
-        {
-          "ingredient": "tomatoes",
-          "qty": 1,
-          "unit": "each"
+          "ingredient": "sauerkraut",
+          "qty": 80,
+          "unit": "g"
         },
         {
           "ingredient": "skyr",
@@ -3155,14 +3134,9 @@
           "unit": "g"
         },
         {
-          "ingredient": "garlic",
+          "ingredient": "lemon",
           "qty": 0.5,
-          "unit": "clove"
-        },
-        {
-          "ingredient": "driedmint",
-          "qty": 0.5,
-          "unit": "tsp"
+          "unit": "each"
         },
         {
           "ingredient": "oregano",
@@ -3170,32 +3144,29 @@
           "unit": "tsp"
         },
         {
-          "ingredient": "lemon",
-          "qty": 0.5,
-          "unit": "each"
-        },
-        {
-          "ingredient": "oil",
-          "qty": 5,
-          "unit": "g"
+          "ingredient": "garlic",
+          "qty": 0.25,
+          "unit": "clove"
         }
       ],
       "method": [
-        "As above, with half a brown basmati pouch; the other half is for tonight's dinner."
+        "Uses chicken steamed on Monday evening with lemon, oregano and garlic.",
+        "Tip half a brown basmati pouch into a bowl (the other half is for tonight's dinner), straight from the pouch.",
+        "Add the chicken, 80g sauerkraut and a dollop of skyr (75g)."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 480,
-        "protein": 53,
-        "carbs": 43,
-        "fat": 10
+        "kcal": 417,
+        "protein": 52,
+        "carbs": 40,
+        "fat": 5
       },
       "batchCookedOn": "mon"
     },
     {
       "id": "burrito-white",
-      "name": "Beef burrito bowl with white rice",
+      "name": "Beef & black bean bowl with white rice & kimchi",
       "meal": "lunch",
       "servingsCooked": 1,
       "cookMinutes": 5,
@@ -3212,21 +3183,6 @@
           "unit": "tin"
         },
         {
-          "ingredient": "tomatoes",
-          "qty": 1,
-          "unit": "each"
-        },
-        {
-          "ingredient": "redonion",
-          "qty": 0.15,
-          "unit": "each"
-        },
-        {
-          "ingredient": "lime",
-          "qty": 0.5,
-          "unit": "each"
-        },
-        {
           "ingredient": "cumin",
           "qty": 1,
           "unit": "tsp"
@@ -3237,36 +3193,36 @@
           "unit": "tsp"
         },
         {
-          "ingredient": "coriander",
-          "qty": 5,
-          "unit": "g"
-        },
-        {
           "ingredient": "riceW",
           "qty": 1,
           "unit": "pouch"
+        },
+        {
+          "ingredient": "kimchi",
+          "qty": 80,
+          "unit": "g"
         }
       ],
       "method": [
-        "Uses the second burrito portion, batch-cooked on Wednesday evening.",
-        "Salsa: chopped tomato, a little red onion, lime juice and coriander.",
-        "Reheat the beef in a pan and serve over 1 white basmati pouch (straight from the pouch) with the salsa."
+        "Uses the second portion, batch-cooked on Wednesday evening.",
+        "Reheat the beef in a pan until piping hot.",
+        "Serve over 1 white basmati pouch (straight from the pouch) with 80g kimchi on top."
       ],
       "prepAhead": null,
       "tags": [
         "post-run"
       ],
       "macros": {
-        "kcal": 699,
+        "kcal": 698,
         "protein": 49,
-        "carbs": 97,
+        "carbs": 96,
         "fat": 12
       },
       "batchCookedOn": "wed"
     },
     {
       "id": "burrito-brown",
-      "name": "Beef burrito bowl with brown rice",
+      "name": "Beef & black bean bowl with brown rice & kimchi",
       "meal": "lunch",
       "servingsCooked": 1,
       "cookMinutes": 20,
@@ -3283,21 +3239,6 @@
           "unit": "tin"
         },
         {
-          "ingredient": "tomatoes",
-          "qty": 1,
-          "unit": "each"
-        },
-        {
-          "ingredient": "redonion",
-          "qty": 0.15,
-          "unit": "each"
-        },
-        {
-          "ingredient": "lime",
-          "qty": 0.5,
-          "unit": "each"
-        },
-        {
           "ingredient": "cumin",
           "qty": 1,
           "unit": "tsp"
@@ -3308,27 +3249,27 @@
           "unit": "tsp"
         },
         {
-          "ingredient": "coriander",
-          "qty": 5,
-          "unit": "g"
-        },
-        {
           "ingredient": "riceB",
           "qty": 0.5,
           "unit": "pouch"
+        },
+        {
+          "ingredient": "kimchi",
+          "qty": 80,
+          "unit": "g"
         }
       ],
       "method": [
-        "Batch-cook the burrito beef this evening: brown 300g beef mince with cumin and paprika, add 1 tin black beans; cook 10 minutes. Makes 2 portions.",
-        "Make the salsa. Eat one portion now with the other half of the brown basmati pouch, straight from the pouch.",
+        "Batch-cook the beef this evening: brown 300g beef mince with cumin and paprika, add 1 tin black beans; cook 10 minutes. Makes 2 portions.",
+        "Eat one portion now with the other half of the brown basmati pouch, straight from the pouch, and 80g kimchi on top.",
         "Cool the second portion quickly and fridge it for Thursday lunch."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 518,
-        "protein": 45,
-        "carbs": 57,
+        "kcal": 517,
+        "protein": 46,
+        "carbs": 56,
         "fat": 10
       },
       "batchCookedOn": "wed"
@@ -3453,7 +3394,7 @@
     },
     {
       "id": "pork-loin",
-      "name": "Pork loin steaks with sweet potato",
+      "name": "Pork loin with sweet potato & sauerkraut",
       "meal": "dinner",
       "servingsCooked": 1,
       "cookMinutes": 35,
@@ -3469,19 +3410,9 @@
           "unit": "g"
         },
         {
-          "ingredient": "pepper",
-          "qty": 0.7,
-          "unit": "each"
-        },
-        {
-          "ingredient": "courgette",
-          "qty": 0.5,
-          "unit": "each"
-        },
-        {
-          "ingredient": "redonion",
-          "qty": 0.33,
-          "unit": "each"
+          "ingredient": "sauerkraut",
+          "qty": 80,
+          "unit": "g"
         },
         {
           "ingredient": "oil",
@@ -3495,17 +3426,18 @@
         }
       ],
       "method": [
-        "Heat oven to 200°C (180°C fan).",
-        "Roast 200g sweet potato chunks, pepper, courgette and red onion with 5ml oil for 30 minutes.",
-        "Season 250g pork loin steaks with paprika; pan-fry or grill 4–5 minutes each side until cooked through."
+        "Heat the oven to 200°C (180°C fan).",
+        "Roast 200g sweet potato chunks with 5ml oil for 30 minutes.",
+        "Season the pork loin steaks with paprika and pan-fry for 4 to 5 minutes each side, until cooked through.",
+        "Serve with 80g sauerkraut."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 627,
-        "protein": 61,
-        "carbs": 47,
-        "fat": 20
+        "kcal": 581,
+        "protein": 59,
+        "carbs": 38,
+        "fat": 19
       }
     },
     {
@@ -3978,7 +3910,7 @@
     },
     {
       "id": "chicken-bulgur-90",
-      "name": "Lemon-herb chicken & bulgur",
+      "name": "Lemon-herb chicken, bulgur & sauerkraut",
       "meal": "lunch",
       "servingsCooked": 1,
       "cookMinutes": 5,
@@ -3987,7 +3919,7 @@
           "ingredient": "chicken",
           "qty": 150,
           "unit": "g",
-          "note": "batch-cooked"
+          "note": "steamed on Monday"
         },
         {
           "ingredient": "bulgur",
@@ -3995,26 +3927,6 @@
           "unit": "g"
         },
         {
-          "ingredient": "pepper",
-          "qty": 0.6,
-          "unit": "each"
-        },
-        {
-          "ingredient": "courgette",
-          "qty": 0.4,
-          "unit": "each"
-        },
-        {
-          "ingredient": "redonion",
-          "qty": 0.25,
-          "unit": "each"
-        },
-        {
-          "ingredient": "oil",
-          "qty": 5,
-          "unit": "g"
-        },
-        {
           "ingredient": "lemon",
           "qty": 0.5,
           "unit": "each"
@@ -4023,25 +3935,36 @@
           "ingredient": "oregano",
           "qty": 1,
           "unit": "tsp"
+        },
+        {
+          "ingredient": "sauerkraut",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 10,
+          "unit": "g"
         }
       ],
       "method": [
-        "Uses chicken, bulgur and roasted veg batch-cooked on Monday evening.",
-        "Reheat in a pan until piping hot (or eat it cold as a salad)."
+        "Uses chicken and bulgur cooked on Monday evening.",
+        "Warm in a pan until piping hot, or eat it cold as a salad.",
+        "Drizzle with 10ml olive oil and serve with 80g sauerkraut."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 574,
-        "protein": 49,
-        "carbs": 71,
-        "fat": 9
+        "kcal": 584,
+        "protein": 48,
+        "carbs": 64,
+        "fat": 13
       },
       "batchCookedOn": "mon"
     },
     {
       "id": "chicken-bulgur-60",
-      "name": "Lemon-herb chicken & bulgur (smaller)",
+      "name": "Lemon-herb chicken, bulgur & sauerkraut",
       "meal": "lunch",
       "servingsCooked": 1,
       "cookMinutes": 5,
@@ -4050,31 +3973,11 @@
           "ingredient": "chicken",
           "qty": 150,
           "unit": "g",
-          "note": "batch-cooked"
+          "note": "steamed on Monday"
         },
         {
           "ingredient": "bulgur",
           "qty": 60,
-          "unit": "g"
-        },
-        {
-          "ingredient": "pepper",
-          "qty": 0.6,
-          "unit": "each"
-        },
-        {
-          "ingredient": "courgette",
-          "qty": 0.4,
-          "unit": "each"
-        },
-        {
-          "ingredient": "redonion",
-          "qty": 0.25,
-          "unit": "each"
-        },
-        {
-          "ingredient": "oil",
-          "qty": 5,
           "unit": "g"
         },
         {
@@ -4086,18 +3989,30 @@
           "ingredient": "oregano",
           "qty": 1,
           "unit": "tsp"
+        },
+        {
+          "ingredient": "sauerkraut",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 10,
+          "unit": "g"
         }
       ],
       "method": [
-        "As above, with the smaller bulgur portion."
+        "Uses chicken and bulgur cooked on Monday evening.",
+        "Warm in a pan until piping hot, or eat it cold as a salad.",
+        "Drizzle with 10ml olive oil and serve with 80g sauerkraut."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 467,
-        "protein": 45,
-        "carbs": 50,
-        "fat": 8
+        "kcal": 478,
+        "protein": 44,
+        "carbs": 44,
+        "fat": 13
       },
       "batchCookedOn": "mon"
     },
@@ -4425,10 +4340,10 @@
     },
     {
       "id": "salmon-noodles",
-      "name": "Salmon & noodle stir-fry",
+      "name": "Salmon & kimchi noodles",
       "meal": "dinner",
       "servingsCooked": 1,
-      "cookMinutes": 20,
+      "cookMinutes": 15,
       "ingredients": [
         {
           "ingredient": "salmon",
@@ -4441,13 +4356,8 @@
           "unit": "g"
         },
         {
-          "ingredient": "pepper",
-          "qty": 0.7,
-          "unit": "each"
-        },
-        {
-          "ingredient": "broccoli",
-          "qty": 200,
+          "ingredient": "kimchi",
+          "qty": 80,
           "unit": "g"
         },
         {
@@ -4456,34 +4366,23 @@
           "unit": "g"
         },
         {
-          "ingredient": "ginger",
-          "qty": 10,
-          "unit": "g"
-        },
-        {
-          "ingredient": "garlic",
-          "qty": 1,
-          "unit": "clove"
-        },
-        {
           "ingredient": "soy",
           "qty": 15,
           "unit": "ml"
         }
       ],
       "method": [
-        "Steam 2 salmon fillets for 10–12 minutes; flake.",
-        "Cook 60g wholewheat noodles.",
-        "Stir-fry sliced pepper, 200g broccoli, ginger and garlic for 4 minutes (a splash of water stops sticking).",
-        "Toss in noodles, salmon, spring onion and 15ml soy."
+        "Steam 2 salmon fillets for 10 to 12 minutes, then flake.",
+        "Cook 60g wholewheat noodles and drain.",
+        "Toss the noodles with 80g kimchi, 15ml soy sauce, the salmon and sliced spring onion."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 812,
-        "protein": 65,
-        "carbs": 50,
-        "fat": 35
+        "kcal": 743,
+        "protein": 59,
+        "carbs": 43,
+        "fat": 34
       }
     },
     {
@@ -4606,6 +4505,373 @@
         "carbs": 37,
         "fat": 23
       }
+    },
+    {
+      "id": "batch-steamed-chicken",
+      "name": "Steamed chicken (Tue/Wed lunches)",
+      "meal": "batch",
+      "servingsCooked": 2,
+      "cookMinutes": 25,
+      "ingredients": [
+        {
+          "ingredient": "chicken",
+          "qty": 300,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Steam the chicken breasts for 20 to 25 minutes, until there's no pink in the middle. If your steamer has room, put it in with tonight's dinner.",
+        "Let it cool, slice it, split it into 2 tubs (150g each) and fridge them for Tuesday and Wednesday lunch."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "batch"
+      ]
+    },
+    {
+      "id": "batch-turkey-chilli",
+      "name": "Turkey chilli (2 portions)",
+      "meal": "batch",
+      "servingsCooked": 2,
+      "cookMinutes": 35,
+      "ingredients": [
+        {
+          "ingredient": "turkeymince",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "ingredient": "onion",
+          "qty": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient": "pepper",
+          "qty": 0.75,
+          "unit": "each"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "ingredient": "cumin",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "paprika",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "chilli",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "kidneybeans",
+          "qty": 1,
+          "unit": "tin",
+          "note": "drained"
+        },
+        {
+          "ingredient": "tomatoestin",
+          "qty": 1,
+          "unit": "tin"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 6,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Heat the oil in a large pan and brown the turkey mince, breaking it up.",
+        "Add the chopped onion, pepper and crushed garlic and cook for 5 minutes.",
+        "Stir in the cumin, paprika and chilli flakes, then the kidney beans and tomatoes.",
+        "Simmer for 25 minutes, stirring now and then.",
+        "Eat one portion tonight. Cool the other quickly and fridge it for Thursday lunch."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "batch"
+      ]
+    },
+    {
+      "id": "batch-souvlaki-chicken",
+      "name": "Lemon-oregano chicken (Tue/Wed lunches)",
+      "meal": "batch",
+      "servingsCooked": 2,
+      "cookMinutes": 25,
+      "ingredients": [
+        {
+          "ingredient": "chicken",
+          "qty": 325,
+          "unit": "g"
+        },
+        {
+          "ingredient": "lemon",
+          "qty": 1,
+          "unit": "each",
+          "note": "juice only"
+        },
+        {
+          "ingredient": "oregano",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 0.5,
+          "unit": "clove",
+          "note": "crushed"
+        }
+      ],
+      "method": [
+        "Toss the chicken with the lemon juice, oregano, garlic and a pinch of salt.",
+        "Steam for 20 to 25 minutes, until there's no pink in the middle. If your steamer has room, put it in with tonight's dinner.",
+        "Let it cool, slice it, split it into 2 tubs and fridge them for Tuesday and Wednesday lunch."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "batch"
+      ]
+    },
+    {
+      "id": "batch-burrito-beef",
+      "name": "Burrito beef (2 portions)",
+      "meal": "batch",
+      "servingsCooked": 2,
+      "cookMinutes": 15,
+      "ingredients": [
+        {
+          "ingredient": "beefmince",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient": "cumin",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "paprika",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "blackbeans",
+          "qty": 1,
+          "unit": "tin",
+          "note": "drained"
+        }
+      ],
+      "method": [
+        "Brown the beef mince in a dry non-stick pan, breaking it up.",
+        "Stir in the cumin and paprika, then the black beans.",
+        "Cook for 10 minutes.",
+        "Eat one portion tonight. Cool the other quickly and fridge it for Thursday lunch."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "batch"
+      ]
+    },
+    {
+      "id": "batch-shakshuka-sauce",
+      "name": "Shakshuka sauce (3 portions)",
+      "meal": "batch",
+      "servingsCooked": 2,
+      "cookMinutes": 30,
+      "ingredients": [
+        {
+          "ingredient": "tomatoestin",
+          "qty": 2,
+          "unit": "tin"
+        },
+        {
+          "ingredient": "pepper",
+          "qty": 2,
+          "unit": "each"
+        },
+        {
+          "ingredient": "onion",
+          "qty": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 3,
+          "unit": "clove"
+        },
+        {
+          "ingredient": "cumin",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "paprika",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 15,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Heat the oil in a pan. Slice the onion and peppers and cook gently for 8 minutes until soft.",
+        "Add the crushed garlic, cumin and paprika and cook for 1 minute.",
+        "Add both tins of tomatoes and simmer for 20 minutes.",
+        "Let it cool, split it into 3 tubs and fridge them. Each tub is one shakshuka breakfast."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "batch"
+      ]
+    },
+    {
+      "id": "batch-chicken-bulgur",
+      "name": "Lemon-herb chicken and bulgur (Tue/Wed lunches)",
+      "meal": "batch",
+      "servingsCooked": 2,
+      "cookMinutes": 25,
+      "ingredients": [
+        {
+          "ingredient": "chicken",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient": "lemon",
+          "qty": 1,
+          "unit": "each",
+          "note": "juice only"
+        },
+        {
+          "ingredient": "oregano",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "bulgur",
+          "qty": 150,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Toss the chicken with the lemon juice, oregano and a pinch of salt.",
+        "Steam for 20 to 25 minutes, until there's no pink in the middle. If your steamer has room, put it in with tonight's dinner.",
+        "Meanwhile put the bulgur in a pan with 300ml boiling water, cover and simmer gently for 10 minutes, then leave it covered off the heat for 5 minutes.",
+        "Let it cool and split it into 2 tubs: half the chicken in each, with a slightly bigger share of bulgur in Tuesday's. Fridge them."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "batch"
+      ]
+    },
+    {
+      "id": "batch-pancakes",
+      "name": "Banana oat pancakes (double batch)",
+      "meal": "batch",
+      "servingsCooked": 2,
+      "cookMinutes": 25,
+      "ingredients": [
+        {
+          "ingredient": "oats",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "ingredient": "eggs",
+          "qty": 4,
+          "unit": "each"
+        },
+        {
+          "ingredient": "quark",
+          "qty": 400,
+          "unit": "g",
+          "note": "for the batter"
+        },
+        {
+          "ingredient": "banana",
+          "qty": 2,
+          "unit": "each"
+        },
+        {
+          "ingredient": "cinnamon",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 6,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Blitz the oats to a flour.",
+        "Blend with the eggs, quark, bananas and cinnamon.",
+        "Cook small pancakes in a non-stick pan with a little oil, 2 minutes each side.",
+        "Eat half now, topped with 125g quark. Cool the rest and fridge it for Thursday."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "batch"
+      ]
+    },
+    {
+      "id": "batch-turkey-larb",
+      "name": "Turkey larb (2 portions)",
+      "meal": "batch",
+      "servingsCooked": 2,
+      "cookMinutes": 15,
+      "ingredients": [
+        {
+          "ingredient": "turkeymince",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 2,
+          "unit": "clove",
+          "note": "crushed"
+        },
+        {
+          "ingredient": "chilli",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "fishsauce",
+          "qty": 20,
+          "unit": "ml"
+        },
+        {
+          "ingredient": "lime",
+          "qty": 2,
+          "unit": "each",
+          "note": "juice only"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 6,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Heat the oil in a large pan. Fry the turkey mince with the garlic and chilli flakes for about 10 minutes, until cooked through.",
+        "Take it off the heat and stir in the fish sauce and lime juice.",
+        "Eat one portion tonight. Cool the other quickly and fridge it for Thursday lunch."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "batch"
+      ]
     }
   ],
   "weeks": [
@@ -4642,7 +4908,7 @@
           ],
           "prep": [
             "First thing: shopping (Week 1 list)",
-            "After shopping: bag and freeze the items marked 'freeze on arrival' (one bag per portion, labelled)"
+            "After shopping: freeze 250g beef steak mince 5% (Tuesday), 250g cod fillets (Thursday), 240g salmon fillets (Monday), 500g turkey breast mince 2% (Wednesday). One bag per portion, labelled"
           ],
           "totals": {
             "kcal": 1917,
@@ -4724,14 +4990,14 @@
             }
           ],
           "prep": [
-            "Evening: soak oats for tomorrow's skyr bowl",
+            "Evening: soak 40g oats in a splash of water in the fridge, for tomorrow's skyr bowl",
             "Evening: move 240g salmon fillets (boneless) from freezer to fridge for Monday"
           ],
           "totals": {
-            "kcal": 1845,
-            "protein": 195,
-            "carbs": 104,
-            "fat": 69
+            "kcal": 1837,
+            "protein": 193,
+            "carbs": 105,
+            "fat": 68
           },
           "note": null
         },
@@ -4740,7 +5006,7 @@
           "dayName": "Monday",
           "dayIndex": 4,
           "training": {
-            "label": "Rest (optional second run later)",
+            "label": "Rest (optional run later)",
             "carbTarget": "low"
           },
           "meals": [
@@ -4764,8 +5030,11 @@
             }
           ],
           "prep": [
-            "Evening: batch-cook 300g chicken breast + roasted veg (1 pepper, 1 courgette, ½ red onion, paprika, 10ml oil) for Tue/Wed lunches",
-            "Evening: soak oats in milk for tomorrow's overnight oats with banana",
+            {
+              "text": "Evening: steam 300g chicken breast for Tue/Wed lunches",
+              "recipe": "batch-steamed-chicken"
+            },
+            "Evening: mix 60g steel-cut oats with 284ml milk (half a pint) in a jar and fridge it, for tomorrow's overnight oats with banana",
             "Evening: move 250g beef steak mince 5% from freezer to fridge for Tuesday"
           ],
           "totals": {
@@ -4814,10 +5083,10 @@
             "Evening: move 500g turkey breast mince 2% from freezer to fridge for Wednesday"
           ],
           "totals": {
-            "kcal": 2201,
-            "protein": 158,
-            "carbs": 276,
-            "fat": 51
+            "kcal": 2127,
+            "protein": 157,
+            "carbs": 270,
+            "fat": 45
           },
           "note": null
         },
@@ -4850,15 +5119,18 @@
             }
           ],
           "prep": [
-            "Evening: batch-cook the turkey chilli (see tonight's dinner recipe) — eat one portion, fridge one for Thursday",
-            "Evening: soak oats in milk for tomorrow's overnight oats with banana",
+            {
+              "text": "Evening: batch-cook the turkey chilli: brown 500g turkey mince, add 1 chopped onion, ¾ pepper, 2 garlic cloves, 2 tsp cumin, 2 tsp smoked paprika, 1 tsp chilli flakes, 1 tin kidney beans and 1 tin chopped tomatoes; simmer 25 minutes. Eat one portion, fridge one for Thursday",
+              "recipe": "batch-turkey-chilli"
+            },
+            "Evening: mix 60g steel-cut oats with 284ml milk (half a pint) in a jar and fridge it, for tomorrow's overnight oats with banana",
             "Evening: move 250g cod fillets from freezer to fridge for Thursday"
           ],
           "totals": {
-            "kcal": 1773,
-            "protein": 172,
-            "carbs": 139,
-            "fat": 58
+            "kcal": 1690,
+            "protein": 169,
+            "carbs": 134,
+            "fat": 52
           },
           "note": null
         },
@@ -5020,7 +5292,7 @@
           "ingredient": "redonion",
           "name": "Red onions",
           "category": "core",
-          "totalQty": 1.13,
+          "totalQty": 0.63,
           "unit": "each",
           "packSize": 1,
           "packUnit": "each",
@@ -5028,11 +5300,9 @@
           "usedOnDays": [
             "fri",
             "sun",
-            "mon",
-            "tue",
-            "wed"
+            "mon"
           ],
-          "buy": "2 loose"
+          "buy": "1 loose"
         },
         {
           "ingredient": "beefmince",
@@ -5109,21 +5379,6 @@
               "defrostEvening": "wed"
             }
           ]
-        },
-        {
-          "ingredient": "courgette",
-          "name": "Courgette",
-          "category": "fresh",
-          "totalQty": 1.0,
-          "unit": "each",
-          "packSize": 1,
-          "packUnit": "each",
-          "stockTracked": false,
-          "usedOnDays": [
-            "tue",
-            "wed"
-          ],
-          "buy": "1 loose"
         },
         {
           "ingredient": "greenbeans",
@@ -5218,7 +5473,7 @@
           "ingredient": "pepper",
           "name": "Peppers",
           "category": "fresh",
-          "totalQty": 3.6,
+          "totalQty": 2.4,
           "unit": "each",
           "packSize": 1,
           "packUnit": "each",
@@ -5229,7 +5484,7 @@
             "wed",
             "thu"
           ],
-          "buy": "4 loose"
+          "buy": "3 loose"
         },
         {
           "ingredient": "salmon",
@@ -5367,15 +5622,13 @@
           "ingredient": "spinach",
           "name": "Frozen spinach",
           "category": "frozen",
-          "totalQty": 240.0,
+          "totalQty": 80,
           "unit": "g",
           "packSize": 900,
           "packUnit": "g",
           "stockTracked": false,
           "usedOnDays": [
-            "sat",
-            "sun",
-            "wed"
+            "sat"
           ]
         },
         {
@@ -5495,7 +5748,7 @@
           "ingredient": "oil",
           "name": "Olive oil",
           "category": "pantry",
-          "totalQty": 76.0,
+          "totalQty": 66,
           "unit": "g",
           "packSize": 1000,
           "packUnit": "ml",
@@ -5505,7 +5758,6 @@
             "sat",
             "sun",
             "mon",
-            "tue",
             "wed",
             "thu"
           ]
@@ -5530,14 +5782,13 @@
           "ingredient": "paprika",
           "name": "Smoked paprika",
           "category": "pantry",
-          "totalQty": 5.0,
+          "totalQty": 3,
           "unit": "tsp",
           "packSize": 1,
           "packUnit": "jar",
           "stockTracked": false,
           "usedOnDays": [
             "fri",
-            "tue",
             "wed",
             "thu"
           ]
@@ -5610,6 +5861,36 @@
           "usedOnDays": [
             "fri"
           ]
+        },
+        {
+          "ingredient": "kimchi",
+          "name": "Kimchi",
+          "category": "fresh",
+          "totalQty": 160,
+          "unit": "g",
+          "packSize": 400,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "wed"
+          ],
+          "buy": "1 × 400g jar if you're running low (160g this week)"
+        },
+        {
+          "ingredient": "sauerkraut",
+          "name": "Sauerkraut",
+          "category": "fresh",
+          "totalQty": 100,
+          "unit": "g",
+          "packSize": 400,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun",
+            "wed"
+          ],
+          "buy": "1 × 400g jar if you're running low (100g this week)"
         }
       ]
     },
@@ -5646,13 +5927,13 @@
           ],
           "prep": [
             "First thing: shopping (Week 2 list)",
-            "After shopping: bag and freeze the items marked 'freeze on arrival' (one bag per portion, labelled)"
+            "After shopping: freeze 300g beef steak mince 5% (Wednesday), 200g beef steak mince 5% (Thursday), 300g chicken thigh fillets (Tuesday), 250g trout fillets (Monday). One bag per portion, labelled"
           ],
           "totals": {
-            "kcal": 2350,
-            "protein": 202,
-            "carbs": 195,
-            "fat": 77
+            "kcal": 2304,
+            "protein": 200,
+            "carbs": 186,
+            "fat": 76
           },
           "note": null
         },
@@ -5744,7 +6025,7 @@
           "dayName": "Monday",
           "dayIndex": 4,
           "training": {
-            "label": "Rest (optional second run later)",
+            "label": "Rest (optional run later)",
             "carbTarget": "low"
           },
           "meals": [
@@ -5768,9 +6049,11 @@
             }
           ],
           "prep": [
-            "Evening: batch-cook ~325g chicken breast souvlaki-style (lemon, oregano, garlic, 5ml oil) for Tue/Wed lunches",
-            "Evening: make tzatziki (150g skyr, ½ cucumber grated and squeezed, garlic, dried mint)",
-            "Evening: soak oats for tomorrow's apple & cinnamon overnight oats",
+            {
+              "text": "Evening: steam ~325g chicken breast with lemon, oregano and garlic for Tue/Wed lunches",
+              "recipe": "batch-souvlaki-chicken"
+            },
+            "Evening: mix 60g steel-cut oats, 175ml kefir, a splash of water, 1 grated apple and 1 tsp cinnamon; fridge it for tomorrow's apple & cinnamon overnight oats",
             "Evening: move 300g chicken thigh fillets, boneless skinless from freezer to fridge for Tuesday"
           ],
           "totals": {
@@ -5819,10 +6102,10 @@
             "Evening: move 300g beef steak mince 5% from freezer to fridge for Wednesday"
           ],
           "totals": {
-            "kcal": 2422,
-            "protein": 170,
-            "carbs": 277,
-            "fat": 69
+            "kcal": 2359,
+            "protein": 169,
+            "carbs": 274,
+            "fat": 64
           },
           "note": null
         },
@@ -5855,15 +6138,18 @@
             }
           ],
           "prep": [
-            "Evening: batch-cook the burrito beef (see tonight's dinner recipe) — eat one portion, fridge one for Thursday",
-            "Evening: soak oats for tomorrow's apple & cinnamon overnight oats",
+            {
+              "text": "Evening: batch-cook the burrito beef: brown 300g beef mince with 2 tsp cumin and 2 tsp smoked paprika, add 1 tin black beans; cook 10 minutes. Eat one portion, fridge one for Thursday",
+              "recipe": "batch-burrito-beef"
+            },
+            "Evening: mix 60g steel-cut oats, 175ml kefir, a splash of water, 1 grated apple and 1 tsp cinnamon; fridge it for tomorrow's apple & cinnamon overnight oats",
             "Evening: move 200g beef steak mince 5% from freezer to fridge for Thursday"
           ],
           "totals": {
-            "kcal": 1681,
+            "kcal": 1617,
             "protein": 155,
-            "carbs": 131,
-            "fat": 55
+            "carbs": 127,
+            "fat": 50
           },
           "note": null
         },
@@ -5896,12 +6182,12 @@
             }
           ],
           "prep": [
-            "Evening: soak oats for tomorrow's quark bowl"
+            "Evening: soak 30g oats in a splash of water, for tomorrow's quark bowl"
           ],
           "totals": {
-            "kcal": 1996,
+            "kcal": 1995,
             "protein": 146,
-            "carbs": 233,
+            "carbs": 232,
             "fat": 49
           },
           "note": null
@@ -5976,7 +6262,7 @@
           "ingredient": "garlic",
           "name": "Garlic",
           "category": "core",
-          "totalQty": 7.0,
+          "totalQty": 6.5,
           "unit": "clove",
           "packSize": 1,
           "packUnit": "bulb",
@@ -6004,22 +6290,6 @@
             "thu"
           ],
           "buy": "2 loose"
-        },
-        {
-          "ingredient": "redonion",
-          "name": "Red onions",
-          "category": "core",
-          "totalQty": 0.63,
-          "unit": "each",
-          "packSize": 1,
-          "packUnit": "each",
-          "stockTracked": true,
-          "usedOnDays": [
-            "fri",
-            "wed",
-            "thu"
-          ],
-          "buy": "1 loose"
         },
         {
           "ingredient": "apple",
@@ -6119,29 +6389,13 @@
           "ingredient": "courgette",
           "name": "Courgette",
           "category": "fresh",
-          "totalQty": 1.0,
+          "totalQty": 0.5,
           "unit": "each",
           "packSize": 1,
           "packUnit": "each",
           "stockTracked": false,
           "usedOnDays": [
-            "fri",
             "sun"
-          ],
-          "buy": "1 loose"
-        },
-        {
-          "ingredient": "cucumber",
-          "name": "Cucumber",
-          "category": "fresh",
-          "totalQty": 1.0,
-          "unit": "each",
-          "packSize": 1,
-          "packUnit": "each",
-          "stockTracked": false,
-          "usedOnDays": [
-            "tue",
-            "wed"
           ],
           "buy": "1 loose"
         },
@@ -6161,21 +6415,6 @@
             "wed"
           ],
           "buy": "1 × 200g"
-        },
-        {
-          "ingredient": "coriander",
-          "name": "Fresh coriander",
-          "category": "fresh",
-          "totalQty": 10.0,
-          "unit": "g",
-          "packSize": 30,
-          "packUnit": "g",
-          "stockTracked": false,
-          "usedOnDays": [
-            "wed",
-            "thu"
-          ],
-          "buy": "1 × 30g"
         },
         {
           "ingredient": "rye",
@@ -6244,21 +6483,6 @@
           "buy": "3 loose"
         },
         {
-          "ingredient": "lime",
-          "name": "Limes",
-          "category": "fresh",
-          "totalQty": 1.0,
-          "unit": "each",
-          "packSize": 1,
-          "packUnit": "each",
-          "stockTracked": false,
-          "usedOnDays": [
-            "wed",
-            "thu"
-          ],
-          "buy": "1 loose"
-        },
-        {
           "ingredient": "eggwhite",
           "name": "Liquid egg whites (Two Chicks)",
           "category": "fresh",
@@ -6323,17 +6547,16 @@
           "ingredient": "pepper",
           "name": "Peppers",
           "category": "fresh",
-          "totalQty": 2.1,
+          "totalQty": 1.4,
           "unit": "each",
           "packSize": 1,
           "packUnit": "each",
           "stockTracked": false,
           "usedOnDays": [
-            "fri",
             "sun",
             "tue"
           ],
-          "buy": "3 loose"
+          "buy": "2 loose"
         },
         {
           "ingredient": "porkloin",
@@ -6397,7 +6620,7 @@
           "ingredient": "tomatoes",
           "name": "Tomatoes",
           "category": "fresh",
-          "totalQty": 8.0,
+          "totalQty": 4,
           "unit": "each",
           "packSize": 1,
           "packUnit": "each",
@@ -6405,12 +6628,9 @@
           "usedOnDays": [
             "fri",
             "sun",
-            "mon",
-            "tue",
-            "wed",
-            "thu"
+            "mon"
           ],
-          "buy": "8 loose"
+          "buy": "4 loose"
         },
         {
           "ingredient": "trout",
@@ -6518,20 +6738,6 @@
           ]
         },
         {
-          "ingredient": "driedmint",
-          "name": "Dried mint",
-          "category": "pantry",
-          "totalQty": 1.0,
-          "unit": "tsp",
-          "packSize": 1,
-          "packUnit": "jar",
-          "stockTracked": false,
-          "usedOnDays": [
-            "tue",
-            "wed"
-          ]
-        },
-        {
           "ingredient": "italianherbs",
           "name": "Dried mixed herbs",
           "category": "pantry",
@@ -6590,7 +6796,7 @@
           "ingredient": "oil",
           "name": "Olive oil",
           "category": "pantry",
-          "totalQty": 50.0,
+          "totalQty": 40,
           "unit": "g",
           "packSize": 1000,
           "packUnit": "ml",
@@ -6600,7 +6806,6 @@
             "sat",
             "sun",
             "mon",
-            "tue",
             "wed"
           ]
         },
@@ -6713,6 +6918,37 @@
           "usedOnDays": [
             "thu"
           ]
+        },
+        {
+          "ingredient": "kimchi",
+          "name": "Kimchi",
+          "category": "fresh",
+          "totalQty": 160,
+          "unit": "g",
+          "packSize": 400,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "wed",
+            "thu"
+          ],
+          "buy": "1 × 400g jar if you're running low (160g this week)"
+        },
+        {
+          "ingredient": "sauerkraut",
+          "name": "Sauerkraut",
+          "category": "fresh",
+          "totalQty": 240,
+          "unit": "g",
+          "packSize": 400,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "tue",
+            "wed"
+          ],
+          "buy": "1 × 400g jar if you're running low (240g this week)"
         }
       ]
     },
@@ -6749,8 +6985,11 @@
           ],
           "prep": [
             "First thing: shopping (Week 3 list)",
-            "After shopping: bag and freeze the items marked 'freeze on arrival' (one bag per portion, labelled)",
-            "Evening: make shakshuka sauce (2 tins tomatoes, 2 peppers, 1 onion, garlic, cumin, paprika, 15ml oil; simmer 20 min; 3 portions)"
+            "After shopping: freeze 200g chicken breast fillets (Tuesday), 240g salmon fillets (Thursday), 200g sea bass fillets (Monday), 500g turkey breast mince 2% (Wednesday). One bag per portion, labelled",
+            {
+              "text": "Evening: make shakshuka sauce (2 tins tomatoes, 2 peppers, 1 onion, 3 garlic cloves, 1½ tsp cumin, 1½ tsp smoked paprika, 15ml oil; simmer 20 min; 3 portions)",
+              "recipe": "batch-shakshuka-sauce"
+            }
           ],
           "totals": {
             "kcal": 1725,
@@ -6832,7 +7071,7 @@
             }
           ],
           "prep": [
-            "Evening: soak oats for tomorrow's quark bowl",
+            "Evening: soak 30g oats in a splash of water, for tomorrow's quark bowl",
             "Evening: move 200g sea bass fillets from freezer to fridge for Monday"
           ],
           "totals": {
@@ -6848,7 +7087,7 @@
           "dayName": "Monday",
           "dayIndex": 4,
           "training": {
-            "label": "Rest (optional second run later)",
+            "label": "Rest (optional run later)",
             "carbTarget": "low"
           },
           "meals": [
@@ -6872,7 +7111,10 @@
             }
           ],
           "prep": [
-            "Evening: batch-cook 300g chicken breast (lemon, oregano), 150g bulgur and roasted veg (1 pepper, 1 courgette, ½ red onion) for Tue/Wed lunches",
+            {
+              "text": "Evening: steam 300g chicken breast with lemon and oregano, and cook 150g bulgur, for Tue/Wed lunches",
+              "recipe": "batch-chicken-bulgur"
+            },
             "Evening: move 200g chicken breast fillets from freezer to fridge for Tuesday"
           ],
           "totals": {
@@ -6918,14 +7160,17 @@
             }
           ],
           "prep": [
-            "Morning: cook both days' pancakes; fridge Thursday's",
+            {
+              "text": "Morning: make a double batch of pancakes (120g steel-cut oats blitzed to flour, 4 eggs, 400g quark, 2 bananas, 1 tsp cinnamon); fridge half for Thursday",
+              "recipe": "batch-pancakes"
+            },
             "Evening: move 500g turkey breast mince 2% from freezer to fridge for Wednesday"
           ],
           "totals": {
-            "kcal": 2138,
-            "protein": 173,
-            "carbs": 262,
-            "fat": 40
+            "kcal": 2148,
+            "protein": 172,
+            "carbs": 255,
+            "fat": 44
           },
           "note": null
         },
@@ -6958,14 +7203,17 @@
             }
           ],
           "prep": [
-            "Evening: batch-cook the turkey larb (see tonight's dinner recipe) — eat one portion, fridge one for Thursday",
+            {
+              "text": "Evening: batch-cook the turkey larb: fry 500g turkey mince with 2 garlic cloves and 1 tsp chilli flakes; finish with 20ml fish sauce and the juice of 2 limes. Eat one portion, fridge one for Thursday",
+              "recipe": "batch-turkey-larb"
+            },
             "Evening: move 240g salmon fillets (boneless) from freezer to fridge for Thursday"
           ],
           "totals": {
-            "kcal": 1836,
-            "protein": 171,
-            "carbs": 168,
-            "fat": 52
+            "kcal": 1847,
+            "protein": 170,
+            "carbs": 162,
+            "fat": 57
           },
           "note": null
         },
@@ -6998,13 +7246,13 @@
             }
           ],
           "prep": [
-            "Evening: soak oats for tomorrow's skyr bowl"
+            "Evening: soak 40g oats in a splash of water in the fridge, for tomorrow's skyr bowl"
           ],
           "totals": {
-            "kcal": 2219,
-            "protein": 194,
-            "carbs": 202,
-            "fat": 67
+            "kcal": 2150,
+            "protein": 188,
+            "carbs": 195,
+            "fat": 66
           },
           "note": null
         }
@@ -7063,14 +7311,13 @@
           "ingredient": "ginger",
           "name": "Fresh ginger",
           "category": "core",
-          "totalQty": 20.0,
+          "totalQty": 10,
           "unit": "g",
           "packSize": 1,
           "packUnit": "piece",
           "stockTracked": true,
           "usedOnDays": [
-            "mon",
-            "thu"
+            "mon"
           ],
           "buy": "1 if you're running low"
         },
@@ -7078,7 +7325,7 @@
           "ingredient": "garlic",
           "name": "Garlic",
           "category": "core",
-          "totalQty": 11.0,
+          "totalQty": 10,
           "unit": "clove",
           "packSize": 1,
           "packUnit": "bulb",
@@ -7111,32 +7358,16 @@
           "buy": "2 loose"
         },
         {
-          "ingredient": "redonion",
-          "name": "Red onions",
-          "category": "core",
-          "totalQty": 0.5,
-          "unit": "each",
-          "packSize": 1,
-          "packUnit": "each",
-          "stockTracked": true,
-          "usedOnDays": [
-            "tue",
-            "wed"
-          ],
-          "buy": "1 loose"
-        },
-        {
           "ingredient": "broccoli",
           "name": "Broccoli",
           "category": "fresh",
-          "totalQty": 350.0,
+          "totalQty": 150,
           "unit": "g",
           "packSize": 350,
           "packUnit": "g",
           "stockTracked": false,
           "usedOnDays": [
-            "tue",
-            "thu"
+            "tue"
           ],
           "buy": "1 × 350g"
         },
@@ -7177,21 +7408,6 @@
             "mon"
           ],
           "buy": "2 × 300g"
-        },
-        {
-          "ingredient": "courgette",
-          "name": "Courgette",
-          "category": "fresh",
-          "totalQty": 0.8,
-          "unit": "each",
-          "packSize": 1,
-          "packUnit": "each",
-          "stockTracked": false,
-          "usedOnDays": [
-            "tue",
-            "wed"
-          ],
-          "buy": "1 loose"
         },
         {
           "ingredient": "cucumber",
@@ -7363,7 +7579,7 @@
           "ingredient": "pepper",
           "name": "Peppers",
           "category": "fresh",
-          "totalQty": 4.0,
+          "totalQty": 2.1,
           "unit": "each",
           "packSize": 1,
           "packUnit": "each",
@@ -7371,11 +7587,9 @@
           "usedOnDays": [
             "sat",
             "sun",
-            "tue",
-            "wed",
-            "thu"
+            "wed"
           ],
-          "buy": "4 loose"
+          "buy": "3 loose"
         },
         {
           "ingredient": "quark",
@@ -7720,7 +7934,7 @@
           "ingredient": "oil",
           "name": "Olive oil",
           "category": "pantry",
-          "totalQty": 67.0,
+          "totalQty": 77,
           "unit": "g",
           "packSize": 1000,
           "packUnit": "ml",
@@ -7848,6 +8062,35 @@
           "usedOnDays": [
             "fri"
           ]
+        },
+        {
+          "ingredient": "kimchi",
+          "name": "Kimchi",
+          "category": "fresh",
+          "totalQty": 80,
+          "unit": "g",
+          "packSize": 400,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "thu"
+          ],
+          "buy": "1 × 400g jar if you're running low (80g this week)"
+        },
+        {
+          "ingredient": "sauerkraut",
+          "name": "Sauerkraut",
+          "category": "fresh",
+          "totalQty": 160,
+          "unit": "g",
+          "packSize": 400,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "wed"
+          ],
+          "buy": "1 × 400g jar if you're running low (160g this week)"
         }
       ]
     }

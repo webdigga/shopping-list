@@ -76,9 +76,21 @@
   color: var(--color-text-muted);
 }
 
-.prepStatic {
-  cursor: default;
+.prep {
+  display: block;
+  padding: var(--space-3) var(--space-4);
   font-size: var(--font-size-base);
+  line-height: 1.45;
+}
+
+.prepLink {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.prepLink span {
+  flex: 1;
 }
 
 .totals {

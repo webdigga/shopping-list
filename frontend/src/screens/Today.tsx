@@ -1,11 +1,10 @@
 import { useState } from 'react'
 import { ShoppingBasket } from 'lucide-react'
-import { addDays, weekday } from '@shared/weekState'
+import { weekday } from '@shared/weekState'
 import { usePlan } from '@/context/PlanContext'
-import { useTaskTicks } from '@/hooks/usePlanData'
 import { getWeek } from '@/plan/data'
 import { formatLongDate, formatShortDate } from '@/plan/format'
-import { currentWeekStart, defaultShoppingInstance, showShoppingPrompt } from '@/plan/schedule'
+import { defaultShoppingInstance, showShoppingPrompt } from '@/plan/schedule'
 import { DayPlan } from '@/components/DayPlan/DayPlan'
 import { WeekForm } from '@/components/WeekForm/WeekForm'
 import ui from '@/styles/ui.module.css'
@@ -15,9 +14,6 @@ const WEEKDAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Frida
 export function Today() {
   const { view, now, initialised, error, setWeek } = usePlan()
   const [picking, setPicking] = useState(false)
-  const running = currentWeekStart(view)
-  const from = running?.start ?? view.today
-  const { tasks, setTask } = useTaskTicks(from, addDays(from, 6))
 
   const shopping = defaultShoppingInstance(view, now)
   const shoppingButton = showShoppingPrompt(view, now) && (
@@ -111,10 +107,6 @@ export function Today() {
           <DayPlan
             day={getWeek(view.state.currentWeek).days[view.dayNumber - 1]}
             prepTitle="Prep today and tonight"
-            prepTicks={{
-              done: tasks[view.today] ?? {},
-              onToggle: (key, done) => setTask(view.today, key, done),
-            }}
           />
         </>
       )}

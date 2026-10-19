@@ -1,7 +1,6 @@
 import { ChevronLeft } from 'lucide-react'
 import { addDays, isWeekNumber } from '@shared/weekState'
 import { usePlan } from '@/context/PlanContext'
-import { useTaskTicks } from '@/hooks/usePlanData'
 import { dayIndex, getWeek, plan } from '@/plan/data'
 import { formatShortDate } from '@/plan/format'
 import { currentWeekStart } from '@/plan/schedule'
@@ -12,8 +11,6 @@ import type { DayKey } from '@shared/planTypes'
 export function DayScreen({ week, day }: { week: number; day: string }) {
   const { view } = usePlan()
   const running = currentWeekStart(view)
-  const from = running?.start ?? view.today
-  const { tasks, setTask } = useTaskTicks(from, addDays(from, 6))
 
   if (!isWeekNumber(week) || !plan.dayOrder.includes(day as DayKey)) {
     return (
@@ -35,10 +32,7 @@ export function DayScreen({ week, day }: { week: number; day: string }) {
         {entry.dayName}, Week {week}
         {date && <span className={ui.lede}> · {formatShortDate(date)}</span>}
       </h1>
-      <DayPlan
-        day={entry}
-        prepTicks={date ? { done: tasks[date] ?? {}, onToggle: (key, done) => setTask(date, key, done) } : undefined}
-      />
+      <DayPlan day={entry} />
     </main>
   )
 }

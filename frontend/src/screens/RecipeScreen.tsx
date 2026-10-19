@@ -40,12 +40,14 @@ export function RecipeScreen({ id }: { id: string }) {
         <p className={styles.batch}>Batch-cooked on {dayName(recipe.batchCookedOn)} evening</p>
       )}
 
-      <dl className={`${ui.card} ${styles.macros}`}>
-        <div><dt>Protein</dt><dd>{macros.protein}g</dd></div>
-        <div><dt>Carbs</dt><dd>{macros.carbs}g</dd></div>
-        <div><dt>Fat</dt><dd>{macros.fat}g</dd></div>
-        <div><dt>kcal</dt><dd>{macros.kcal}</dd></div>
-      </dl>
+      {macros && (
+        <dl className={`${ui.card} ${styles.macros}`}>
+          <div><dt>Protein</dt><dd>{macros.protein}g</dd></div>
+          <div><dt>Carbs</dt><dd>{macros.carbs}g</dd></div>
+          <div><dt>Fat</dt><dd>{macros.fat}g</dd></div>
+          <div><dt>kcal</dt><dd>{macros.kcal}</dd></div>
+        </dl>
+      )}
 
       <section className={ui.section} aria-labelledby="ingredients">
         <h2 id="ingredients" className={ui.sectionTitle}>Ingredients</h2>
