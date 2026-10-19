@@ -1,64 +1,39 @@
+import { useEffect } from 'react'
 import { useAuth, AuthProvider } from '@/context/AuthContext'
-import { useItems } from '@/hooks/useItems'
+import { PlanProvider } from '@/context/PlanContext'
+import { useOnline } from '@/hooks/useOnline'
+import { useRoute } from '@/hooks/useRoute'
+import { flush } from '@/services/sync'
 import { PinEntry } from '@/components/PinEntry/PinEntry'
-import { AddItem } from '@/components/AddItem/AddItem'
-import { ItemList } from '@/components/ItemList/ItemList'
 import { OfflineIndicator } from '@/components/OfflineIndicator/OfflineIndicator'
+import { TabBar } from '@/components/TabBar/TabBar'
+import { Today } from '@/screens/Today'
+import { WeekScreen } from '@/screens/WeekScreen'
+import { DayScreen } from '@/screens/DayScreen'
+import { Shopping } from '@/screens/Shopping'
+import { RecipeScreen } from '@/screens/RecipeScreen'
+import { Settings } from '@/screens/Settings'
 import styles from './App.module.css'
 
-function ShoppingList() {
-  const { items, loading, error, isOffline, addItem, toggleItem, deleteItem, clearAll } = useItems()
+function MealPlan() {
+  const route = useRoute()
+  const online = useOnline()
 
-  const hasCompleted = items.some(i => i.completed)
-
-  const handleClearAll = () => {
-    if (window.confirm('Uncheck all completed items?')) {
-      clearAll()
-    }
-  }
-
-  if (loading) {
-    return (
-      <div className={styles.loading}>
-        <div className={styles.spinner} />
-        <p>Loading list...</p>
-      </div>
-    )
-  }
+  // Send anything ticked while offline in an earlier session.
+  useEffect(() => {
+    void flush()
+  }, [])
 
   return (
     <div className={styles.container}>
-      <OfflineIndicator isOffline={isOffline} />
-
-      <main className={styles.main}>
-        <header className={styles.header}>
-          <h1 className={styles.title}>Shopping List</h1>
-          <span className={styles.count}>
-            {items.filter(i => !i.completed).length} items
-          </span>
-        </header>
-
-        {hasCompleted && (
-          <button className={styles.clearAll} onClick={handleClearAll}>
-            Uncheck All
-          </button>
-        )}
-
-        <AddItem onAdd={addItem} />
-
-        {error && (
-          <div className={styles.error}>
-            {error}
-          </div>
-        )}
-
-        <ItemList
-          items={items}
-          onToggle={toggleItem}
-          onDelete={deleteItem}
-        />
-
-      </main>
+      <OfflineIndicator isOffline={!online} />
+      {route.name === 'today' && <Today />}
+      {route.name === 'week' && <WeekScreen week={route.week} />}
+      {route.name === 'day' && <DayScreen week={route.week} day={route.day} />}
+      {route.name === 'shopping' && <Shopping />}
+      {route.name === 'recipe' && <RecipeScreen id={route.id} />}
+      {route.name === 'settings' && <Settings />}
+      <TabBar route={route} />
     </div>
   )
 }
@@ -81,7 +56,11 @@ function AppContent() {
     return <PinEntry mode="login" onSubmit={login} />
   }
 
-  return <ShoppingList />
+  return (
+    <PlanProvider>
+      <MealPlan />
+    </PlanProvider>
+  )
 }
 
 export default function App() {

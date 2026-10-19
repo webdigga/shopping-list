@@ -28,16 +28,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       const existingToken = api.getAuthToken()
 
       if (existingToken) {
-        // Try to use the existing token by making a test request
+        // Open the plan straight away; it is bundled, so there is nothing to wait for.
+        // The token is checked in the background and only a 401 signs out.
+        setIsAuthenticated(true)
+        setIsLoading(false)
         try {
-          await api.fetchItems()
-          // Token is valid
-          setIsAuthenticated(true)
-          setIsLoading(false)
+          await api.fetchState()
           return
-        } catch {
-          // Token invalid, clear it
+        } catch (error) {
+          if (!(error instanceof api.ApiError && error.status === 401)) return
           api.setAuthToken(null)
+          setIsAuthenticated(false)
         }
       }
 

@@ -1,4 +1,4 @@
-import { handleItems, handleItemById, handleSync } from './routes/items'
+import { handleState, handleTicks, handleStock, handleTasks } from './routes/mealPlan'
 import { handleAuthSetup, handleAuthVerify, handleAuthCheck } from './routes/auth'
 import { authMiddleware } from './middleware/auth'
 import { json, cors, corsHeaders } from './utils/response'
@@ -41,31 +41,23 @@ export default {
       return authResult
     }
 
-    // Items routes
-    if (path === '/api/items') {
-      if (request.method === 'GET') {
-        return handleItems(request, env, 'GET')
-      }
-      if (request.method === 'POST') {
-        return handleItems(request, env, 'POST')
-      }
+    if (path === '/api/mp/state') {
+      return handleState(request, env)
     }
 
-    // Single item routes
-    const itemMatch = path.match(/^\/api\/items\/([a-zA-Z0-9-]+)$/)
-    if (itemMatch) {
-      const itemId = itemMatch[1]
-      if (request.method === 'PATCH') {
-        return handleItemById(request, env, itemId, 'PATCH')
-      }
-      if (request.method === 'DELETE') {
-        return handleItemById(request, env, itemId, 'DELETE')
-      }
+    const ticksMatch = path.match(/^\/api\/mp\/ticks\/([^/]+)(?:\/([^/]+))?$/)
+    if (ticksMatch) {
+      return handleTicks(request, env, decodeURIComponent(ticksMatch[1]), ticksMatch[2] ?? null)
     }
 
-    // Sync route
-    if (path === '/api/items/sync' && request.method === 'POST') {
-      return handleSync(request, env)
+    const stockMatch = path.match(/^\/api\/mp\/stock(?:\/([^/]+))?$/)
+    if (stockMatch) {
+      return handleStock(request, env, stockMatch[1] ?? null)
+    }
+
+    const tasksMatch = path.match(/^\/api\/mp\/tasks(?:\/([^/]+)\/([^/]+))?$/)
+    if (tasksMatch) {
+      return handleTasks(request, env, tasksMatch[1] ?? null, tasksMatch[2] ?? null)
     }
 
     // 404 for unknown routes

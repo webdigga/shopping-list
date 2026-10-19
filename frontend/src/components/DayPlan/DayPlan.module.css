@@ -1,0 +1,118 @@
+.training {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  color: var(--color-primary);
+}
+
+.trainingLabel {
+  color: var(--color-text);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+}
+
+.note {
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.meal {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  min-height: 64px;
+}
+
+.free {
+  background: var(--color-surface-muted);
+}
+
+.time {
+  flex: none;
+  width: 52px;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  font-variant-numeric: tabular-nums;
+}
+
+.mealBody {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.slot {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+}
+
+.mealName {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+.macros {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.chevron {
+  flex: none;
+  color: var(--color-text-muted);
+}
+
+.prepStatic {
+  cursor: default;
+  font-size: var(--font-size-base);
+}
+
+.totals {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.totalHead {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.totalValue {
+  font-weight: var(--font-weight-semibold);
+  font-variant-numeric: tabular-nums;
+}
+
+.bar {
+  height: 8px;
+  border-radius: var(--radius-full);
+  background: var(--color-bar-track);
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+}

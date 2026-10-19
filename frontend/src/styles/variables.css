@@ -1,23 +1,31 @@
 :root {
-  /* Colors - Light theme optimised for shopping */
-  --color-bg: #f8fafc;
+  color-scheme: light dark;
+
+  /* Colors: calm light theme, readable at a glance in the kitchen */
+  --color-bg: #f6f5f1;
   --color-surface: #ffffff;
   --color-surface-elevated: #ffffff;
-  --color-text: #1e293b;
-  --color-text-secondary: #64748b;
-  --color-text-muted: #94a3b8;
+  --color-surface-muted: #efeee8;
+  --color-text: #1f2421;
+  --color-text-secondary: #565e58;
+  --color-text-muted: #858b86;
 
   /* Action colors */
-  --color-primary: #3b82f6;
-  --color-primary-hover: #2563eb;
-  --color-complete: #22c55e;
-  --color-complete-bg: #dcfce7;
-  --color-delete: #ef4444;
-  --color-delete-bg: #fee2e2;
+  --color-primary: #2f6f4f;
+  --color-primary-hover: #255a40;
+  --color-on-primary: #ffffff;
+  --color-primary-soft: #e3efe7;
+  --color-complete: #2f6f4f;
+  --color-complete-bg: #e3efe7;
+  --color-delete: #b42318;
+  --color-delete-bg: #fde8e6;
+  --color-warning-bg: #fdf3d8;
+  --color-warning-text: #7a5300;
+  --color-bar-track: #e7e6df;
 
   /* Borders */
-  --color-border: #e2e8f0;
-  --color-border-light: #f1f5f9;
+  --color-border: #e1e0d8;
+  --color-border-light: #eeede7;
 
   /* Shadows for depth */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
@@ -64,4 +72,36 @@
 
   /* Touch targets */
   --touch-target-min: 44px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #151715;
+    --color-surface: #1e211e;
+    --color-surface-elevated: #252925;
+    --color-surface-muted: #1a1d1a;
+    --color-text: #e8ebe7;
+    --color-text-secondary: #aab1ab;
+    --color-text-muted: #7b827c;
+
+    --color-primary: #7cc79b;
+    --color-primary-hover: #95d4ae;
+    --color-on-primary: #0f2318;
+    --color-primary-soft: #23352a;
+    --color-complete: #7cc79b;
+    --color-complete-bg: #23352a;
+    --color-delete: #f2867a;
+    --color-delete-bg: #3a201d;
+    --color-warning-bg: #3a3017;
+    --color-warning-text: #f1d48a;
+    --color-bar-track: #2e332e;
+
+    --color-border: #313631;
+    --color-border-light: #282c28;
+
+    --shadow-sm: none;
+    --shadow-md: none;
+    --shadow-lg: none;
+    --shadow-item: none;
+  }
 }

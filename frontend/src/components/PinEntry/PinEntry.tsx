@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import { Lock, ShoppingCart } from 'lucide-react'
+import { Lock, UtensilsCrossed } from 'lucide-react'
 import styles from './PinEntry.module.css'
 
 interface PinEntryProps {
@@ -73,16 +73,16 @@ export function PinEntry({ mode, onSubmit }: PinEntryProps) {
     <div className={styles.container}>
       <div className={styles.card}>
         <div className={styles.iconWrapper}>
-          <ShoppingCart size={32} />
+          <UtensilsCrossed size={32} />
         </div>
 
-        <h1 className={styles.title}>Shopping List</h1>
+        <h1 className={styles.title}>Meal plan</h1>
 
         <p className={styles.subtitle}>
           {mode === 'setup'
             ? showConfirm
               ? 'Confirm your PIN'
-              : 'Create a PIN to protect your list'
+              : 'Create a PIN to protect your plan'
             : 'Enter your PIN to continue'}
         </p>
 

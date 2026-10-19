@@ -1,0 +1,322 @@
+{
+  "exported": "2026-10-19",
+  "source": "shopping-list-db items table",
+  "count": 45,
+  "items": [
+    {
+      "name": "Soap",
+      "completed": true,
+      "position": 0,
+      "created_at": "2026-03-22T07:35:11.419Z",
+      "updated_at": "2026-10-16T05:24:37.761Z"
+    },
+    {
+      "name": "Toothpicks",
+      "completed": true,
+      "position": 0,
+      "created_at": "2026-05-21T11:54:45.324Z",
+      "updated_at": "2026-10-16T05:24:51.369Z"
+    },
+    {
+      "name": "Kimchi/Sauerkraut",
+      "completed": true,
+      "position": 0,
+      "created_at": "2026-07-29T16:47:04.832Z",
+      "updated_at": "2026-10-16T06:58:12.499Z"
+    },
+    {
+      "name": "Steel cut oats",
+      "completed": true,
+      "position": 0,
+      "created_at": "2026-09-29T06:41:13.521Z",
+      "updated_at": "2026-10-16T05:24:50.137Z"
+    },
+    {
+      "name": "Brazil nuts",
+      "completed": true,
+      "position": 1,
+      "created_at": "2026-03-22T07:35:21.933Z",
+      "updated_at": "2026-10-16T06:29:27.638Z"
+    },
+    {
+      "name": "Metal scourers",
+      "completed": true,
+      "position": 2,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:25:03.571Z"
+    },
+    {
+      "name": "Body wash",
+      "completed": true,
+      "position": 3,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:25:06.595Z"
+    },
+    {
+      "name": "Conditioner",
+      "completed": true,
+      "position": 6,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:25:28.442Z"
+    },
+    {
+      "name": "Colour catcher",
+      "completed": true,
+      "position": 7,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:25:29.700Z"
+    },
+    {
+      "name": "Frozen berries",
+      "completed": true,
+      "position": 8,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T06:36:03.722Z"
+    },
+    {
+      "name": "Apple cider vinegar",
+      "completed": true,
+      "position": 9,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:25:44.668Z"
+    },
+    {
+      "name": "Clothes washing liquid",
+      "completed": true,
+      "position": 10,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:25:46.403Z"
+    },
+    {
+      "name": "Butter",
+      "completed": true,
+      "position": 11,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:26:26.562Z"
+    },
+    {
+      "name": "Chia seeds",
+      "completed": true,
+      "position": 12,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:26:30.572Z"
+    },
+    {
+      "name": "Shampoo",
+      "completed": true,
+      "position": 13,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:26:31.758Z"
+    },
+    {
+      "name": "Nuts",
+      "completed": true,
+      "position": 14,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T06:28:57.903Z"
+    },
+    {
+      "name": "Washing machine cleaner",
+      "completed": true,
+      "position": 15,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:26:35.819Z"
+    },
+    {
+      "name": "Poo bags",
+      "completed": true,
+      "position": 18,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:26:37.806Z"
+    },
+    {
+      "name": "Kitchen towel",
+      "completed": true,
+      "position": 20,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:26:39.050Z"
+    },
+    {
+      "name": "Toilet cleaner",
+      "completed": true,
+      "position": 21,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:26:40.085Z"
+    },
+    {
+      "name": "White wine vinegar",
+      "completed": true,
+      "position": 23,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:26:44.551Z"
+    },
+    {
+      "name": "Seeds",
+      "completed": true,
+      "position": 24,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:26:51.894Z"
+    },
+    {
+      "name": "Eggs",
+      "completed": true,
+      "position": 25,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T06:35:04.113Z"
+    },
+    {
+      "name": "Cheese",
+      "completed": true,
+      "position": 26,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T06:31:37.502Z"
+    },
+    {
+      "name": "Olive oil",
+      "completed": true,
+      "position": 28,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:27:53.053Z"
+    },
+    {
+      "name": "Frozen Salmon",
+      "completed": true,
+      "position": 32,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T06:36:04.605Z"
+    },
+    {
+      "name": "Salt",
+      "completed": true,
+      "position": 34,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:28:05.159Z"
+    },
+    {
+      "name": "Cloths",
+      "completed": true,
+      "position": 38,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:28:06.254Z"
+    },
+    {
+      "name": "Sensitive toothpaste",
+      "completed": true,
+      "position": 39,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:28:08.369Z"
+    },
+    {
+      "name": "Toilet roll",
+      "completed": true,
+      "position": 41,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T06:36:08.401Z"
+    },
+    {
+      "name": "Fairy liquid",
+      "completed": true,
+      "position": 45,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:28:12.130Z"
+    },
+    {
+      "name": "Antibacterial spray",
+      "completed": true,
+      "position": 47,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:28:15.237Z"
+    },
+    {
+      "name": "Tin foil",
+      "completed": true,
+      "position": 48,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:28:16.262Z"
+    },
+    {
+      "name": "Coffee",
+      "completed": true,
+      "position": 50,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:28:17.954Z"
+    },
+    {
+      "name": "Bin bags",
+      "completed": true,
+      "position": 52,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:28:23.610Z"
+    },
+    {
+      "name": "Deodrant",
+      "completed": true,
+      "position": 53,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T05:28:25.295Z"
+    },
+    {
+      "name": "Steak x 2",
+      "completed": true,
+      "position": 54,
+      "created_at": "2026-02-06 12:36:59",
+      "updated_at": "2026-10-16T06:33:59.075Z"
+    },
+    {
+      "name": "High fat greek yoghurt",
+      "completed": true,
+      "position": 57,
+      "created_at": "2026-04-02T16:45:45.824Z",
+      "updated_at": "2026-10-16T06:32:29.764Z"
+    },
+    {
+      "name": "Limes",
+      "completed": true,
+      "position": 59,
+      "created_at": "2026-07-17T06:04:33.667Z",
+      "updated_at": "2026-10-16T06:28:10.641Z"
+    },
+    {
+      "name": "Mixed leaves",
+      "completed": true,
+      "position": 60,
+      "created_at": "2026-07-22T11:00:57.087Z",
+      "updated_at": "2026-10-16T06:57:18.606Z"
+    },
+    {
+      "name": "Manilife peanut butter",
+      "completed": false,
+      "position": 63,
+      "created_at": "2026-10-02T06:12:41.317Z",
+      "updated_at": "2026-10-16T05:24:33.671Z"
+    },
+    {
+      "name": "Chicken thighs 1kg",
+      "completed": true,
+      "position": 64,
+      "created_at": "2026-10-02T06:17:15.261Z",
+      "updated_at": "2026-10-16T06:33:41.273Z"
+    },
+    {
+      "name": "Banana",
+      "completed": true,
+      "position": 65,
+      "created_at": "2026-10-02T06:17:57.058Z",
+      "updated_at": "2026-10-16T06:28:47.036Z"
+    },
+    {
+      "name": "Pasta",
+      "completed": true,
+      "position": 66,
+      "created_at": "2026-10-02T07:18:04.741Z",
+      "updated_at": "2026-10-16T06:34:21.946Z"
+    },
+    {
+      "name": "Dark chocolate",
+      "completed": false,
+      "position": 67,
+      "created_at": "2026-10-09T04:50:11.510Z",
+      "updated_at": "2026-10-16T05:24:34.456Z"
+    }
+  ]
+}

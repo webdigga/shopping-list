@@ -1,0 +1,7855 @@
+{
+  "meta": {
+    "title": "David's 3-week meal plan",
+    "version": 2,
+    "generated": "2026-10-19",
+    "notes": [
+      "Plan weeks run Friday to Thursday: David shops first thing on Friday and the week starts when he gets home.",
+      "No microwave. Rice, quinoa and lentil pouches are used straight from the pouch (cold is fine, or let hot food warm them).",
+      "Macros are approximate, from typical UK per-100g values.",
+      "Saturday lunch and dinner are free meals; aim to include some protein."
+    ],
+    "targets": {
+      "kcal": 2200,
+      "protein": 160,
+      "fat": 70,
+      "fatMinimum": 40,
+      "carbs": {
+        "low": 150,
+        "medium": 200,
+        "high": 250
+      }
+    },
+    "rules": [
+      "No whey or ultra-processed food",
+      "No caffeine after midday",
+      "Avoid energy drinks, sugar spikes and skipped meals",
+      "Excluded: whey, prawns, lamb, tinned salmon. Tinned tuna max 1 tin a week",
+      "Opened rice pouch halves: fridge, eat within 48 hours",
+      "Fresh meat and fish cooked later in the week: freeze on arrival, defrost in the fridge the night before",
+      "Always check the actual use-by date in store"
+    ]
+  },
+  "dayOrder": [
+    "fri",
+    "sat",
+    "sun",
+    "mon",
+    "tue",
+    "wed",
+    "thu"
+  ],
+  "ingredients": [
+    {
+      "id": "skyr",
+      "name": "Skyr, plain 0%",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 63,
+        "protein": 11,
+        "carbs": 4,
+        "fat": 0.2
+      },
+      "packSize": 450,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 10,
+      "openedDays": 4,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "quark",
+      "name": "Quark, fat-free (formaggio fresco)",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 67,
+        "protein": 12,
+        "carbs": 4,
+        "fat": 0.2
+      },
+      "packSize": 250,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 10,
+      "openedDays": 3,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "cottage",
+      "name": "Cottage cheese",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 90,
+        "protein": 11,
+        "carbs": 3.5,
+        "fat": 3.5
+      },
+      "packSize": 300,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 10,
+      "openedDays": 3,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "kefir",
+      "name": "Kefir, plain",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 50,
+        "protein": 3.4,
+        "carbs": 4.5,
+        "fat": 2
+      },
+      "packSize": 350,
+      "packUnit": "ml",
+      "store": "Lidl",
+      "unit": "ml",
+      "unitWeight": null,
+      "fridgeDays": 10,
+      "openedDays": 5,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "milk",
+      "name": "Semi-skimmed milk",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 47,
+        "protein": 3.5,
+        "carbs": 4.8,
+        "fat": 1.7
+      },
+      "packSize": 568,
+      "packUnit": "ml",
+      "store": "Lidl",
+      "unit": "ml",
+      "unitWeight": null,
+      "fridgeDays": 7,
+      "openedDays": 4,
+      "note": "1 pint",
+      "stockTracked": false
+    },
+    {
+      "id": "eggs",
+      "name": "Eggs, large",
+      "category": "core",
+      "per100g": {
+        "kcal": 142,
+        "protein": 12.6,
+        "carbs": 0.7,
+        "fat": 9.6
+      },
+      "packSize": 15,
+      "packUnit": "each",
+      "store": "Lidl",
+      "unit": "each",
+      "unitWeight": 55,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": "Staple: enter how many you have before shopping",
+      "stockTracked": true
+    },
+    {
+      "id": "eggwhite",
+      "name": "Liquid egg whites (Two Chicks)",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 48,
+        "protein": 10.5,
+        "carbs": 0.7,
+        "fat": 0.2
+      },
+      "packSize": 500,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 10,
+      "openedDays": 7,
+      "note": "Use within 7 days of opening; can be frozen on day of purchase",
+      "stockTracked": false
+    },
+    {
+      "id": "feta",
+      "name": "Feta",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 270,
+        "protein": 16,
+        "carbs": 1,
+        "fat": 22
+      },
+      "packSize": 200,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 14,
+      "openedDays": 7,
+      "note": "Keep in its brine",
+      "stockTracked": false
+    },
+    {
+      "id": "chicken",
+      "name": "Chicken breast fillets",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 106,
+        "protein": 24,
+        "carbs": 0,
+        "fat": 1.1
+      },
+      "packSize": null,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 4,
+      "openedDays": 1,
+      "note": "Lidl packs: ~325g, 650g, 1kg",
+      "stockTracked": false
+    },
+    {
+      "id": "thigh",
+      "name": "Chicken thigh fillets, boneless skinless",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 155,
+        "protein": 19,
+        "carbs": 0,
+        "fat": 8.8
+      },
+      "packSize": 600,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 4,
+      "openedDays": 1,
+      "note": "Trim visible fat",
+      "stockTracked": false
+    },
+    {
+      "id": "turkeymince",
+      "name": "Turkey breast mince 2%",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 105,
+        "protein": 23.5,
+        "carbs": 0,
+        "fat": 2
+      },
+      "packSize": 500,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 3,
+      "openedDays": 1,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "beefmince",
+      "name": "Beef steak mince 5%",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 124,
+        "protein": 21.4,
+        "carbs": 0,
+        "fat": 4.5
+      },
+      "packSize": 500,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 3,
+      "openedDays": 1,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "turkeysteak",
+      "name": "Turkey breast steaks",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 105,
+        "protein": 24,
+        "carbs": 0,
+        "fat": 1
+      },
+      "packSize": 250,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 4,
+      "openedDays": 1,
+      "note": "Cook the whole pack",
+      "stockTracked": false
+    },
+    {
+      "id": "porkloin",
+      "name": "Pork loin steaks, fat trimmed",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 140,
+        "protein": 22,
+        "carbs": 0,
+        "fat": 5.5
+      },
+      "packSize": 250,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 4,
+      "openedDays": 1,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "sirloin",
+      "name": "Sirloin steak",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 165,
+        "protein": 23,
+        "carbs": 0,
+        "fat": 8
+      },
+      "packSize": 225,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 4,
+      "openedDays": 1,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "rump",
+      "name": "Rump steak",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 140,
+        "protein": 22,
+        "carbs": 0,
+        "fat": 5.5
+      },
+      "packSize": 225,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 4,
+      "openedDays": 1,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "salmon",
+      "name": "Salmon fillets (boneless)",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 208,
+        "protein": 20,
+        "carbs": 0,
+        "fat": 13.5
+      },
+      "packSize": 240,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 2,
+      "openedDays": 1,
+      "note": "Pack of 2",
+      "stockTracked": false
+    },
+    {
+      "id": "smokedsalmon",
+      "name": "Smoked salmon",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 184,
+        "protein": 22,
+        "carbs": 0,
+        "fat": 10.5
+      },
+      "packSize": null,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 10,
+      "openedDays": 2,
+      "note": "100g and 200g packs",
+      "stockTracked": false
+    },
+    {
+      "id": "trout",
+      "name": "Trout fillets, boneless",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 140,
+        "protein": 20,
+        "carbs": 0,
+        "fat": 6.5
+      },
+      "packSize": 250,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 2,
+      "openedDays": 1,
+      "note": "Pack of 2",
+      "stockTracked": false
+    },
+    {
+      "id": "cod",
+      "name": "Cod fillets",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 80,
+        "protein": 18,
+        "carbs": 0,
+        "fat": 0.7
+      },
+      "packSize": 250,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 2,
+      "openedDays": 1,
+      "note": "Pack of 2",
+      "stockTracked": false
+    },
+    {
+      "id": "seabass",
+      "name": "Sea bass fillets",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 120,
+        "protein": 20,
+        "carbs": 0,
+        "fat": 4.5
+      },
+      "packSize": 200,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 2,
+      "openedDays": 1,
+      "note": "Pack of 2",
+      "stockTracked": false
+    },
+    {
+      "id": "tuna",
+      "name": "Tuna in spring water",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 110,
+        "protein": 25,
+        "carbs": 0,
+        "fat": 1
+      },
+      "packSize": 1,
+      "packUnit": "tin",
+      "store": "Lidl",
+      "unit": "tin",
+      "unitWeight": 112,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": "Max one tin a week",
+      "stockTracked": false
+    },
+    {
+      "id": "oats",
+      "name": "Steel-cut oats",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 374,
+        "protein": 11,
+        "carbs": 60,
+        "fat": 8
+      },
+      "packSize": 1000,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "riceW",
+      "name": "White basmati rice pouch",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 145,
+        "protein": 3,
+        "carbs": 30,
+        "fat": 1.8
+      },
+      "packSize": 1,
+      "packUnit": "pouch",
+      "store": "Lidl",
+      "unit": "pouch",
+      "unitWeight": 250,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": "Ingredients should be just rice, water, a little oil",
+      "stockTracked": false
+    },
+    {
+      "id": "riceB",
+      "name": "Brown basmati rice pouch",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 145,
+        "protein": 3.2,
+        "carbs": 28,
+        "fat": 2.2
+      },
+      "packSize": 1,
+      "packUnit": "pouch",
+      "store": "Lidl",
+      "unit": "pouch",
+      "unitWeight": 250,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": "Opened half: fridge, eat within 48 hours",
+      "stockTracked": false
+    },
+    {
+      "id": "quinoa",
+      "name": "Quinoa pouch",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 155,
+        "protein": 5,
+        "carbs": 21,
+        "fat": 4
+      },
+      "packSize": 1,
+      "packUnit": "pouch",
+      "store": "Lidl",
+      "unit": "pouch",
+      "unitWeight": 250,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "lentils",
+      "name": "Puy lentil pouch",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 120,
+        "protein": 9,
+        "carbs": 16,
+        "fat": 1.4
+      },
+      "packSize": 1,
+      "packUnit": "pouch",
+      "store": "Lidl",
+      "unit": "pouch",
+      "unitWeight": 250,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": "Label should be just lentils and water",
+      "stockTracked": false
+    },
+    {
+      "id": "spaghetti",
+      "name": "Wholewheat spaghetti",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 350,
+        "protein": 13,
+        "carbs": 63,
+        "fat": 2.5
+      },
+      "packSize": 500,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "pasta",
+      "name": "Wholewheat penne",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 350,
+        "protein": 13,
+        "carbs": 63,
+        "fat": 2.5
+      },
+      "packSize": 500,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "couscous",
+      "name": "Wholewheat couscous",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 350,
+        "protein": 12,
+        "carbs": 66,
+        "fat": 2
+      },
+      "packSize": 500,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "bulgur",
+      "name": "Bulgur wheat",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 355,
+        "protein": 12,
+        "carbs": 69,
+        "fat": 1.7
+      },
+      "packSize": 500,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "noodles",
+      "name": "Wholewheat noodles",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 340,
+        "protein": 13,
+        "carbs": 63,
+        "fat": 2.5
+      },
+      "packSize": 250,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "sourdough",
+      "name": "Sourdough (flour, water, salt only)",
+      "category": "frozen",
+      "per100g": {
+        "kcal": 240,
+        "protein": 9,
+        "carbs": 46,
+        "fat": 1.5
+      },
+      "packSize": 1,
+      "packUnit": "loaf",
+      "store": "Lidl",
+      "unit": "slice",
+      "unitWeight": 40,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": "Freeze sliced; toast from frozen. One loaf covers Weeks 1 and 3",
+      "stockTracked": false
+    },
+    {
+      "id": "rye",
+      "name": "German-style rye bread",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 200,
+        "protein": 6,
+        "carbs": 38,
+        "fat": 1.5
+      },
+      "packSize": 500,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "slice",
+      "unitWeight": 50,
+      "fridgeDays": 21,
+      "openedDays": 7,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "potatoes",
+      "name": "Baby / new potatoes",
+      "category": "core",
+      "per100g": {
+        "kcal": 70,
+        "protein": 1.7,
+        "carbs": 15,
+        "fat": 0.3
+      },
+      "packSize": 1000,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 14,
+      "openedDays": null,
+      "note": "Keeps 2 weeks somewhere cool and dark; can carry over",
+      "stockTracked": true
+    },
+    {
+      "id": "sweetpotato",
+      "name": "Sweet potato",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 85,
+        "protein": 1.6,
+        "carbs": 18,
+        "fat": 0.1
+      },
+      "packSize": null,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 14,
+      "openedDays": null,
+      "note": "Buy loose",
+      "stockTracked": false
+    },
+    {
+      "id": "butterbeans",
+      "name": "Butter beans, tinned",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 80,
+        "protein": 6,
+        "carbs": 12,
+        "fat": 0.4
+      },
+      "packSize": 1,
+      "packUnit": "tin",
+      "store": "Lidl",
+      "unit": "tin",
+      "unitWeight": 235,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "kidneybeans",
+      "name": "Kidney beans, tinned",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 100,
+        "protein": 7,
+        "carbs": 15,
+        "fat": 0.5
+      },
+      "packSize": 1,
+      "packUnit": "tin",
+      "store": "Lidl",
+      "unit": "tin",
+      "unitWeight": 240,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "blackbeans",
+      "name": "Black beans, tinned",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 105,
+        "protein": 7,
+        "carbs": 15,
+        "fat": 0.5
+      },
+      "packSize": 1,
+      "packUnit": "tin",
+      "store": "Lidl",
+      "unit": "tin",
+      "unitWeight": 240,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "chickpeas",
+      "name": "Chickpeas, tinned",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 120,
+        "protein": 7,
+        "carbs": 15,
+        "fat": 2.5
+      },
+      "packSize": 1,
+      "packUnit": "tin",
+      "store": "Lidl",
+      "unit": "tin",
+      "unitWeight": 240,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "tomatoestin",
+      "name": "Chopped tomatoes, tinned",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 22,
+        "protein": 1.2,
+        "carbs": 3.5,
+        "fat": 0.2
+      },
+      "packSize": 1,
+      "packUnit": "tin",
+      "store": "Lidl",
+      "unit": "tin",
+      "unitWeight": 400,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "pumpkinseeds",
+      "name": "Pumpkin seeds",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 590,
+        "protein": 30,
+        "carbs": 4,
+        "fat": 49
+      },
+      "packSize": 150,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "walnuts",
+      "name": "Walnuts",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 690,
+        "protein": 15,
+        "carbs": 3,
+        "fat": 69
+      },
+      "packSize": 150,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "almonds",
+      "name": "Almonds",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 612,
+        "protein": 21,
+        "carbs": 7,
+        "fat": 55
+      },
+      "packSize": 200,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "honey",
+      "name": "Honey",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 304,
+        "protein": 0.3,
+        "carbs": 82,
+        "fat": 0
+      },
+      "packSize": 340,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "oil",
+      "name": "Olive oil",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 900,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 100
+      },
+      "packSize": 1000,
+      "packUnit": "ml",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "soy",
+      "name": "Soy sauce",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 60,
+        "protein": 8,
+        "carbs": 5,
+        "fat": 0
+      },
+      "packSize": 150,
+      "packUnit": "ml",
+      "store": "Lidl",
+      "unit": "ml",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "fishsauce",
+      "name": "Fish sauce",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 35,
+        "protein": 5,
+        "carbs": 3,
+        "fat": 0
+      },
+      "packSize": 150,
+      "packUnit": "ml",
+      "store": "Lidl",
+      "unit": "ml",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "vinegar",
+      "name": "Red wine vinegar",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 20,
+        "protein": 0,
+        "carbs": 0.5,
+        "fat": 0
+      },
+      "packSize": 350,
+      "packUnit": "ml",
+      "store": "Lidl",
+      "unit": "ml",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "berries",
+      "name": "Frozen mixed berries",
+      "category": "frozen",
+      "per100g": {
+        "kcal": 40,
+        "protein": 1,
+        "carbs": 7,
+        "fat": 0.3
+      },
+      "packSize": 500,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "raspberries",
+      "name": "Frozen raspberries",
+      "category": "frozen",
+      "per100g": {
+        "kcal": 32,
+        "protein": 1.2,
+        "carbs": 5,
+        "fat": 0.6
+      },
+      "packSize": 500,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "spinach",
+      "name": "Frozen spinach",
+      "category": "frozen",
+      "per100g": {
+        "kcal": 23,
+        "protein": 3,
+        "carbs": 1,
+        "fat": 0.5
+      },
+      "packSize": 900,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "edamame",
+      "name": "Frozen edamame (shelled)",
+      "category": "frozen",
+      "per100g": {
+        "kcal": 120,
+        "protein": 11,
+        "carbs": 5,
+        "fat": 5
+      },
+      "packSize": 500,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "peas",
+      "name": "Frozen peas",
+      "category": "frozen",
+      "per100g": {
+        "kcal": 70,
+        "protein": 5.5,
+        "carbs": 10,
+        "fat": 1
+      },
+      "packSize": 900,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "banana",
+      "name": "Bananas",
+      "category": "core",
+      "per100g": {
+        "kcal": 89,
+        "protein": 1.1,
+        "carbs": 20,
+        "fat": 0.3
+      },
+      "packSize": 1,
+      "packUnit": "each",
+      "store": "Lidl",
+      "unit": "each",
+      "unitWeight": 120,
+      "fridgeDays": 6,
+      "openedDays": null,
+      "note": "Buy loose so you get the right number",
+      "stockTracked": false
+    },
+    {
+      "id": "apple",
+      "name": "Apples",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 52,
+        "protein": 0.3,
+        "carbs": 12,
+        "fat": 0.2
+      },
+      "packSize": 1,
+      "packUnit": "each",
+      "store": "Lidl",
+      "unit": "each",
+      "unitWeight": 150,
+      "fridgeDays": 14,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "orange",
+      "name": "Oranges",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 47,
+        "protein": 0.9,
+        "carbs": 9,
+        "fat": 0.1
+      },
+      "packSize": 1,
+      "packUnit": "each",
+      "store": "Lidl",
+      "unit": "each",
+      "unitWeight": 130,
+      "fridgeDays": 14,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "lemon",
+      "name": "Lemons",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      },
+      "packSize": 1,
+      "packUnit": "each",
+      "store": "Lidl",
+      "unit": "each",
+      "unitWeight": 0,
+      "fridgeDays": 14,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "lime",
+      "name": "Limes",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      },
+      "packSize": 1,
+      "packUnit": "each",
+      "store": "Lidl",
+      "unit": "each",
+      "unitWeight": 0,
+      "fridgeDays": 14,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "broccoli",
+      "name": "Broccoli",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 34,
+        "protein": 3.5,
+        "carbs": 3,
+        "fat": 0.5
+      },
+      "packSize": 350,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 7,
+      "openedDays": null,
+      "note": "One head is about 350g",
+      "stockTracked": false
+    },
+    {
+      "id": "greenbeans",
+      "name": "Green beans",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 25,
+        "protein": 1.8,
+        "carbs": 3.5,
+        "fat": 0.2
+      },
+      "packSize": 200,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 7,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "pepper",
+      "name": "Peppers",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 26,
+        "protein": 1,
+        "carbs": 5,
+        "fat": 0.3
+      },
+      "packSize": 1,
+      "packUnit": "each",
+      "store": "Lidl",
+      "unit": "each",
+      "unitWeight": 140,
+      "fridgeDays": 7,
+      "openedDays": null,
+      "note": "Buy loose",
+      "stockTracked": false
+    },
+    {
+      "id": "courgette",
+      "name": "Courgette",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 17,
+        "protein": 1.2,
+        "carbs": 2,
+        "fat": 0.3
+      },
+      "packSize": 1,
+      "packUnit": "each",
+      "store": "Lidl",
+      "unit": "each",
+      "unitWeight": 200,
+      "fridgeDays": 7,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "onion",
+      "name": "Onions",
+      "category": "core",
+      "per100g": {
+        "kcal": 40,
+        "protein": 1.1,
+        "carbs": 8,
+        "fat": 0.1
+      },
+      "packSize": 1,
+      "packUnit": "each",
+      "store": "Lidl",
+      "unit": "each",
+      "unitWeight": 150,
+      "fridgeDays": 21,
+      "openedDays": null,
+      "note": "Keeps; can carry over",
+      "stockTracked": true
+    },
+    {
+      "id": "redonion",
+      "name": "Red onions",
+      "category": "core",
+      "per100g": {
+        "kcal": 40,
+        "protein": 1.1,
+        "carbs": 8,
+        "fat": 0.1
+      },
+      "packSize": 1,
+      "packUnit": "each",
+      "store": "Lidl",
+      "unit": "each",
+      "unitWeight": 150,
+      "fridgeDays": 21,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": true
+    },
+    {
+      "id": "garlic",
+      "name": "Garlic",
+      "category": "core",
+      "per100g": {
+        "kcal": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      },
+      "packSize": 1,
+      "packUnit": "bulb",
+      "store": "Lidl",
+      "unit": "clove",
+      "unitWeight": 0,
+      "fridgeDays": 30,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": true
+    },
+    {
+      "id": "ginger",
+      "name": "Fresh ginger",
+      "category": "core",
+      "per100g": {
+        "kcal": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      },
+      "packSize": 1,
+      "packUnit": "piece",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 21,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": true
+    },
+    {
+      "id": "mushrooms",
+      "name": "Mushrooms",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 13,
+        "protein": 1.8,
+        "carbs": 0.4,
+        "fat": 0.3
+      },
+      "packSize": 250,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 7,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "tomatoes",
+      "name": "Tomatoes",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 18,
+        "protein": 0.8,
+        "carbs": 3,
+        "fat": 0.2
+      },
+      "packSize": 1,
+      "packUnit": "each",
+      "store": "Lidl",
+      "unit": "each",
+      "unitWeight": 85,
+      "fridgeDays": 7,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "cucumber",
+      "name": "Cucumber",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 12,
+        "protein": 0.6,
+        "carbs": 1.5,
+        "fat": 0.1
+      },
+      "packSize": 1,
+      "packUnit": "each",
+      "store": "Lidl",
+      "unit": "each",
+      "unitWeight": 300,
+      "fridgeDays": 7,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "littlegem",
+      "name": "Little gem lettuce (2-pack)",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 15,
+        "protein": 1,
+        "carbs": 1.7,
+        "fat": 0.2
+      },
+      "packSize": 2,
+      "packUnit": "heads",
+      "store": "Lidl",
+      "unit": "head",
+      "unitWeight": 90,
+      "fridgeDays": 8,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "springonion",
+      "name": "Spring onions",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 32,
+        "protein": 1.8,
+        "carbs": 5,
+        "fat": 0.2
+      },
+      "packSize": 100,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 7,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "greens",
+      "name": "Spring greens or savoy cabbage",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 30,
+        "protein": 2.5,
+        "carbs": 4,
+        "fat": 0.5
+      },
+      "packSize": 250,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 7,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "carrots",
+      "name": "Carrots",
+      "category": "core",
+      "per100g": {
+        "kcal": 35,
+        "protein": 0.6,
+        "carbs": 7,
+        "fat": 0.3
+      },
+      "packSize": 1,
+      "packUnit": "each",
+      "store": "Lidl",
+      "unit": "each",
+      "unitWeight": 80,
+      "fridgeDays": 21,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": true
+    },
+    {
+      "id": "mint",
+      "name": "Fresh mint",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      },
+      "packSize": 30,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 7,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "parsley",
+      "name": "Fresh flat-leaf parsley",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      },
+      "packSize": 30,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 7,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "coriander",
+      "name": "Fresh coriander",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      },
+      "packSize": 30,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 7,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "cinnamon",
+      "name": "Ground cinnamon",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      },
+      "packSize": 1,
+      "packUnit": "jar",
+      "store": "Lidl",
+      "unit": "tsp",
+      "unitWeight": 0,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "oregano",
+      "name": "Dried oregano",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      },
+      "packSize": 1,
+      "packUnit": "jar",
+      "store": "Lidl",
+      "unit": "tsp",
+      "unitWeight": 0,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "paprika",
+      "name": "Smoked paprika",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      },
+      "packSize": 1,
+      "packUnit": "jar",
+      "store": "Lidl",
+      "unit": "tsp",
+      "unitWeight": 0,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "cumin",
+      "name": "Ground cumin",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      },
+      "packSize": 1,
+      "packUnit": "jar",
+      "store": "Lidl",
+      "unit": "tsp",
+      "unitWeight": 0,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "curry",
+      "name": "Curry powder",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      },
+      "packSize": 1,
+      "packUnit": "jar",
+      "store": "Lidl",
+      "unit": "tsp",
+      "unitWeight": 0,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "rasel",
+      "name": "Ras el hanout",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      },
+      "packSize": 1,
+      "packUnit": "jar",
+      "store": "Lidl",
+      "unit": "tsp",
+      "unitWeight": 0,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "chilli",
+      "name": "Chilli flakes",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      },
+      "packSize": 1,
+      "packUnit": "jar",
+      "store": "Lidl",
+      "unit": "tsp",
+      "unitWeight": 0,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "driedmint",
+      "name": "Dried mint",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      },
+      "packSize": 1,
+      "packUnit": "jar",
+      "store": "Lidl",
+      "unit": "tsp",
+      "unitWeight": 0,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "italianherbs",
+      "name": "Dried mixed herbs",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      },
+      "packSize": 1,
+      "packUnit": "jar",
+      "store": "Lidl",
+      "unit": "tsp",
+      "unitWeight": 0,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    },
+    {
+      "id": "salt",
+      "name": "Salt & black pepper",
+      "category": "pantry",
+      "per100g": {
+        "kcal": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      },
+      "packSize": 1,
+      "packUnit": "jar",
+      "store": "Lidl",
+      "unit": "tsp",
+      "unitWeight": 0,
+      "fridgeDays": null,
+      "openedDays": null,
+      "note": null,
+      "stockTracked": false
+    }
+  ],
+  "recipes": [
+    {
+      "id": "skyr-bowl",
+      "name": "Skyr bowl",
+      "meal": "breakfast",
+      "servingsCooked": 1,
+      "cookMinutes": 3,
+      "ingredients": [
+        {
+          "ingredient": "skyr",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient": "oats",
+          "qty": 40,
+          "unit": "g",
+          "note": "steel-cut, soaked overnight in a splash of water"
+        },
+        {
+          "ingredient": "berries",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient": "pumpkinseeds",
+          "qty": 20,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "The night before: soak 40g oats in a splash of water in the fridge.",
+        "In the morning, spoon 300g skyr into a bowl.",
+        "Top with the soaked oats, 100g frozen berries (take out of the freezer the night before) and 20g pumpkin seeds."
+      ],
+      "prepAhead": "Soak oats the night before",
+      "tags": [],
+      "macros": {
+        "kcal": 497,
+        "protein": 44,
+        "carbs": 44,
+        "fat": 14
+      }
+    },
+    {
+      "id": "overnight-oats",
+      "name": "Overnight oats with banana",
+      "meal": "breakfast",
+      "servingsCooked": 1,
+      "cookMinutes": 10,
+      "ingredients": [
+        {
+          "ingredient": "oats",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient": "milk",
+          "qty": 284,
+          "unit": "ml"
+        },
+        {
+          "ingredient": "banana",
+          "qty": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient": "skyr",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient": "pumpkinseeds",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "ingredient": "eggs",
+          "qty": 1,
+          "unit": "each",
+          "note": "boiled"
+        }
+      ],
+      "method": [
+        "The night before: mix 60g steel-cut oats with 284ml milk (half a pint) in a jar and refrigerate.",
+        "In the morning, stir, top with sliced banana, 150g skyr and 15g pumpkin seeds.",
+        "Boil 1 egg for 9 minutes (or use one boiled the night before) and eat on the side."
+      ],
+      "prepAhead": "Soak oats in milk the night before",
+      "tags": [],
+      "macros": {
+        "kcal": 726,
+        "protein": 46,
+        "carbs": 81,
+        "fat": 23
+      }
+    },
+    {
+      "id": "eggs-salmon",
+      "name": "Eggs & smoked salmon",
+      "meal": "breakfast",
+      "servingsCooked": 1,
+      "cookMinutes": 10,
+      "ingredients": [
+        {
+          "ingredient": "eggs",
+          "qty": 3,
+          "unit": "each"
+        },
+        {
+          "ingredient": "smokedsalmon",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient": "spinach",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient": "sourdough",
+          "qty": 1,
+          "unit": "slice"
+        },
+        {
+          "ingredient": "kefir",
+          "qty": 175,
+          "unit": "ml"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Toast 1 slice of sourdough from frozen.",
+        "Warm 80g frozen spinach in a pan with 5ml olive oil until wilted; season.",
+        "Scramble 3 eggs gently over low heat.",
+        "Serve eggs on the toast with spinach and 100g smoked salmon. Glass of kefir (175ml) on the side."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 665,
+        "protein": 55,
+        "carbs": 28,
+        "fat": 36
+      }
+    },
+    {
+      "id": "eggs-salmon-postrun",
+      "name": "Post-parkrun eggs & smoked salmon",
+      "meal": "breakfast",
+      "servingsCooked": 1,
+      "cookMinutes": 10,
+      "ingredients": [
+        {
+          "ingredient": "eggs",
+          "qty": 3,
+          "unit": "each"
+        },
+        {
+          "ingredient": "smokedsalmon",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient": "spinach",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient": "sourdough",
+          "qty": 2,
+          "unit": "slice"
+        },
+        {
+          "ingredient": "orange",
+          "qty": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Toast 2 slices of sourdough from frozen.",
+        "Warm 80g frozen spinach with 5ml olive oil; scramble 3 eggs.",
+        "Serve with 100g smoked salmon and an orange."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "post-run"
+      ],
+      "macros": {
+        "kcal": 735,
+        "protein": 54,
+        "carbs": 50,
+        "fat": 33
+      }
+    },
+    {
+      "id": "prerun-banana",
+      "name": "Banana + coffee (pre-parkrun)",
+      "meal": "snack",
+      "servingsCooked": 1,
+      "cookMinutes": null,
+      "ingredients": [
+        {
+          "ingredient": "banana",
+          "qty": 1,
+          "unit": "each"
+        }
+      ],
+      "method": [
+        "Eat a banana with your usual small coffee about 90 minutes before parkrun."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "pre-run"
+      ],
+      "macros": {
+        "kcal": 107,
+        "protein": 1,
+        "carbs": 24,
+        "fat": 0
+      }
+    },
+    {
+      "id": "banana-snack",
+      "name": "Banana (pre-badminton)",
+      "meal": "snack",
+      "servingsCooked": 1,
+      "cookMinutes": null,
+      "ingredients": [
+        {
+          "ingredient": "banana",
+          "qty": 1,
+          "unit": "each"
+        }
+      ],
+      "method": [
+        "Eat a banana around 4:30pm to fuel badminton."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "pre-session"
+      ],
+      "macros": {
+        "kcal": 107,
+        "protein": 1,
+        "carbs": 24,
+        "fat": 0
+      }
+    },
+    {
+      "id": "tuna-bean-salad",
+      "name": "Tuna & butter bean salad",
+      "meal": "lunch",
+      "servingsCooked": 1,
+      "cookMinutes": 12,
+      "ingredients": [
+        {
+          "ingredient": "tuna",
+          "qty": 1,
+          "unit": "tin"
+        },
+        {
+          "ingredient": "butterbeans",
+          "qty": 1,
+          "unit": "tin"
+        },
+        {
+          "ingredient": "eggs",
+          "qty": 2,
+          "unit": "each",
+          "note": "boiled"
+        },
+        {
+          "ingredient": "littlegem",
+          "qty": 1,
+          "unit": "head"
+        },
+        {
+          "ingredient": "redonion",
+          "qty": 0.15,
+          "unit": "each"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "ingredient": "lemon",
+          "qty": 0.5,
+          "unit": "each"
+        }
+      ],
+      "method": [
+        "Boil 2 eggs for 9 minutes, cool and halve.",
+        "Drain and rinse 1 tin butter beans; drain 1 tin tuna.",
+        "Chop 1 little gem and a little red onion.",
+        "Toss everything with 10ml olive oil, the juice of half a lemon, salt and pepper."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 580,
+        "protein": 57,
+        "carbs": 32,
+        "fat": 23
+      }
+    },
+    {
+      "id": "chicken-rice-white",
+      "name": "Chicken & white rice bowl",
+      "meal": "lunch",
+      "servingsCooked": 1,
+      "cookMinutes": 5,
+      "ingredients": [
+        {
+          "ingredient": "chicken",
+          "qty": 150,
+          "unit": "g",
+          "note": "batch-cooked"
+        },
+        {
+          "ingredient": "riceW",
+          "qty": 1,
+          "unit": "pouch"
+        },
+        {
+          "ingredient": "pepper",
+          "qty": 0.6,
+          "unit": "each"
+        },
+        {
+          "ingredient": "courgette",
+          "qty": 0.5,
+          "unit": "each"
+        },
+        {
+          "ingredient": "redonion",
+          "qty": 0.25,
+          "unit": "each"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "ingredient": "paprika",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "method": [
+        "Uses chicken and roasted veg batch-cooked on Monday evening.",
+        "Reheat 150g chicken and the roasted veg in a pan until piping hot.",
+        "Tip 1 white basmati pouch on top, straight from the pouch (cold is fine)."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 620,
+        "protein": 46,
+        "carbs": 84,
+        "fat": 12
+      },
+      "batchCookedOn": "mon"
+    },
+    {
+      "id": "chicken-rice-brown",
+      "name": "Chicken & brown rice bowl",
+      "meal": "lunch",
+      "servingsCooked": 1,
+      "cookMinutes": 5,
+      "ingredients": [
+        {
+          "ingredient": "chicken",
+          "qty": 150,
+          "unit": "g",
+          "note": "batch-cooked"
+        },
+        {
+          "ingredient": "riceB",
+          "qty": 0.5,
+          "unit": "pouch"
+        },
+        {
+          "ingredient": "pepper",
+          "qty": 0.6,
+          "unit": "each"
+        },
+        {
+          "ingredient": "courgette",
+          "qty": 0.5,
+          "unit": "each"
+        },
+        {
+          "ingredient": "redonion",
+          "qty": 0.25,
+          "unit": "each"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "ingredient": "paprika",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "method": [
+        "Uses chicken and roasted veg batch-cooked on Monday evening.",
+        "Reheat 150g chicken and the roasted veg in a pan until piping hot.",
+        "Tip half a brown basmati pouch on top, straight from the pouch (cold is fine). The other half is for tonight's dinner."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 439,
+        "protein": 42,
+        "carbs": 44,
+        "fat": 10
+      },
+      "batchCookedOn": "mon"
+    },
+    {
+      "id": "turkey-chilli-white",
+      "name": "Turkey chilli with white rice",
+      "meal": "lunch",
+      "servingsCooked": 1,
+      "cookMinutes": 5,
+      "ingredients": [
+        {
+          "ingredient": "turkeymince",
+          "qty": 250,
+          "unit": "g",
+          "note": "batch-cooked"
+        },
+        {
+          "ingredient": "kidneybeans",
+          "qty": 0.5,
+          "unit": "tin"
+        },
+        {
+          "ingredient": "tomatoestin",
+          "qty": 0.5,
+          "unit": "tin"
+        },
+        {
+          "ingredient": "onion",
+          "qty": 0.33,
+          "unit": "each"
+        },
+        {
+          "ingredient": "pepper",
+          "qty": 0.4,
+          "unit": "each"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "paprika",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "chilli",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 3,
+          "unit": "g"
+        },
+        {
+          "ingredient": "riceW",
+          "qty": 1,
+          "unit": "pouch"
+        }
+      ],
+      "method": [
+        "Uses the second chilli portion, batch-cooked on Wednesday evening.",
+        "Reheat one portion in a pan until piping hot.",
+        "Serve over 1 white basmati pouch, straight from the pouch."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "post-run"
+      ],
+      "macros": {
+        "kcal": 850,
+        "protein": 78,
+        "carbs": 107,
+        "fat": 14
+      },
+      "batchCookedOn": "wed"
+    },
+    {
+      "id": "turkey-chilli-brown",
+      "name": "Turkey chilli with brown rice",
+      "meal": "lunch",
+      "servingsCooked": 1,
+      "cookMinutes": 5,
+      "ingredients": [
+        {
+          "ingredient": "turkeymince",
+          "qty": 250,
+          "unit": "g",
+          "note": "batch-cooked"
+        },
+        {
+          "ingredient": "kidneybeans",
+          "qty": 0.5,
+          "unit": "tin"
+        },
+        {
+          "ingredient": "tomatoestin",
+          "qty": 0.5,
+          "unit": "tin"
+        },
+        {
+          "ingredient": "onion",
+          "qty": 0.33,
+          "unit": "each"
+        },
+        {
+          "ingredient": "pepper",
+          "qty": 0.4,
+          "unit": "each"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "paprika",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "chilli",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 3,
+          "unit": "g"
+        },
+        {
+          "ingredient": "riceB",
+          "qty": 0.5,
+          "unit": "pouch"
+        }
+      ],
+      "method": [
+        "Batch-cook the chilli this evening: brown 500g turkey mince, add 1 chopped onion, ¾ pepper, 2 garlic cloves, cumin, paprika, chilli, 1 tin kidney beans and 1 tin tomatoes; simmer 25 minutes. Makes 2 portions.",
+        "Eat one portion now with the other half of the brown basmati pouch, straight from the pouch.",
+        "Cool the second portion quickly and fridge it for Thursday lunch."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 669,
+        "protein": 75,
+        "carbs": 67,
+        "fat": 12
+      },
+      "batchCookedOn": "wed"
+    },
+    {
+      "id": "chicken-bean-salad",
+      "name": "Chicken & butter bean salad",
+      "meal": "lunch",
+      "servingsCooked": 1,
+      "cookMinutes": 25,
+      "ingredients": [
+        {
+          "ingredient": "chicken",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient": "butterbeans",
+          "qty": 1,
+          "unit": "tin"
+        },
+        {
+          "ingredient": "eggs",
+          "qty": 1,
+          "unit": "each",
+          "note": "boiled"
+        },
+        {
+          "ingredient": "littlegem",
+          "qty": 1,
+          "unit": "head"
+        },
+        {
+          "ingredient": "redonion",
+          "qty": 0.15,
+          "unit": "each"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "ingredient": "lemon",
+          "qty": 0.5,
+          "unit": "each"
+        }
+      ],
+      "method": [
+        "Steam 200g chicken breast for 20–25 minutes until cooked through; slice.",
+        "Boil 1 egg for 9 minutes. Drain and rinse 1 tin butter beans.",
+        "Toss with chopped little gem, a little red onion, 10ml olive oil and lemon juice."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 591,
+        "protein": 70,
+        "carbs": 32,
+        "fat": 19
+      }
+    },
+    {
+      "id": "salmon-traybake",
+      "name": "Salmon traybake",
+      "meal": "dinner",
+      "servingsCooked": 1,
+      "cookMinutes": 25,
+      "ingredients": [
+        {
+          "ingredient": "salmon",
+          "qty": 240,
+          "unit": "g"
+        },
+        {
+          "ingredient": "potatoes",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient": "broccoli",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient": "lemon",
+          "qty": 0.5,
+          "unit": "each"
+        }
+      ],
+      "method": [
+        "Steam 200g baby potatoes for 10 minutes.",
+        "Add 2 salmon fillets and 150g broccoli to the steamer for the last 10–12 minutes.",
+        "Season and finish with lemon juice."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 690,
+        "protein": 57,
+        "carbs": 34,
+        "fat": 34
+      }
+    },
+    {
+      "id": "beef-stirfry",
+      "name": "Thai-style beef stir-fry",
+      "meal": "dinner",
+      "servingsCooked": 1,
+      "cookMinutes": 15,
+      "ingredients": [
+        {
+          "ingredient": "beefmince",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient": "pepper",
+          "qty": 0.6,
+          "unit": "each"
+        },
+        {
+          "ingredient": "greenbeans",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient": "onion",
+          "qty": 0.33,
+          "unit": "each"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "ingredient": "ginger",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "ingredient": "soy",
+          "qty": 15,
+          "unit": "ml"
+        },
+        {
+          "ingredient": "chilli",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "lime",
+          "qty": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient": "riceW",
+          "qty": 1,
+          "unit": "pouch"
+        }
+      ],
+      "method": [
+        "Brown 250g beef mince in a hot pan (no oil needed); drain any fat.",
+        "Add sliced onion, pepper and 100g green beans; stir-fry 4 minutes.",
+        "Add 2 crushed garlic cloves, grated ginger, chilli and 15ml soy sauce; cook 2 minutes.",
+        "Finish with lime juice. Serve over 1 white basmati pouch, straight from the pouch."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "post-session"
+      ],
+      "macros": {
+        "kcal": 748,
+        "protein": 65,
+        "carbs": 87,
+        "fat": 16
+      }
+    },
+    {
+      "id": "chicken-traybake",
+      "name": "Chicken traybake with sweet potato",
+      "meal": "dinner",
+      "servingsCooked": 1,
+      "cookMinutes": 40,
+      "ingredients": [
+        {
+          "ingredient": "chicken",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient": "sweetpotato",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient": "pepper",
+          "qty": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient": "redonion",
+          "qty": 0.33,
+          "unit": "each"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "ingredient": "paprika",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "method": [
+        "Heat oven to 200°C (180°C fan).",
+        "Cut 250g sweet potato into chunks; toss with 1 sliced pepper, red onion, 10ml oil and paprika. Roast 15 minutes.",
+        "Add 250g chicken breast, cut into chunks, and roast a further 20 minutes until cooked through."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 624,
+        "protein": 66,
+        "carbs": 56,
+        "fat": 13
+      }
+    },
+    {
+      "id": "cod-potatoes",
+      "name": "Steamed cod & potatoes",
+      "meal": "dinner",
+      "servingsCooked": 1,
+      "cookMinutes": 25,
+      "ingredients": [
+        {
+          "ingredient": "cod",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient": "potatoes",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient": "peas",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient": "broccoli",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "ingredient": "lemon",
+          "qty": 0.5,
+          "unit": "each"
+        }
+      ],
+      "method": [
+        "Steam 250g baby potatoes for 10 minutes.",
+        "Add 2 cod fillets, 100g broccoli and 80g frozen peas; steam 10 minutes more.",
+        "Drizzle 5ml olive oil and lemon juice over the potatoes; season."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 510,
+        "protein": 57,
+        "carbs": 48,
+        "fat": 9
+      }
+    },
+    {
+      "id": "beef-bolognese",
+      "name": "Beef bolognese",
+      "meal": "dinner",
+      "servingsCooked": 1,
+      "cookMinutes": 35,
+      "ingredients": [
+        {
+          "ingredient": "beefmince",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient": "tomatoestin",
+          "qty": 1,
+          "unit": "tin"
+        },
+        {
+          "ingredient": "onion",
+          "qty": 0.33,
+          "unit": "each"
+        },
+        {
+          "ingredient": "carrots",
+          "qty": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "ingredient": "italianherbs",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "spaghetti",
+          "qty": 100,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Brown 250g beef mince; drain any fat.",
+        "Add chopped onion, grated carrot and 2 garlic cloves; cook 5 minutes.",
+        "Add 1 tin chopped tomatoes and herbs; simmer 20 minutes.",
+        "Cook 100g wholewheat spaghetti and serve with the sauce."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "pre-run"
+      ],
+      "macros": {
+        "kcal": 796,
+        "protein": 72,
+        "carbs": 87,
+        "fat": 15
+      }
+    },
+    {
+      "id": "roast-chicken",
+      "name": "Roast chicken dinner",
+      "meal": "dinner",
+      "servingsCooked": 1,
+      "cookMinutes": 40,
+      "ingredients": [
+        {
+          "ingredient": "chicken",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient": "potatoes",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient": "broccoli",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient": "greenbeans",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 10,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Heat oven to 200°C (180°C fan).",
+        "Halve 250g baby potatoes, toss in 10ml oil, roast 35 minutes.",
+        "Roast 250g chicken breast for the last 20–25 minutes.",
+        "Steam 100g broccoli and 100g green beans."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 589,
+        "protein": 70,
+        "carbs": 44,
+        "fat": 14
+      }
+    },
+    {
+      "id": "cottage-rye",
+      "name": "Cottage cheese on rye",
+      "meal": "breakfast",
+      "servingsCooked": 1,
+      "cookMinutes": 10,
+      "ingredients": [
+        {
+          "ingredient": "cottage",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient": "rye",
+          "qty": 2,
+          "unit": "slice"
+        },
+        {
+          "ingredient": "tomatoes",
+          "qty": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient": "eggs",
+          "qty": 2,
+          "unit": "each",
+          "note": "boiled"
+        }
+      ],
+      "method": [
+        "Toast 2 slices of rye bread.",
+        "Top with 300g cottage cheese and a sliced tomato; season with black pepper.",
+        "2 boiled eggs on the side (boil the night before to save time)."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 642,
+        "protein": 54,
+        "carbs": 52,
+        "fat": 23
+      }
+    },
+    {
+      "id": "apple-oats",
+      "name": "Apple & cinnamon overnight oats",
+      "meal": "breakfast",
+      "servingsCooked": 1,
+      "cookMinutes": 10,
+      "ingredients": [
+        {
+          "ingredient": "oats",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient": "kefir",
+          "qty": 175,
+          "unit": "ml"
+        },
+        {
+          "ingredient": "apple",
+          "qty": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient": "cinnamon",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "walnuts",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "ingredient": "skyr",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient": "eggs",
+          "qty": 1,
+          "unit": "each",
+          "note": "boiled"
+        }
+      ],
+      "method": [
+        "The night before: mix 60g steel-cut oats, 175ml kefir, a splash of water, 1 grated apple and cinnamon. Refrigerate.",
+        "In the morning, top with 150g skyr and 15g walnuts.",
+        "1 boiled egg on the side."
+      ],
+      "prepAhead": "Soak oats the night before",
+      "tags": [],
+      "macros": {
+        "kcal": 666,
+        "protein": 39,
+        "carbs": 69,
+        "fat": 25
+      }
+    },
+    {
+      "id": "feta-omelette",
+      "name": "Feta omelette",
+      "meal": "breakfast",
+      "servingsCooked": 1,
+      "cookMinutes": 12,
+      "ingredients": [
+        {
+          "ingredient": "eggs",
+          "qty": 3,
+          "unit": "each"
+        },
+        {
+          "ingredient": "eggwhite",
+          "qty": 165,
+          "unit": "g"
+        },
+        {
+          "ingredient": "feta",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient": "spinach",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient": "mushrooms",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient": "rye",
+          "qty": 1,
+          "unit": "slice"
+        },
+        {
+          "ingredient": "kefir",
+          "qty": 175,
+          "unit": "ml"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Fry 80g sliced mushrooms in 5ml oil for 3 minutes; add 80g frozen spinach until wilted.",
+        "Whisk 3 eggs with 165g egg whites; pour over the veg and cook on medium-low.",
+        "Crumble 40g feta over, fold, and serve with 1 slice of rye. Glass of kefir (175ml) on the side."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 683,
+        "protein": 57,
+        "carbs": 31,
+        "fat": 35
+      }
+    },
+    {
+      "id": "feta-omelette-postrun",
+      "name": "Post-parkrun feta omelette",
+      "meal": "breakfast",
+      "servingsCooked": 1,
+      "cookMinutes": 12,
+      "ingredients": [
+        {
+          "ingredient": "eggs",
+          "qty": 3,
+          "unit": "each"
+        },
+        {
+          "ingredient": "eggwhite",
+          "qty": 165,
+          "unit": "g"
+        },
+        {
+          "ingredient": "feta",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient": "spinach",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient": "mushrooms",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient": "rye",
+          "qty": 2,
+          "unit": "slice"
+        },
+        {
+          "ingredient": "orange",
+          "qty": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Same as the feta omelette, with 2 slices of rye and an orange instead of kefir."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "post-run"
+      ],
+      "macros": {
+        "kcal": 756,
+        "protein": 56,
+        "carbs": 54,
+        "fat": 32
+      }
+    },
+    {
+      "id": "egg-lentil-salad",
+      "name": "Egg & lentil salad",
+      "meal": "lunch",
+      "servingsCooked": 1,
+      "cookMinutes": 12,
+      "ingredients": [
+        {
+          "ingredient": "lentils",
+          "qty": 1,
+          "unit": "pouch"
+        },
+        {
+          "ingredient": "eggs",
+          "qty": 3,
+          "unit": "each",
+          "note": "boiled"
+        },
+        {
+          "ingredient": "feta",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient": "littlegem",
+          "qty": 1,
+          "unit": "head"
+        },
+        {
+          "ingredient": "tomatoes",
+          "qty": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "ingredient": "lemon",
+          "qty": 0.5,
+          "unit": "each"
+        }
+      ],
+      "method": [
+        "Boil 3 eggs for 9 minutes; cool and quarter.",
+        "Tip 1 lentil pouch into a bowl (cold is fine).",
+        "Add chopped little gem and tomato, crumble over 40g feta.",
+        "Dress with 5ml olive oil and lemon juice."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 716,
+        "protein": 51,
+        "carbs": 46,
+        "fat": 33
+      }
+    },
+    {
+      "id": "souvlaki-white",
+      "name": "Chicken souvlaki bowl with white rice",
+      "meal": "lunch",
+      "servingsCooked": 1,
+      "cookMinutes": 5,
+      "ingredients": [
+        {
+          "ingredient": "chicken",
+          "qty": 162,
+          "unit": "g",
+          "note": "batch-cooked"
+        },
+        {
+          "ingredient": "riceW",
+          "qty": 1,
+          "unit": "pouch"
+        },
+        {
+          "ingredient": "cucumber",
+          "qty": 0.5,
+          "unit": "each"
+        },
+        {
+          "ingredient": "tomatoes",
+          "qty": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient": "skyr",
+          "qty": 75,
+          "unit": "g"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 0.5,
+          "unit": "clove"
+        },
+        {
+          "ingredient": "driedmint",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "oregano",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "lemon",
+          "qty": 0.5,
+          "unit": "each"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Uses chicken batch-cooked on Monday evening (marinated in lemon, oregano, garlic and 5ml oil, then grilled or roasted).",
+        "Tzatziki: 75g skyr, 40g grated cucumber (squeezed), a little garlic and dried mint.",
+        "Serve with 1 white basmati pouch (straight from the pouch), chicken, chopped cucumber and tomato, and the tzatziki."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 660,
+        "protein": 56,
+        "carbs": 83,
+        "fat": 12
+      },
+      "batchCookedOn": "mon"
+    },
+    {
+      "id": "souvlaki-brown",
+      "name": "Chicken souvlaki bowl with brown rice",
+      "meal": "lunch",
+      "servingsCooked": 1,
+      "cookMinutes": 5,
+      "ingredients": [
+        {
+          "ingredient": "chicken",
+          "qty": 163,
+          "unit": "g",
+          "note": "batch-cooked"
+        },
+        {
+          "ingredient": "riceB",
+          "qty": 0.5,
+          "unit": "pouch"
+        },
+        {
+          "ingredient": "cucumber",
+          "qty": 0.5,
+          "unit": "each"
+        },
+        {
+          "ingredient": "tomatoes",
+          "qty": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient": "skyr",
+          "qty": 75,
+          "unit": "g"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 0.5,
+          "unit": "clove"
+        },
+        {
+          "ingredient": "driedmint",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "oregano",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "lemon",
+          "qty": 0.5,
+          "unit": "each"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "As above, with half a brown basmati pouch; the other half is for tonight's dinner."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 480,
+        "protein": 53,
+        "carbs": 43,
+        "fat": 10
+      },
+      "batchCookedOn": "mon"
+    },
+    {
+      "id": "burrito-white",
+      "name": "Beef burrito bowl with white rice",
+      "meal": "lunch",
+      "servingsCooked": 1,
+      "cookMinutes": 5,
+      "ingredients": [
+        {
+          "ingredient": "beefmince",
+          "qty": 150,
+          "unit": "g",
+          "note": "batch-cooked"
+        },
+        {
+          "ingredient": "blackbeans",
+          "qty": 0.5,
+          "unit": "tin"
+        },
+        {
+          "ingredient": "tomatoes",
+          "qty": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient": "redonion",
+          "qty": 0.15,
+          "unit": "each"
+        },
+        {
+          "ingredient": "lime",
+          "qty": 0.5,
+          "unit": "each"
+        },
+        {
+          "ingredient": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "paprika",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "coriander",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "ingredient": "riceW",
+          "qty": 1,
+          "unit": "pouch"
+        }
+      ],
+      "method": [
+        "Uses the second burrito portion, batch-cooked on Wednesday evening.",
+        "Salsa: chopped tomato, a little red onion, lime juice and coriander.",
+        "Reheat the beef in a pan and serve over 1 white basmati pouch (straight from the pouch) with the salsa."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "post-run"
+      ],
+      "macros": {
+        "kcal": 699,
+        "protein": 49,
+        "carbs": 97,
+        "fat": 12
+      },
+      "batchCookedOn": "wed"
+    },
+    {
+      "id": "burrito-brown",
+      "name": "Beef burrito bowl with brown rice",
+      "meal": "lunch",
+      "servingsCooked": 1,
+      "cookMinutes": 20,
+      "ingredients": [
+        {
+          "ingredient": "beefmince",
+          "qty": 150,
+          "unit": "g",
+          "note": "batch-cooked"
+        },
+        {
+          "ingredient": "blackbeans",
+          "qty": 0.5,
+          "unit": "tin"
+        },
+        {
+          "ingredient": "tomatoes",
+          "qty": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient": "redonion",
+          "qty": 0.15,
+          "unit": "each"
+        },
+        {
+          "ingredient": "lime",
+          "qty": 0.5,
+          "unit": "each"
+        },
+        {
+          "ingredient": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "paprika",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "coriander",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "ingredient": "riceB",
+          "qty": 0.5,
+          "unit": "pouch"
+        }
+      ],
+      "method": [
+        "Batch-cook the burrito beef this evening: brown 300g beef mince with cumin and paprika, add 1 tin black beans; cook 10 minutes. Makes 2 portions.",
+        "Make the salsa. Eat one portion now with the other half of the brown basmati pouch, straight from the pouch.",
+        "Cool the second portion quickly and fridge it for Thursday lunch."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 518,
+        "protein": 45,
+        "carbs": 57,
+        "fat": 10
+      },
+      "batchCookedOn": "wed"
+    },
+    {
+      "id": "lemon-trout",
+      "name": "Lemon trout with crushed potatoes",
+      "meal": "dinner",
+      "servingsCooked": 1,
+      "cookMinutes": 25,
+      "ingredients": [
+        {
+          "ingredient": "trout",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient": "potatoes",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient": "greenbeans",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "ingredient": "lemon",
+          "qty": 0.5,
+          "unit": "each"
+        }
+      ],
+      "method": [
+        "Steam 200g baby potatoes for 15 minutes.",
+        "Add 2 trout fillets and 200g green beans for the last 8–10 minutes.",
+        "Lightly crush the potatoes with 5ml olive oil, lemon juice and salt."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 585,
+        "protein": 57,
+        "carbs": 37,
+        "fat": 22
+      }
+    },
+    {
+      "id": "chicken-curry",
+      "name": "Chicken thigh curry",
+      "meal": "dinner",
+      "servingsCooked": 1,
+      "cookMinutes": 35,
+      "ingredients": [
+        {
+          "ingredient": "thigh",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient": "tomatoestin",
+          "qty": 1,
+          "unit": "tin"
+        },
+        {
+          "ingredient": "onion",
+          "qty": 0.5,
+          "unit": "each"
+        },
+        {
+          "ingredient": "pepper",
+          "qty": 0.7,
+          "unit": "each"
+        },
+        {
+          "ingredient": "spinach",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "ingredient": "ginger",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "ingredient": "curry",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "riceW",
+          "qty": 1,
+          "unit": "pouch"
+        }
+      ],
+      "method": [
+        "Trim 300g chicken thighs and cut into chunks.",
+        "Brown the chicken in a dry non-stick pan (thighs release their own fat); remove.",
+        "Soften chopped onion in the same pan; add garlic, ginger and 2 tsp curry powder for 1 minute.",
+        "Return the chicken with sliced pepper; add 1 tin tomatoes; simmer 20 minutes.",
+        "Stir in 80g frozen spinach. Serve with 1 white basmati pouch."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "post-session"
+      ],
+      "macros": {
+        "kcal": 989,
+        "protein": 74,
+        "carbs": 101,
+        "fat": 32
+      }
+    },
+    {
+      "id": "pork-loin",
+      "name": "Pork loin steaks with sweet potato",
+      "meal": "dinner",
+      "servingsCooked": 1,
+      "cookMinutes": 35,
+      "ingredients": [
+        {
+          "ingredient": "porkloin",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient": "sweetpotato",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient": "pepper",
+          "qty": 0.7,
+          "unit": "each"
+        },
+        {
+          "ingredient": "courgette",
+          "qty": 0.5,
+          "unit": "each"
+        },
+        {
+          "ingredient": "redonion",
+          "qty": 0.33,
+          "unit": "each"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "ingredient": "paprika",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "method": [
+        "Heat oven to 200°C (180°C fan).",
+        "Roast 200g sweet potato chunks, pepper, courgette and red onion with 5ml oil for 30 minutes.",
+        "Season 250g pork loin steaks with paprika; pan-fry or grill 4–5 minutes each side until cooked through."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 627,
+        "protein": 61,
+        "carbs": 47,
+        "fat": 20
+      }
+    },
+    {
+      "id": "beef-meatballs",
+      "name": "Beef meatballs with spaghetti",
+      "meal": "dinner",
+      "servingsCooked": 1,
+      "cookMinutes": 30,
+      "ingredients": [
+        {
+          "ingredient": "beefmince",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient": "onion",
+          "qty": 0.25,
+          "unit": "each"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "ingredient": "italianherbs",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "tomatoestin",
+          "qty": 1,
+          "unit": "tin"
+        },
+        {
+          "ingredient": "spaghetti",
+          "qty": 80,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Mix 200g beef mince with finely grated onion, 1 garlic clove and herbs; roll into 8 balls.",
+        "Brown in a dry non-stick pan; add 1 tin tomatoes and the other garlic clove; simmer 15 minutes.",
+        "Cook 80g wholewheat spaghetti and serve."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 631,
+        "protein": 58,
+        "carbs": 67,
+        "fat": 12
+      }
+    },
+    {
+      "id": "chicken-tagine",
+      "name": "Chicken & chickpea tagine",
+      "meal": "dinner",
+      "servingsCooked": 1,
+      "cookMinutes": 35,
+      "ingredients": [
+        {
+          "ingredient": "thigh",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient": "chickpeas",
+          "qty": 1,
+          "unit": "tin"
+        },
+        {
+          "ingredient": "tomatoestin",
+          "qty": 1,
+          "unit": "tin"
+        },
+        {
+          "ingredient": "onion",
+          "qty": 0.5,
+          "unit": "each"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "ingredient": "rasel",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "couscous",
+          "qty": 60,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Trim 300g chicken thighs (defrosted overnight) and cut into chunks.",
+        "Brown the chicken in a dry non-stick pan; add chopped onion, garlic and 2 tsp ras el hanout.",
+        "Add 1 tin chickpeas and 1 tin tomatoes; simmer 25 minutes.",
+        "Pour boiling water over 60g couscous, cover 5 minutes, fluff and serve."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "pre-run"
+      ],
+      "macros": {
+        "kcal": 1081,
+        "protein": 87,
+        "carbs": 96,
+        "fat": 34
+      }
+    },
+    {
+      "id": "sirloin",
+      "name": "Sirloin steak with roasted veg",
+      "meal": "dinner",
+      "servingsCooked": 1,
+      "cookMinutes": 35,
+      "ingredients": [
+        {
+          "ingredient": "sirloin",
+          "qty": 225,
+          "unit": "g"
+        },
+        {
+          "ingredient": "potatoes",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient": "pepper",
+          "qty": 0.7,
+          "unit": "each"
+        },
+        {
+          "ingredient": "courgette",
+          "qty": 0.5,
+          "unit": "each"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Halve 200g baby potatoes; roast with pepper and courgette in 5ml oil at 200°C for 30 minutes.",
+        "Pan-fry the sirloin 2–4 minutes each side to your liking. Rest 5 minutes."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 599,
+        "protein": 57,
+        "carbs": 37,
+        "fat": 24
+      }
+    },
+    {
+      "id": "quark-bowl",
+      "name": "Quark bowl",
+      "meal": "breakfast",
+      "servingsCooked": 1,
+      "cookMinutes": 3,
+      "ingredients": [
+        {
+          "ingredient": "quark",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient": "raspberries",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient": "oats",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "ingredient": "almonds",
+          "qty": 20,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "The night before: soak 30g oats in a splash of water.",
+        "Spoon 300g quark into a bowl; top with the oats, 100g frozen raspberries and 20g almonds."
+      ],
+      "prepAhead": "Soak oats the night before",
+      "tags": [],
+      "macros": {
+        "kcal": 468,
+        "protein": 45,
+        "carbs": 36,
+        "fat": 15
+      }
+    },
+    {
+      "id": "pancakes",
+      "name": "Banana oat pancakes",
+      "meal": "breakfast",
+      "servingsCooked": 1,
+      "cookMinutes": 15,
+      "ingredients": [
+        {
+          "ingredient": "oats",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient": "eggs",
+          "qty": 2,
+          "unit": "each"
+        },
+        {
+          "ingredient": "quark",
+          "qty": 200,
+          "unit": "g",
+          "note": "in the batter"
+        },
+        {
+          "ingredient": "banana",
+          "qty": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient": "quark",
+          "qty": 125,
+          "unit": "g",
+          "note": "on top"
+        },
+        {
+          "ingredient": "cinnamon",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 3,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Blitz 60g steel-cut oats to a flour.",
+        "Blend with 2 eggs, 200g quark, 1 banana and cinnamon.",
+        "Cook small pancakes in a non-stick pan with a little oil, 2 minutes each side.",
+        "Top with 125g quark. On Tuesday cook both days' batches and fridge Thursday's."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "pre-run"
+      ],
+      "macros": {
+        "kcal": 732,
+        "protein": 61,
+        "carbs": 74,
+        "fat": 19
+      }
+    },
+    {
+      "id": "shakshuka",
+      "name": "Shakshuka",
+      "meal": "breakfast",
+      "servingsCooked": 1,
+      "cookMinutes": 12,
+      "ingredients": [
+        {
+          "ingredient": "eggs",
+          "qty": 4,
+          "unit": "each"
+        },
+        {
+          "ingredient": "eggwhite",
+          "qty": 165,
+          "unit": "g"
+        },
+        {
+          "ingredient": "tomatoestin",
+          "qty": 0.67,
+          "unit": "tin"
+        },
+        {
+          "ingredient": "pepper",
+          "qty": 0.7,
+          "unit": "each"
+        },
+        {
+          "ingredient": "onion",
+          "qty": 0.33,
+          "unit": "each"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient": "cumin",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "paprika",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "ingredient": "sourdough",
+          "qty": 1,
+          "unit": "slice"
+        },
+        {
+          "ingredient": "kefir",
+          "qty": 115,
+          "unit": "ml"
+        }
+      ],
+      "method": [
+        "Uses the shakshuka sauce batch (2 tins tomatoes, 2 peppers, 1 onion, garlic, cumin, paprika, 15ml oil, simmered 20 minutes; makes 3 portions).",
+        "Heat one portion in a small pan. Stir in 165g egg whites, then make 4 wells and crack in 4 eggs.",
+        "Cover and cook on low for 6–8 minutes until set.",
+        "Serve with 1 slice of toasted sourdough and ~115ml kefir."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 694,
+        "protein": 57,
+        "carbs": 45,
+        "fat": 30
+      }
+    },
+    {
+      "id": "shakshuka-postrun",
+      "name": "Post-parkrun shakshuka",
+      "meal": "breakfast",
+      "servingsCooked": 1,
+      "cookMinutes": 12,
+      "ingredients": [
+        {
+          "ingredient": "eggs",
+          "qty": 4,
+          "unit": "each"
+        },
+        {
+          "ingredient": "eggwhite",
+          "qty": 165,
+          "unit": "g"
+        },
+        {
+          "ingredient": "tomatoestin",
+          "qty": 0.67,
+          "unit": "tin"
+        },
+        {
+          "ingredient": "pepper",
+          "qty": 0.7,
+          "unit": "each"
+        },
+        {
+          "ingredient": "onion",
+          "qty": 0.33,
+          "unit": "each"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient": "cumin",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "paprika",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "ingredient": "sourdough",
+          "qty": 2,
+          "unit": "slice"
+        },
+        {
+          "ingredient": "kefir",
+          "qty": 115,
+          "unit": "ml"
+        },
+        {
+          "ingredient": "orange",
+          "qty": 1,
+          "unit": "each"
+        }
+      ],
+      "method": [
+        "As shakshuka, with 2 slices of sourdough and an orange."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "post-run"
+      ],
+      "macros": {
+        "kcal": 851,
+        "protein": 62,
+        "carbs": 75,
+        "fat": 31
+      }
+    },
+    {
+      "id": "protein-bowl",
+      "name": "Cottage cheese & quinoa protein bowl",
+      "meal": "lunch",
+      "servingsCooked": 1,
+      "cookMinutes": 12,
+      "ingredients": [
+        {
+          "ingredient": "cottage",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient": "quinoa",
+          "qty": 1,
+          "unit": "pouch"
+        },
+        {
+          "ingredient": "edamame",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient": "cucumber",
+          "qty": 0.5,
+          "unit": "each"
+        },
+        {
+          "ingredient": "lemon",
+          "qty": 0.5,
+          "unit": "each"
+        }
+      ],
+      "method": [
+        "Steam 80g frozen edamame for 3–4 minutes.",
+        "Tip 1 quinoa pouch into a bowl; add 300g cottage cheese, sliced cucumber and the edamame.",
+        "Squeeze over lemon; season."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 772,
+        "protein": 55,
+        "carbs": 69,
+        "fat": 25
+      }
+    },
+    {
+      "id": "chicken-bulgur-90",
+      "name": "Lemon-herb chicken & bulgur",
+      "meal": "lunch",
+      "servingsCooked": 1,
+      "cookMinutes": 5,
+      "ingredients": [
+        {
+          "ingredient": "chicken",
+          "qty": 150,
+          "unit": "g",
+          "note": "batch-cooked"
+        },
+        {
+          "ingredient": "bulgur",
+          "qty": 90,
+          "unit": "g"
+        },
+        {
+          "ingredient": "pepper",
+          "qty": 0.6,
+          "unit": "each"
+        },
+        {
+          "ingredient": "courgette",
+          "qty": 0.4,
+          "unit": "each"
+        },
+        {
+          "ingredient": "redonion",
+          "qty": 0.25,
+          "unit": "each"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "ingredient": "lemon",
+          "qty": 0.5,
+          "unit": "each"
+        },
+        {
+          "ingredient": "oregano",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "method": [
+        "Uses chicken, bulgur and roasted veg batch-cooked on Monday evening.",
+        "Reheat in a pan until piping hot (or eat it cold as a salad)."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 574,
+        "protein": 49,
+        "carbs": 71,
+        "fat": 9
+      },
+      "batchCookedOn": "mon"
+    },
+    {
+      "id": "chicken-bulgur-60",
+      "name": "Lemon-herb chicken & bulgur (smaller)",
+      "meal": "lunch",
+      "servingsCooked": 1,
+      "cookMinutes": 5,
+      "ingredients": [
+        {
+          "ingredient": "chicken",
+          "qty": 150,
+          "unit": "g",
+          "note": "batch-cooked"
+        },
+        {
+          "ingredient": "bulgur",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient": "pepper",
+          "qty": 0.6,
+          "unit": "each"
+        },
+        {
+          "ingredient": "courgette",
+          "qty": 0.4,
+          "unit": "each"
+        },
+        {
+          "ingredient": "redonion",
+          "qty": 0.25,
+          "unit": "each"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "ingredient": "lemon",
+          "qty": 0.5,
+          "unit": "each"
+        },
+        {
+          "ingredient": "oregano",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "method": [
+        "As above, with the smaller bulgur portion."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 467,
+        "protein": 45,
+        "carbs": 50,
+        "fat": 8
+      },
+      "batchCookedOn": "mon"
+    },
+    {
+      "id": "larb-white",
+      "name": "Turkey larb with white rice",
+      "meal": "lunch",
+      "servingsCooked": 1,
+      "cookMinutes": 5,
+      "ingredients": [
+        {
+          "ingredient": "turkeymince",
+          "qty": 250,
+          "unit": "g",
+          "note": "batch-cooked"
+        },
+        {
+          "ingredient": "lime",
+          "qty": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient": "mint",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "ingredient": "coriander",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "ingredient": "springonion",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "ingredient": "chilli",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient": "fishsauce",
+          "qty": 10,
+          "unit": "ml"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 3,
+          "unit": "g"
+        },
+        {
+          "ingredient": "littlegem",
+          "qty": 1,
+          "unit": "head"
+        },
+        {
+          "ingredient": "riceW",
+          "qty": 1,
+          "unit": "pouch"
+        }
+      ],
+      "method": [
+        "Uses the second larb portion, batch-cooked on Wednesday evening.",
+        "Reheat in a pan until piping hot; stir through fresh mint, coriander and spring onion.",
+        "Serve in little gem leaves with 1 white basmati pouch."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "post-run"
+      ],
+      "macros": {
+        "kcal": 675,
+        "protein": 68,
+        "carbs": 78,
+        "fat": 13
+      },
+      "batchCookedOn": "wed"
+    },
+    {
+      "id": "larb-brown",
+      "name": "Turkey larb with brown rice",
+      "meal": "lunch",
+      "servingsCooked": 1,
+      "cookMinutes": 20,
+      "ingredients": [
+        {
+          "ingredient": "turkeymince",
+          "qty": 250,
+          "unit": "g",
+          "note": "batch-cooked"
+        },
+        {
+          "ingredient": "lime",
+          "qty": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient": "mint",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "ingredient": "coriander",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "ingredient": "springonion",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "ingredient": "chilli",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient": "fishsauce",
+          "qty": 10,
+          "unit": "ml"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 3,
+          "unit": "g"
+        },
+        {
+          "ingredient": "littlegem",
+          "qty": 1,
+          "unit": "head"
+        },
+        {
+          "ingredient": "riceB",
+          "qty": 1,
+          "unit": "pouch"
+        }
+      ],
+      "method": [
+        "Batch-cook the larb this evening: fry 500g turkey mince with garlic and chilli; finish with fish sauce and lime. Makes 2 portions.",
+        "Eat one portion now with fresh mint, coriander and spring onion, in little gem leaves, with 1 brown basmati pouch, straight from the pouch.",
+        "Cool the second portion quickly and fridge it for Thursday lunch."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 675,
+        "protein": 69,
+        "carbs": 73,
+        "fat": 14
+      },
+      "batchCookedOn": "wed"
+    },
+    {
+      "id": "sea-bass",
+      "name": "Steamed sea bass with ginger",
+      "meal": "dinner",
+      "servingsCooked": 1,
+      "cookMinutes": 25,
+      "ingredients": [
+        {
+          "ingredient": "seabass",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient": "ginger",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "ingredient": "springonion",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "ingredient": "soy",
+          "qty": 10,
+          "unit": "ml"
+        },
+        {
+          "ingredient": "potatoes",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient": "edamame",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Steam 200g baby potatoes for 10 minutes.",
+        "Lay 2 sea bass fillets on top with shredded ginger and spring onion; add 80g edamame. Steam 8–10 minutes.",
+        "Drizzle with 10ml soy sauce and 5ml oil."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 533,
+        "protein": 53,
+        "carbs": 36,
+        "fat": 19
+      }
+    },
+    {
+      "id": "honey-garlic-chicken",
+      "name": "Honey-garlic chicken",
+      "meal": "dinner",
+      "servingsCooked": 1,
+      "cookMinutes": 20,
+      "ingredients": [
+        {
+          "ingredient": "chicken",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient": "honey",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "ingredient": "soy",
+          "qty": 15,
+          "unit": "ml"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "ingredient": "riceW",
+          "qty": 1,
+          "unit": "pouch"
+        },
+        {
+          "ingredient": "broccoli",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Cut 200g chicken breast into chunks; fry in 5ml oil for 8 minutes.",
+        "Add 2 crushed garlic cloves, 15g honey and 15ml soy; bubble 2 minutes until sticky.",
+        "Steam 150g broccoli. Serve with 1 white basmati pouch."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "post-session"
+      ],
+      "macros": {
+        "kcal": 725,
+        "protein": 62,
+        "carbs": 93,
+        "fat": 12
+      }
+    },
+    {
+      "id": "turkey-steaks",
+      "name": "Turkey steaks with sweet potato",
+      "meal": "dinner",
+      "servingsCooked": 1,
+      "cookMinutes": 25,
+      "ingredients": [
+        {
+          "ingredient": "turkeysteak",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient": "sweetpotato",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient": "greens",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "ingredient": "paprika",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "method": [
+        "Steam 250g sweet potato chunks for 15 minutes; add 250g shredded greens for the last 5.",
+        "Season the turkey steaks with paprika; pan-fry in 5ml oil 4–5 minutes each side until cooked through."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 595,
+        "protein": 70,
+        "carbs": 55,
+        "fat": 9
+      }
+    },
+    {
+      "id": "salmon-noodles",
+      "name": "Salmon & noodle stir-fry",
+      "meal": "dinner",
+      "servingsCooked": 1,
+      "cookMinutes": 20,
+      "ingredients": [
+        {
+          "ingredient": "salmon",
+          "qty": 240,
+          "unit": "g"
+        },
+        {
+          "ingredient": "noodles",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient": "pepper",
+          "qty": 0.7,
+          "unit": "each"
+        },
+        {
+          "ingredient": "broccoli",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient": "springonion",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "ingredient": "ginger",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient": "soy",
+          "qty": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": [
+        "Steam 2 salmon fillets for 10–12 minutes; flake.",
+        "Cook 60g wholewheat noodles.",
+        "Stir-fry sliced pepper, 200g broccoli, ginger and garlic for 4 minutes (a splash of water stops sticking).",
+        "Toss in noodles, salmon, spring onion and 15ml soy."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 812,
+        "protein": 65,
+        "carbs": 50,
+        "fat": 35
+      }
+    },
+    {
+      "id": "arrabbiata",
+      "name": "Chicken arrabbiata",
+      "meal": "dinner",
+      "servingsCooked": 1,
+      "cookMinutes": 30,
+      "ingredients": [
+        {
+          "ingredient": "chicken",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient": "tomatoestin",
+          "qty": 1,
+          "unit": "tin"
+        },
+        {
+          "ingredient": "onion",
+          "qty": 0.33,
+          "unit": "each"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "ingredient": "chilli",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "ingredient": "pasta",
+          "qty": 100,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Fry 150g chicken chunks in 5ml oil for 6 minutes; remove.",
+        "Soften onion and garlic; add chilli flakes and 1 tin tomatoes; simmer 15 minutes.",
+        "Return the chicken; cook 5 minutes. Toss with 100g cooked wholewheat penne."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "pre-run"
+      ],
+      "macros": {
+        "kcal": 662,
+        "protein": 54,
+        "carbs": 81,
+        "fat": 10
+      }
+    },
+    {
+      "id": "rump-steak",
+      "name": "Rump steak with chimichurri",
+      "meal": "dinner",
+      "servingsCooked": 1,
+      "cookMinutes": 25,
+      "ingredients": [
+        {
+          "ingredient": "rump",
+          "qty": 225,
+          "unit": "g"
+        },
+        {
+          "ingredient": "potatoes",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient": "greenbeans",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient": "parsley",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "ingredient": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient": "vinegar",
+          "qty": 10,
+          "unit": "ml"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "ingredient": "chilli",
+          "qty": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "method": [
+        "Steam 200g baby potatoes for 15 minutes, adding 200g green beans for the last 6.",
+        "Chimichurri: finely chop 15g parsley and 1 garlic clove; mix with 10ml olive oil, 10ml vinegar and chilli.",
+        "Pan-fry the rump 2–4 minutes each side; rest 5 minutes. Spoon over the chimichurri."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 597,
+        "protein": 56,
+        "carbs": 37,
+        "fat": 23
+      }
+    }
+  ],
+  "weeks": [
+    {
+      "week": 1,
+      "days": [
+        {
+          "day": "fri",
+          "dayName": "Friday",
+          "dayIndex": 1,
+          "training": {
+            "label": "Shopping first thing. Rest — carb-rich dinner for parkrun",
+            "carbTarget": "medium"
+          },
+          "meals": [
+            {
+              "time": "09:00",
+              "slot": "breakfast",
+              "recipe": "skyr-bowl",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": "chicken-traybake",
+              "free": false
+            },
+            {
+              "time": "17:00",
+              "slot": "dinner",
+              "recipe": "beef-bolognese",
+              "free": false
+            }
+          ],
+          "prep": [
+            "First thing: shopping (Week 1 list)",
+            "After shopping: bag and freeze the items marked 'freeze on arrival' (one bag per portion, labelled)"
+          ],
+          "totals": {
+            "kcal": 1917,
+            "protein": 182,
+            "carbs": 187,
+            "fat": 42
+          },
+          "note": null
+        },
+        {
+          "day": "sat",
+          "dayName": "Saturday",
+          "dayIndex": 2,
+          "training": {
+            "label": "parkrun (morning)",
+            "carbTarget": "high"
+          },
+          "meals": [
+            {
+              "time": "07:30",
+              "slot": "pre-run",
+              "recipe": "prerun-banana",
+              "free": false
+            },
+            {
+              "time": "10:00",
+              "slot": "breakfast",
+              "recipe": "eggs-salmon-postrun",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": null,
+              "free": true
+            },
+            {
+              "time": "17:00",
+              "slot": "dinner",
+              "recipe": null,
+              "free": true
+            }
+          ],
+          "prep": [],
+          "totals": {
+            "kcal": 842,
+            "protein": 55,
+            "carbs": 74,
+            "fat": 33
+          },
+          "note": "Lunch and dinner free"
+        },
+        {
+          "day": "sun",
+          "dayName": "Sunday",
+          "dayIndex": 3,
+          "training": {
+            "label": "Rest",
+            "carbTarget": "low"
+          },
+          "meals": [
+            {
+              "time": "08:00",
+              "slot": "breakfast",
+              "recipe": "eggs-salmon",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": "chicken-bean-salad",
+              "free": false
+            },
+            {
+              "time": "17:00",
+              "slot": "dinner",
+              "recipe": "roast-chicken",
+              "free": false
+            }
+          ],
+          "prep": [
+            "Evening: soak oats for tomorrow's skyr bowl",
+            "Evening: move 240g salmon fillets (boneless) from freezer to fridge for Monday"
+          ],
+          "totals": {
+            "kcal": 1845,
+            "protein": 195,
+            "carbs": 104,
+            "fat": 69
+          },
+          "note": null
+        },
+        {
+          "day": "mon",
+          "dayName": "Monday",
+          "dayIndex": 4,
+          "training": {
+            "label": "Rest (optional second run later)",
+            "carbTarget": "low"
+          },
+          "meals": [
+            {
+              "time": "08:00",
+              "slot": "breakfast",
+              "recipe": "skyr-bowl",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": "tuna-bean-salad",
+              "free": false
+            },
+            {
+              "time": "17:00",
+              "slot": "dinner",
+              "recipe": "salmon-traybake",
+              "free": false
+            }
+          ],
+          "prep": [
+            "Evening: batch-cook 300g chicken breast + roasted veg (1 pepper, 1 courgette, ½ red onion, paprika, 10ml oil) for Tue/Wed lunches",
+            "Evening: soak oats in milk for tomorrow's overnight oats with banana",
+            "Evening: move 250g beef steak mince 5% from freezer to fridge for Tuesday"
+          ],
+          "totals": {
+            "kcal": 1767,
+            "protein": 158,
+            "carbs": 110,
+            "fat": 71
+          },
+          "note": null
+        },
+        {
+          "day": "tue",
+          "dayName": "Tuesday",
+          "dayIndex": 5,
+          "training": {
+            "label": "Badminton 6–7pm",
+            "carbTarget": "high"
+          },
+          "meals": [
+            {
+              "time": "08:00",
+              "slot": "breakfast",
+              "recipe": "overnight-oats",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": "chicken-rice-white",
+              "free": false
+            },
+            {
+              "time": "16:30",
+              "slot": "snack",
+              "recipe": "banana-snack",
+              "free": false
+            },
+            {
+              "time": "19:15",
+              "slot": "dinner",
+              "recipe": "beef-stirfry",
+              "free": false
+            }
+          ],
+          "prep": [
+            "Evening: move 500g turkey breast mince 2% from freezer to fridge for Wednesday"
+          ],
+          "totals": {
+            "kcal": 2201,
+            "protein": 158,
+            "carbs": 276,
+            "fat": 51
+          },
+          "note": null
+        },
+        {
+          "day": "wed",
+          "dayName": "Wednesday",
+          "dayIndex": 6,
+          "training": {
+            "label": "Recovery",
+            "carbTarget": "low"
+          },
+          "meals": [
+            {
+              "time": "08:00",
+              "slot": "breakfast",
+              "recipe": "eggs-salmon",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": "chicken-rice-brown",
+              "free": false
+            },
+            {
+              "time": "17:00",
+              "slot": "dinner",
+              "recipe": "turkey-chilli-brown",
+              "free": false
+            }
+          ],
+          "prep": [
+            "Evening: batch-cook the turkey chilli (see tonight's dinner recipe) — eat one portion, fridge one for Thursday",
+            "Evening: soak oats in milk for tomorrow's overnight oats with banana",
+            "Evening: move 250g cod fillets from freezer to fridge for Thursday"
+          ],
+          "totals": {
+            "kcal": 1773,
+            "protein": 172,
+            "carbs": 139,
+            "fat": 58
+          },
+          "note": null
+        },
+        {
+          "day": "thu",
+          "dayName": "Thursday",
+          "dayIndex": 7,
+          "training": {
+            "label": "Training run ~10:30am",
+            "carbTarget": "high"
+          },
+          "meals": [
+            {
+              "time": "08:00",
+              "slot": "breakfast",
+              "recipe": "overnight-oats",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": "turkey-chilli-white",
+              "free": false
+            },
+            {
+              "time": "17:00",
+              "slot": "dinner",
+              "recipe": "cod-potatoes",
+              "free": false
+            }
+          ],
+          "prep": [
+            "Evening: boil 2 eggs for tomorrow's breakfast"
+          ],
+          "totals": {
+            "kcal": 2086,
+            "protein": 181,
+            "carbs": 236,
+            "fat": 46
+          },
+          "note": null
+        }
+      ],
+      "shopping": [
+        {
+          "ingredient": "potatoes",
+          "name": "Baby / new potatoes",
+          "category": "core",
+          "totalQty": 700.0,
+          "unit": "g",
+          "packSize": 1000,
+          "packUnit": "g",
+          "stockTracked": true,
+          "usedOnDays": [
+            "sun",
+            "mon",
+            "thu"
+          ],
+          "buy": "1 × 1000g"
+        },
+        {
+          "ingredient": "banana",
+          "name": "Bananas",
+          "category": "core",
+          "totalQty": 4.0,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat",
+            "tue",
+            "thu"
+          ],
+          "buy": "4 loose"
+        },
+        {
+          "ingredient": "carrots",
+          "name": "Carrots",
+          "category": "core",
+          "totalQty": 1.0,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": true,
+          "usedOnDays": [
+            "fri"
+          ],
+          "buy": "1 loose"
+        },
+        {
+          "ingredient": "eggs",
+          "name": "Eggs, large",
+          "category": "core",
+          "totalQty": 14.0,
+          "unit": "each",
+          "packSize": 15,
+          "packUnit": "each",
+          "stockTracked": true,
+          "usedOnDays": [
+            "sat",
+            "sun",
+            "mon",
+            "tue",
+            "wed",
+            "thu"
+          ],
+          "buy": "14 loose"
+        },
+        {
+          "ingredient": "ginger",
+          "name": "Fresh ginger",
+          "category": "core",
+          "totalQty": 10.0,
+          "unit": "g",
+          "packSize": 1,
+          "packUnit": "piece",
+          "stockTracked": true,
+          "usedOnDays": [
+            "tue"
+          ],
+          "buy": "1 if you're running low"
+        },
+        {
+          "ingredient": "garlic",
+          "name": "Garlic",
+          "category": "core",
+          "totalQty": 6.0,
+          "unit": "clove",
+          "packSize": 1,
+          "packUnit": "bulb",
+          "stockTracked": true,
+          "usedOnDays": [
+            "fri",
+            "tue",
+            "wed",
+            "thu"
+          ],
+          "buy": "1 if you're running low"
+        },
+        {
+          "ingredient": "onion",
+          "name": "Onions",
+          "category": "core",
+          "totalQty": 1.32,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": true,
+          "usedOnDays": [
+            "fri",
+            "tue",
+            "wed",
+            "thu"
+          ],
+          "buy": "2 loose"
+        },
+        {
+          "ingredient": "redonion",
+          "name": "Red onions",
+          "category": "core",
+          "totalQty": 1.13,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": true,
+          "usedOnDays": [
+            "fri",
+            "sun",
+            "mon",
+            "tue",
+            "wed"
+          ],
+          "buy": "2 loose"
+        },
+        {
+          "ingredient": "beefmince",
+          "name": "Beef steak mince 5%",
+          "category": "fresh",
+          "totalQty": 500.0,
+          "unit": "g",
+          "packSize": 500,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "tue"
+          ],
+          "buy": "1 × 500g",
+          "freezeOnArrival": [
+            {
+              "cookDay": "tue",
+              "qty": 250.0,
+              "defrostEvening": "mon"
+            }
+          ]
+        },
+        {
+          "ingredient": "broccoli",
+          "name": "Broccoli",
+          "category": "fresh",
+          "totalQty": 350.0,
+          "unit": "g",
+          "packSize": 350,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun",
+            "mon",
+            "thu"
+          ],
+          "buy": "1 × 350g"
+        },
+        {
+          "ingredient": "chicken",
+          "name": "Chicken breast fillets",
+          "category": "fresh",
+          "totalQty": 1000.0,
+          "unit": "g",
+          "packSize": null,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "sun",
+            "tue",
+            "wed"
+          ],
+          "buy": "1 × 1kg pack"
+        },
+        {
+          "ingredient": "cod",
+          "name": "Cod fillets",
+          "category": "fresh",
+          "totalQty": 250.0,
+          "unit": "g",
+          "packSize": 250,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "thu"
+          ],
+          "buy": "1 × 250g",
+          "freezeOnArrival": [
+            {
+              "cookDay": "thu",
+              "qty": 250.0,
+              "defrostEvening": "wed"
+            }
+          ]
+        },
+        {
+          "ingredient": "courgette",
+          "name": "Courgette",
+          "category": "fresh",
+          "totalQty": 1.0,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "wed"
+          ],
+          "buy": "1 loose"
+        },
+        {
+          "ingredient": "greenbeans",
+          "name": "Green beans",
+          "category": "fresh",
+          "totalQty": 200.0,
+          "unit": "g",
+          "packSize": 200,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun",
+            "tue"
+          ],
+          "buy": "1 × 200g"
+        },
+        {
+          "ingredient": "kefir",
+          "name": "Kefir, plain",
+          "category": "fresh",
+          "totalQty": 350.0,
+          "unit": "ml",
+          "packSize": 350,
+          "packUnit": "ml",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun",
+            "wed"
+          ],
+          "buy": "1 × 350ml"
+        },
+        {
+          "ingredient": "lemon",
+          "name": "Lemons",
+          "category": "fresh",
+          "totalQty": 2.0,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun",
+            "mon",
+            "thu"
+          ],
+          "buy": "2 loose"
+        },
+        {
+          "ingredient": "lime",
+          "name": "Limes",
+          "category": "fresh",
+          "totalQty": 1.0,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue"
+          ],
+          "buy": "1 loose"
+        },
+        {
+          "ingredient": "littlegem",
+          "name": "Little gem lettuce (2-pack)",
+          "category": "fresh",
+          "totalQty": 2.0,
+          "unit": "head",
+          "packSize": 2,
+          "packUnit": "heads",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun",
+            "mon"
+          ],
+          "buy": "1 × 2-pack"
+        },
+        {
+          "ingredient": "orange",
+          "name": "Oranges",
+          "category": "fresh",
+          "totalQty": 1.0,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat"
+          ],
+          "buy": "1 loose"
+        },
+        {
+          "ingredient": "pepper",
+          "name": "Peppers",
+          "category": "fresh",
+          "totalQty": 3.6,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "tue",
+            "wed",
+            "thu"
+          ],
+          "buy": "4 loose"
+        },
+        {
+          "ingredient": "salmon",
+          "name": "Salmon fillets (boneless)",
+          "category": "fresh",
+          "totalQty": 240.0,
+          "unit": "g",
+          "packSize": 240,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "mon"
+          ],
+          "buy": "1 × 240g",
+          "freezeOnArrival": [
+            {
+              "cookDay": "mon",
+              "qty": 240.0,
+              "defrostEvening": "sun"
+            }
+          ]
+        },
+        {
+          "ingredient": "milk",
+          "name": "Semi-skimmed milk",
+          "category": "fresh",
+          "totalQty": 568.0,
+          "unit": "ml",
+          "packSize": 568,
+          "packUnit": "ml",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "thu"
+          ],
+          "buy": "1 × 568ml"
+        },
+        {
+          "ingredient": "skyr",
+          "name": "Skyr, plain 0%",
+          "category": "fresh",
+          "totalQty": 900.0,
+          "unit": "g",
+          "packSize": 450,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "mon",
+            "tue",
+            "thu"
+          ],
+          "buy": "2 × 450g"
+        },
+        {
+          "ingredient": "smokedsalmon",
+          "name": "Smoked salmon",
+          "category": "fresh",
+          "totalQty": 300.0,
+          "unit": "g",
+          "packSize": null,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat",
+            "sun",
+            "wed"
+          ],
+          "buy": "1 × 200g (Sat/Sun) + 1 × 100g (Wed)"
+        },
+        {
+          "ingredient": "sweetpotato",
+          "name": "Sweet potato",
+          "category": "fresh",
+          "totalQty": 250.0,
+          "unit": "g",
+          "packSize": null,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri"
+          ],
+          "buy": "250g loose"
+        },
+        {
+          "ingredient": "turkeymince",
+          "name": "Turkey breast mince 2%",
+          "category": "fresh",
+          "totalQty": 500.0,
+          "unit": "g",
+          "packSize": 500,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "wed",
+            "thu"
+          ],
+          "buy": "1 × 500g",
+          "freezeOnArrival": [
+            {
+              "cookDay": "wed",
+              "qty": 500.0,
+              "defrostEvening": "tue"
+            }
+          ]
+        },
+        {
+          "ingredient": "berries",
+          "name": "Frozen mixed berries",
+          "category": "frozen",
+          "totalQty": 200.0,
+          "unit": "g",
+          "packSize": 500,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "mon"
+          ]
+        },
+        {
+          "ingredient": "peas",
+          "name": "Frozen peas",
+          "category": "frozen",
+          "totalQty": 80.0,
+          "unit": "g",
+          "packSize": 900,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "spinach",
+          "name": "Frozen spinach",
+          "category": "frozen",
+          "totalQty": 240.0,
+          "unit": "g",
+          "packSize": 900,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat",
+            "sun",
+            "wed"
+          ]
+        },
+        {
+          "ingredient": "sourdough",
+          "name": "Sourdough (flour, water, salt only)",
+          "category": "frozen",
+          "totalQty": 4.0,
+          "unit": "slice",
+          "packSize": 1,
+          "packUnit": "loaf",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat",
+            "sun",
+            "wed"
+          ]
+        },
+        {
+          "ingredient": "riceB",
+          "name": "Brown basmati rice pouch",
+          "category": "pantry",
+          "totalQty": 1.0,
+          "unit": "pouch",
+          "packSize": 1,
+          "packUnit": "pouch",
+          "stockTracked": false,
+          "usedOnDays": [
+            "wed"
+          ]
+        },
+        {
+          "ingredient": "butterbeans",
+          "name": "Butter beans, tinned",
+          "category": "pantry",
+          "totalQty": 2.0,
+          "unit": "tin",
+          "packSize": 1,
+          "packUnit": "tin",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun",
+            "mon"
+          ]
+        },
+        {
+          "ingredient": "chilli",
+          "name": "Chilli flakes",
+          "category": "pantry",
+          "totalQty": 1.5,
+          "unit": "tsp",
+          "packSize": 1,
+          "packUnit": "jar",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "wed",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "tomatoestin",
+          "name": "Chopped tomatoes, tinned",
+          "category": "pantry",
+          "totalQty": 2.0,
+          "unit": "tin",
+          "packSize": 1,
+          "packUnit": "tin",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "wed",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "italianherbs",
+          "name": "Dried mixed herbs",
+          "category": "pantry",
+          "totalQty": 1.0,
+          "unit": "tsp",
+          "packSize": 1,
+          "packUnit": "jar",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri"
+          ]
+        },
+        {
+          "ingredient": "cumin",
+          "name": "Ground cumin",
+          "category": "pantry",
+          "totalQty": 2.0,
+          "unit": "tsp",
+          "packSize": 1,
+          "packUnit": "jar",
+          "stockTracked": false,
+          "usedOnDays": [
+            "wed",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "kidneybeans",
+          "name": "Kidney beans, tinned",
+          "category": "pantry",
+          "totalQty": 1.0,
+          "unit": "tin",
+          "packSize": 1,
+          "packUnit": "tin",
+          "stockTracked": false,
+          "usedOnDays": [
+            "wed",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "oil",
+          "name": "Olive oil",
+          "category": "pantry",
+          "totalQty": 76.0,
+          "unit": "g",
+          "packSize": 1000,
+          "packUnit": "ml",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "sat",
+            "sun",
+            "mon",
+            "tue",
+            "wed",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "pumpkinseeds",
+          "name": "Pumpkin seeds",
+          "category": "pantry",
+          "totalQty": 70.0,
+          "unit": "g",
+          "packSize": 150,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "mon",
+            "tue",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "paprika",
+          "name": "Smoked paprika",
+          "category": "pantry",
+          "totalQty": 5.0,
+          "unit": "tsp",
+          "packSize": 1,
+          "packUnit": "jar",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "tue",
+            "wed",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "soy",
+          "name": "Soy sauce",
+          "category": "pantry",
+          "totalQty": 15.0,
+          "unit": "ml",
+          "packSize": 150,
+          "packUnit": "ml",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue"
+          ]
+        },
+        {
+          "ingredient": "oats",
+          "name": "Steel-cut oats",
+          "category": "pantry",
+          "totalQty": 200.0,
+          "unit": "g",
+          "packSize": 1000,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "mon",
+            "tue",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "tuna",
+          "name": "Tuna in spring water",
+          "category": "pantry",
+          "totalQty": 1.0,
+          "unit": "tin",
+          "packSize": 1,
+          "packUnit": "tin",
+          "stockTracked": false,
+          "usedOnDays": [
+            "mon"
+          ]
+        },
+        {
+          "ingredient": "riceW",
+          "name": "White basmati rice pouch",
+          "category": "pantry",
+          "totalQty": 3.0,
+          "unit": "pouch",
+          "packSize": 1,
+          "packUnit": "pouch",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "spaghetti",
+          "name": "Wholewheat spaghetti",
+          "category": "pantry",
+          "totalQty": 100.0,
+          "unit": "g",
+          "packSize": 500,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri"
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "days": [
+        {
+          "day": "fri",
+          "dayName": "Friday",
+          "dayIndex": 1,
+          "training": {
+            "label": "Shopping first thing. Rest — carb-rich dinner for parkrun",
+            "carbTarget": "medium"
+          },
+          "meals": [
+            {
+              "time": "09:00",
+              "slot": "breakfast",
+              "recipe": "cottage-rye",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": "pork-loin",
+              "free": false
+            },
+            {
+              "time": "17:00",
+              "slot": "dinner",
+              "recipe": "chicken-tagine",
+              "free": false
+            }
+          ],
+          "prep": [
+            "First thing: shopping (Week 2 list)",
+            "After shopping: bag and freeze the items marked 'freeze on arrival' (one bag per portion, labelled)"
+          ],
+          "totals": {
+            "kcal": 2350,
+            "protein": 202,
+            "carbs": 195,
+            "fat": 77
+          },
+          "note": null
+        },
+        {
+          "day": "sat",
+          "dayName": "Saturday",
+          "dayIndex": 2,
+          "training": {
+            "label": "parkrun (morning)",
+            "carbTarget": "high"
+          },
+          "meals": [
+            {
+              "time": "07:30",
+              "slot": "pre-run",
+              "recipe": "prerun-banana",
+              "free": false
+            },
+            {
+              "time": "10:00",
+              "slot": "breakfast",
+              "recipe": "feta-omelette-postrun",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": null,
+              "free": true
+            },
+            {
+              "time": "17:00",
+              "slot": "dinner",
+              "recipe": null,
+              "free": true
+            }
+          ],
+          "prep": [],
+          "totals": {
+            "kcal": 863,
+            "protein": 57,
+            "carbs": 78,
+            "fat": 32
+          },
+          "note": "Lunch and dinner free"
+        },
+        {
+          "day": "sun",
+          "dayName": "Sunday",
+          "dayIndex": 3,
+          "training": {
+            "label": "Rest",
+            "carbTarget": "low"
+          },
+          "meals": [
+            {
+              "time": "08:00",
+              "slot": "breakfast",
+              "recipe": "feta-omelette",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": "egg-lentil-salad",
+              "free": false
+            },
+            {
+              "time": "17:00",
+              "slot": "dinner",
+              "recipe": "sirloin",
+              "free": false
+            }
+          ],
+          "prep": [
+            "Evening: boil 2 eggs for Monday's breakfast",
+            "Evening: move 250g trout fillets, boneless from freezer to fridge for Monday"
+          ],
+          "totals": {
+            "kcal": 1998,
+            "protein": 165,
+            "carbs": 114,
+            "fat": 92
+          },
+          "note": null
+        },
+        {
+          "day": "mon",
+          "dayName": "Monday",
+          "dayIndex": 4,
+          "training": {
+            "label": "Rest (optional second run later)",
+            "carbTarget": "low"
+          },
+          "meals": [
+            {
+              "time": "08:00",
+              "slot": "breakfast",
+              "recipe": "cottage-rye",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": "egg-lentil-salad",
+              "free": false
+            },
+            {
+              "time": "17:00",
+              "slot": "dinner",
+              "recipe": "lemon-trout",
+              "free": false
+            }
+          ],
+          "prep": [
+            "Evening: batch-cook ~325g chicken breast souvlaki-style (lemon, oregano, garlic, 5ml oil) for Tue/Wed lunches",
+            "Evening: make tzatziki (150g skyr, ½ cucumber grated and squeezed, garlic, dried mint)",
+            "Evening: soak oats for tomorrow's apple & cinnamon overnight oats",
+            "Evening: move 300g chicken thigh fillets, boneless skinless from freezer to fridge for Tuesday"
+          ],
+          "totals": {
+            "kcal": 1943,
+            "protein": 162,
+            "carbs": 135,
+            "fat": 78
+          },
+          "note": null
+        },
+        {
+          "day": "tue",
+          "dayName": "Tuesday",
+          "dayIndex": 5,
+          "training": {
+            "label": "Badminton 6–7pm",
+            "carbTarget": "high"
+          },
+          "meals": [
+            {
+              "time": "08:00",
+              "slot": "breakfast",
+              "recipe": "apple-oats",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": "souvlaki-white",
+              "free": false
+            },
+            {
+              "time": "16:30",
+              "slot": "snack",
+              "recipe": "banana-snack",
+              "free": false
+            },
+            {
+              "time": "19:15",
+              "slot": "dinner",
+              "recipe": "chicken-curry",
+              "free": false
+            }
+          ],
+          "prep": [
+            "Evening: move 300g beef steak mince 5% from freezer to fridge for Wednesday"
+          ],
+          "totals": {
+            "kcal": 2422,
+            "protein": 170,
+            "carbs": 277,
+            "fat": 69
+          },
+          "note": null
+        },
+        {
+          "day": "wed",
+          "dayName": "Wednesday",
+          "dayIndex": 6,
+          "training": {
+            "label": "Recovery",
+            "carbTarget": "low"
+          },
+          "meals": [
+            {
+              "time": "08:00",
+              "slot": "breakfast",
+              "recipe": "feta-omelette",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": "souvlaki-brown",
+              "free": false
+            },
+            {
+              "time": "17:00",
+              "slot": "dinner",
+              "recipe": "burrito-brown",
+              "free": false
+            }
+          ],
+          "prep": [
+            "Evening: batch-cook the burrito beef (see tonight's dinner recipe) — eat one portion, fridge one for Thursday",
+            "Evening: soak oats for tomorrow's apple & cinnamon overnight oats",
+            "Evening: move 200g beef steak mince 5% from freezer to fridge for Thursday"
+          ],
+          "totals": {
+            "kcal": 1681,
+            "protein": 155,
+            "carbs": 131,
+            "fat": 55
+          },
+          "note": null
+        },
+        {
+          "day": "thu",
+          "dayName": "Thursday",
+          "dayIndex": 7,
+          "training": {
+            "label": "Training run ~10:30am",
+            "carbTarget": "high"
+          },
+          "meals": [
+            {
+              "time": "08:00",
+              "slot": "breakfast",
+              "recipe": "apple-oats",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": "burrito-white",
+              "free": false
+            },
+            {
+              "time": "17:00",
+              "slot": "dinner",
+              "recipe": "beef-meatballs",
+              "free": false
+            }
+          ],
+          "prep": [
+            "Evening: soak oats for tomorrow's quark bowl"
+          ],
+          "totals": {
+            "kcal": 1996,
+            "protein": 146,
+            "carbs": 233,
+            "fat": 49
+          },
+          "note": null
+        }
+      ],
+      "shopping": [
+        {
+          "ingredient": "potatoes",
+          "name": "Baby / new potatoes",
+          "category": "core",
+          "totalQty": 400.0,
+          "unit": "g",
+          "packSize": 1000,
+          "packUnit": "g",
+          "stockTracked": true,
+          "usedOnDays": [
+            "sun",
+            "mon"
+          ],
+          "buy": "1 × 1000g"
+        },
+        {
+          "ingredient": "banana",
+          "name": "Bananas",
+          "category": "core",
+          "totalQty": 2.0,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat",
+            "tue"
+          ],
+          "buy": "2 loose"
+        },
+        {
+          "ingredient": "eggs",
+          "name": "Eggs, large",
+          "category": "core",
+          "totalQty": 21.0,
+          "unit": "each",
+          "packSize": 15,
+          "packUnit": "each",
+          "stockTracked": true,
+          "usedOnDays": [
+            "fri",
+            "sat",
+            "sun",
+            "mon",
+            "tue",
+            "wed",
+            "thu"
+          ],
+          "buy": "21 loose"
+        },
+        {
+          "ingredient": "ginger",
+          "name": "Fresh ginger",
+          "category": "core",
+          "totalQty": 10.0,
+          "unit": "g",
+          "packSize": 1,
+          "packUnit": "piece",
+          "stockTracked": true,
+          "usedOnDays": [
+            "tue"
+          ],
+          "buy": "1 if you're running low"
+        },
+        {
+          "ingredient": "garlic",
+          "name": "Garlic",
+          "category": "core",
+          "totalQty": 7.0,
+          "unit": "clove",
+          "packSize": 1,
+          "packUnit": "bulb",
+          "stockTracked": true,
+          "usedOnDays": [
+            "fri",
+            "tue",
+            "wed",
+            "thu"
+          ],
+          "buy": "1 if you're running low"
+        },
+        {
+          "ingredient": "onion",
+          "name": "Onions",
+          "category": "core",
+          "totalQty": 1.25,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": true,
+          "usedOnDays": [
+            "fri",
+            "tue",
+            "thu"
+          ],
+          "buy": "2 loose"
+        },
+        {
+          "ingredient": "redonion",
+          "name": "Red onions",
+          "category": "core",
+          "totalQty": 0.63,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": true,
+          "usedOnDays": [
+            "fri",
+            "wed",
+            "thu"
+          ],
+          "buy": "1 loose"
+        },
+        {
+          "ingredient": "apple",
+          "name": "Apples",
+          "category": "fresh",
+          "totalQty": 2.0,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "thu"
+          ],
+          "buy": "2 loose"
+        },
+        {
+          "ingredient": "beefmince",
+          "name": "Beef steak mince 5%",
+          "category": "fresh",
+          "totalQty": 500.0,
+          "unit": "g",
+          "packSize": 500,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "wed",
+            "thu"
+          ],
+          "buy": "1 × 500g",
+          "freezeOnArrival": [
+            {
+              "cookDay": "wed",
+              "qty": 300.0,
+              "defrostEvening": "tue"
+            },
+            {
+              "cookDay": "thu",
+              "qty": 200.0,
+              "defrostEvening": "wed"
+            }
+          ]
+        },
+        {
+          "ingredient": "chicken",
+          "name": "Chicken breast fillets",
+          "category": "fresh",
+          "totalQty": 325.0,
+          "unit": "g",
+          "packSize": null,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "wed"
+          ],
+          "buy": "1 × ~325g pack (2 fillets)"
+        },
+        {
+          "ingredient": "thigh",
+          "name": "Chicken thigh fillets, boneless skinless",
+          "category": "fresh",
+          "totalQty": 600.0,
+          "unit": "g",
+          "packSize": 600,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "tue"
+          ],
+          "buy": "1 × 600g",
+          "freezeOnArrival": [
+            {
+              "cookDay": "tue",
+              "qty": 300.0,
+              "defrostEvening": "mon"
+            }
+          ]
+        },
+        {
+          "ingredient": "cottage",
+          "name": "Cottage cheese",
+          "category": "fresh",
+          "totalQty": 600.0,
+          "unit": "g",
+          "packSize": 300,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "mon"
+          ],
+          "buy": "2 × 300g"
+        },
+        {
+          "ingredient": "courgette",
+          "name": "Courgette",
+          "category": "fresh",
+          "totalQty": 1.0,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "sun"
+          ],
+          "buy": "1 loose"
+        },
+        {
+          "ingredient": "cucumber",
+          "name": "Cucumber",
+          "category": "fresh",
+          "totalQty": 1.0,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "wed"
+          ],
+          "buy": "1 loose"
+        },
+        {
+          "ingredient": "feta",
+          "name": "Feta",
+          "category": "fresh",
+          "totalQty": 200.0,
+          "unit": "g",
+          "packSize": 200,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat",
+            "sun",
+            "mon",
+            "wed"
+          ],
+          "buy": "1 × 200g"
+        },
+        {
+          "ingredient": "coriander",
+          "name": "Fresh coriander",
+          "category": "fresh",
+          "totalQty": 10.0,
+          "unit": "g",
+          "packSize": 30,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "wed",
+            "thu"
+          ],
+          "buy": "1 × 30g"
+        },
+        {
+          "ingredient": "rye",
+          "name": "German-style rye bread",
+          "category": "fresh",
+          "totalQty": 8.0,
+          "unit": "slice",
+          "packSize": 500,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "sat",
+            "sun",
+            "mon",
+            "wed"
+          ],
+          "buy": "1 × 500g pack (8 slices used; keeps)"
+        },
+        {
+          "ingredient": "greenbeans",
+          "name": "Green beans",
+          "category": "fresh",
+          "totalQty": 200.0,
+          "unit": "g",
+          "packSize": 200,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "mon"
+          ],
+          "buy": "1 × 200g"
+        },
+        {
+          "ingredient": "kefir",
+          "name": "Kefir, plain",
+          "category": "fresh",
+          "totalQty": 700.0,
+          "unit": "ml",
+          "packSize": 350,
+          "packUnit": "ml",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun",
+            "tue",
+            "wed",
+            "thu"
+          ],
+          "buy": "2 × 350ml"
+        },
+        {
+          "ingredient": "lemon",
+          "name": "Lemons",
+          "category": "fresh",
+          "totalQty": 2.5,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun",
+            "mon",
+            "tue",
+            "wed"
+          ],
+          "buy": "3 loose"
+        },
+        {
+          "ingredient": "lime",
+          "name": "Limes",
+          "category": "fresh",
+          "totalQty": 1.0,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "wed",
+            "thu"
+          ],
+          "buy": "1 loose"
+        },
+        {
+          "ingredient": "eggwhite",
+          "name": "Liquid egg whites (Two Chicks)",
+          "category": "fresh",
+          "totalQty": 495.0,
+          "unit": "g",
+          "packSize": 500,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat",
+            "sun",
+            "wed"
+          ],
+          "buy": "1 × 500g"
+        },
+        {
+          "ingredient": "littlegem",
+          "name": "Little gem lettuce (2-pack)",
+          "category": "fresh",
+          "totalQty": 2.0,
+          "unit": "head",
+          "packSize": 2,
+          "packUnit": "heads",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun",
+            "mon"
+          ],
+          "buy": "1 × 2-pack"
+        },
+        {
+          "ingredient": "mushrooms",
+          "name": "Mushrooms",
+          "category": "fresh",
+          "totalQty": 240.0,
+          "unit": "g",
+          "packSize": 250,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat",
+            "sun",
+            "wed"
+          ],
+          "buy": "1 × 250g"
+        },
+        {
+          "ingredient": "orange",
+          "name": "Oranges",
+          "category": "fresh",
+          "totalQty": 1.0,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat"
+          ],
+          "buy": "1 loose"
+        },
+        {
+          "ingredient": "pepper",
+          "name": "Peppers",
+          "category": "fresh",
+          "totalQty": 2.1,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "sun",
+            "tue"
+          ],
+          "buy": "3 loose"
+        },
+        {
+          "ingredient": "porkloin",
+          "name": "Pork loin steaks, fat trimmed",
+          "category": "fresh",
+          "totalQty": 250.0,
+          "unit": "g",
+          "packSize": 250,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri"
+          ],
+          "buy": "1 × 250g"
+        },
+        {
+          "ingredient": "sirloin",
+          "name": "Sirloin steak",
+          "category": "fresh",
+          "totalQty": 225.0,
+          "unit": "g",
+          "packSize": 225,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun"
+          ],
+          "buy": "1 × 225g"
+        },
+        {
+          "ingredient": "skyr",
+          "name": "Skyr, plain 0%",
+          "category": "fresh",
+          "totalQty": 450.0,
+          "unit": "g",
+          "packSize": 450,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "wed",
+            "thu"
+          ],
+          "buy": "1 × 450g"
+        },
+        {
+          "ingredient": "sweetpotato",
+          "name": "Sweet potato",
+          "category": "fresh",
+          "totalQty": 200.0,
+          "unit": "g",
+          "packSize": null,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri"
+          ],
+          "buy": "200g loose"
+        },
+        {
+          "ingredient": "tomatoes",
+          "name": "Tomatoes",
+          "category": "fresh",
+          "totalQty": 8.0,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "sun",
+            "mon",
+            "tue",
+            "wed",
+            "thu"
+          ],
+          "buy": "8 loose"
+        },
+        {
+          "ingredient": "trout",
+          "name": "Trout fillets, boneless",
+          "category": "fresh",
+          "totalQty": 250.0,
+          "unit": "g",
+          "packSize": 250,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "mon"
+          ],
+          "buy": "1 × 250g",
+          "freezeOnArrival": [
+            {
+              "cookDay": "mon",
+              "qty": 250.0,
+              "defrostEvening": "sun"
+            }
+          ]
+        },
+        {
+          "ingredient": "spinach",
+          "name": "Frozen spinach",
+          "category": "frozen",
+          "totalQty": 320.0,
+          "unit": "g",
+          "packSize": 900,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat",
+            "sun",
+            "tue",
+            "wed"
+          ]
+        },
+        {
+          "ingredient": "blackbeans",
+          "name": "Black beans, tinned",
+          "category": "pantry",
+          "totalQty": 1.0,
+          "unit": "tin",
+          "packSize": 1,
+          "packUnit": "tin",
+          "stockTracked": false,
+          "usedOnDays": [
+            "wed",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "riceB",
+          "name": "Brown basmati rice pouch",
+          "category": "pantry",
+          "totalQty": 1.0,
+          "unit": "pouch",
+          "packSize": 1,
+          "packUnit": "pouch",
+          "stockTracked": false,
+          "usedOnDays": [
+            "wed"
+          ]
+        },
+        {
+          "ingredient": "chickpeas",
+          "name": "Chickpeas, tinned",
+          "category": "pantry",
+          "totalQty": 1.0,
+          "unit": "tin",
+          "packSize": 1,
+          "packUnit": "tin",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri"
+          ]
+        },
+        {
+          "ingredient": "tomatoestin",
+          "name": "Chopped tomatoes, tinned",
+          "category": "pantry",
+          "totalQty": 3.0,
+          "unit": "tin",
+          "packSize": 1,
+          "packUnit": "tin",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "tue",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "curry",
+          "name": "Curry powder",
+          "category": "pantry",
+          "totalQty": 2.0,
+          "unit": "tsp",
+          "packSize": 1,
+          "packUnit": "jar",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue"
+          ]
+        },
+        {
+          "ingredient": "driedmint",
+          "name": "Dried mint",
+          "category": "pantry",
+          "totalQty": 1.0,
+          "unit": "tsp",
+          "packSize": 1,
+          "packUnit": "jar",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "wed"
+          ]
+        },
+        {
+          "ingredient": "italianherbs",
+          "name": "Dried mixed herbs",
+          "category": "pantry",
+          "totalQty": 1.0,
+          "unit": "tsp",
+          "packSize": 1,
+          "packUnit": "jar",
+          "stockTracked": false,
+          "usedOnDays": [
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "oregano",
+          "name": "Dried oregano",
+          "category": "pantry",
+          "totalQty": 2.0,
+          "unit": "tsp",
+          "packSize": 1,
+          "packUnit": "jar",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "wed"
+          ]
+        },
+        {
+          "ingredient": "cinnamon",
+          "name": "Ground cinnamon",
+          "category": "pantry",
+          "totalQty": 2.0,
+          "unit": "tsp",
+          "packSize": 1,
+          "packUnit": "jar",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "cumin",
+          "name": "Ground cumin",
+          "category": "pantry",
+          "totalQty": 2.0,
+          "unit": "tsp",
+          "packSize": 1,
+          "packUnit": "jar",
+          "stockTracked": false,
+          "usedOnDays": [
+            "wed",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "oil",
+          "name": "Olive oil",
+          "category": "pantry",
+          "totalQty": 50.0,
+          "unit": "g",
+          "packSize": 1000,
+          "packUnit": "ml",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "sat",
+            "sun",
+            "mon",
+            "tue",
+            "wed"
+          ]
+        },
+        {
+          "ingredient": "lentils",
+          "name": "Puy lentil pouch",
+          "category": "pantry",
+          "totalQty": 2.0,
+          "unit": "pouch",
+          "packSize": 1,
+          "packUnit": "pouch",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun",
+            "mon"
+          ]
+        },
+        {
+          "ingredient": "rasel",
+          "name": "Ras el hanout",
+          "category": "pantry",
+          "totalQty": 2.0,
+          "unit": "tsp",
+          "packSize": 1,
+          "packUnit": "jar",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri"
+          ]
+        },
+        {
+          "ingredient": "paprika",
+          "name": "Smoked paprika",
+          "category": "pantry",
+          "totalQty": 3.0,
+          "unit": "tsp",
+          "packSize": 1,
+          "packUnit": "jar",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "wed",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "oats",
+          "name": "Steel-cut oats",
+          "category": "pantry",
+          "totalQty": 120.0,
+          "unit": "g",
+          "packSize": 1000,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "walnuts",
+          "name": "Walnuts",
+          "category": "pantry",
+          "totalQty": 30.0,
+          "unit": "g",
+          "packSize": 150,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "riceW",
+          "name": "White basmati rice pouch",
+          "category": "pantry",
+          "totalQty": 3.0,
+          "unit": "pouch",
+          "packSize": 1,
+          "packUnit": "pouch",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "couscous",
+          "name": "Wholewheat couscous",
+          "category": "pantry",
+          "totalQty": 60.0,
+          "unit": "g",
+          "packSize": 500,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri"
+          ]
+        },
+        {
+          "ingredient": "spaghetti",
+          "name": "Wholewheat spaghetti",
+          "category": "pantry",
+          "totalQty": 80.0,
+          "unit": "g",
+          "packSize": 500,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "thu"
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "days": [
+        {
+          "day": "fri",
+          "dayName": "Friday",
+          "dayIndex": 1,
+          "training": {
+            "label": "Shopping first thing. Rest — carb-rich dinner for parkrun",
+            "carbTarget": "medium"
+          },
+          "meals": [
+            {
+              "time": "09:00",
+              "slot": "breakfast",
+              "recipe": "quark-bowl",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": "turkey-steaks",
+              "free": false
+            },
+            {
+              "time": "17:00",
+              "slot": "dinner",
+              "recipe": "arrabbiata",
+              "free": false
+            }
+          ],
+          "prep": [
+            "First thing: shopping (Week 3 list)",
+            "After shopping: bag and freeze the items marked 'freeze on arrival' (one bag per portion, labelled)",
+            "Evening: make shakshuka sauce (2 tins tomatoes, 2 peppers, 1 onion, garlic, cumin, paprika, 15ml oil; simmer 20 min; 3 portions)"
+          ],
+          "totals": {
+            "kcal": 1725,
+            "protein": 169,
+            "carbs": 172,
+            "fat": 34
+          },
+          "note": null
+        },
+        {
+          "day": "sat",
+          "dayName": "Saturday",
+          "dayIndex": 2,
+          "training": {
+            "label": "parkrun (morning)",
+            "carbTarget": "high"
+          },
+          "meals": [
+            {
+              "time": "07:30",
+              "slot": "pre-run",
+              "recipe": "prerun-banana",
+              "free": false
+            },
+            {
+              "time": "10:00",
+              "slot": "breakfast",
+              "recipe": "shakshuka-postrun",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": null,
+              "free": true
+            },
+            {
+              "time": "17:00",
+              "slot": "dinner",
+              "recipe": null,
+              "free": true
+            }
+          ],
+          "prep": [],
+          "totals": {
+            "kcal": 958,
+            "protein": 63,
+            "carbs": 99,
+            "fat": 31
+          },
+          "note": "Lunch and dinner free"
+        },
+        {
+          "day": "sun",
+          "dayName": "Sunday",
+          "dayIndex": 3,
+          "training": {
+            "label": "Rest",
+            "carbTarget": "low"
+          },
+          "meals": [
+            {
+              "time": "08:00",
+              "slot": "breakfast",
+              "recipe": "shakshuka",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": "protein-bowl",
+              "free": false
+            },
+            {
+              "time": "17:00",
+              "slot": "dinner",
+              "recipe": "rump-steak",
+              "free": false
+            }
+          ],
+          "prep": [
+            "Evening: soak oats for tomorrow's quark bowl",
+            "Evening: move 200g sea bass fillets from freezer to fridge for Monday"
+          ],
+          "totals": {
+            "kcal": 2063,
+            "protein": 168,
+            "carbs": 151,
+            "fat": 78
+          },
+          "note": null
+        },
+        {
+          "day": "mon",
+          "dayName": "Monday",
+          "dayIndex": 4,
+          "training": {
+            "label": "Rest (optional second run later)",
+            "carbTarget": "low"
+          },
+          "meals": [
+            {
+              "time": "08:00",
+              "slot": "breakfast",
+              "recipe": "quark-bowl",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": "protein-bowl",
+              "free": false
+            },
+            {
+              "time": "17:00",
+              "slot": "dinner",
+              "recipe": "sea-bass",
+              "free": false
+            }
+          ],
+          "prep": [
+            "Evening: batch-cook 300g chicken breast (lemon, oregano), 150g bulgur and roasted veg (1 pepper, 1 courgette, ½ red onion) for Tue/Wed lunches",
+            "Evening: move 200g chicken breast fillets from freezer to fridge for Tuesday"
+          ],
+          "totals": {
+            "kcal": 1773,
+            "protein": 153,
+            "carbs": 141,
+            "fat": 59
+          },
+          "note": null
+        },
+        {
+          "day": "tue",
+          "dayName": "Tuesday",
+          "dayIndex": 5,
+          "training": {
+            "label": "Badminton 6–7pm",
+            "carbTarget": "high"
+          },
+          "meals": [
+            {
+              "time": "08:00",
+              "slot": "breakfast",
+              "recipe": "pancakes",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": "chicken-bulgur-90",
+              "free": false
+            },
+            {
+              "time": "16:30",
+              "slot": "snack",
+              "recipe": "banana-snack",
+              "free": false
+            },
+            {
+              "time": "19:15",
+              "slot": "dinner",
+              "recipe": "honey-garlic-chicken",
+              "free": false
+            }
+          ],
+          "prep": [
+            "Morning: cook both days' pancakes; fridge Thursday's",
+            "Evening: move 500g turkey breast mince 2% from freezer to fridge for Wednesday"
+          ],
+          "totals": {
+            "kcal": 2138,
+            "protein": 173,
+            "carbs": 262,
+            "fat": 40
+          },
+          "note": null
+        },
+        {
+          "day": "wed",
+          "dayName": "Wednesday",
+          "dayIndex": 6,
+          "training": {
+            "label": "Recovery",
+            "carbTarget": "low"
+          },
+          "meals": [
+            {
+              "time": "08:00",
+              "slot": "breakfast",
+              "recipe": "shakshuka",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": "chicken-bulgur-60",
+              "free": false
+            },
+            {
+              "time": "17:00",
+              "slot": "dinner",
+              "recipe": "larb-brown",
+              "free": false
+            }
+          ],
+          "prep": [
+            "Evening: batch-cook the turkey larb (see tonight's dinner recipe) — eat one portion, fridge one for Thursday",
+            "Evening: move 240g salmon fillets (boneless) from freezer to fridge for Thursday"
+          ],
+          "totals": {
+            "kcal": 1836,
+            "protein": 171,
+            "carbs": 168,
+            "fat": 52
+          },
+          "note": null
+        },
+        {
+          "day": "thu",
+          "dayName": "Thursday",
+          "dayIndex": 7,
+          "training": {
+            "label": "Training run ~10:30am",
+            "carbTarget": "high"
+          },
+          "meals": [
+            {
+              "time": "08:00",
+              "slot": "breakfast",
+              "recipe": "pancakes",
+              "free": false
+            },
+            {
+              "time": "12:30",
+              "slot": "lunch",
+              "recipe": "larb-white",
+              "free": false
+            },
+            {
+              "time": "17:00",
+              "slot": "dinner",
+              "recipe": "salmon-noodles",
+              "free": false
+            }
+          ],
+          "prep": [
+            "Evening: soak oats for tomorrow's skyr bowl"
+          ],
+          "totals": {
+            "kcal": 2219,
+            "protein": 194,
+            "carbs": 202,
+            "fat": 67
+          },
+          "note": null
+        }
+      ],
+      "shopping": [
+        {
+          "ingredient": "potatoes",
+          "name": "Baby / new potatoes",
+          "category": "core",
+          "totalQty": 400.0,
+          "unit": "g",
+          "packSize": 1000,
+          "packUnit": "g",
+          "stockTracked": true,
+          "usedOnDays": [
+            "sun",
+            "mon"
+          ],
+          "buy": "1 × 1000g"
+        },
+        {
+          "ingredient": "banana",
+          "name": "Bananas",
+          "category": "core",
+          "totalQty": 4.0,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat",
+            "tue",
+            "thu"
+          ],
+          "buy": "4 loose"
+        },
+        {
+          "ingredient": "eggs",
+          "name": "Eggs, large",
+          "category": "core",
+          "totalQty": 16.0,
+          "unit": "each",
+          "packSize": 15,
+          "packUnit": "each",
+          "stockTracked": true,
+          "usedOnDays": [
+            "sat",
+            "sun",
+            "tue",
+            "wed",
+            "thu"
+          ],
+          "buy": "16 loose"
+        },
+        {
+          "ingredient": "ginger",
+          "name": "Fresh ginger",
+          "category": "core",
+          "totalQty": 20.0,
+          "unit": "g",
+          "packSize": 1,
+          "packUnit": "piece",
+          "stockTracked": true,
+          "usedOnDays": [
+            "mon",
+            "thu"
+          ],
+          "buy": "1 if you're running low"
+        },
+        {
+          "ingredient": "garlic",
+          "name": "Garlic",
+          "category": "core",
+          "totalQty": 11.0,
+          "unit": "clove",
+          "packSize": 1,
+          "packUnit": "bulb",
+          "stockTracked": true,
+          "usedOnDays": [
+            "fri",
+            "sat",
+            "sun",
+            "tue",
+            "wed",
+            "thu"
+          ],
+          "buy": "1 if you're running low"
+        },
+        {
+          "ingredient": "onion",
+          "name": "Onions",
+          "category": "core",
+          "totalQty": 1.32,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": true,
+          "usedOnDays": [
+            "fri",
+            "sat",
+            "sun",
+            "wed"
+          ],
+          "buy": "2 loose"
+        },
+        {
+          "ingredient": "redonion",
+          "name": "Red onions",
+          "category": "core",
+          "totalQty": 0.5,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": true,
+          "usedOnDays": [
+            "tue",
+            "wed"
+          ],
+          "buy": "1 loose"
+        },
+        {
+          "ingredient": "broccoli",
+          "name": "Broccoli",
+          "category": "fresh",
+          "totalQty": 350.0,
+          "unit": "g",
+          "packSize": 350,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "thu"
+          ],
+          "buy": "1 × 350g"
+        },
+        {
+          "ingredient": "chicken",
+          "name": "Chicken breast fillets",
+          "category": "fresh",
+          "totalQty": 650.0,
+          "unit": "g",
+          "packSize": null,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "tue",
+            "wed"
+          ],
+          "buy": "1 × 650g pack",
+          "freezeOnArrival": [
+            {
+              "cookDay": "tue",
+              "qty": 200.0,
+              "defrostEvening": "mon"
+            }
+          ]
+        },
+        {
+          "ingredient": "cottage",
+          "name": "Cottage cheese",
+          "category": "fresh",
+          "totalQty": 600.0,
+          "unit": "g",
+          "packSize": 300,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun",
+            "mon"
+          ],
+          "buy": "2 × 300g"
+        },
+        {
+          "ingredient": "courgette",
+          "name": "Courgette",
+          "category": "fresh",
+          "totalQty": 0.8,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "wed"
+          ],
+          "buy": "1 loose"
+        },
+        {
+          "ingredient": "cucumber",
+          "name": "Cucumber",
+          "category": "fresh",
+          "totalQty": 1.0,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun",
+            "mon"
+          ],
+          "buy": "1 loose"
+        },
+        {
+          "ingredient": "coriander",
+          "name": "Fresh coriander",
+          "category": "fresh",
+          "totalQty": 20.0,
+          "unit": "g",
+          "packSize": 30,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "wed",
+            "thu"
+          ],
+          "buy": "1 × 30g"
+        },
+        {
+          "ingredient": "parsley",
+          "name": "Fresh flat-leaf parsley",
+          "category": "fresh",
+          "totalQty": 15.0,
+          "unit": "g",
+          "packSize": 30,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun"
+          ],
+          "buy": "1 × 30g"
+        },
+        {
+          "ingredient": "mint",
+          "name": "Fresh mint",
+          "category": "fresh",
+          "totalQty": 20.0,
+          "unit": "g",
+          "packSize": 30,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "wed",
+            "thu"
+          ],
+          "buy": "1 × 30g"
+        },
+        {
+          "ingredient": "greenbeans",
+          "name": "Green beans",
+          "category": "fresh",
+          "totalQty": 200.0,
+          "unit": "g",
+          "packSize": 200,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun"
+          ],
+          "buy": "1 × 200g"
+        },
+        {
+          "ingredient": "kefir",
+          "name": "Kefir, plain",
+          "category": "fresh",
+          "totalQty": 345.0,
+          "unit": "ml",
+          "packSize": 350,
+          "packUnit": "ml",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat",
+            "sun",
+            "wed"
+          ],
+          "buy": "1 × 350ml"
+        },
+        {
+          "ingredient": "lemon",
+          "name": "Lemons",
+          "category": "fresh",
+          "totalQty": 2.0,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun",
+            "mon",
+            "tue",
+            "wed"
+          ],
+          "buy": "2 loose"
+        },
+        {
+          "ingredient": "lime",
+          "name": "Limes",
+          "category": "fresh",
+          "totalQty": 2.0,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "wed",
+            "thu"
+          ],
+          "buy": "2 loose"
+        },
+        {
+          "ingredient": "eggwhite",
+          "name": "Liquid egg whites (Two Chicks)",
+          "category": "fresh",
+          "totalQty": 495.0,
+          "unit": "g",
+          "packSize": 500,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat",
+            "sun",
+            "wed"
+          ],
+          "buy": "1 × 500g"
+        },
+        {
+          "ingredient": "littlegem",
+          "name": "Little gem lettuce (2-pack)",
+          "category": "fresh",
+          "totalQty": 2.0,
+          "unit": "head",
+          "packSize": 2,
+          "packUnit": "heads",
+          "stockTracked": false,
+          "usedOnDays": [
+            "wed",
+            "thu"
+          ],
+          "buy": "1 × 2-pack"
+        },
+        {
+          "ingredient": "orange",
+          "name": "Oranges",
+          "category": "fresh",
+          "totalQty": 1.0,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat"
+          ],
+          "buy": "1 loose"
+        },
+        {
+          "ingredient": "pepper",
+          "name": "Peppers",
+          "category": "fresh",
+          "totalQty": 4.0,
+          "unit": "each",
+          "packSize": 1,
+          "packUnit": "each",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat",
+            "sun",
+            "tue",
+            "wed",
+            "thu"
+          ],
+          "buy": "4 loose"
+        },
+        {
+          "ingredient": "quark",
+          "name": "Quark, fat-free (formaggio fresco)",
+          "category": "fresh",
+          "totalQty": 1250.0,
+          "unit": "g",
+          "packSize": 250,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "mon",
+            "tue",
+            "thu"
+          ],
+          "buy": "5 × 250g"
+        },
+        {
+          "ingredient": "rump",
+          "name": "Rump steak",
+          "category": "fresh",
+          "totalQty": 225.0,
+          "unit": "g",
+          "packSize": 225,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun"
+          ],
+          "buy": "1 × 225g"
+        },
+        {
+          "ingredient": "salmon",
+          "name": "Salmon fillets (boneless)",
+          "category": "fresh",
+          "totalQty": 240.0,
+          "unit": "g",
+          "packSize": 240,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "thu"
+          ],
+          "buy": "1 × 240g",
+          "freezeOnArrival": [
+            {
+              "cookDay": "thu",
+              "qty": 240.0,
+              "defrostEvening": "wed"
+            }
+          ]
+        },
+        {
+          "ingredient": "seabass",
+          "name": "Sea bass fillets",
+          "category": "fresh",
+          "totalQty": 200.0,
+          "unit": "g",
+          "packSize": 200,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "mon"
+          ],
+          "buy": "1 × 200g",
+          "freezeOnArrival": [
+            {
+              "cookDay": "mon",
+              "qty": 200.0,
+              "defrostEvening": "sun"
+            }
+          ]
+        },
+        {
+          "ingredient": "greens",
+          "name": "Spring greens or savoy cabbage",
+          "category": "fresh",
+          "totalQty": 250.0,
+          "unit": "g",
+          "packSize": 250,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri"
+          ],
+          "buy": "1 × 250g"
+        },
+        {
+          "ingredient": "springonion",
+          "name": "Spring onions",
+          "category": "fresh",
+          "totalQty": 80.0,
+          "unit": "g",
+          "packSize": 100,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "mon",
+            "wed",
+            "thu"
+          ],
+          "buy": "1 × 100g"
+        },
+        {
+          "ingredient": "sweetpotato",
+          "name": "Sweet potato",
+          "category": "fresh",
+          "totalQty": 250.0,
+          "unit": "g",
+          "packSize": null,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri"
+          ],
+          "buy": "250g loose"
+        },
+        {
+          "ingredient": "turkeymince",
+          "name": "Turkey breast mince 2%",
+          "category": "fresh",
+          "totalQty": 500.0,
+          "unit": "g",
+          "packSize": 500,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "wed",
+            "thu"
+          ],
+          "buy": "1 × 500g",
+          "freezeOnArrival": [
+            {
+              "cookDay": "wed",
+              "qty": 500.0,
+              "defrostEvening": "tue"
+            }
+          ]
+        },
+        {
+          "ingredient": "turkeysteak",
+          "name": "Turkey breast steaks",
+          "category": "fresh",
+          "totalQty": 250.0,
+          "unit": "g",
+          "packSize": 250,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri"
+          ],
+          "buy": "1 × 250g"
+        },
+        {
+          "ingredient": "edamame",
+          "name": "Frozen edamame (shelled)",
+          "category": "frozen",
+          "totalQty": 240.0,
+          "unit": "g",
+          "packSize": 500,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun",
+            "mon"
+          ]
+        },
+        {
+          "ingredient": "raspberries",
+          "name": "Frozen raspberries",
+          "category": "frozen",
+          "totalQty": 200.0,
+          "unit": "g",
+          "packSize": 500,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "mon"
+          ]
+        },
+        {
+          "ingredient": "sourdough",
+          "name": "Sourdough (flour, water, salt only)",
+          "category": "frozen",
+          "totalQty": 4.0,
+          "unit": "slice",
+          "packSize": 1,
+          "packUnit": "loaf",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat",
+            "sun",
+            "wed"
+          ]
+        },
+        {
+          "ingredient": "almonds",
+          "name": "Almonds",
+          "category": "pantry",
+          "totalQty": 40.0,
+          "unit": "g",
+          "packSize": 200,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "mon"
+          ]
+        },
+        {
+          "ingredient": "riceB",
+          "name": "Brown basmati rice pouch",
+          "category": "pantry",
+          "totalQty": 1.0,
+          "unit": "pouch",
+          "packSize": 1,
+          "packUnit": "pouch",
+          "stockTracked": false,
+          "usedOnDays": [
+            "wed"
+          ]
+        },
+        {
+          "ingredient": "bulgur",
+          "name": "Bulgur wheat",
+          "category": "pantry",
+          "totalQty": 150.0,
+          "unit": "g",
+          "packSize": 500,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "wed"
+          ]
+        },
+        {
+          "ingredient": "chilli",
+          "name": "Chilli flakes",
+          "category": "pantry",
+          "totalQty": 2.5,
+          "unit": "tsp",
+          "packSize": 1,
+          "packUnit": "jar",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "sun",
+            "wed",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "tomatoestin",
+          "name": "Chopped tomatoes, tinned",
+          "category": "pantry",
+          "totalQty": 3.01,
+          "unit": "tin",
+          "packSize": 1,
+          "packUnit": "tin",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "sat",
+            "sun",
+            "wed"
+          ]
+        },
+        {
+          "ingredient": "oregano",
+          "name": "Dried oregano",
+          "category": "pantry",
+          "totalQty": 2.0,
+          "unit": "tsp",
+          "packSize": 1,
+          "packUnit": "jar",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "wed"
+          ]
+        },
+        {
+          "ingredient": "fishsauce",
+          "name": "Fish sauce",
+          "category": "pantry",
+          "totalQty": 20.0,
+          "unit": "ml",
+          "packSize": 150,
+          "packUnit": "ml",
+          "stockTracked": false,
+          "usedOnDays": [
+            "wed",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "cinnamon",
+          "name": "Ground cinnamon",
+          "category": "pantry",
+          "totalQty": 1.0,
+          "unit": "tsp",
+          "packSize": 1,
+          "packUnit": "jar",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "cumin",
+          "name": "Ground cumin",
+          "category": "pantry",
+          "totalQty": 1.5,
+          "unit": "tsp",
+          "packSize": 1,
+          "packUnit": "jar",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat",
+            "sun",
+            "wed"
+          ]
+        },
+        {
+          "ingredient": "honey",
+          "name": "Honey",
+          "category": "pantry",
+          "totalQty": 15.0,
+          "unit": "g",
+          "packSize": 340,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue"
+          ]
+        },
+        {
+          "ingredient": "oil",
+          "name": "Olive oil",
+          "category": "pantry",
+          "totalQty": 67.0,
+          "unit": "g",
+          "packSize": 1000,
+          "packUnit": "ml",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "sat",
+            "sun",
+            "mon",
+            "tue",
+            "wed",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "quinoa",
+          "name": "Quinoa pouch",
+          "category": "pantry",
+          "totalQty": 2.0,
+          "unit": "pouch",
+          "packSize": 1,
+          "packUnit": "pouch",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun",
+            "mon"
+          ]
+        },
+        {
+          "ingredient": "vinegar",
+          "name": "Red wine vinegar",
+          "category": "pantry",
+          "totalQty": 10.0,
+          "unit": "ml",
+          "packSize": 350,
+          "packUnit": "ml",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun"
+          ]
+        },
+        {
+          "ingredient": "paprika",
+          "name": "Smoked paprika",
+          "category": "pantry",
+          "totalQty": 2.5,
+          "unit": "tsp",
+          "packSize": 1,
+          "packUnit": "jar",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "sat",
+            "sun",
+            "wed"
+          ]
+        },
+        {
+          "ingredient": "soy",
+          "name": "Soy sauce",
+          "category": "pantry",
+          "totalQty": 40.0,
+          "unit": "ml",
+          "packSize": 150,
+          "packUnit": "ml",
+          "stockTracked": false,
+          "usedOnDays": [
+            "mon",
+            "tue",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "oats",
+          "name": "Steel-cut oats",
+          "category": "pantry",
+          "totalQty": 180.0,
+          "unit": "g",
+          "packSize": 1000,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri",
+            "mon",
+            "tue",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "riceW",
+          "name": "White basmati rice pouch",
+          "category": "pantry",
+          "totalQty": 2.0,
+          "unit": "pouch",
+          "packSize": 1,
+          "packUnit": "pouch",
+          "stockTracked": false,
+          "usedOnDays": [
+            "tue",
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "noodles",
+          "name": "Wholewheat noodles",
+          "category": "pantry",
+          "totalQty": 60.0,
+          "unit": "g",
+          "packSize": 250,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "thu"
+          ]
+        },
+        {
+          "ingredient": "pasta",
+          "name": "Wholewheat penne",
+          "category": "pantry",
+          "totalQty": 100.0,
+          "unit": "g",
+          "packSize": 500,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "fri"
+          ]
+        }
+      ]
+    }
+  ]
+}

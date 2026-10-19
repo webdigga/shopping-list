@@ -11,7 +11,7 @@ export function OfflineIndicator({ isOffline }: OfflineIndicatorProps) {
   return (
     <div className={styles.indicator}>
       <WifiOff size={14} />
-      <span>Offline - changes will sync when connected</span>
+      <span>Offline: ticks will sync when you're back online</span>
     </div>
   )
 }

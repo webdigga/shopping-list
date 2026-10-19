@@ -1,0 +1,76 @@
+.picker {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.pick {
+  flex: 1;
+  min-height: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-weight: var(--font-weight-medium);
+}
+
+.picked {
+  background: var(--color-primary-soft);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.pickDate {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-normal);
+}
+
+.amount {
+  font-weight: var(--font-weight-bold);
+}
+
+.detail {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.needToBuy {
+  color: var(--color-primary);
+}
+
+.staple {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+}
+
+.stapleHead {
+  display: flex;
+  flex-direction: column;
+}
+
+.have {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-lg);
+}
+
+.haveInput {
+  width: 96px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.stapleBuy {
+  padding: var(--space-2) 0 0;
+  min-height: 0;
+}
+
+.enough {
+  color: var(--color-text-muted);
+}

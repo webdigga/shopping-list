@@ -1,3 +1,4 @@
+/// <reference types="vitest/config" />
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
@@ -10,11 +11,11 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'icons/*.png'],
       manifest: {
-        name: 'Shopping List',
-        short_name: 'Shop List',
-        description: 'Simple shopping list with offline support',
-        theme_color: '#3b82f6',
-        background_color: '#f8fafc',
+        name: 'Meal Plan',
+        short_name: 'Meal Plan',
+        description: "David's 3-week meal plan",
+        theme_color: '#2f6f4f',
+        background_color: '#f6f5f1',
         display: 'standalone',
         icons: [
           {
@@ -50,8 +51,13 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@shared': fileURLToPath(new URL('../shared', import.meta.url)),
+      '@data': fileURLToPath(new URL('..', import.meta.url))
     }
+  },
+  test: {
+    include: ['src/**/*.test.ts'],
   },
   server: {
     port: 5173,

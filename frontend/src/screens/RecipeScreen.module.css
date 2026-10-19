@@ -1,0 +1,84 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.time {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  color: var(--color-text-secondary);
+}
+
+.batch {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+.macros {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+
+.macros dt {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.macros dd {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  font-variant-numeric: tabular-nums;
+}
+
+.ingredient {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+}
+
+.amount {
+  flex: none;
+  min-width: 96px;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  font-variant-numeric: tabular-nums;
+}
+
+.ingredientBody {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-lg);
+  line-height: 1.35;
+}
+
+.method {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  counter-reset: none;
+}
+
+.method li {
+  display: flex;
+  gap: var(--space-3);
+  font-size: var(--font-size-lg);
+  line-height: 1.5;
+}
+
+.stepNumber {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+  display: grid;
+  place-content: center;
+}

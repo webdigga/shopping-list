@@ -1,4 +1,5 @@
-import type { ApiItem, SyncChange } from '@/types'
+import type { AwayPrompt, PlanState } from '@shared/weekState'
+import type { WeekNumber } from '@shared/planTypes'
 
 // Use production API in prod, proxy in dev
 const API_BASE = import.meta.env.PROD
@@ -9,6 +10,12 @@ const TOKEN_KEY = 'shopping-list-auth'
 
 // 30-day expiry (matches server session duration)
 const TOKEN_EXPIRY_MS = 30 * 24 * 60 * 60 * 1000
+
+export class ApiError extends Error {
+  constructor(message: string, readonly status: number) {
+    super(message)
+  }
+}
 
 function loadToken(): string | null {
   try {
@@ -44,7 +51,7 @@ export function getAuthToken(): string | null {
   return authToken
 }
 
-async function request<T>(
+export async function request<T>(
   endpoint: string,
   options: RequestInit = {}
 ): Promise<T> {
@@ -70,7 +77,7 @@ async function request<T>(
   const data = await response.json()
 
   if (!response.ok) {
-    throw new Error(data.error || data.message || 'Request failed')
+    throw new ApiError(data.error || data.message || 'Request failed', response.status)
   }
 
   return data
@@ -95,42 +102,40 @@ export async function verifyPin(pin: string): Promise<{ valid: boolean; token?: 
   })
 }
 
-// Items API
-export async function fetchItems(): Promise<{ items: ApiItem[] }> {
-  return request('/items')
+// Meal plan API
+export interface StateResponse {
+  initialised: boolean
+  state: PlanState | null
+  today: string
+  away: AwayPrompt | null
 }
 
-export async function createItem(name: string, id?: string): Promise<{ item: ApiItem }> {
-  return request('/items', {
+export async function fetchState(): Promise<StateResponse> {
+  return request('/mp/state')
+}
+
+export async function setWeek(week: WeekNumber, startDate: string): Promise<StateResponse> {
+  return request('/mp/state', {
     method: 'POST',
-    body: JSON.stringify({ id, name })
+    body: JSON.stringify({ action: 'set', week, startDate })
   })
 }
 
-export async function updateItem(
-  id: string,
-  updates: { name?: string; completed?: boolean; position?: number }
-): Promise<{ item: ApiItem }> {
-  return request(`/items/${id}`, {
-    method: 'PATCH',
-    body: JSON.stringify(updates)
-  })
-}
-
-export async function deleteItem(id: string): Promise<{ success: boolean }> {
-  return request(`/items/${id}`, {
-    method: 'DELETE'
-  })
-}
-
-export async function syncChanges(changes: SyncChange[]): Promise<{
-  applied: string[]
-  errors: { itemId: string; error: string }[]
-  items: ApiItem[]
-  syncTimestamp: string
-}> {
-  return request('/items/sync', {
+export async function pausePlan(): Promise<StateResponse> {
+  return request('/mp/state', {
     method: 'POST',
-    body: JSON.stringify({ changes })
+    body: JSON.stringify({ action: 'pause' })
   })
+}
+
+export function ticksPath(instance: string): string {
+  return `/mp/ticks/${encodeURIComponent(instance)}`
+}
+
+export function stockPath(): string {
+  return '/mp/stock'
+}
+
+export function tasksPath(from: string, to: string): string {
+  return `/mp/tasks?from=${from}&to=${to}`
 }

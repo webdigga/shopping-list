@@ -13,7 +13,8 @@
     "build": "npm run build:frontend && npm run build:worker",
     "build:frontend": "npm run build -w frontend",
     "build:worker": "npm run build -w worker",
-    "lint": "npm run lint -w frontend"
+    "lint": "npm run lint -w frontend",
+    "test": "npm run test -w frontend"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
