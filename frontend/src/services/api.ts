@@ -131,3 +131,7 @@ export async function pausePlan(): Promise<StateResponse> {
 export function ticksPath(instance: string): string {
   return `/mp/ticks/${encodeURIComponent(instance)}`
 }
+
+export function extrasPath(): string {
+  return '/mp/extras'
+}

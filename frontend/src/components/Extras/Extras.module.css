@@ -1,0 +1,46 @@
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.rowCheck {
+  flex: 1;
+  min-width: 0;
+}
+
+.edit {
+  flex: none;
+  width: var(--touch-target-min);
+  height: var(--touch-target-min);
+  margin-right: var(--space-2);
+  display: grid;
+  place-content: center;
+  border-radius: var(--radius-md);
+  color: var(--color-text-muted);
+}
+
+.editRow {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+}
+
+.delete {
+  composes: buttonSecondary from '../../styles/ui.module.css';
+  margin-left: auto;
+  color: var(--color-delete);
+  border-color: var(--color-delete);
+  background: var(--color-delete-bg);
+}
+
+.addRow {
+  display: flex;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+}
+
+.addInput {
+  flex: 1;
+  min-width: 0;
+}

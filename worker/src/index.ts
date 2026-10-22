@@ -1,4 +1,4 @@
-import { handleState, handleTicks } from './routes/mealPlan'
+import { handleState, handleTicks, handleExtras } from './routes/mealPlan'
 import { handleAuthSetup, handleAuthVerify, handleAuthCheck } from './routes/auth'
 import { authMiddleware } from './middleware/auth'
 import { json, cors, corsHeaders } from './utils/response'
@@ -48,6 +48,11 @@ export default {
     const ticksMatch = path.match(/^\/api\/mp\/ticks\/([^/]+)(?:\/([^/]+))?$/)
     if (ticksMatch) {
       return handleTicks(request, env, decodeURIComponent(ticksMatch[1]), ticksMatch[2] ?? null)
+    }
+
+    const extrasMatch = path.match(/^\/api\/mp\/extras(?:\/([^/]+))?$/)
+    if (extrasMatch) {
+      return handleExtras(request, env, extrasMatch[1] ?? null)
     }
 
     // 404 for unknown routes

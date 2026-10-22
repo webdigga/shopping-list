@@ -2,11 +2,11 @@
 
 ## 🔄 Active work
 
-Meal plan rebuild from `SPEC.md` is built; not yet deployed.
+Meal plan app is live. Plan starts Friday 23 Oct 2026.
 
-1. Apply the D1 migrations (0002 and 0003 drop the unused `mp_stock` and `mp_task_ticks`): `npm run db:migrate:remote -w worker`
-2. Deploy (push to `main`; GitHub Actions deploys Pages and the worker)
-3. Open the app, set Week and start Friday, check it on the phone
+1. Apply migration 0004 (household and extras list): `npm run db:migrate:remote -w worker`
+2. On the phone, set Week 1 starting Friday 23 Oct (Settings, Set week, Next Friday)
+3. Review again after the first week of use
 
 ## Context
 

@@ -12,7 +12,7 @@ const assign = (aisle: Aisle, ids: string[]) => ids.forEach(id => (AISLE_BY_INGR
 assign('Fruit & veg', [
   'broccoli', 'courgette', 'greenbeans', 'lemon', 'lime', 'littlegem', 'orange', 'pepper',
   'sweetpotato', 'apple', 'cucumber', 'coriander', 'mushrooms', 'tomatoes', 'parsley', 'mint',
-  'greens', 'springonion',
+  'greens', 'springonion', 'mixedleaves',
   'potatoes', 'banana', 'carrots', 'ginger', 'garlic', 'onion', 'redonion',
 ])
 // Sourdough is bought fresh and frozen at home, so it is found in the bakery.

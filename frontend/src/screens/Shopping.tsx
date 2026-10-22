@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { Fragment, useState } from 'react'
 import { weekInstanceKey } from '@shared/weekState'
 import type { ShoppingItem, WeekNumber } from '@shared/planTypes'
 import { usePlan } from '@/context/PlanContext'
@@ -7,6 +7,7 @@ import { getIngredient, getWeek } from '@/plan/data'
 import { formatAmount, formatLongDate, formatShortDate } from '@/plan/format'
 import { cycleInstances, defaultShoppingInstance } from '@/plan/schedule'
 import { freezeLines, lastsUntil, shoppingAisles } from '@/plan/shopping'
+import { Extras } from '@/components/Extras/Extras'
 import ui from '@/styles/ui.module.css'
 import styles from './Shopping.module.css'
 
@@ -22,6 +23,9 @@ export function Shopping() {
   const instance = instances.find(i => i.week === selected) ?? base
   const { ticks, setTick, clearTicks } = useShoppingTicks(weekInstanceKey(instance.week, instance.start))
   const aisles = shoppingAisles(getWeek(instance.week))
+  // Household and extras sit after the cupboard aisles, where Lidl keeps them.
+  const extrasAfter = aisles.findIndex(g => g.aisle === 'Cupboard')
+  const extras = <Extras ticks={ticks} onTick={setTick} />
 
   // Every tick means the same thing: bought.
   const tickRow = (item: ShoppingItem, amount: string, details: string[] = []) => {
@@ -64,25 +68,29 @@ export function Shopping() {
         ))}
       </div>
 
-      {aisles.map(({ aisle, items }) => (
-        <section key={aisle} className={ui.section} aria-label={aisle}>
-          <h2 className={ui.sectionTitle}>{aisle}</h2>
-          {(aisle === 'Cupboard' || aisle === 'Frozen') && (
-            <p className={ui.muted}>You may already have some of these at home.</p>
-          )}
-          <ul className={ui.list}>
-            {items.map(item =>
-              tickRow(
-                item,
-                item.buy ?? weekAmount(item),
-                item.category === 'fresh'
-                  ? [`Needs to last until: ${formatShortDate(lastsUntil(item, instance.start))}`, ...freezeLines(item)]
-                  : []
-              )
+      {aisles.map(({ aisle, items }, index) => (
+        <Fragment key={aisle}>
+          <section className={ui.section} aria-label={aisle}>
+            <h2 className={ui.sectionTitle}>{aisle}</h2>
+            {(aisle === 'Cupboard' || aisle === 'Frozen') && (
+              <p className={ui.muted}>You may already have some of these at home.</p>
             )}
-          </ul>
-        </section>
+            <ul className={ui.list}>
+              {items.map(item =>
+                tickRow(
+                  item,
+                  item.buy ?? weekAmount(item),
+                  item.category === 'fresh'
+                    ? [`Needs to last until: ${formatShortDate(lastsUntil(item, instance.start))}`, ...freezeLines(item)]
+                    : []
+                )
+              )}
+            </ul>
+          </section>
+          {index === extrasAfter && extras}
+        </Fragment>
       ))}
+      {extrasAfter === -1 && extras}
 
       <button
         className={`${ui.buttonSecondary} ${ui.buttonBlock}`}

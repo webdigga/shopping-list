@@ -1819,6 +1819,26 @@
       "openedDays": null,
       "note": "400g jar; an opened jar lasts more than a week",
       "stockTracked": false
+    },
+    {
+      "id": "mixedleaves",
+      "name": "Mixed salad leaves",
+      "category": "fresh",
+      "per100g": {
+        "kcal": 20,
+        "protein": 2,
+        "carbs": 2,
+        "fat": 0.4
+      },
+      "packSize": 100,
+      "packUnit": "g",
+      "store": "Lidl",
+      "unit": "g",
+      "unitWeight": null,
+      "fridgeDays": 5,
+      "openedDays": 2,
+      "note": "Pick a different mix each week (rocket, spinach, watercress, chard)",
+      "stockTracked": false
     }
   ],
   "recipes": [
@@ -2102,9 +2122,9 @@
           "note": "boiled"
         },
         {
-          "ingredient": "littlegem",
-          "qty": 1,
-          "unit": "head"
+          "ingredient": "mixedleaves",
+          "qty": 50,
+          "unit": "g"
         },
         {
           "ingredient": "redonion",
@@ -2125,13 +2145,13 @@
       "method": [
         "Boil 2 eggs for 9 minutes, cool and halve.",
         "Drain and rinse 1 tin butter beans; drain 1 tin tuna.",
-        "Chop 1 little gem and a little red onion.",
+        "Chop a little red onion and add 50g mixed leaves.",
         "Toss everything with 10ml olive oil, the juice of half a lemon, salt and pepper."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 580,
+        "kcal": 576,
         "protein": 57,
         "carbs": 32,
         "fat": 23
@@ -2399,9 +2419,9 @@
           "note": "boiled"
         },
         {
-          "ingredient": "littlegem",
-          "qty": 1,
-          "unit": "head"
+          "ingredient": "mixedleaves",
+          "qty": 50,
+          "unit": "g"
         },
         {
           "ingredient": "redonion",
@@ -2422,14 +2442,14 @@
       "method": [
         "Steam 200g chicken breast for 20–25 minutes until cooked through; slice.",
         "Boil 1 egg for 9 minutes. Drain and rinse 1 tin butter beans.",
-        "Toss with chopped little gem, a little red onion, 10ml olive oil and lemon juice."
+        "Toss with 50g mixed leaves, a little chopped red onion, 10ml olive oil and lemon juice."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 591,
+        "kcal": 587,
         "protein": 70,
-        "carbs": 32,
+        "carbs": 31,
         "fat": 19
       }
     },
@@ -3011,9 +3031,9 @@
           "unit": "g"
         },
         {
-          "ingredient": "littlegem",
-          "qty": 1,
-          "unit": "head"
+          "ingredient": "mixedleaves",
+          "qty": 50,
+          "unit": "g"
         },
         {
           "ingredient": "tomatoes",
@@ -3034,16 +3054,16 @@
       "method": [
         "Boil 3 eggs for 9 minutes; cool and quarter.",
         "Tip 1 lentil pouch into a bowl (cold is fine).",
-        "Add chopped little gem and tomato, crumble over 40g feta.",
+        "Add 50g mixed leaves and a chopped tomato, and crumble over 40g feta.",
         "Dress with 5ml olive oil and lemon juice."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 716,
+        "kcal": 713,
         "protein": 51,
-        "carbs": 46,
-        "fat": 33
+        "carbs": 45,
+        "fat": 34
       }
     },
     {
@@ -4994,9 +5014,9 @@
             "Evening: move 240g salmon fillets (boneless) from freezer to fridge for Monday"
           ],
           "totals": {
-            "kcal": 1837,
+            "kcal": 1833,
             "protein": 193,
-            "carbs": 105,
+            "carbs": 104,
             "fat": 68
           },
           "note": null
@@ -5038,7 +5058,7 @@
             "Evening: move 250g beef steak mince 5% from freezer to fridge for Tuesday"
           ],
           "totals": {
-            "kcal": 1767,
+            "kcal": 1763,
             "protein": 158,
             "carbs": 110,
             "fat": 71
@@ -5439,21 +5459,6 @@
             "tue"
           ],
           "buy": "1 loose"
-        },
-        {
-          "ingredient": "littlegem",
-          "name": "Little gem lettuce (2-pack)",
-          "category": "fresh",
-          "totalQty": 2.0,
-          "unit": "head",
-          "packSize": 2,
-          "packUnit": "heads",
-          "stockTracked": false,
-          "usedOnDays": [
-            "sun",
-            "mon"
-          ],
-          "buy": "1 × 2-pack"
         },
         {
           "ingredient": "orange",
@@ -5891,6 +5896,21 @@
             "wed"
           ],
           "buy": "1 × 400g jar if you're running low (100g this week)"
+        },
+        {
+          "ingredient": "mixedleaves",
+          "name": "Mixed salad leaves",
+          "category": "fresh",
+          "totalQty": 100,
+          "unit": "g",
+          "packSize": 100,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun",
+            "mon"
+          ],
+          "buy": "1 × 100g bag"
         }
       ]
     },
@@ -6013,10 +6033,10 @@
             "Evening: move 250g trout fillets, boneless from freezer to fridge for Monday"
           ],
           "totals": {
-            "kcal": 1998,
+            "kcal": 1995,
             "protein": 165,
-            "carbs": 114,
-            "fat": 92
+            "carbs": 113,
+            "fat": 93
           },
           "note": null
         },
@@ -6057,10 +6077,10 @@
             "Evening: move 300g chicken thigh fillets, boneless skinless from freezer to fridge for Tuesday"
           ],
           "totals": {
-            "kcal": 1943,
+            "kcal": 1940,
             "protein": 162,
-            "carbs": 135,
-            "fat": 78
+            "carbs": 134,
+            "fat": 79
           },
           "note": null
         },
@@ -6499,21 +6519,6 @@
           "buy": "1 × 500g"
         },
         {
-          "ingredient": "littlegem",
-          "name": "Little gem lettuce (2-pack)",
-          "category": "fresh",
-          "totalQty": 2.0,
-          "unit": "head",
-          "packSize": 2,
-          "packUnit": "heads",
-          "stockTracked": false,
-          "usedOnDays": [
-            "sun",
-            "mon"
-          ],
-          "buy": "1 × 2-pack"
-        },
-        {
           "ingredient": "mushrooms",
           "name": "Mushrooms",
           "category": "fresh",
@@ -6949,6 +6954,21 @@
             "wed"
           ],
           "buy": "1 × 400g jar if you're running low (240g this week)"
+        },
+        {
+          "ingredient": "mixedleaves",
+          "name": "Mixed salad leaves",
+          "category": "fresh",
+          "totalQty": 100,
+          "unit": "g",
+          "packSize": 100,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sun",
+            "mon"
+          ],
+          "buy": "1 × 100g bag"
         }
       ]
     },
