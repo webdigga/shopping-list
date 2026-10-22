@@ -8,7 +8,6 @@ import {
   daysBetween,
   type PlanState,
 } from '../../../shared/weekState'
-import { EXTRA_NAME_MAX, extraTickKey } from '../../../shared/extras'
 
 // Earliest and latest start Friday that Set week / Resume accept, relative to today:
 // the most recent Friday (up to 6 days ago) or the next one (up to 7 days ahead).
@@ -161,50 +160,6 @@ export async function handleTicks(
     return json({ error: 'Method not allowed' }, 405, env)
   } catch (error) {
     console.error('Ticks error:', error)
-    return json({ error: 'Internal error' }, 500, env)
-  }
-}
-
-const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/
-
-// GET    /api/mp/extras
-// PUT    /api/mp/extras/:id  { name }  (creates or renames; ids come from the app so offline adds can queue)
-// DELETE /api/mp/extras/:id
-export async function handleExtras(request: Request, env: Env, id: string | null): Promise<Response> {
-  try {
-    if (!id && request.method === 'GET') {
-      const rows = await env.DB.prepare(
-        'SELECT id, name FROM mp_extra_items ORDER BY name COLLATE NOCASE'
-      ).all<{ id: string; name: string }>()
-      return json({ items: rows.results ?? [] }, 200, env)
-    }
-
-    if (id && !UUID_RE.test(id)) return json({ error: 'Invalid item' }, 400, env)
-
-    if (id && request.method === 'PUT') {
-      const { name } = await request.json() as { name?: unknown }
-      const trimmed = typeof name === 'string' ? name.trim() : ''
-      if (!trimmed || trimmed.length > EXTRA_NAME_MAX) {
-        return json({ error: `Name must be 1 to ${EXTRA_NAME_MAX} characters` }, 400, env)
-      }
-      await env.DB.prepare(
-        `INSERT INTO mp_extra_items (id, name, updated_at) VALUES (?, ?, datetime('now'))
-         ON CONFLICT(id) DO UPDATE SET name = excluded.name, updated_at = excluded.updated_at`
-      ).bind(id, trimmed).run()
-      return json({ success: true }, 200, env)
-    }
-
-    if (id && request.method === 'DELETE') {
-      await env.DB.batch([
-        env.DB.prepare('DELETE FROM mp_extra_items WHERE id = ?').bind(id),
-        env.DB.prepare('DELETE FROM mp_shopping_ticks WHERE ingredient_id = ?').bind(extraTickKey(id)),
-      ])
-      return json({ success: true }, 200, env)
-    }
-
-    return json({ error: 'Method not allowed' }, 405, env)
-  } catch (error) {
-    console.error('Extras error:', error)
     return json({ error: 'Internal error' }, 500, env)
   }
 }

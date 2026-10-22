@@ -8114,5 +8114,99 @@
         }
       ]
     }
+  ],
+  "extras": [
+    {
+      "id": "antibacterial-spray",
+      "name": "Antibacterial spray"
+    },
+    {
+      "id": "apple-cider-vinegar",
+      "name": "Apple cider vinegar"
+    },
+    {
+      "id": "bin-bags",
+      "name": "Bin bags"
+    },
+    {
+      "id": "body-wash",
+      "name": "Body wash"
+    },
+    {
+      "id": "clothes-washing-liquid",
+      "name": "Clothes washing liquid"
+    },
+    {
+      "id": "cloths",
+      "name": "Cloths"
+    },
+    {
+      "id": "coffee",
+      "name": "Coffee"
+    },
+    {
+      "id": "colour-catcher",
+      "name": "Colour catcher"
+    },
+    {
+      "id": "conditioner",
+      "name": "Conditioner"
+    },
+    {
+      "id": "deodorant",
+      "name": "Deodorant"
+    },
+    {
+      "id": "fairy-liquid",
+      "name": "Fairy liquid"
+    },
+    {
+      "id": "kitchen-towel",
+      "name": "Kitchen towel"
+    },
+    {
+      "id": "metal-scourers",
+      "name": "Metal scourers"
+    },
+    {
+      "id": "poo-bags",
+      "name": "Poo bags"
+    },
+    {
+      "id": "sensitive-toothpaste",
+      "name": "Sensitive toothpaste"
+    },
+    {
+      "id": "shampoo",
+      "name": "Shampoo"
+    },
+    {
+      "id": "soap",
+      "name": "Soap"
+    },
+    {
+      "id": "tin-foil",
+      "name": "Tin foil"
+    },
+    {
+      "id": "toilet-cleaner",
+      "name": "Toilet cleaner"
+    },
+    {
+      "id": "toilet-roll",
+      "name": "Toilet roll"
+    },
+    {
+      "id": "toothpicks",
+      "name": "Toothpicks"
+    },
+    {
+      "id": "washing-machine-cleaner",
+      "name": "Washing machine cleaner"
+    },
+    {
+      "id": "white-wine-vinegar",
+      "name": "White wine vinegar"
+    }
   ]
 }

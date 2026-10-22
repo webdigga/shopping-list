@@ -96,6 +96,12 @@ export interface Week {
   shopping: ShoppingItem[]
 }
 
+/** Household items and other everyday extras: on the shopping list every week. */
+export interface ExtraItem {
+  id: string
+  name: string
+}
+
 export interface PlanData {
   meta: {
     title: string
@@ -113,4 +119,5 @@ export interface PlanData {
   ingredients: Ingredient[]
   recipes: Recipe[]
   weeks: Week[]
+  extras: ExtraItem[]
 }

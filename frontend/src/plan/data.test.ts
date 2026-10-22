@@ -22,3 +22,13 @@ describe('meal-plan-data.json', () => {
     }
   })
 })
+
+describe('extras', () => {
+  it('have unique tick-safe ids, in alphabetical order', () => {
+    const ids = plan.extras.map(e => e.id)
+    expect(new Set(ids).size).toBe(ids.length)
+    for (const id of ids) expect(id).toMatch(/^[a-z0-9-]{1,57}$/)
+    const names = plan.extras.map(e => e.name)
+    expect(names).toEqual([...names].sort((a, b) => a.localeCompare(b, 'en-GB', { sensitivity: 'base' })))
+  })
+})
