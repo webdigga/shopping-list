@@ -2700,10 +2700,10 @@
     },
     {
       "id": "beef-stirfry",
-      "name": "Thai-style beef stir-fry",
+      "name": "Thai-style steamed beef & green beans",
       "meal": "dinner",
       "servingsCooked": 1,
-      "cookMinutes": 15,
+      "cookMinutes": 20,
       "ingredients": [
         {
           "ingredient": "beefmince",
@@ -2757,10 +2757,10 @@
         }
       ],
       "method": [
-        "Brown 250g beef mince in a hot pan (no oil needed); drain any fat.",
-        "Add sliced onion, pepper and 100g green beans; stir-fry 4 minutes.",
-        "Add 2 crushed garlic cloves, grated ginger, chilli and 15ml soy sauce; cook 2 minutes.",
-        "Finish with lime juice. Serve over 1 white basmati pouch, cold, straight from the pouch."
+        "Mix 250g beef mince with 2 crushed garlic cloves, the grated ginger and the chilli flakes; spread it in a shallow heatproof dish and steam for 15 to 20 minutes, until no pink remains.",
+        "Add the sliced onion, pepper and 100g green beans to the steamer for the last 6 to 7 minutes.",
+        "Break it up with a fork and pour off any fat. Toss everything with 15ml soy sauce and the lime juice.",
+        "Serve over 1 white basmati pouch, cold, straight from the pouch."
       ],
       "prepAhead": null,
       "tags": [
@@ -2922,9 +2922,9 @@
         }
       ],
       "method": [
-        "Brown 250g beef mince; drain any fat.",
-        "Add chopped onion, grated carrot and 2 garlic cloves; cook 5 minutes.",
-        "Add 1 tin chopped tomatoes and herbs; simmer 20 minutes.",
+        "Put 250g beef mince in a shallow heatproof dish and steam for 15 to 20 minutes, until no pink remains. Break it up with a fork and pour off any fat.",
+        "Meanwhile, cook the chopped onion, grated carrot and 2 garlic cloves gently in a splash of water for 5 minutes.",
+        "Add 1 tin chopped tomatoes, the herbs and the steamed mince; simmer for 15 minutes.",
         "Cook 100g wholewheat spaghetti and serve with the sauce."
       ],
       "prepAhead": null,
@@ -3484,7 +3484,7 @@
         }
       ],
       "method": [
-        "Batch-cook the beef this evening: brown 300g beef mince with cumin and paprika, add 1 tin black beans; cook 10 minutes. Makes 2 portions.",
+        "Batch-cook the beef this evening: mix 300g beef mince with cumin and paprika and steam it in a shallow dish for 15 to 20 minutes; break it up, pour off any fat and stir in 1 tin black beans. Makes 2 portions.",
         "Eat one portion now with the other half of the brown basmati pouch, cold, straight from the pouch, and 80g kimchi on top.",
         "Cool the second portion quickly and fridge it for Thursday lunch."
       ],
@@ -3704,7 +3704,8 @@
       ],
       "method": [
         "Mix 200g beef mince with finely grated onion, 1 garlic clove and herbs; roll into 8 balls.",
-        "Brown in a dry non-stick pan; add 1 tin tomatoes and the other garlic clove; simmer 15 minutes.",
+        "Steam the meatballs for 12 to 15 minutes, until cooked through.",
+        "Meanwhile, simmer 1 tin tomatoes with the other garlic clove for 10 minutes. Add the meatballs and simmer for 5 minutes more.",
         "Cook 80g wholewheat spaghetti and serve."
       ],
       "prepAhead": null,
@@ -3778,7 +3779,7 @@
     },
     {
       "id": "sirloin",
-      "name": "Sirloin steak with roasted veg",
+      "name": "Steamed sirloin steak with roasted veg",
       "meal": "dinner",
       "servingsCooked": 1,
       "cookMinutes": 35,
@@ -3811,7 +3812,8 @@
       ],
       "method": [
         "Halve 200g baby potatoes; roast with pepper and courgette in 5ml oil at 200°C for 30 minutes.",
-        "Pan-fry the sirloin 2–4 minutes each side to your liking. Rest 5 minutes."
+        "For the last 10 minutes, steam the sirloin: 8 to 10 minutes for medium (a little less for pink, a little more for well done).",
+        "Rest the steak for 5 minutes before slicing."
       ],
       "prepAhead": null,
       "tags": [],
@@ -4242,13 +4244,13 @@
     },
     {
       "id": "larb-white",
-      "name": "Turkey larb with white rice",
+      "name": "Beef larb with white rice",
       "meal": "lunch",
       "servingsCooked": 1,
       "cookMinutes": 5,
       "ingredients": [
         {
-          "ingredient": "turkeymince",
+          "ingredient": "beefmince",
           "qty": 250,
           "unit": "g",
           "note": "batch-cooked"
@@ -4287,11 +4289,6 @@
           "ingredient": "fishsauce",
           "qty": 10,
           "unit": "ml"
-        },
-        {
-          "ingredient": "oil",
-          "qty": 3,
-          "unit": "g"
         },
         {
           "ingredient": "littlegem",
@@ -4314,22 +4311,22 @@
         "post-run"
       ],
       "macros": {
-        "kcal": 675,
-        "protein": 68,
+        "kcal": 696,
+        "protein": 63,
         "carbs": 78,
-        "fat": 13
+        "fat": 16
       },
       "batchCookedOn": "wed"
     },
     {
       "id": "larb-brown",
-      "name": "Turkey larb with brown rice",
+      "name": "Beef larb with brown rice",
       "meal": "lunch",
       "servingsCooked": 1,
       "cookMinutes": 20,
       "ingredients": [
         {
-          "ingredient": "turkeymince",
+          "ingredient": "beefmince",
           "qty": 250,
           "unit": "g",
           "note": "batch-cooked"
@@ -4370,11 +4367,6 @@
           "unit": "ml"
         },
         {
-          "ingredient": "oil",
-          "qty": 3,
-          "unit": "g"
-        },
-        {
           "ingredient": "littlegem",
           "qty": 1,
           "unit": "head"
@@ -4386,17 +4378,17 @@
         }
       ],
       "method": [
-        "Batch-cook the larb this evening: fry 500g turkey mince with garlic and chilli; finish with fish sauce and lime. Makes 2 portions.",
+        "Batch-cook the larb this evening: steam 500g beef mince with garlic and chilli in a shallow dish for 15 to 20 minutes; break it up, pour off any fat, and finish with fish sauce and lime. Makes 2 portions.",
         "Eat one portion now with fresh mint, coriander and spring onion, in little gem leaves, with 1 brown basmati pouch, cold, straight from the pouch.",
         "Cool the second portion quickly and fridge it for Thursday lunch."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 675,
-        "protein": 69,
+        "kcal": 696,
+        "protein": 63,
         "carbs": 73,
-        "fat": 14
+        "fat": 17
       },
       "batchCookedOn": "wed"
     },
@@ -4671,7 +4663,7 @@
     },
     {
       "id": "rump-steak",
-      "name": "Rump steak with chimichurri",
+      "name": "Steamed rump steak with chimichurri",
       "meal": "dinner",
       "servingsCooked": 1,
       "cookMinutes": 25,
@@ -4718,9 +4710,9 @@
         }
       ],
       "method": [
-        "Steam 200g baby potatoes for 15 minutes, adding 200g green beans for the last 6.",
+        "Steam 200g baby potatoes for 15 minutes. Lay the rump steak on top for the last 8 to 10 minutes (medium), and add 200g green beans for the last 6.",
         "Chimichurri: finely chop 15g parsley and 1 garlic clove; mix with 10ml olive oil, 10ml vinegar and chilli.",
-        "Pan-fry the rump 2–4 minutes each side; rest 5 minutes. Spoon over the chimichurri."
+        "Rest the steak for 5 minutes, slice it and spoon over the chimichurri."
       ],
       "prepAhead": null,
       "tags": [],
@@ -4869,7 +4861,7 @@
       "name": "Burrito beef (2 portions)",
       "meal": "batch",
       "servingsCooked": 2,
-      "cookMinutes": 15,
+      "cookMinutes": 20,
       "ingredients": [
         {
           "ingredient": "beefmince",
@@ -4894,9 +4886,9 @@
         }
       ],
       "method": [
-        "Brown the beef mince in a dry non-stick pan, breaking it up.",
-        "Stir in the cumin and paprika, then the black beans.",
-        "Cook for 10 minutes.",
+        "Mix the beef mince with the cumin and paprika, then spread it in a shallow heatproof dish and steam for 15 to 20 minutes, until no pink remains.",
+        "Break it up with a fork and pour off any fat.",
+        "Stir in the drained black beans; put the dish back in the steamer for 3 minutes to warm them through.",
         "Eat one portion tonight. Cool the other quickly and fridge it for Thursday lunch."
       ],
       "prepAhead": null,
@@ -5049,14 +5041,14 @@
       ]
     },
     {
-      "id": "batch-turkey-larb",
-      "name": "Turkey larb (2 portions)",
+      "id": "batch-beef-larb",
+      "name": "Beef larb (2 portions)",
       "meal": "batch",
       "servingsCooked": 2,
-      "cookMinutes": 15,
+      "cookMinutes": 20,
       "ingredients": [
         {
-          "ingredient": "turkeymince",
+          "ingredient": "beefmince",
           "qty": 500,
           "unit": "g"
         },
@@ -5081,16 +5073,12 @@
           "qty": 2,
           "unit": "each",
           "note": "juice only"
-        },
-        {
-          "ingredient": "oil",
-          "qty": 6,
-          "unit": "g"
         }
       ],
       "method": [
-        "Heat the oil in a large pan. Fry the turkey mince with the garlic and chilli flakes for about 10 minutes, until cooked through.",
-        "Take it off the heat and stir in the fish sauce and lime juice.",
+        "Mix the beef mince with the garlic and chilli flakes, then spread it in a shallow heatproof dish and steam for 15 to 20 minutes, until no pink remains.",
+        "Break it up with a fork and pour off any fat.",
+        "Stir in the fish sauce and lime juice.",
         "Eat one portion tonight. Cool the other quickly and fridge it for Thursday lunch."
       ],
       "prepAhead": null,
@@ -6465,7 +6453,7 @@
           ],
           "prep": [
             {
-              "text": "Evening: batch-cook the burrito beef: brown 300g beef mince with 2 tsp cumin and 2 tsp smoked paprika, add 1 tin black beans; cook 10 minutes. Eat one portion, fridge one for Thursday",
+              "text": "Evening: batch-cook the burrito beef: steam 300g beef mince with 2 tsp cumin and 2 tsp smoked paprika for 15 to 20 minutes, then stir in 1 tin black beans. Eat one portion, fridge one for Thursday",
               "recipe": "batch-burrito-beef"
             },
             "Evening: mix 60g steel-cut oats, 250ml kefir, a splash of water, 1 grated apple and 1 tsp cinnamon; fridge it for tomorrow's apple & cinnamon overnight oats"
@@ -7571,15 +7559,15 @@
           ],
           "prep": [
             {
-              "text": "Evening: batch-cook the turkey larb: fry 500g turkey mince with 2 garlic cloves and 1 tsp chilli flakes; finish with 20ml fish sauce and the juice of 2 limes. Eat one portion, fridge one for Thursday",
-              "recipe": "batch-turkey-larb"
+              "text": "Evening: batch-cook the beef larb: steam 500g beef mince with 2 garlic cloves and 1 tsp chilli flakes for 15 to 20 minutes; finish with 20ml fish sauce and the juice of 2 limes. Eat one portion, fridge one for Thursday",
+              "recipe": "batch-beef-larb"
             }
           ],
           "totals": {
-            "kcal": 2058,
-            "protein": 178,
+            "kcal": 2079,
+            "protein": 172,
             "carbs": 167,
-            "fat": 74
+            "fat": 77
           },
           "note": null
         },
@@ -7621,10 +7609,10 @@
             "Evening: soak 40g oats in a splash of water in the fridge, for tomorrow's skyr bowl"
           ],
           "totals": {
-            "kcal": 2252,
-            "protein": 186,
+            "kcal": 2273,
+            "protein": 181,
             "carbs": 198,
-            "fat": 77
+            "fat": 80
           },
           "note": null
         }
@@ -8065,21 +8053,6 @@
           "buy": "250g loose"
         },
         {
-          "ingredient": "turkeymince",
-          "name": "Turkey breast mince 2%",
-          "category": "fresh",
-          "totalQty": 500,
-          "unit": "g",
-          "packSize": 500,
-          "packUnit": "g",
-          "stockTracked": false,
-          "usedOnDays": [
-            "wed",
-            "thu"
-          ],
-          "buy": "1 × 500g"
-        },
-        {
           "ingredient": "turkeysteak",
           "name": "Turkey breast steaks",
           "category": "fresh",
@@ -8284,7 +8257,7 @@
           "ingredient": "oil",
           "name": "Olive oil",
           "category": "pantry",
-          "totalQty": 77,
+          "totalQty": 71,
           "unit": "g",
           "packSize": 1000,
           "packUnit": "ml",
@@ -8460,6 +8433,21 @@
             "wed",
             "thu"
           ]
+        },
+        {
+          "ingredient": "beefmince",
+          "name": "Beef steak mince 5%",
+          "category": "fresh",
+          "totalQty": 500,
+          "unit": "g",
+          "packSize": 500,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "wed",
+            "thu"
+          ],
+          "buy": "1 × 500g"
         }
       ]
     }
