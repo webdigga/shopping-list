@@ -76,21 +76,36 @@
   color: var(--color-text-muted);
 }
 
+/* One job per row, each with a bullet, so the number of jobs is visible at a glance. */
 .prep {
-  display: block;
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
   padding: var(--space-3) var(--space-4);
   font-size: var(--font-size-base);
   line-height: 1.45;
 }
 
-.prepLink {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
+.prep::before {
+  content: '';
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+  transform: translateY(-1px);
 }
 
-.prepLink span {
+.prep span {
   flex: 1;
+}
+
+.prepLink {
+  align-items: center;
+}
+
+.prepLink::before {
+  align-self: center;
 }
 
 .totals {

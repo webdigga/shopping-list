@@ -66,11 +66,13 @@ export function DayPlan({ day, prepTitle = 'Prep' }: DayPlanProps) {
 
       {day.prep.length > 0 && (
         <section className={ui.section} aria-labelledby={`prep-${day.day}`}>
-          <h2 id={`prep-${day.day}`} className={ui.sectionTitle}>{prepTitle}</h2>
+          <h2 id={`prep-${day.day}`} className={ui.sectionTitle}>
+            {prepTitle} ({day.prep.length} {day.prep.length === 1 ? 'job' : 'jobs'})
+          </h2>
           <ul className={ui.list}>
             {day.prep.map(task =>
               typeof task === 'string' ? (
-                <li key={task} className={styles.prep}>{task}</li>
+                <li key={task} className={styles.prep}><span>{task}</span></li>
               ) : (
                 <li key={task.text}>
                   <a href={`#/recipe/${task.recipe}`} className={`${styles.prep} ${styles.prepLink}`}>

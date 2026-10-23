@@ -5151,8 +5151,9 @@
             }
           ],
           "prep": [
-            "First thing: shopping (Week 1 list)",
-            "After shopping: slice the sourdough; keep half out, freeze the other half for Week 3."
+            "After shopping: slice the sourdough",
+            "Keep half the slices out for this week",
+            "Freeze the other half for Week 3"
           ],
           "totals": {
             "kcal": 2103,
@@ -6214,9 +6215,7 @@
               "free": false
             }
           ],
-          "prep": [
-            "First thing: shopping (Week 2 list)"
-          ],
+          "prep": [],
           "totals": {
             "kcal": 2490,
             "protein": 206,
@@ -7313,7 +7312,6 @@
             }
           ],
           "prep": [
-            "First thing: shopping (Week 3 list)",
             {
               "text": "Evening: make shakshuka sauce (2 tins tomatoes, 2 peppers, 1 onion, 3 garlic cloves, 1½ tsp cumin, 1½ tsp smoked paprika, 15ml oil; simmer 20 min; 3 portions)",
               "recipe": "batch-shakshuka-sauce"
