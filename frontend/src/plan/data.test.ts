@@ -62,3 +62,11 @@ describe('daily nuts', () => {
     }
   })
 })
+
+describe('recipe labels', () => {
+  it('match the slot the recipe is eaten in', () => {
+    for (const w of plan.weeks) for (const d of w.days) for (const m of d.meals) {
+      if (m.recipe) expect(getRecipe(m.recipe)?.meal, `${m.recipe} on W${w.week} ${d.day}`).toBe(m.slot)
+    }
+  })
+})

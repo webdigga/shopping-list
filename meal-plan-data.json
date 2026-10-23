@@ -2249,7 +2249,7 @@
     {
       "id": "prerun-banana",
       "name": "Banana + coffee (pre-parkrun)",
-      "meal": "snack",
+      "meal": "pre-run",
       "servingsCooked": 1,
       "cookMinutes": null,
       "ingredients": [
@@ -2521,7 +2521,7 @@
     {
       "id": "turkey-chilli-brown",
       "name": "Turkey chilli with brown rice",
-      "meal": "lunch",
+      "meal": "dinner",
       "servingsCooked": 1,
       "cookMinutes": 5,
       "ingredients": [
@@ -2776,7 +2776,7 @@
     {
       "id": "chicken-traybake",
       "name": "Chicken traybake with sweet potato",
-      "meal": "dinner",
+      "meal": "lunch",
       "servingsCooked": 1,
       "cookMinutes": 40,
       "ingredients": [
@@ -3447,7 +3447,7 @@
     {
       "id": "burrito-brown",
       "name": "Beef & black bean bowl with brown rice & kimchi",
-      "meal": "lunch",
+      "meal": "dinner",
       "servingsCooked": 1,
       "cookMinutes": 20,
       "ingredients": [
@@ -3619,7 +3619,7 @@
     {
       "id": "pork-loin",
       "name": "Pork loin with sweet potato & sauerkraut",
-      "meal": "dinner",
+      "meal": "lunch",
       "servingsCooked": 1,
       "cookMinutes": 35,
       "ingredients": [
@@ -4321,7 +4321,7 @@
     {
       "id": "larb-brown",
       "name": "Beef larb with brown rice",
-      "meal": "lunch",
+      "meal": "dinner",
       "servingsCooked": 1,
       "cookMinutes": 20,
       "ingredients": [
@@ -4511,7 +4511,7 @@
     {
       "id": "turkey-steaks",
       "name": "Turkey steaks with sweet potato",
-      "meal": "dinner",
+      "meal": "lunch",
       "servingsCooked": 1,
       "cookMinutes": 25,
       "ingredients": [

@@ -30,7 +30,10 @@ export function RecipeScreen({ id }: { id: string }) {
       <header className={styles.header}>
         <p className={ui.sectionTitle}>{slotLabel(recipe.meal)}</p>
         <h1 className={ui.pageTitle}>{recipe.name}</h1>
-        <p className={styles.time}><Clock size={16} aria-hidden /> {recipe.cookMinutes} min</p>
+        <p className={styles.time}>
+          <Clock size={16} aria-hidden /> {recipe.cookMinutes} min · makes {recipe.servingsCooked}{' '}
+          {recipe.servingsCooked === 1 ? 'portion' : 'portions'}
+        </p>
       </header>
 
       {recipe.prepAhead && (

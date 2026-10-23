@@ -43,6 +43,8 @@ export interface Recipe {
   id: string
   name: string
   meal: string
+  /** How many portions the ingredients make. */
+  servingsCooked: number
   cookMinutes: number
   ingredients: RecipeIngredient[]
   method: string[]
