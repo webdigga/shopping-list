@@ -1,5 +1,5 @@
 import { plan } from '@/plan/data'
-import { extraTickKey } from '@/plan/extras'
+import { extraTickKey } from '@shared/ticks'
 import ui from '@/styles/ui.module.css'
 
 interface ExtrasProps {

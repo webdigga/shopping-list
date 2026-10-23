@@ -87,18 +87,19 @@ Shows as soon as the app opens.
 ### 4.3 Shopping
 Defaults to the **next** week from Thursday evening until the Friday shop is done, otherwise the current week. Week picker at the top.
 
-Sections:
-1. **Fresh** (`category: "fresh"`): tickable. Each item shows:
-   - What to buy (`buy`)
-   - **"Needs to last until: Thu 24 Oct"** — the date of the last day in `usedOnDays`, calculated from the shop date
-   - If `freezeOnArrival` exists: **"Freeze on arrival: 250g for Wednesday (defrost Tuesday evening)"**, one line per entry
-2. **Staples** (`stockTracked: true` — eggs, potatoes, onions, red onions, carrots, garlic, ginger):
-   input "I have ___"; show **buy = need − have**, rounded up to whole packs (`packSize`). Stock values persist in `mp_stock`.
-3. **Core** (other `category: "core"` items, e.g. bananas): tickable.
-4. **Pantry & freezer** (`category: "pantry"` or `"frozen"`): a "check you have these" list. Tick = "need to buy".
+Sections are aisles, in `aisleOrder`: Fruit & veg, Bakery, Dairy, Meat & fish, Frozen, Cupboard, then Household & extras (`extras`, a fixed list) and Sainsbury's. Within an aisle, sort by `aisleRank`, then name. Eggs sit at the very end of Cupboard.
 
-Ticks persist per week-instance (week number + start date) and reset for the next instance.
-A "Clear ticks" button. Group fresh items roughly by aisle (meat & fish, dairy & eggs, fruit & veg, bread).
+Every item is tickable (tick = bought) and shows:
+- Its `buy` text exactly as given (cupboard and freezer staples without `buy` show the week's amount)
+- Fresh items: **"Needs to last until: Thu 29 Oct"**, the date of the last day in `usedOnDays`, counted from the shop date
+- Items with `openedPack` (one raw pack cooked on several days): its `note` in small text instead
+- Stock-tracked items (`stockTracked: true`: eggs, potatoes, onions, red onions, carrots, garlic, ginger, frozen cod and salmon, sourdough): an "I have ___" input, with **buy = need minus have** rounded up to whole packs. Stock values persist in `mp_stock`.
+
+Nothing is frozen on arrival or defrosted: frozen fish is cooked from frozen and frozen bread is toasted from frozen.
+
+Ticks persist per week-instance (week number + start date) and reset for the next instance. Every tick is keyed by ingredient id (extras by `extra-<id>`); no two items share a key. A "Clear ticks" button.
+
+Nothing on the list is editable in the app: every addition goes through Claude so calories stay capped.
 
 ### 4.4 Recipe
 - Name, meal type, cook time, macros.
@@ -159,18 +160,20 @@ Use a numbered migration file. Do not touch existing tables.
 ```
 meta        { title, targets{kcal, protein, fat, fatMinimum, carbs{low,medium,high}}, rules[], notes[] }
 dayOrder    ["fri","sat","sun","mon","tue","wed","thu"]
+aisleOrder  ["Fruit & veg","Bakery","Dairy","Meat & fish","Frozen","Cupboard","Sainsbury's"]
 ingredients [{ id, name, category: fresh|core|pantry|frozen, unit, unitWeight, packSize, packUnit,
-               per100g{kcal,protein,carbs,fat}, fridgeDays, openedDays, stockTracked, note }]
+               per100g{kcal,protein,carbs,fat}, fridgeDays, openedDays, stockTracked, store, aisle, aisleRank, note }]
 recipes     [{ id, name, meal, cookMinutes, ingredients[{ingredient, qty, unit, note?}],
                method[], prepAhead?, batchCookedOn?, macros{kcal,protein,carbs,fat}, tags[] }]
 weeks       [{ week: 1|2|3,
                days[{ day, dayName, dayIndex, training{label, carbTarget},
                       meals[{time, slot, recipe|null, free}], prep[], totals{...}, note? }],
                shopping[{ ingredient, name, category, totalQty, unit, packSize, packUnit, stockTracked,
-                          buy?, usedOnDays[], freezeOnArrival?[{cookDay, qty, defrostEvening}] }] }]
+                          buy?, usedOnDays[], openedPack?{openedOn, lastUsedOn, note} }] }]
+extras      [{ id, name }]
 ```
 
-Macros are pre-computed. Don't recalculate them in the app.
+Macros, day totals and shopping quantities are pre-computed from the per-100g values. Don't recalculate them in the app.
 
 ---
 
@@ -179,7 +182,7 @@ Macros are pre-computed. Don't recalculate them in the app.
 - Mobile-first, thumb-friendly, readable at a glance in the kitchen. Large text for quantities.
 - Calm, uncluttered. Light and dark mode.
 - Today screen must load instantly: no spinners for plan content (it's bundled).
-- No microwave in David's kitchen: never suggest one. Rice pouches are used straight from the pouch.
+- No microwave and no toaster in David's kitchen: never suggest either. Rice pouches are used cold, straight from the pouch. Toast bread in a dry frying pan, about 3 minutes each side (from frozen is fine).
 
 ---
 

@@ -4,7 +4,7 @@
 
 Meal plan app is live. Plan starts Friday 23 Oct 2026.
 
-1. Apply migrations 0004 and 0005 (0005 drops the editable-extras table again): `npm run db:migrate:remote -w worker`
+1. Apply migrations 0004 to 0006 (0006 brings back `mp_stock` for the staple inputs): `npm run db:migrate:remote -w worker`
 2. On the phone, set Week 1 starting Friday 23 Oct (Settings, Set week, Next Friday)
 3. Review again after the first week of use
 

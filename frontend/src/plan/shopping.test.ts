@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { ShoppingItem } from '@shared/planTypes'
 import { getWeek, plan } from './data'
-import { freezeLines, lastsUntil, shoppingAisles } from './shopping'
+import { lastsUntil, shoppingAisles, stapleBuy } from './shopping'
 
 const item = (over: Partial<ShoppingItem>): ShoppingItem => ({
   ingredient: 'eggs',
@@ -23,10 +23,43 @@ describe('lastsUntil', () => {
   })
 })
 
-describe('freezeLines', () => {
-  it('describes each portion to freeze', () => {
+describe('opened packs', () => {
+  it('note when one raw pack is cooked across several days', () => {
     const mince = getWeek(1).shopping.find(s => s.ingredient === 'beefmince')!
-    expect(freezeLines(mince)).toEqual(['Freeze on arrival: 250g for Tuesday (defrost Monday evening)'])
+    expect(mince.openedPack?.note).toBe('Opened Friday, last used Tuesday. Keep tightly sealed in the fridge and check the label.')
+  })
+
+  it('never ask for anything to be frozen on arrival or defrosted', () => {
+    for (const w of plan.weeks) {
+      for (const s of w.shopping) expect(s).not.toHaveProperty('freezeOnArrival')
+      for (const d of w.days) for (const p of d.prep) {
+        expect(typeof p === 'string' ? p : p.text).not.toMatch(/freezer to fridge|defrost/i)
+      }
+    }
+  })
+})
+
+describe('stapleBuy', () => {
+  it('rounds the shortfall up to whole packs', () => {
+    expect(stapleBuy(item({}), 6)).toMatchObject({ short: 8, packs: 1, text: '1 × 15 eggs' })
+  })
+
+  it('buys nothing when stock covers the week', () => {
+    expect(stapleBuy(item({}), 14)).toMatchObject({ packs: 0, text: 'Nothing to buy' })
+  })
+
+  it('buys frozen fish in 400g packs', () => {
+    const cod = getWeek(1).shopping.find(s => s.ingredient === 'cod')!
+    expect(stapleBuy(cod, 0).text).toBe('1 × 400g')
+    expect(stapleBuy(cod, 200).packs).toBe(0)
+  })
+
+  it('buys one bag, loaf or bulb when sold in a different unit', () => {
+    const onions = getWeek(1).shopping.find(s => s.ingredient === 'onion')!
+    const bread = getWeek(1).shopping.find(s => s.ingredient === 'sourdough')!
+    expect(stapleBuy(onions, 0).text).toBe('1 bag')
+    expect(stapleBuy(bread, 2).text).toBe('1 loaf')
+    expect(stapleBuy(bread, 4).packs).toBe(0)
   })
 })
 
@@ -40,18 +73,26 @@ describe('shoppingAisles', () => {
     }
   })
 
-  it('walks Lidl in order, frozen last, then the Sainsbury\'s shop', () => {
-    const order = shoppingAisles(getWeek(1)).map(g => g.aisle)
-    expect(order[0]).toBe('Fruit & veg')
-    expect(order.slice(-2)).toEqual(['Frozen', "Sainsbury's"])
+  it('walks the aisles in the plan order', () => {
+    for (const week of plan.weeks) {
+      const order = shoppingAisles(week).map(g => g.aisle)
+      expect(order).toEqual(plan.aisleOrder.filter(a => order.includes(a)))
+    }
+    expect(plan.aisleOrder.slice(0, 6)).toEqual(['Fruit & veg', 'Bakery', 'Dairy', 'Meat & fish', 'Frozen', 'Cupboard'])
+  })
+
+  it('puts eggs at the very end of Cupboard', () => {
+    const cupboard = shoppingAisles(getWeek(1)).find(g => g.aisle === 'Cupboard')!
+    expect(cupboard.items[cupboard.items.length - 1].ingredient).toBe('eggs')
   })
 
   it('shelves staples with their aisle, not a separate section', () => {
     const groups = shoppingAisles(getWeek(1))
     const aisle = (id: string) => groups.find(g => g.items.some(i => i.ingredient === id))?.aisle
     expect(aisle('banana')).toBe('Fruit & veg')
-    expect(aisle('eggs')).toBe('Dairy & eggs')
     expect(aisle('sourdough')).toBe('Bakery')
+    expect(aisle('cod')).toBe('Frozen')
+    expect(aisle('spinach')).toBe('Fruit & veg')
     expect(aisle('kimchi')).toBe("Sainsbury's")
     expect(aisle('sauerkraut')).toBe("Sainsbury's")
   })

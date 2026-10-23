@@ -8,6 +8,7 @@ import {
   daysBetween,
   type PlanState,
 } from '../../../shared/weekState'
+import { TICK_KEY_RE } from '../../../shared/ticks'
 
 // Earliest and latest start Friday that Set week / Resume accept, relative to today:
 // the most recent Friday (up to 6 days ago) or the next one (up to 7 days ahead).
@@ -15,7 +16,6 @@ const START_MIN_OFFSET = -6
 const START_MAX_OFFSET = 7
 
 const INSTANCE_RE = /^W[123]:\d{4}-\d{2}-\d{2}$/
-const ID_RE = /^[a-z0-9-]{1,64}$/
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/
 
 async function readState(env: Env): Promise<PlanState | null> {
@@ -145,7 +145,7 @@ export async function handleTicks(
     }
 
     if (ingredient && request.method === 'PUT') {
-      if (!ID_RE.test(ingredient)) return json({ error: 'Invalid ingredient' }, 400, env)
+      if (!TICK_KEY_RE.test(ingredient)) return json({ error: 'Invalid ingredient' }, 400, env)
       const { ticked } = await request.json() as { ticked?: unknown }
       if (typeof ticked !== 'boolean') return json({ error: 'ticked must be true or false' }, 400, env)
       await env.DB.prepare(
@@ -160,6 +160,41 @@ export async function handleTicks(
     return json({ error: 'Method not allowed' }, 405, env)
   } catch (error) {
     console.error('Ticks error:', error)
+    return json({ error: 'Internal error' }, 500, env)
+  }
+}
+
+// GET /api/mp/stock
+// PUT /api/mp/stock/:ingredient  { qty }  (null clears it)
+export async function handleStock(request: Request, env: Env, ingredient: string | null): Promise<Response> {
+  try {
+    if (!ingredient && request.method === 'GET') {
+      const rows = await env.DB.prepare('SELECT ingredient_id, qty FROM mp_stock').all<{ ingredient_id: string; qty: number }>()
+      const stock: Record<string, number> = {}
+      for (const r of rows.results ?? []) stock[r.ingredient_id] = r.qty
+      return json({ stock }, 200, env)
+    }
+
+    if (ingredient && request.method === 'PUT') {
+      if (!TICK_KEY_RE.test(ingredient)) return json({ error: 'Invalid ingredient' }, 400, env)
+      const { qty } = await request.json() as { qty?: unknown }
+      if (qty === null) {
+        await env.DB.prepare('DELETE FROM mp_stock WHERE ingredient_id = ?').bind(ingredient).run()
+        return json({ success: true }, 200, env)
+      }
+      if (typeof qty !== 'number' || !Number.isFinite(qty) || qty < 0) {
+        return json({ error: 'qty must be a number of 0 or more' }, 400, env)
+      }
+      await env.DB.prepare(
+        `INSERT INTO mp_stock (ingredient_id, qty, updated_at) VALUES (?, ?, datetime('now'))
+         ON CONFLICT(ingredient_id) DO UPDATE SET qty = excluded.qty, updated_at = excluded.updated_at`
+      ).bind(ingredient, qty).run()
+      return json({ success: true }, 200, env)
+    }
+
+    return json({ error: 'Method not allowed' }, 405, env)
+  } catch (error) {
+    console.error('Stock error:', error)
     return json({ error: 'Internal error' }, 500, env)
   }
 }

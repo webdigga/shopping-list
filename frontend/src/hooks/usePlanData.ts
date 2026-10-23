@@ -1,6 +1,6 @@
-// Shopping ticks: persisted in D1, updated optimistically, queued offline.
+// Shopping ticks and staple stock counts: persisted in D1, updated optimistically, queued offline.
 import { useCallback } from 'react'
-import { ticksPath } from '@/services/api'
+import { stockPath, ticksPath } from '@/services/api'
 import { enqueue } from '@/services/sync'
 import { useRemote } from './useRemote'
 
@@ -28,4 +28,21 @@ export function useShoppingTicks(instance: string) {
   }, [path, update])
 
   return { ticks: data.ticks, setTick, clearTicks }
+}
+
+export function useStock() {
+  const path = stockPath()
+  const [data, update] = useRemote<{ stock: Record<string, number> }>(path, { stock: {} })
+
+  const setStock = useCallback((ingredient: string, qty: number | null) => {
+    update(d => {
+      const stock = { ...d.stock }
+      if (qty === null) delete stock[ingredient]
+      else stock[ingredient] = qty
+      return { stock }
+    })
+    enqueue({ method: 'PUT', path: `${path}/${ingredient}`, body: { qty } })
+  }, [path, update])
+
+  return { stock: data.stock, setStock }
 }

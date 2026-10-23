@@ -18,13 +18,17 @@ export interface Ingredient {
   category: Category
   unit: string
   unitWeight: number | null
-  packSize: number
+  packSize: number | null
   packUnit: string
   per100g: Macros
   fridgeDays: number | null
   openedDays: number | null
   stockTracked: boolean
   store: string
+  /** Shopping list section; one of PlanData.aisleOrder. */
+  aisle: string
+  /** Order within the aisle (lower first); ties sort by name. */
+  aisleRank: number
   note: string | null
 }
 
@@ -70,10 +74,11 @@ export interface Day {
   note?: string | null
 }
 
-export interface FreezeEntry {
-  cookDay: DayKey
-  qty: number
-  defrostEvening: DayKey
+/** One raw pack (meat, smoked salmon) cooked on several days of the week. */
+export interface OpenedPack {
+  openedOn: DayKey
+  lastUsedOn: DayKey
+  note: string
 }
 
 export interface ShoppingItem {
@@ -82,12 +87,12 @@ export interface ShoppingItem {
   category: Category
   totalQty: number
   unit: string
-  packSize: number
+  packSize: number | null
   packUnit: string
   stockTracked: boolean
   buy?: string
   usedOnDays: DayKey[]
-  freezeOnArrival?: FreezeEntry[]
+  openedPack?: OpenedPack
 }
 
 export interface Week {
@@ -116,6 +121,8 @@ export interface PlanData {
     notes: string[]
   }
   dayOrder: DayKey[]
+  /** Shopping list sections in walking order. */
+  aisleOrder: string[]
   ingredients: Ingredient[]
   recipes: Recipe[]
   weeks: Week[]
