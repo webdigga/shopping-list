@@ -70,3 +70,41 @@ describe('recipe labels', () => {
     }
   })
 })
+
+// Guards hand edits to meal-plan-data.json: run scripts/recompute-plan.py after changing recipes.
+describe('pre-computed numbers', () => {
+  const ingredient = (id: string) => getIngredient(id)!
+  const grams = (id: string, qty: number, unit: string) =>
+    unit === 'g' || unit === 'ml' ? qty : qty * (ingredient(id).unitWeight ?? 0)
+
+  it('recipe macros match the per-100g values', () => {
+    for (const r of plan.recipes) {
+      if (!r.macros) continue
+      for (const k of ['kcal', 'protein', 'carbs', 'fat'] as const) {
+        const sum = r.ingredients.reduce((t, x) => t + (grams(x.ingredient, x.qty, x.unit) * ingredient(x.ingredient).per100g[k]) / 100, 0)
+        expect(Math.abs(Math.round(sum) - r.macros[k]), `${r.id} ${k}`).toBeLessThanOrEqual(1)
+      }
+    }
+  })
+
+  it('day totals add up the day’s meals', () => {
+    for (const w of plan.weeks) for (const d of w.days) {
+      for (const k of ['kcal', 'protein', 'carbs', 'fat'] as const) {
+        const sum = d.meals.reduce((t, m) => t + (m.recipe ? getRecipe(m.recipe)!.macros![k] : 0), 0)
+        expect(sum, `W${w.week} ${d.day} ${k}`).toBe(d.totals[k])
+      }
+    }
+  })
+
+  it('shopping quantities add up the week’s recipes', () => {
+    for (const w of plan.weeks) {
+      const need = new Map<string, number>()
+      for (const d of w.days) for (const m of d.meals) {
+        if (!m.recipe) continue
+        for (const x of getRecipe(m.recipe)!.ingredients) need.set(x.ingredient, (need.get(x.ingredient) ?? 0) + x.qty)
+      }
+      expect(new Set(w.shopping.map(s => s.ingredient)), `W${w.week}`).toEqual(new Set(need.keys()))
+      for (const s of w.shopping) expect(Math.abs(s.totalQty - need.get(s.ingredient)!), `W${w.week} ${s.ingredient}`).toBeLessThan(0.01)
+    }
+  })
+})

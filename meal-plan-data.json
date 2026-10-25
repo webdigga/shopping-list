@@ -2940,10 +2940,10 @@
     },
     {
       "id": "roast-chicken",
-      "name": "Roast chicken dinner",
+      "name": "Steamed chicken dinner",
       "meal": "dinner",
       "servingsCooked": 1,
-      "cookMinutes": 40,
+      "cookMinutes": 30,
       "ingredients": [
         {
           "ingredient": "chicken",
@@ -2964,26 +2964,20 @@
           "ingredient": "greenbeans",
           "qty": 100,
           "unit": "g"
-        },
-        {
-          "ingredient": "oil",
-          "qty": 10,
-          "unit": "g"
         }
       ],
       "method": [
-        "Heat oven to 200°C (180°C fan).",
-        "Halve 250g baby potatoes, toss in 2 tsp oil, roast 35 minutes.",
-        "Roast 250g chicken breast for the last 20–25 minutes.",
-        "Steam 100g tenderstem broccoli and 100g green beans."
+        "Halve 250g baby potatoes and steam them with the 250g chicken breast for 20 to 25 minutes, until the chicken has no pink in the middle.",
+        "Add 100g tenderstem broccoli and 100g green beans for the last 6 to 7 minutes.",
+        "Season and serve."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 589,
+        "kcal": 499,
         "protein": 70,
         "carbs": 44,
-        "fat": 14
+        "fat": 4
       }
     },
     {
@@ -5250,10 +5244,10 @@
             "Evening: soak 40g oats in a splash of water in the fridge, for tomorrow's skyr bowl"
           ],
           "totals": {
-            "kcal": 2056,
+            "kcal": 1966,
             "protein": 201,
             "carbs": 110,
-            "fat": 86
+            "fat": 76
           },
           "note": null
         },
@@ -5998,7 +5992,7 @@
           "ingredient": "oil",
           "name": "Olive oil",
           "category": "pantry",
-          "totalQty": 66,
+          "totalQty": 56,
           "unit": "g",
           "packSize": 1000,
           "packUnit": "ml",
