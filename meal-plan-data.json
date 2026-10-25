@@ -834,7 +834,7 @@
     },
     {
       "id": "butterbeans",
-      "name": "Butter beans, tinned",
+      "name": "Butter beans, tinned (400g tin)",
       "category": "pantry",
       "per100g": {
         "kcal": 80,
@@ -849,14 +849,14 @@
       "unitWeight": 235,
       "fridgeDays": null,
       "openedDays": null,
-      "note": null,
+      "note": "400g tin, about 235g drained",
       "stockTracked": false,
       "aisle": "Cupboard",
       "aisleRank": 50
     },
     {
       "id": "kidneybeans",
-      "name": "Kidney beans, tinned",
+      "name": "Kidney beans, tinned (400g tin)",
       "category": "pantry",
       "per100g": {
         "kcal": 100,
@@ -871,14 +871,14 @@
       "unitWeight": 240,
       "fridgeDays": null,
       "openedDays": null,
-      "note": null,
+      "note": "400g tin, about 240g drained",
       "stockTracked": false,
       "aisle": "Cupboard",
       "aisleRank": 50
     },
     {
       "id": "blackbeans",
-      "name": "Black beans, tinned",
+      "name": "Black beans, tinned (400g tin)",
       "category": "pantry",
       "per100g": {
         "kcal": 105,
@@ -893,14 +893,14 @@
       "unitWeight": 240,
       "fridgeDays": null,
       "openedDays": null,
-      "note": null,
+      "note": "400g tin, about 240g drained",
       "stockTracked": false,
       "aisle": "Cupboard",
       "aisleRank": 50
     },
     {
       "id": "chickpeas",
-      "name": "Chickpeas, tinned",
+      "name": "Chickpeas, tinned (400g tin)",
       "category": "pantry",
       "per100g": {
         "kcal": 120,
@@ -915,14 +915,14 @@
       "unitWeight": 240,
       "fridgeDays": null,
       "openedDays": null,
-      "note": null,
+      "note": "400g tin, about 240g drained",
       "stockTracked": false,
       "aisle": "Cupboard",
       "aisleRank": 50
     },
     {
       "id": "tomatoestin",
-      "name": "Chopped tomatoes, tinned",
+      "name": "Chopped tomatoes, tinned (400g tin)",
       "category": "pantry",
       "per100g": {
         "kcal": 22,
@@ -2142,7 +2142,7 @@
     },
     {
       "id": "eggs-salmon",
-      "name": "Scrambled eggs, smoked salmon & sauerkraut",
+      "name": "Omelette, smoked salmon & sauerkraut",
       "meal": "breakfast",
       "servingsCooked": 1,
       "cookMinutes": 10,
@@ -2180,8 +2180,8 @@
       ],
       "method": [
         "Toast 1 slice of sourdough in a dry frying pan, about 3 minutes each side (from frozen is fine).",
-        "Scramble 3 eggs gently in 5ml olive oil over a low heat.",
-        "Serve the eggs on the toast with 100g smoked salmon and 50g sauerkraut on the side. Glass of kefir (250ml) on the side."
+        "Whisk 3 eggs and cook them as an omelette in 5ml olive oil over a medium-low heat.",
+        "Serve the omelette with the toast, 100g smoked salmon and 50g sauerkraut on the side. Glass of kefir (250ml) on the side."
       ],
       "prepAhead": null,
       "tags": [],
@@ -2194,7 +2194,7 @@
     },
     {
       "id": "eggs-salmon-postrun",
-      "name": "Post-parkrun eggs & smoked salmon",
+      "name": "Post-parkrun omelette & smoked salmon",
       "meal": "breakfast",
       "servingsCooked": 1,
       "cookMinutes": 10,
@@ -2232,8 +2232,8 @@
       ],
       "method": [
         "Toast 2 slices of sourdough in a dry frying pan, about 3 minutes each side (from frozen is fine).",
-        "Wilt 80g spinach in a pan with 5ml olive oil, then scramble 3 eggs.",
-        "Serve with 100g smoked salmon and an orange."
+        "Wilt 80g spinach in a pan with 5ml olive oil, then pour in 3 whisked eggs and cook as an omelette.",
+        "Serve with the toast, 100g smoked salmon and an orange."
       ],
       "prepAhead": null,
       "tags": [
@@ -5911,7 +5911,7 @@
         },
         {
           "ingredient": "butterbeans",
-          "name": "Butter beans, tinned",
+          "name": "Butter beans, tinned (400g tin)",
           "category": "pantry",
           "totalQty": 2,
           "unit": "tin",
@@ -5940,7 +5940,7 @@
         },
         {
           "ingredient": "tomatoestin",
-          "name": "Chopped tomatoes, tinned",
+          "name": "Chopped tomatoes, tinned (400g tin)",
           "category": "pantry",
           "totalQty": 2,
           "unit": "tin",
@@ -5982,7 +5982,7 @@
         },
         {
           "ingredient": "kidneybeans",
-          "name": "Kidney beans, tinned",
+          "name": "Kidney beans, tinned (400g tin)",
           "category": "pantry",
           "totalQty": 1,
           "unit": "tin",
@@ -6959,7 +6959,7 @@
         },
         {
           "ingredient": "blackbeans",
-          "name": "Black beans, tinned",
+          "name": "Black beans, tinned (400g tin)",
           "category": "pantry",
           "totalQty": 1,
           "unit": "tin",
@@ -6986,7 +6986,7 @@
         },
         {
           "ingredient": "chickpeas",
-          "name": "Chickpeas, tinned",
+          "name": "Chickpeas, tinned (400g tin)",
           "category": "pantry",
           "totalQty": 1,
           "unit": "tin",
@@ -6999,7 +6999,7 @@
         },
         {
           "ingredient": "tomatoestin",
-          "name": "Chopped tomatoes, tinned",
+          "name": "Chopped tomatoes, tinned (400g tin)",
           "category": "pantry",
           "totalQty": 3,
           "unit": "tin",
@@ -8167,7 +8167,7 @@
         },
         {
           "ingredient": "tomatoestin",
-          "name": "Chopped tomatoes, tinned",
+          "name": "Chopped tomatoes, tinned (400g tin)",
           "category": "pantry",
           "totalQty": 3.01,
           "unit": "tin",
