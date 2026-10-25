@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { getIngredient } from './data'
-import { formatAmount, formatShortDate, itemNoun, toFraction } from './format'
+import { formatAmount, formatShortDate, itemNoun, toFraction, toSpoons } from './format'
 
 describe('toFraction', () => {
   it.each([
@@ -56,5 +56,25 @@ describe('itemNoun', () => {
 describe('formatShortDate', () => {
   it('reads like "Thu 29 Oct"', () => {
     expect(formatShortDate('2026-10-29')).toBe('Thu 29 Oct')
+  })
+})
+
+describe('toSpoons', () => {
+  it.each([
+    [3, '½ tsp'],
+    [5, '1 tsp'],
+    [6, '1 tsp'],
+    [10, '2 tsp'],
+    [15, '1 tbsp'],
+    [20, '1 tbsp + 1 tsp'],
+    [30, '2 tbsp'],
+  ])('%sml → %s', (ml, text) => {
+    expect(toSpoons(ml)).toBe(text)
+  })
+
+  it('is used for oil and sauces in recipe amounts', () => {
+    expect(formatAmount(10, 'g', getIngredient('oil'))).toBe('2 tsp')
+    expect(formatAmount(15, 'ml', getIngredient('soy'))).toBe('1 tbsp')
+    expect(formatAmount(250, 'ml', getIngredient('kefir'))).toBe('250ml')
   })
 })

@@ -49,11 +49,31 @@ export function itemNoun(name: string): { one: string; many: string } {
   return { one: base, many: `${base}s` }
 }
 
+/** Oil, soy sauce, fish sauce and vinegar are measured with spoons, not jugs. */
+const SPOON_INGREDIENTS = new Set(['oil', 'soy', 'fishsauce', 'vinegar'])
+
+/** 15ml = 1 tbsp, 5ml = 1 tsp, to the nearest half teaspoon: 10ml is "2 tsp", 20ml is "1 tbsp + 1 tsp". */
+export function toSpoons(ml: number): string {
+  let tbsp = Math.floor(ml / 15)
+  let tsp = Math.round(((ml - tbsp * 15) / 5) * 2) / 2
+  if (tsp === 3) {
+    tbsp += 1
+    tsp = 0
+  }
+  if (tbsp === 0 && tsp === 0) tsp = 0.5
+  const tspText = tsp === 0.5 ? '½' : Number.isInteger(tsp) ? String(tsp) : `${Math.floor(tsp)}½`
+  const parts = [tbsp ? `${tbsp} tbsp` : '', tsp ? `${tspText} tsp` : ''].filter(Boolean)
+  return parts.join(' + ')
+}
+
 /**
  * The amount to show in large text, e.g. "150g", "175ml", "½ pepper", "2 eggs", "1 tin".
  * For "each" the item noun is part of the amount, so the label below it can carry the detail.
  */
 export function formatAmount(qty: number, unit: string, ingredient?: Ingredient): string {
+  if ((unit === 'g' || unit === 'ml') && ingredient && SPOON_INGREDIENTS.has(ingredient.id) && qty <= 45) {
+    return toSpoons(qty)
+  }
   if (unit === 'g' || unit === 'ml') return `${Math.round(qty)}${unit}`
   if (!FRACTION_UNITS.has(unit)) return `${Math.round(qty * 100) / 100} ${unit}`
 
