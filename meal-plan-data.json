@@ -2074,11 +2074,11 @@
         }
       ],
       "method": [
-        "The night before: soak 40g oats in a splash of water in the fridge.",
+        "The night before: soak 40g oats in a splash of water in the fridge, with 100g frozen berries on top so they defrost overnight.",
         "In the morning, spoon 300g skyr into a bowl.",
-        "Top with the soaked oats, 100g frozen berries straight from the freezer and 20g pumpkin seeds."
+        "Top with the soaked oats and berries and 20g pumpkin seeds."
       ],
-      "prepAhead": "Soak oats the night before",
+      "prepAhead": "Soak the oats and berries the night before",
       "tags": [],
       "macros": {
         "kcal": 497,
@@ -3847,10 +3847,10 @@
         }
       ],
       "method": [
-        "The night before: soak 30g oats in a splash of water.",
-        "Spoon 300g quark into a bowl; top with the oats, 100g frozen raspberries straight from the freezer and 20g almonds."
+        "The night before: soak 30g oats in a splash of water in the fridge, with 100g frozen raspberries on top so they defrost overnight.",
+        "Spoon 300g quark into a bowl; top with the soaked oats and raspberries and 20g almonds."
       ],
-      "prepAhead": "Soak oats the night before",
+      "prepAhead": "Soak the oats and raspberries the night before",
       "tags": [],
       "macros": {
         "kcal": 468,
@@ -5241,7 +5241,7 @@
             }
           ],
           "prep": [
-            "Evening: soak 40g oats in a splash of water in the fridge, for tomorrow's skyr bowl"
+            "Evening: soak 40g oats in a splash of water in the fridge, with 100g frozen berries on top, for tomorrow's skyr bowl"
           ],
           "totals": {
             "kcal": 1966,
@@ -6494,7 +6494,7 @@
             }
           ],
           "prep": [
-            "Evening: soak 30g oats in a splash of water, for tomorrow's quark bowl"
+            "Evening: soak 30g oats in a splash of water in the fridge, with 100g frozen raspberries on top, for tomorrow's quark bowl"
           ],
           "totals": {
             "kcal": 2219,
@@ -7403,7 +7403,7 @@
             }
           ],
           "prep": [
-            "Evening: soak 30g oats in a splash of water, for tomorrow's quark bowl"
+            "Evening: soak 30g oats in a splash of water in the fridge, with 100g frozen raspberries on top, for tomorrow's quark bowl"
           ],
           "totals": {
             "kcal": 2274,
@@ -7598,7 +7598,7 @@
             }
           ],
           "prep": [
-            "Evening: soak 40g oats in a splash of water in the fridge, for tomorrow's skyr bowl"
+            "Evening: soak 40g oats in a splash of water in the fridge, with 100g frozen berries on top, for tomorrow's skyr bowl"
           ],
           "totals": {
             "kcal": 2273,
