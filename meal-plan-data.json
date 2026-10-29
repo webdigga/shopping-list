@@ -2599,7 +2599,7 @@
     },
     {
       "id": "chicken-bean-salad",
-      "name": "Chicken & butter bean salad",
+      "name": "Chicken, butter bean & rice salad",
       "meal": "lunch",
       "servingsCooked": 1,
       "cookMinutes": 25,
@@ -2615,10 +2615,9 @@
           "unit": "tin"
         },
         {
-          "ingredient": "eggs",
+          "ingredient": "riceW",
           "qty": 1,
-          "unit": "each",
-          "note": "boiled"
+          "unit": "pouch"
         },
         {
           "ingredient": "mixedleaves",
@@ -2632,7 +2631,7 @@
         },
         {
           "ingredient": "oil",
-          "qty": 10,
+          "qty": 5,
           "unit": "g"
         },
         {
@@ -2642,17 +2641,17 @@
         }
       ],
       "method": [
-        "Steam 200g chicken breast for 20–25 minutes until cooked through; slice.",
-        "Boil 1 egg for 9 minutes. Drain and rinse 1 tin butter beans.",
-        "Toss with 50g mixed leaves, a little chopped red onion, 2 tsp olive oil and lemon juice."
+        "Steam 200g chicken breast for 20 to 25 minutes until cooked through; slice.",
+        "Drain and rinse 1 tin butter beans. Tip 1 white basmati pouch into a bowl, cold, straight from the pouch.",
+        "Toss with the chicken, beans, 50g mixed leaves, a little chopped red onion, 1 tsp olive oil and lemon juice."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 587,
-        "protein": 70,
-        "carbs": 31,
-        "fat": 19
+        "kcal": 826,
+        "protein": 71,
+        "carbs": 106,
+        "fat": 13
       }
     },
     {
@@ -3773,7 +3772,7 @@
     },
     {
       "id": "sirloin",
-      "name": "Steamed sirloin steak with roasted veg",
+      "name": "Steamed sirloin steak with potatoes & veg",
       "meal": "dinner",
       "servingsCooked": 1,
       "cookMinutes": 35,
@@ -3785,7 +3784,7 @@
         },
         {
           "ingredient": "potatoes",
-          "qty": 200,
+          "qty": 250,
           "unit": "g"
         },
         {
@@ -3797,25 +3796,20 @@
           "ingredient": "courgette",
           "qty": 0.5,
           "unit": "each"
-        },
-        {
-          "ingredient": "oil",
-          "qty": 5,
-          "unit": "g"
         }
       ],
       "method": [
-        "Halve 200g baby potatoes; roast with pepper and courgette in 1 tsp oil at 200°C for 30 minutes.",
-        "For the last 10 minutes, steam the sirloin: 8 to 10 minutes for medium (a little less for pink, a little more for well done).",
+        "Halve 250g baby potatoes and steam them for 15 minutes.",
+        "Add the sliced pepper and courgette and lay the sirloin on top; steam for 8 to 10 minutes more for medium (a little less for pink, a little more for well done).",
         "Rest the steak for 5 minutes before slicing."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 599,
-        "protein": 57,
-        "carbs": 37,
-        "fat": 24
+        "kcal": 589,
+        "protein": 58,
+        "carbs": 44,
+        "fat": 19
       }
     },
     {
@@ -4669,7 +4663,7 @@
         },
         {
           "ingredient": "potatoes",
-          "qty": 200,
+          "qty": 400,
           "unit": "g"
         },
         {
@@ -4694,7 +4688,7 @@
         },
         {
           "ingredient": "oil",
-          "qty": 10,
+          "qty": 5,
           "unit": "g"
         },
         {
@@ -4704,17 +4698,17 @@
         }
       ],
       "method": [
-        "Steam 200g baby potatoes for 15 minutes. Lay the rump steak on top for the last 8 to 10 minutes (medium), and add 200g green beans for the last 6.",
-        "Chimichurri: finely chop 15g parsley and 1 garlic clove; mix with 2 tsp olive oil, 2 tsp vinegar and chilli.",
+        "Steam 400g baby potatoes for 15 minutes. Lay the rump steak on top for the last 8 to 10 minutes (medium), and add 200g green beans for the last 6.",
+        "Chimichurri: finely chop 15g parsley and 1 garlic clove; mix with 1 tsp olive oil, 2 tsp vinegar and chilli.",
         "Rest the steak for 5 minutes, slice it and spoon over the chimichurri."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 597,
-        "protein": 56,
-        "carbs": 37,
-        "fat": 23
+        "kcal": 692,
+        "protein": 60,
+        "carbs": 67,
+        "fat": 19
       }
     },
     {
@@ -5104,6 +5098,65 @@
         "carbs": 3,
         "fat": 16
       }
+    },
+    {
+      "id": "egg-lentil-rice-salad",
+      "name": "Egg, lentil & rice salad",
+      "meal": "lunch",
+      "servingsCooked": 1,
+      "cookMinutes": 12,
+      "ingredients": [
+        {
+          "ingredient": "lentils",
+          "qty": 1,
+          "unit": "pouch"
+        },
+        {
+          "ingredient": "riceW",
+          "qty": 1,
+          "unit": "pouch"
+        },
+        {
+          "ingredient": "eggs",
+          "qty": 2,
+          "unit": "each",
+          "note": "boiled"
+        },
+        {
+          "ingredient": "mixedleaves",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient": "tomatoes",
+          "qty": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "ingredient": "lemon",
+          "qty": 0.5,
+          "unit": "each"
+        }
+      ],
+      "method": [
+        "Boil 2 eggs for 9 minutes; cool and quarter.",
+        "Tip 1 lentil pouch and 1 white basmati pouch into a bowl, cold, straight from the pouch.",
+        "Add 50g mixed leaves and a chopped tomato.",
+        "Dress with 1 tsp olive oil and lemon juice."
+      ],
+      "prepAhead": null,
+      "tags": [],
+      "macros": {
+        "kcal": 889,
+        "protein": 46,
+        "carbs": 119,
+        "fat": 24
+      }
     }
   ],
   "weeks": [
@@ -5211,8 +5264,8 @@
           "dayName": "Sunday",
           "dayIndex": 3,
           "training": {
-            "label": "Rest",
-            "carbTarget": "low"
+            "label": "Rest. Carbs up for Monday's run",
+            "carbTarget": "medium"
           },
           "meals": [
             {
@@ -5244,10 +5297,10 @@
             "Evening: soak 40g oats in a splash of water in the fridge, with 100g frozen berries on top, for tomorrow's skyr bowl"
           ],
           "totals": {
-            "kcal": 1966,
-            "protein": 201,
-            "carbs": 110,
-            "fat": 76
+            "kcal": 2205,
+            "protein": 202,
+            "carbs": 185,
+            "fat": 70
           },
           "note": null
         },
@@ -5256,7 +5309,7 @@
           "dayName": "Monday",
           "dayIndex": 4,
           "training": {
-            "label": "Rest (optional run later)",
+            "label": "Long run or intervals",
             "carbTarget": "low"
           },
           "meals": [
@@ -5298,7 +5351,7 @@
             "carbs": 113,
             "fat": 81
           },
-          "note": null
+          "note": "Long run: go first thing, before breakfast. Intervals: eat breakfast first, then go about 2 hours later."
         },
         {
           "day": "tue",
@@ -5354,7 +5407,7 @@
           "dayName": "Wednesday",
           "dayIndex": 6,
           "training": {
-            "label": "Recovery",
+            "label": "Strength and conditioning",
             "carbTarget": "low"
           },
           "meals": [
@@ -5403,7 +5456,7 @@
           "dayName": "Thursday",
           "dayIndex": 7,
           "training": {
-            "label": "Training run ~10:30am",
+            "label": "15K cycle",
             "carbTarget": "high"
           },
           "meals": [
@@ -5495,7 +5548,7 @@
           "ingredient": "eggs",
           "name": "Eggs, large",
           "category": "core",
-          "totalQty": 14,
+          "totalQty": 13,
           "unit": "each",
           "packSize": 15,
           "packUnit": "each",
@@ -5508,7 +5561,7 @@
             "wed",
             "thu"
           ],
-          "buy": "14 loose"
+          "buy": "13 loose"
         },
         {
           "ingredient": "ginger",
@@ -5992,7 +6045,7 @@
           "ingredient": "oil",
           "name": "Olive oil",
           "category": "pantry",
-          "totalQty": 56,
+          "totalQty": 51,
           "unit": "g",
           "packSize": 1000,
           "packUnit": "ml",
@@ -6083,12 +6136,13 @@
           "ingredient": "riceW",
           "name": "White basmati rice pouch",
           "category": "pantry",
-          "totalQty": 3,
+          "totalQty": 4,
           "unit": "pouch",
           "packSize": 1,
           "packUnit": "pouch",
           "stockTracked": false,
           "usedOnDays": [
+            "sun",
             "tue",
             "thu"
           ]
@@ -6272,8 +6326,8 @@
           "dayName": "Sunday",
           "dayIndex": 3,
           "training": {
-            "label": "Rest",
-            "carbTarget": "low"
+            "label": "Rest. Carbs up for Monday's run",
+            "carbTarget": "medium"
           },
           "meals": [
             {
@@ -6285,7 +6339,7 @@
             {
               "time": "12:30",
               "slot": "lunch",
-              "recipe": "egg-lentil-salad",
+              "recipe": "egg-lentil-rice-salad",
               "free": false
             },
             {
@@ -6305,10 +6359,10 @@
             "Evening: boil 2 eggs for Monday's breakfast"
           ],
           "totals": {
-            "kcal": 2218,
-            "protein": 174,
-            "carbs": 119,
-            "fat": 110
+            "kcal": 2384,
+            "protein": 170,
+            "carbs": 200,
+            "fat": 95
           },
           "note": null
         },
@@ -6317,7 +6371,7 @@
           "dayName": "Monday",
           "dayIndex": 4,
           "training": {
-            "label": "Rest (optional run later)",
+            "label": "Long run or intervals",
             "carbTarget": "low"
           },
           "meals": [
@@ -6359,7 +6413,7 @@
             "carbs": 137,
             "fat": 95
           },
-          "note": null
+          "note": "Long run: go first thing, before breakfast. Intervals: eat breakfast first, then go about 2 hours later."
         },
         {
           "day": "tue",
@@ -6415,7 +6469,7 @@
           "dayName": "Wednesday",
           "dayIndex": 6,
           "training": {
-            "label": "Recovery",
+            "label": "Strength and conditioning",
             "carbTarget": "low"
           },
           "meals": [
@@ -6464,7 +6518,7 @@
           "dayName": "Thursday",
           "dayIndex": 7,
           "training": {
-            "label": "Training run ~10:30am",
+            "label": "15K cycle",
             "carbTarget": "high"
           },
           "meals": [
@@ -6510,7 +6564,7 @@
           "ingredient": "potatoes",
           "name": "Baby / new potatoes",
           "category": "core",
-          "totalQty": 400,
+          "totalQty": 450,
           "unit": "g",
           "packSize": 750,
           "packUnit": "g",
@@ -6540,7 +6594,7 @@
           "ingredient": "eggs",
           "name": "Eggs, large",
           "category": "core",
-          "totalQty": 21,
+          "totalQty": 20,
           "unit": "each",
           "packSize": 15,
           "packUnit": "each",
@@ -6554,7 +6608,7 @@
             "wed",
             "thu"
           ],
-          "buy": "21 loose"
+          "buy": "20 loose"
         },
         {
           "ingredient": "ginger",
@@ -6706,7 +6760,7 @@
           "ingredient": "feta",
           "name": "Feta",
           "category": "fresh",
-          "totalQty": 200,
+          "totalQty": 160,
           "unit": "g",
           "packSize": 200,
           "packUnit": "g",
@@ -7078,7 +7132,7 @@
           "ingredient": "oil",
           "name": "Olive oil",
           "category": "pantry",
-          "totalQty": 40,
+          "totalQty": 35,
           "unit": "g",
           "packSize": 1000,
           "packUnit": "ml",
@@ -7165,12 +7219,13 @@
           "ingredient": "riceW",
           "name": "White basmati rice pouch",
           "category": "pantry",
-          "totalQty": 3,
+          "totalQty": 4,
           "unit": "pouch",
           "packSize": 1,
           "packUnit": "pouch",
           "stockTracked": false,
           "usedOnDays": [
+            "sun",
             "tue",
             "thu"
           ]
@@ -7373,8 +7428,8 @@
           "dayName": "Sunday",
           "dayIndex": 3,
           "training": {
-            "label": "Rest",
-            "carbTarget": "low"
+            "label": "Rest. Carbs up for Monday's run",
+            "carbTarget": "medium"
           },
           "meals": [
             {
@@ -7406,10 +7461,10 @@
             "Evening: soak 30g oats in a splash of water in the fridge, with 100g frozen raspberries on top, for tomorrow's quark bowl"
           ],
           "totals": {
-            "kcal": 2274,
-            "protein": 176,
-            "carbs": 156,
-            "fat": 95
+            "kcal": 2369,
+            "protein": 180,
+            "carbs": 186,
+            "fat": 91
           },
           "note": null
         },
@@ -7418,7 +7473,7 @@
           "dayName": "Monday",
           "dayIndex": 4,
           "training": {
-            "label": "Rest (optional run later)",
+            "label": "Long run or intervals",
             "carbTarget": "low"
           },
           "meals": [
@@ -7459,7 +7514,7 @@
             "carbs": 144,
             "fat": 75
           },
-          "note": null
+          "note": "Long run: go first thing, before breakfast. Intervals: eat breakfast first, then go about 2 hours later."
         },
         {
           "day": "tue",
@@ -7520,7 +7575,7 @@
           "dayName": "Wednesday",
           "dayIndex": 6,
           "training": {
-            "label": "Recovery",
+            "label": "Strength and conditioning",
             "carbTarget": "low"
           },
           "meals": [
@@ -7568,7 +7623,7 @@
           "dayName": "Thursday",
           "dayIndex": 7,
           "training": {
-            "label": "Training run ~10:30am",
+            "label": "15K cycle",
             "carbTarget": "high"
           },
           "meals": [
@@ -7614,7 +7669,7 @@
           "ingredient": "potatoes",
           "name": "Baby / new potatoes",
           "category": "core",
-          "totalQty": 400,
+          "totalQty": 600,
           "unit": "g",
           "packSize": 750,
           "packUnit": "g",
@@ -8249,7 +8304,7 @@
           "ingredient": "oil",
           "name": "Olive oil",
           "category": "pantry",
-          "totalQty": 71,
+          "totalQty": 66,
           "unit": "g",
           "packSize": 1000,
           "packUnit": "ml",

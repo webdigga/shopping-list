@@ -19,7 +19,7 @@ MACROS = ('kcal', 'protein', 'carbs', 'fat')
 def default_buy(i, total):
     if i['category'] == 'pantry' or (i['category'] == 'frozen' and not i['stockTracked']):
         return None
-    if i['unit'] == 'each' and i['packSize'] == 1:
+    if i['unit'] == 'each':
         return f"{math.ceil(total - 1e-9)} loose"
     if i['packSize'] and i['unit'] == i['packUnit']:
         return f"{math.ceil(total / i['packSize'] - 1e-9)} × {i['packSize']}{i['unit']}"
