@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { ShoppingItem } from '@shared/planTypes'
 import { getWeek, plan } from './data'
-import { lastsUntil, shoppingAisles, stapleBuy } from './shopping'
+import { lastsUntil, openedOn, shoppingAisles, stapleBuy } from './shopping'
 
 const item = (over: Partial<ShoppingItem>): ShoppingItem => ({
   ingredient: 'eggs',
@@ -13,20 +13,32 @@ const item = (over: Partial<ShoppingItem>): ShoppingItem => ({
   packUnit: 'each',
   stockTracked: true,
   usedOnDays: ['sat', 'thu'],
+  lastNeededOn: 'thu',
   ...over,
 })
 
 describe('lastsUntil', () => {
-  it('is the date of the last day the item is used, from the Friday shop', () => {
-    expect(lastsUntil(item({ usedOnDays: ['fri', 'tue'] }), '2026-10-23')).toBe('2026-10-27')
-    expect(lastsUntil(item({ usedOnDays: ['thu', 'sat'] }), '2026-10-23')).toBe('2026-10-29')
+  it('is the real date of the last day the item is needed, from the shop date', () => {
+    expect(lastsUntil(item({ lastNeededOn: 'tue' }), '2026-10-30')).toBe('2026-11-03')
+    expect(lastsUntil(item({ lastNeededOn: 'wed' }), '2026-10-30')).toBe('2026-11-04')
+  })
+
+  it('moves with the shop date, so the next cycle gets new dates', () => {
+    expect(lastsUntil(item({ lastNeededOn: 'tue' }), '2026-11-20')).toBe('2026-11-24')
+  })
+
+  it('uses the day a batch is cooked, not the day it is eaten', () => {
+    const chicken = getWeek(2).shopping.find(s => s.ingredient === 'chicken')!
+    expect(chicken.usedOnDays).toEqual(['tue', 'wed'])
+    expect(chicken.lastNeededOn).toBe('mon')
   })
 })
 
 describe('opened packs', () => {
-  it('note when one raw pack is cooked across several days', () => {
+  it('give a real opened date when one raw pack is cooked across several days', () => {
     const mince = getWeek(1).shopping.find(s => s.ingredient === 'beefmince')!
-    expect(mince.openedPack?.note).toBe('Opened Friday, last used Tuesday. Keep tightly sealed in the fridge and check the label.')
+    expect(openedOn(mince, '2026-10-23')).toBe('2026-10-23')
+    expect(openedOn(item({}), '2026-10-23')).toBeNull()
   })
 
   it('never ask for anything to be frozen on arrival or defrosted', () => {

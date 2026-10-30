@@ -91,8 +91,8 @@ Sections are aisles, in `aisleOrder`: Fruit & veg, Bakery, Dairy, Meat & fish, F
 
 Every item is tickable (tick = bought) and shows:
 - Its `buy` text exactly as given (cupboard and freezer staples without `buy` show the week's amount)
-- Fresh items: **"Needs to last until: Thu 29 Oct"**, the date of the last day in `usedOnDays`, counted from the shop date
-- Items with `openedPack` (one raw pack cooked on several days): its `note` in small text instead
+- Fresh items: **"Needs to last until: Thu 29 Oct"**, always a real date: `lastNeededOn` counted from the shop date
+- Items with `openedPack` (one raw pack cooked on several days) also show "Opened Fri 23 Oct. Keep tightly sealed in the fridge and check the label."
 - Stock-tracked items (`stockTracked: true`: eggs, potatoes, onions, red onions, carrots, garlic, ginger, frozen cod and salmon, sourdough): an "I have ___" input, with **buy = need minus have** rounded up to whole packs. Stock values persist in `mp_stock`.
 
 Nothing is frozen on arrival or defrosted: frozen fish is cooked from frozen and frozen bread is toasted from frozen.
@@ -169,7 +169,7 @@ weeks       [{ week: 1|2|3,
                days[{ day, dayName, dayIndex, training{label, carbTarget},
                       meals[{time, slot, recipe|null, free}], prep[], totals{...}, note? }],
                shopping[{ ingredient, name, category, totalQty, unit, packSize, packUnit, stockTracked,
-                          buy?, usedOnDays[], openedPack?{openedOn, lastUsedOn, note} }] }]
+                          buy?, usedOnDays[], lastNeededOn, openedPack?{openedOn} }] }]
 extras      [{ id, name }]
 ```
 

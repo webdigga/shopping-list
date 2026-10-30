@@ -14,10 +14,14 @@ function aisleRank(item: ShoppingItem): number {
   return getIngredient(item.ingredient)?.aisleRank ?? 50
 }
 
-/** The date of the last day this item is used, counted from the Friday shop. */
+/** The date this item must last until, counted from the Friday shop. */
 export function lastsUntil(item: ShoppingItem, shopDate: string): string {
-  const last = Math.max(...item.usedOnDays.map(dayIndex))
-  return addDays(shopDate, last)
+  return addDays(shopDate, dayIndex(item.lastNeededOn))
+}
+
+/** For a raw pack cooked on several days: when it gets opened, as a real date. */
+export function openedOn(item: ShoppingItem, shopDate: string): string | null {
+  return item.openedPack ? addDays(shopDate, dayIndex(item.openedPack.openedOn)) : null
 }
 
 export interface StapleBuy {

@@ -4,8 +4,7 @@
 
 Meal plan app is live and in use. Week 1 is done, Week 2 started Friday 30 Oct 2026.
 
-1. Confirm migrations 0004 to 0006 are applied remotely (`npm run db:migrate:remote -w worker`); 0006 brings back `mp_stock`, which the "I have" boxes need
-2. Review Week 2 and Week 3 as David reaches them
+1. Review Week 2 and Week 3 as David reaches them
 
 ## Context
 

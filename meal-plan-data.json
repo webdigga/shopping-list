@@ -3590,10 +3590,10 @@
     },
     {
       "id": "pork-loin",
-      "name": "Pork loin with sweet potato & sauerkraut",
+      "name": "Steamed pork loin with sweet potato & sauerkraut",
       "meal": "lunch",
       "servingsCooked": 1,
-      "cookMinutes": 35,
+      "cookMinutes": 20,
       "ingredients": [
         {
           "ingredient": "porkloin",
@@ -3611,29 +3611,23 @@
           "unit": "g"
         },
         {
-          "ingredient": "oil",
-          "qty": 5,
-          "unit": "g"
-        },
-        {
           "ingredient": "paprika",
           "qty": 1,
           "unit": "tsp"
         }
       ],
       "method": [
-        "Heat the oven to 200°C (180°C fan).",
-        "Roast 200g sweet potato chunks with 1 tsp oil for 30 minutes.",
-        "Season 2 pork loin steaks (240g) with paprika and pan-fry for 4 to 5 minutes each side, until cooked through.",
+        "Cut 200g sweet potato into chunks. Sprinkle the paprika over 2 pork loin steaks (240g).",
+        "Steam the sweet potato and pork together for 15 minutes, until the pork has no pink in the middle. Thicker steaks may need 2 to 3 minutes more.",
         "Serve with 80g sauerkraut."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 567,
+        "kcal": 522,
         "protein": 57,
         "carbs": 38,
-        "fat": 18
+        "fat": 13
       }
     },
     {
@@ -3733,9 +3727,9 @@
         }
       ],
       "method": [
-        "Trim 300g chicken thighs and cut into chunks.",
-        "Brown the chicken in a dry non-stick pan; add chopped onion, garlic and 2 tsp garam masala.",
-        "Add 1 tin chickpeas and 1 tin tomatoes; simmer 25 minutes.",
+        "Cut 300g chicken thighs into chunks and steam for 15 to 20 minutes, until there is no pink in the middle.",
+        "Meanwhile, cook the chopped onion and garlic gently in a splash of water for 5 minutes, then stir in 2 tsp garam masala.",
+        "Add 1 tin chickpeas, 1 tin tomatoes and the steamed chicken; simmer for 15 minutes.",
         "Pour boiling water over 60g couscous, cover 5 minutes, fluff and serve."
       ],
       "prepAhead": null,
@@ -5492,7 +5486,8 @@
             "mon",
             "thu"
           ],
-          "buy": "1 × 750g"
+          "buy": "1 × 750g",
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "banana",
@@ -5508,7 +5503,8 @@
             "tue",
             "thu"
           ],
-          "buy": "4 loose"
+          "buy": "4 loose",
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "carrots",
@@ -5522,7 +5518,8 @@
           "usedOnDays": [
             "fri"
           ],
-          "buy": "1 loose"
+          "buy": "1 loose",
+          "lastNeededOn": "fri"
         },
         {
           "ingredient": "eggs",
@@ -5541,7 +5538,8 @@
             "wed",
             "thu"
           ],
-          "buy": "13 loose"
+          "buy": "13 loose",
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "ginger",
@@ -5555,7 +5553,8 @@
           "usedOnDays": [
             "tue"
           ],
-          "buy": "1 if you're running low"
+          "buy": "1 if you're running low",
+          "lastNeededOn": "tue"
         },
         {
           "ingredient": "garlic",
@@ -5572,7 +5571,8 @@
             "wed",
             "thu"
           ],
-          "buy": "1 if you're running low"
+          "buy": "1 if you're running low",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "onion",
@@ -5589,7 +5589,8 @@
             "wed",
             "thu"
           ],
-          "buy": "1 × bag (if running low)"
+          "buy": "1 × bag (if running low)",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "redonion",
@@ -5605,7 +5606,8 @@
             "sun",
             "mon"
           ],
-          "buy": "1 × pack of 3 (if running low)"
+          "buy": "1 × pack of 3 (if running low)",
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "beefmince",
@@ -5621,10 +5623,9 @@
             "tue"
           ],
           "buy": "1 × 500g",
+          "lastNeededOn": "tue",
           "openedPack": {
-            "openedOn": "fri",
-            "lastUsedOn": "tue",
-            "note": "Opened Friday, last used Tuesday. Keep tightly sealed in the fridge and check the label."
+            "openedOn": "fri"
           }
         },
         {
@@ -5641,7 +5642,8 @@
             "mon",
             "thu"
           ],
-          "buy": "1 × 400g"
+          "buy": "1 × 400g",
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "chicken",
@@ -5659,10 +5661,9 @@
             "wed"
           ],
           "buy": "1 × 1kg pack",
+          "lastNeededOn": "mon",
           "openedPack": {
-            "openedOn": "fri",
-            "lastUsedOn": "mon",
-            "note": "Opened Friday, last used Monday. Keep tightly sealed in the fridge and check the label."
+            "openedOn": "fri"
           }
         },
         {
@@ -5677,7 +5678,8 @@
           "usedOnDays": [
             "thu"
           ],
-          "buy": "1 × 400g pack (if running low)"
+          "buy": "1 × 400g pack (if running low)",
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "greenbeans",
@@ -5692,7 +5694,8 @@
             "sun",
             "tue"
           ],
-          "buy": "1 × 200g"
+          "buy": "1 × 200g",
+          "lastNeededOn": "tue"
         },
         {
           "ingredient": "kefir",
@@ -5707,7 +5710,8 @@
             "sun",
             "wed"
           ],
-          "buy": "1 × 500ml"
+          "buy": "1 × 500ml",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "lemon",
@@ -5723,7 +5727,8 @@
             "mon",
             "thu"
           ],
-          "buy": "2 loose"
+          "buy": "2 loose",
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "lime",
@@ -5737,7 +5742,8 @@
           "usedOnDays": [
             "tue"
           ],
-          "buy": "1 loose"
+          "buy": "1 loose",
+          "lastNeededOn": "tue"
         },
         {
           "ingredient": "orange",
@@ -5751,7 +5757,8 @@
           "usedOnDays": [
             "sat"
           ],
-          "buy": "1 loose"
+          "buy": "1 loose",
+          "lastNeededOn": "sat"
         },
         {
           "ingredient": "pepper",
@@ -5768,7 +5775,8 @@
             "wed",
             "thu"
           ],
-          "buy": "3 loose"
+          "buy": "3 loose",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "salmon",
@@ -5782,7 +5790,8 @@
           "usedOnDays": [
             "mon"
           ],
-          "buy": "1 × 400g pack (if running low)"
+          "buy": "1 × 400g pack (if running low)",
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "milk",
@@ -5797,7 +5806,8 @@
             "tue",
             "thu"
           ],
-          "buy": "1 × 568ml"
+          "buy": "1 × 568ml",
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "skyr",
@@ -5814,7 +5824,8 @@
             "tue",
             "thu"
           ],
-          "buy": "2 × 450g"
+          "buy": "2 × 450g",
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "smokedsalmon",
@@ -5831,10 +5842,9 @@
             "wed"
           ],
           "buy": "1 × 300g",
+          "lastNeededOn": "wed",
           "openedPack": {
-            "openedOn": "sat",
-            "lastUsedOn": "wed",
-            "note": "Opened Saturday, last used Wednesday. Keep tightly sealed in the fridge and check the label."
+            "openedOn": "sat"
           }
         },
         {
@@ -5849,7 +5859,8 @@
           "usedOnDays": [
             "fri"
           ],
-          "buy": "250g loose"
+          "buy": "250g loose",
+          "lastNeededOn": "fri"
         },
         {
           "ingredient": "turkeymince",
@@ -5864,7 +5875,8 @@
             "wed",
             "thu"
           ],
-          "buy": "1 × 500g"
+          "buy": "1 × 500g",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "berries",
@@ -5878,7 +5890,8 @@
           "usedOnDays": [
             "fri",
             "mon"
-          ]
+          ],
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "peas",
@@ -5891,7 +5904,8 @@
           "stockTracked": false,
           "usedOnDays": [
             "thu"
-          ]
+          ],
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "spinach",
@@ -5905,7 +5919,8 @@
           "usedOnDays": [
             "sat"
           ],
-          "buy": "1 × 240g bag"
+          "buy": "1 × 240g bag",
+          "lastNeededOn": "sat"
         },
         {
           "ingredient": "sourdough",
@@ -5921,7 +5936,8 @@
             "sun",
             "wed"
           ],
-          "buy": "1 loaf"
+          "buy": "1 loaf",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "riceB",
@@ -5936,7 +5952,8 @@
             "sun",
             "wed",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "butterbeans",
@@ -5950,7 +5967,8 @@
           "usedOnDays": [
             "sun",
             "mon"
-          ]
+          ],
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "chilli",
@@ -5965,7 +5983,8 @@
             "tue",
             "wed",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "tomatoestin",
@@ -5980,7 +5999,8 @@
             "fri",
             "wed",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "italianherbs",
@@ -5993,7 +6013,8 @@
           "stockTracked": false,
           "usedOnDays": [
             "fri"
-          ]
+          ],
+          "lastNeededOn": "fri"
         },
         {
           "ingredient": "cumin",
@@ -6007,7 +6028,8 @@
           "usedOnDays": [
             "wed",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "kidneybeans",
@@ -6021,7 +6043,8 @@
           "usedOnDays": [
             "wed",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "oil",
@@ -6039,7 +6062,8 @@
             "mon",
             "wed",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "pumpkinseeds",
@@ -6055,7 +6079,8 @@
             "mon",
             "tue",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "paprika",
@@ -6070,7 +6095,8 @@
             "fri",
             "wed",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "soy",
@@ -6083,7 +6109,8 @@
           "stockTracked": false,
           "usedOnDays": [
             "tue"
-          ]
+          ],
+          "lastNeededOn": "tue"
         },
         {
           "ingredient": "oats",
@@ -6099,7 +6126,8 @@
             "mon",
             "tue",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "tuna",
@@ -6112,7 +6140,8 @@
           "stockTracked": false,
           "usedOnDays": [
             "mon"
-          ]
+          ],
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "riceW",
@@ -6125,7 +6154,8 @@
           "stockTracked": false,
           "usedOnDays": [
             "tue"
-          ]
+          ],
+          "lastNeededOn": "tue"
         },
         {
           "ingredient": "spaghetti",
@@ -6138,7 +6168,8 @@
           "stockTracked": false,
           "usedOnDays": [
             "fri"
-          ]
+          ],
+          "lastNeededOn": "fri"
         },
         {
           "ingredient": "kimchi",
@@ -6153,7 +6184,8 @@
             "tue",
             "wed"
           ],
-          "buy": "1 × 400g jar if you're running low (160g this week)"
+          "buy": "1 × 400g jar if you're running low (160g this week)",
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "sauerkraut",
@@ -6168,7 +6200,8 @@
             "sun",
             "wed"
           ],
-          "buy": "1 × 400g jar if you're running low (100g this week)"
+          "buy": "1 × 400g jar if you're running low (100g this week)",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "mixedleaves",
@@ -6183,7 +6216,8 @@
             "sun",
             "mon"
           ],
-          "buy": "1 × 100g bag"
+          "buy": "1 × 100g bag",
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "mixednuts",
@@ -6202,7 +6236,8 @@
             "tue",
             "wed",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "thu"
         }
       ]
     },
@@ -6247,10 +6282,10 @@
             "After shopping: freeze 2 of the 4 pork loin steaks for next time"
           ],
           "totals": {
-            "kcal": 2504,
+            "kcal": 2459,
             "protein": 204,
             "carbs": 194,
-            "fat": 91
+            "fat": 86
           },
           "note": null
         },
@@ -6555,7 +6590,8 @@
             "sun",
             "mon"
           ],
-          "buy": "1 × 750g"
+          "buy": "1 × 750g",
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "banana",
@@ -6570,7 +6606,8 @@
             "sat",
             "tue"
           ],
-          "buy": "2 loose"
+          "buy": "2 loose",
+          "lastNeededOn": "tue"
         },
         {
           "ingredient": "eggs",
@@ -6590,7 +6627,8 @@
             "wed",
             "thu"
           ],
-          "buy": "20 loose"
+          "buy": "20 loose",
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "ginger",
@@ -6604,7 +6642,8 @@
           "usedOnDays": [
             "tue"
           ],
-          "buy": "1 if you're running low"
+          "buy": "1 if you're running low",
+          "lastNeededOn": "tue"
         },
         {
           "ingredient": "garlic",
@@ -6621,7 +6660,8 @@
             "wed",
             "thu"
           ],
-          "buy": "1 if you're running low"
+          "buy": "1 if you're running low",
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "onion",
@@ -6637,7 +6677,8 @@
             "tue",
             "thu"
           ],
-          "buy": "1 × bag (if running low)"
+          "buy": "1 × bag (if running low)",
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "apple",
@@ -6652,7 +6693,8 @@
             "tue",
             "thu"
           ],
-          "buy": "2 loose"
+          "buy": "2 loose",
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "beefmince",
@@ -6668,10 +6710,9 @@
             "thu"
           ],
           "buy": "1 × 500g",
+          "lastNeededOn": "thu",
           "openedPack": {
-            "openedOn": "wed",
-            "lastUsedOn": "thu",
-            "note": "Opened Wednesday, last used Thursday. Keep tightly sealed in the fridge and check the label."
+            "openedOn": "wed"
           }
         },
         {
@@ -6687,7 +6728,8 @@
             "tue",
             "wed"
           ],
-          "buy": "1 × 300g pack (2 fillets)"
+          "buy": "1 × 300g pack (2 fillets)",
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "thigh",
@@ -6703,10 +6745,9 @@
             "tue"
           ],
           "buy": "1 × 600g",
+          "lastNeededOn": "tue",
           "openedPack": {
-            "openedOn": "fri",
-            "lastUsedOn": "tue",
-            "note": "Opened Friday, last used Tuesday. Keep tightly sealed in the fridge and check the label."
+            "openedOn": "fri"
           }
         },
         {
@@ -6722,7 +6763,8 @@
             "fri",
             "mon"
           ],
-          "buy": "2 × 300g"
+          "buy": "2 × 300g",
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "courgette",
@@ -6736,7 +6778,8 @@
           "usedOnDays": [
             "sun"
           ],
-          "buy": "1 loose"
+          "buy": "1 loose",
+          "lastNeededOn": "sun"
         },
         {
           "ingredient": "feta",
@@ -6753,7 +6796,8 @@
             "mon",
             "wed"
           ],
-          "buy": "1 × 200g"
+          "buy": "1 × 200g",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "rye",
@@ -6771,7 +6815,8 @@
             "mon",
             "wed"
           ],
-          "buy": "1 × 400g pack (7 slices)"
+          "buy": "1 × 400g pack (7 slices)",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "greenbeans",
@@ -6785,7 +6830,8 @@
           "usedOnDays": [
             "mon"
           ],
-          "buy": "1 × 200g"
+          "buy": "1 × 200g",
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "kefir",
@@ -6802,7 +6848,8 @@
             "wed",
             "thu"
           ],
-          "buy": "2 × 500ml"
+          "buy": "2 × 500ml",
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "lemon",
@@ -6819,7 +6866,8 @@
             "tue",
             "wed"
           ],
-          "buy": "3 loose"
+          "buy": "3 loose",
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "eggwhite",
@@ -6835,7 +6883,8 @@
             "sun",
             "wed"
           ],
-          "buy": "1 × 500g"
+          "buy": "1 × 500g",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "mushrooms",
@@ -6851,7 +6900,8 @@
             "sun",
             "wed"
           ],
-          "buy": "1 × 250g"
+          "buy": "1 × 250g",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "orange",
@@ -6865,7 +6915,8 @@
           "usedOnDays": [
             "sat"
           ],
-          "buy": "1 loose"
+          "buy": "1 loose",
+          "lastNeededOn": "sat"
         },
         {
           "ingredient": "pepper",
@@ -6880,7 +6931,8 @@
             "sun",
             "tue"
           ],
-          "buy": "2 loose"
+          "buy": "2 loose",
+          "lastNeededOn": "tue"
         },
         {
           "ingredient": "porkloin",
@@ -6894,7 +6946,8 @@
           "usedOnDays": [
             "fri"
           ],
-          "buy": "1 × 480g pack (if running low)"
+          "buy": "1 × 480g pack (if running low)",
+          "lastNeededOn": "fri"
         },
         {
           "ingredient": "sirloin",
@@ -6908,7 +6961,8 @@
           "usedOnDays": [
             "sun"
           ],
-          "buy": "1 × 225g"
+          "buy": "1 × 225g",
+          "lastNeededOn": "sun"
         },
         {
           "ingredient": "skyr",
@@ -6924,7 +6978,8 @@
             "wed",
             "thu"
           ],
-          "buy": "1 × 450g"
+          "buy": "1 × 450g",
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "sweetpotato",
@@ -6938,7 +6993,8 @@
           "usedOnDays": [
             "fri"
           ],
-          "buy": "200g loose"
+          "buy": "200g loose",
+          "lastNeededOn": "fri"
         },
         {
           "ingredient": "tomatoes",
@@ -6954,7 +7010,8 @@
             "sun",
             "mon"
           ],
-          "buy": "4 loose"
+          "buy": "4 loose",
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "spinach",
@@ -6971,7 +7028,8 @@
             "tue",
             "wed"
           ],
-          "buy": "2 × 240g bag"
+          "buy": "2 × 240g bag",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "blackbeans",
@@ -6985,7 +7043,8 @@
           "usedOnDays": [
             "wed",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "riceB",
@@ -7000,7 +7059,8 @@
             "sun",
             "wed",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "chickpeas",
@@ -7013,7 +7073,8 @@
           "stockTracked": false,
           "usedOnDays": [
             "fri"
-          ]
+          ],
+          "lastNeededOn": "fri"
         },
         {
           "ingredient": "tomatoestin",
@@ -7028,7 +7089,8 @@
             "fri",
             "tue",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "curry",
@@ -7041,7 +7103,8 @@
           "stockTracked": false,
           "usedOnDays": [
             "tue"
-          ]
+          ],
+          "lastNeededOn": "tue"
         },
         {
           "ingredient": "italianherbs",
@@ -7054,7 +7117,8 @@
           "stockTracked": false,
           "usedOnDays": [
             "thu"
-          ]
+          ],
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "oregano",
@@ -7068,7 +7132,8 @@
           "usedOnDays": [
             "tue",
             "wed"
-          ]
+          ],
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "cinnamon",
@@ -7082,7 +7147,8 @@
           "usedOnDays": [
             "tue",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "cumin",
@@ -7096,24 +7162,25 @@
           "usedOnDays": [
             "wed",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "oil",
           "name": "Olive oil",
           "category": "pantry",
-          "totalQty": 35,
+          "totalQty": 30,
           "unit": "g",
           "packSize": 1000,
           "packUnit": "ml",
           "stockTracked": false,
           "usedOnDays": [
-            "fri",
             "sat",
             "sun",
             "mon",
             "wed"
-          ]
+          ],
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "lentils",
@@ -7127,7 +7194,8 @@
           "usedOnDays": [
             "sun",
             "mon"
-          ]
+          ],
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "garammasala",
@@ -7140,7 +7208,8 @@
           "stockTracked": false,
           "usedOnDays": [
             "fri"
-          ]
+          ],
+          "lastNeededOn": "fri"
         },
         {
           "ingredient": "paprika",
@@ -7155,7 +7224,8 @@
             "fri",
             "wed",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "oats",
@@ -7169,7 +7239,8 @@
           "usedOnDays": [
             "tue",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "walnuts",
@@ -7183,7 +7254,8 @@
           "usedOnDays": [
             "tue",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "riceW",
@@ -7196,7 +7268,8 @@
           "stockTracked": false,
           "usedOnDays": [
             "tue"
-          ]
+          ],
+          "lastNeededOn": "tue"
         },
         {
           "ingredient": "couscous",
@@ -7209,7 +7282,8 @@
           "stockTracked": false,
           "usedOnDays": [
             "fri"
-          ]
+          ],
+          "lastNeededOn": "fri"
         },
         {
           "ingredient": "spaghetti",
@@ -7222,7 +7296,8 @@
           "stockTracked": false,
           "usedOnDays": [
             "thu"
-          ]
+          ],
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "kimchi",
@@ -7237,7 +7312,8 @@
             "wed",
             "thu"
           ],
-          "buy": "1 × 400g jar if you're running low (160g this week)"
+          "buy": "1 × 400g jar if you're running low (160g this week)",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "sauerkraut",
@@ -7253,7 +7329,8 @@
             "tue",
             "wed"
           ],
-          "buy": "1 × 400g jar if you're running low (240g this week)"
+          "buy": "1 × 400g jar if you're running low (240g this week)",
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "mixedleaves",
@@ -7268,7 +7345,8 @@
             "sun",
             "mon"
           ],
-          "buy": "1 × 100g bag"
+          "buy": "1 × 100g bag",
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "mixednuts",
@@ -7287,7 +7365,8 @@
             "tue",
             "wed",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "salmon",
@@ -7301,7 +7380,8 @@
           "usedOnDays": [
             "mon"
           ],
-          "buy": "1 × 400g pack (if running low)"
+          "buy": "1 × 400g pack (if running low)",
+          "lastNeededOn": "mon"
         }
       ]
     },
@@ -7660,7 +7740,8 @@
             "sun",
             "mon"
           ],
-          "buy": "1 × 750g"
+          "buy": "1 × 750g",
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "banana",
@@ -7676,7 +7757,8 @@
             "tue",
             "thu"
           ],
-          "buy": "4 loose"
+          "buy": "4 loose",
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "eggs",
@@ -7694,7 +7776,8 @@
             "wed",
             "thu"
           ],
-          "buy": "16 loose"
+          "buy": "16 loose",
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "ginger",
@@ -7708,7 +7791,8 @@
           "usedOnDays": [
             "mon"
           ],
-          "buy": "1 if you're running low"
+          "buy": "1 if you're running low",
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "garlic",
@@ -7727,7 +7811,8 @@
             "wed",
             "thu"
           ],
-          "buy": "1 if you're running low"
+          "buy": "1 if you're running low",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "onion",
@@ -7744,7 +7829,8 @@
             "sun",
             "wed"
           ],
-          "buy": "1 × bag (if running low)"
+          "buy": "1 × bag (if running low)",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "broccoli",
@@ -7758,7 +7844,8 @@
           "usedOnDays": [
             "tue"
           ],
-          "buy": "1 × 400g"
+          "buy": "1 × 400g",
+          "lastNeededOn": "tue"
         },
         {
           "ingredient": "chicken",
@@ -7775,10 +7862,9 @@
             "wed"
           ],
           "buy": "1 × 650g pack",
+          "lastNeededOn": "tue",
           "openedPack": {
-            "openedOn": "fri",
-            "lastUsedOn": "tue",
-            "note": "Opened Friday, last used Tuesday. Keep tightly sealed in the fridge and check the label."
+            "openedOn": "fri"
           }
         },
         {
@@ -7794,7 +7880,8 @@
             "sun",
             "mon"
           ],
-          "buy": "2 × 300g"
+          "buy": "2 × 300g",
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "cucumber",
@@ -7809,7 +7896,8 @@
             "sun",
             "mon"
           ],
-          "buy": "1 loose"
+          "buy": "1 loose",
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "coriander",
@@ -7824,7 +7912,8 @@
             "wed",
             "thu"
           ],
-          "buy": "1 × 30g"
+          "buy": "1 × 30g",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "parsley",
@@ -7838,7 +7927,8 @@
           "usedOnDays": [
             "sun"
           ],
-          "buy": "1 × 30g"
+          "buy": "1 × 30g",
+          "lastNeededOn": "sun"
         },
         {
           "ingredient": "mint",
@@ -7853,7 +7943,8 @@
             "wed",
             "thu"
           ],
-          "buy": "1 × 30g"
+          "buy": "1 × 30g",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "greenbeans",
@@ -7867,7 +7958,8 @@
           "usedOnDays": [
             "sun"
           ],
-          "buy": "1 × 200g"
+          "buy": "1 × 200g",
+          "lastNeededOn": "sun"
         },
         {
           "ingredient": "kefir",
@@ -7883,7 +7975,8 @@
             "sun",
             "wed"
           ],
-          "buy": "1 × 500ml"
+          "buy": "1 × 500ml",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "lemon",
@@ -7900,7 +7993,8 @@
             "tue",
             "wed"
           ],
-          "buy": "2 loose"
+          "buy": "2 loose",
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "lime",
@@ -7915,7 +8009,8 @@
             "wed",
             "thu"
           ],
-          "buy": "2 loose"
+          "buy": "2 loose",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "eggwhite",
@@ -7931,7 +8026,8 @@
             "sun",
             "wed"
           ],
-          "buy": "1 × 500g"
+          "buy": "1 × 500g",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "littlegem",
@@ -7946,7 +8042,8 @@
             "wed",
             "thu"
           ],
-          "buy": "1 × 2-pack"
+          "buy": "1 × 2-pack",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "orange",
@@ -7960,7 +8057,8 @@
           "usedOnDays": [
             "sat"
           ],
-          "buy": "1 loose"
+          "buy": "1 loose",
+          "lastNeededOn": "sat"
         },
         {
           "ingredient": "pepper",
@@ -7976,7 +8074,8 @@
             "sun",
             "wed"
           ],
-          "buy": "3 loose"
+          "buy": "3 loose",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "quark",
@@ -7993,7 +8092,8 @@
             "tue",
             "thu"
           ],
-          "buy": "5 × 250g"
+          "buy": "5 × 250g",
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "rump",
@@ -8007,7 +8107,8 @@
           "usedOnDays": [
             "sun"
           ],
-          "buy": "1 × 225g"
+          "buy": "1 × 225g",
+          "lastNeededOn": "sun"
         },
         {
           "ingredient": "salmon",
@@ -8021,7 +8122,8 @@
           "usedOnDays": [
             "thu"
           ],
-          "buy": "1 × 400g pack (if running low)"
+          "buy": "1 × 400g pack (if running low)",
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "seabass",
@@ -8035,7 +8137,8 @@
           "usedOnDays": [
             "mon"
           ],
-          "buy": "1 × 200g"
+          "buy": "1 × 200g",
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "greens",
@@ -8049,7 +8152,8 @@
           "usedOnDays": [
             "fri"
           ],
-          "buy": "1 × 250g"
+          "buy": "1 × 250g",
+          "lastNeededOn": "fri"
         },
         {
           "ingredient": "springonion",
@@ -8065,7 +8169,8 @@
             "wed",
             "thu"
           ],
-          "buy": "1 × 100g"
+          "buy": "1 × 100g",
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "sweetpotato",
@@ -8079,7 +8184,8 @@
           "usedOnDays": [
             "fri"
           ],
-          "buy": "250g loose"
+          "buy": "250g loose",
+          "lastNeededOn": "fri"
         },
         {
           "ingredient": "turkeysteak",
@@ -8093,7 +8199,8 @@
           "usedOnDays": [
             "fri"
           ],
-          "buy": "1 × 250g"
+          "buy": "1 × 250g",
+          "lastNeededOn": "fri"
         },
         {
           "ingredient": "edamame",
@@ -8107,7 +8214,8 @@
           "usedOnDays": [
             "sun",
             "mon"
-          ]
+          ],
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "raspberries",
@@ -8121,7 +8229,8 @@
           "usedOnDays": [
             "fri",
             "mon"
-          ]
+          ],
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "sourdough",
@@ -8137,7 +8246,8 @@
             "sun",
             "wed"
           ],
-          "buy": "1 loaf (if running low)"
+          "buy": "1 loaf (if running low)",
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "almonds",
@@ -8151,7 +8261,8 @@
           "usedOnDays": [
             "fri",
             "mon"
-          ]
+          ],
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "riceB",
@@ -8165,7 +8276,8 @@
           "usedOnDays": [
             "wed",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "bulgur",
@@ -8179,7 +8291,8 @@
           "usedOnDays": [
             "tue",
             "wed"
-          ]
+          ],
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "chilli",
@@ -8195,7 +8308,8 @@
             "sun",
             "wed",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "tomatoestin",
@@ -8211,7 +8325,8 @@
             "sat",
             "sun",
             "wed"
-          ]
+          ],
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "oregano",
@@ -8225,7 +8340,8 @@
           "usedOnDays": [
             "tue",
             "wed"
-          ]
+          ],
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "fishsauce",
@@ -8239,7 +8355,8 @@
           "usedOnDays": [
             "wed",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "cinnamon",
@@ -8253,7 +8370,8 @@
           "usedOnDays": [
             "tue",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "cumin",
@@ -8268,7 +8386,8 @@
             "sat",
             "sun",
             "wed"
-          ]
+          ],
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "honey",
@@ -8281,7 +8400,8 @@
           "stockTracked": false,
           "usedOnDays": [
             "tue"
-          ]
+          ],
+          "lastNeededOn": "tue"
         },
         {
           "ingredient": "oil",
@@ -8300,7 +8420,8 @@
             "tue",
             "wed",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "quinoa",
@@ -8314,7 +8435,8 @@
           "usedOnDays": [
             "sun",
             "mon"
-          ]
+          ],
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "vinegar",
@@ -8327,7 +8449,8 @@
           "stockTracked": false,
           "usedOnDays": [
             "sun"
-          ]
+          ],
+          "lastNeededOn": "sun"
         },
         {
           "ingredient": "paprika",
@@ -8343,7 +8466,8 @@
             "sat",
             "sun",
             "wed"
-          ]
+          ],
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "soy",
@@ -8358,7 +8482,8 @@
             "mon",
             "tue",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "oats",
@@ -8374,7 +8499,8 @@
             "mon",
             "tue",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "riceW",
@@ -8387,7 +8513,8 @@
           "stockTracked": false,
           "usedOnDays": [
             "tue"
-          ]
+          ],
+          "lastNeededOn": "tue"
         },
         {
           "ingredient": "noodles",
@@ -8400,7 +8527,8 @@
           "stockTracked": false,
           "usedOnDays": [
             "thu"
-          ]
+          ],
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "pasta",
@@ -8413,7 +8541,8 @@
           "stockTracked": false,
           "usedOnDays": [
             "fri"
-          ]
+          ],
+          "lastNeededOn": "fri"
         },
         {
           "ingredient": "kimchi",
@@ -8427,7 +8556,8 @@
           "usedOnDays": [
             "thu"
           ],
-          "buy": "1 × 400g jar if you're running low (80g this week)"
+          "buy": "1 × 400g jar if you're running low (80g this week)",
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "sauerkraut",
@@ -8442,7 +8572,8 @@
             "tue",
             "wed"
           ],
-          "buy": "1 × 400g jar if you're running low (160g this week)"
+          "buy": "1 × 400g jar if you're running low (160g this week)",
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "mixednuts",
@@ -8461,7 +8592,8 @@
             "tue",
             "wed",
             "thu"
-          ]
+          ],
+          "lastNeededOn": "thu"
         },
         {
           "ingredient": "beefmince",
@@ -8476,7 +8608,8 @@
             "wed",
             "thu"
           ],
-          "buy": "1 × 500g"
+          "buy": "1 × 500g",
+          "lastNeededOn": "wed"
         }
       ]
     }

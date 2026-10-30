@@ -79,8 +79,6 @@ export interface Day {
 /** One raw pack (meat, smoked salmon) cooked on several days of the week. */
 export interface OpenedPack {
   openedOn: DayKey
-  lastUsedOn: DayKey
-  note: string
 }
 
 export interface ShoppingItem {
@@ -94,6 +92,8 @@ export interface ShoppingItem {
   stockTracked: boolean
   buy?: string
   usedOnDays: DayKey[]
+  /** The last day the item is needed: the day it is cooked, not the day a batch is eaten. */
+  lastNeededOn: DayKey
   openedPack?: OpenedPack
 }
 

@@ -10,7 +10,6 @@ import json
 import math
 import sys
 
-DAY = {'fri': 'Friday', 'sat': 'Saturday', 'sun': 'Sunday', 'mon': 'Monday', 'tue': 'Tuesday', 'wed': 'Wednesday', 'thu': 'Thursday'}
 # Raw packs that get a "keep it sealed" note when cooked on more than one day.
 RAW_SHARED = {'chicken', 'thigh', 'beefmince', 'turkeymince', 'smokedsalmon'}
 MACROS = ('kcal', 'protein', 'carbs', 'fat')
@@ -85,12 +84,13 @@ def recompute(d):
                     notes.append(f"W{w['week']} {iid} added: {total}{i['unit']}, buy {b}")
                 elif s.get('buy') != b:
                     notes.append(f"W{w['week']} {iid}: {s.get('buy')} -> {b} (total {total})")
+            order = d['dayOrder']
+            first = min(a['cook'], key=order.index)
+            last = max(a['cook'], key=order.index)
+            # The app turns these days into real dates from the shop date.
+            e['lastNeededOn'] = last
             if iid in RAW_SHARED and len(a['cook']) > 1:
-                order = d['dayOrder']
-                first = min(a['cook'], key=order.index)
-                last = max(a['cook'], key=order.index)
-                e['openedPack'] = {'openedOn': first, 'lastUsedOn': last,
-                                   'note': f"Opened {DAY[first]}, last used {DAY[last]}. Keep tightly sealed in the fridge and check the label."}
+                e['openedPack'] = {'openedOn': first}
             out.append(e)
         for k in old:
             if k not in agg:

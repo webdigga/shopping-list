@@ -6,7 +6,7 @@ import { useShoppingTicks, useStock } from '@/hooks/usePlanData'
 import { getIngredient, getWeek } from '@/plan/data'
 import { formatAmount, formatLongDate, formatShortDate, itemNoun } from '@/plan/format'
 import { cycleInstances, defaultShoppingInstance } from '@/plan/schedule'
-import { lastsUntil, shoppingAisles, stapleBuy } from '@/plan/shopping'
+import { lastsUntil, openedOn, shoppingAisles, stapleBuy } from '@/plan/shopping'
 import { Extras } from '@/components/Extras/Extras'
 import ui from '@/styles/ui.module.css'
 import styles from './Shopping.module.css'
@@ -22,11 +22,13 @@ function haveUnit(item: ShoppingItem): string {
   return item.unit
 }
 
-/** Small lines under an item: how long fresh food must last, or how long an opened pack is in use. */
+/** Small lines under an item, always as real dates worked out from this list's shop date. */
 function detailLines(item: ShoppingItem, shopDate: string): string[] {
-  if (item.openedPack) return [item.openedPack.note]
-  if (item.category === 'fresh') return [`Needs to last until: ${formatShortDate(lastsUntil(item, shopDate))}`]
-  return []
+  const lines: string[] = []
+  if (item.category === 'fresh') lines.push(`Needs to last until: ${formatShortDate(lastsUntil(item, shopDate))}`)
+  const opened = openedOn(item, shopDate)
+  if (opened) lines.push(`Opened ${formatShortDate(opened)}. Keep tightly sealed in the fridge and check the label.`)
+  return lines
 }
 
 export function Shopping() {
