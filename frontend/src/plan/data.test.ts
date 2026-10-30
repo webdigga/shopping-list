@@ -108,3 +108,11 @@ describe('pre-computed numbers', () => {
     }
   })
 })
+
+describe('recipe methods', () => {
+  it('stand on their own, never pointing at another recipe', () => {
+    for (const r of plan.recipes) {
+      expect(r.method.join(' '), r.id).not.toMatch(/same as|as above|^as /i)
+    }
+  })
+})
