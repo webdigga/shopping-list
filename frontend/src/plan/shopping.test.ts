@@ -78,12 +78,12 @@ describe('shoppingAisles', () => {
       const order = shoppingAisles(week).map(g => g.aisle)
       expect(order).toEqual(plan.aisleOrder.filter(a => order.includes(a)))
     }
-    expect(plan.aisleOrder.slice(0, 6)).toEqual(['Fruit & veg', 'Bakery', 'Dairy', 'Meat & fish', 'Frozen', 'Cupboard'])
+    expect(plan.aisleOrder.slice(0, 7)).toEqual(['Fruit & veg', 'Bakery', 'Dairy', 'Meat & fish', 'Frozen', 'Cupboard', 'Eggs & oil'])
   })
 
-  it('puts eggs at the very end of Cupboard', () => {
-    const cupboard = shoppingAisles(getWeek(1)).find(g => g.aisle === 'Cupboard')!
-    expect(cupboard.items[cupboard.items.length - 1].ingredient).toBe('eggs')
+  it('keeps eggs, liquid egg and olive oil together, apart from Cupboard', () => {
+    const aisle = shoppingAisles(getWeek(3)).find(g => g.aisle === 'Eggs & oil')!
+    expect(aisle.items.map(i => i.ingredient)).toEqual(expect.arrayContaining(['eggs', 'eggwhite', 'oil']))
   })
 
   it('shelves staples with their aisle, not a separate section', () => {

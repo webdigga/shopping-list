@@ -87,7 +87,7 @@ Shows as soon as the app opens.
 ### 4.3 Shopping
 Defaults to the **next** week from Thursday evening until the Friday shop is done, otherwise the current week. Week picker at the top.
 
-Sections are aisles, in `aisleOrder`: Fruit & veg, Bakery, Dairy, Meat & fish, Frozen, Cupboard, then Household & extras (`extras`, a fixed list) and Sainsbury's. Within an aisle, sort by `aisleRank`, then name. Eggs sit at the very end of Cupboard.
+Sections are aisles, in `aisleOrder`: Fruit & veg, Bakery, Dairy, Meat & fish, Frozen, Cupboard, Eggs & oil, then Household & extras (`extras`, a fixed list) and Sainsbury's. Within an aisle, sort by `aisleRank`, then name.
 
 Every item is tickable (tick = bought) and shows:
 - Its `buy` text exactly as given (cupboard and freezer staples without `buy` show the week's amount)
@@ -160,7 +160,7 @@ Use a numbered migration file. Do not touch existing tables.
 ```
 meta        { title, targets{kcal, protein, fat, fatMinimum, carbs{low,medium,high}}, rules[], notes[] }
 dayOrder    ["fri","sat","sun","mon","tue","wed","thu"]
-aisleOrder  ["Fruit & veg","Bakery","Dairy","Meat & fish","Frozen","Cupboard","Sainsbury's"]
+aisleOrder  ["Fruit & veg","Bakery","Dairy","Meat & fish","Frozen","Cupboard","Eggs & oil","Sainsbury's"]
 ingredients [{ id, name, category: fresh|core|pantry|frozen, unit, unitWeight, packSize, packUnit,
                per100g{kcal,protein,carbs,fat}, fridgeDays, openedDays, stockTracked, store, aisle, aisleRank, note }]
 recipes     [{ id, name, meal, cookMinutes, ingredients[{ingredient, qty, unit, note?}],

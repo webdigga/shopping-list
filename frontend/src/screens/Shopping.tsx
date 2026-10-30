@@ -38,8 +38,8 @@ export function Shopping() {
   const { ticks, setTick, clearTicks } = useShoppingTicks(weekInstanceKey(instance.week, instance.start))
   const { stock, setStock } = useStock()
   const aisles = shoppingAisles(getWeek(instance.week))
-  // Household and extras sit after the cupboard aisles, where Lidl keeps them.
-  const extrasAfter = aisles.findIndex(g => g.aisle === 'Cupboard')
+  // Household and extras close the Lidl shop, before the separate Sainsbury's section.
+  const extrasAfter = aisles.findIndex(g => g.aisle === "Sainsbury's") - 1
   const extras = <Extras ticks={ticks} onTick={setTick} />
 
   // Every tick means the same thing: bought. The buy text is shown exactly as the plan gives it.
@@ -108,7 +108,7 @@ export function Shopping() {
           {index === extrasAfter && extras}
         </Fragment>
       ))}
-      {extrasAfter === -1 && extras}
+      {extrasAfter < 0 && extras}
 
       <button
         className={`${ui.buttonSecondary} ${ui.buttonBlock}`}

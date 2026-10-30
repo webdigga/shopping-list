@@ -169,8 +169,8 @@
       "openedDays": null,
       "note": "Staple: enter how many you have before shopping",
       "stockTracked": true,
-      "aisle": "Cupboard",
-      "aisleRank": 99
+      "aisle": "Eggs & oil",
+      "aisleRank": 50
     },
     {
       "id": "eggwhite",
@@ -191,7 +191,7 @@
       "openedDays": 7,
       "note": "Use within 7 days of opening; can be frozen on day of purchase",
       "stockTracked": false,
-      "aisle": "Dairy",
+      "aisle": "Eggs & oil",
       "aisleRank": 50
     },
     {
@@ -336,15 +336,15 @@
         "carbs": 0,
         "fat": 5.5
       },
-      "packSize": 250,
+      "packSize": 480,
       "packUnit": "g",
       "store": "Lidl",
       "unit": "g",
       "unitWeight": null,
       "fridgeDays": 4,
       "openedDays": 1,
-      "note": null,
-      "stockTracked": false,
+      "note": "480g pack of 4 steaks: use 2, freeze 2 for next time",
+      "stockTracked": true,
       "aisle": "Meat & fish",
       "aisleRank": 50
     },
@@ -432,28 +432,6 @@
       "fridgeDays": 10,
       "openedDays": 2,
       "note": "One 300g pack",
-      "stockTracked": false,
-      "aisle": "Meat & fish",
-      "aisleRank": 50
-    },
-    {
-      "id": "trout",
-      "name": "Trout fillets, boneless",
-      "category": "fresh",
-      "per100g": {
-        "kcal": 140,
-        "protein": 20,
-        "carbs": 0,
-        "fat": 6.5
-      },
-      "packSize": 250,
-      "packUnit": "g",
-      "store": "Lidl",
-      "unit": "g",
-      "unitWeight": null,
-      "fridgeDays": 2,
-      "openedDays": 1,
-      "note": "Pack of 2",
       "stockTracked": false,
       "aisle": "Meat & fish",
       "aisleRank": 50
@@ -570,7 +548,7 @@
     },
     {
       "id": "riceB",
-      "name": "Brown basmati rice pouch",
+      "name": "Whole grain rice pouch",
       "category": "pantry",
       "per100g": {
         "kcal": 145,
@@ -624,14 +602,14 @@
       },
       "packSize": 1,
       "packUnit": "pouch",
-      "store": "Lidl",
+      "store": "Sainsbury's",
       "unit": "pouch",
       "unitWeight": 250,
       "fridgeDays": null,
       "openedDays": null,
       "note": "Label should be just lentils and water",
       "stockTracked": false,
-      "aisle": "Cupboard",
+      "aisle": "Sainsbury's",
       "aisleRank": 50
     },
     {
@@ -690,14 +668,14 @@
       },
       "packSize": 500,
       "packUnit": "g",
-      "store": "Lidl",
+      "store": "Sainsbury's",
       "unit": "g",
       "unitWeight": null,
       "fridgeDays": null,
       "openedDays": null,
       "note": null,
       "stockTracked": false,
-      "aisle": "Cupboard",
+      "aisle": "Sainsbury's",
       "aisleRank": 50
     },
     {
@@ -776,16 +754,16 @@
         "carbs": 38,
         "fat": 1.5
       },
-      "packSize": 500,
+      "packSize": 400,
       "packUnit": "g",
-      "store": "Lidl",
+      "store": "Sainsbury's",
       "unit": "slice",
-      "unitWeight": 50,
+      "unitWeight": 57,
       "fridgeDays": 21,
       "openedDays": 7,
-      "note": null,
+      "note": "400g pack, 7 slices",
       "stockTracked": false,
-      "aisle": "Bakery",
+      "aisle": "Sainsbury's",
       "aisleRank": 50
     },
     {
@@ -1049,7 +1027,7 @@
       "openedDays": null,
       "note": null,
       "stockTracked": false,
-      "aisle": "Cupboard",
+      "aisle": "Eggs & oil",
       "aisleRank": 50
     },
     {
@@ -1845,8 +1823,8 @@
       "aisleRank": 50
     },
     {
-      "id": "rasel",
-      "name": "Ras el hanout",
+      "id": "garammasala",
+      "name": "Garam masala",
       "category": "pantry",
       "per100g": {
         "kcal": 0,
@@ -2400,7 +2378,7 @@
     },
     {
       "id": "chicken-rice-brown",
-      "name": "Chicken, brown rice & kimchi bowl",
+      "name": "Chicken, whole grain rice & kimchi bowl",
       "meal": "lunch",
       "servingsCooked": 1,
       "cookMinutes": 5,
@@ -2425,7 +2403,7 @@
       "method": [
         "Uses chicken steamed on Monday evening.",
         "Warm the chicken in a pan until piping hot, or eat it cold.",
-        "Tip half a brown basmati pouch into a bowl (the other half is for tonight's dinner), cold, straight from the pouch. Add the chicken and top with 80g kimchi."
+        "Tip half a whole grain rice pouch into a bowl (the other half is for tonight's dinner), cold, straight from the pouch. Add the chicken and top with 80g kimchi."
       ],
       "prepAhead": null,
       "tags": [],
@@ -2439,7 +2417,7 @@
     },
     {
       "id": "turkey-chilli-white",
-      "name": "Turkey chilli with white rice",
+      "name": "Turkey chilli with whole grain rice",
       "meal": "lunch",
       "servingsCooked": 1,
       "cookMinutes": 5,
@@ -2496,7 +2474,7 @@
           "unit": "g"
         },
         {
-          "ingredient": "riceW",
+          "ingredient": "riceB",
           "qty": 1,
           "unit": "pouch"
         }
@@ -2504,7 +2482,7 @@
       "method": [
         "Uses the second chilli portion, batch-cooked on Wednesday evening.",
         "Reheat one portion in a pan until piping hot.",
-        "Serve over 1 white basmati pouch, cold, straight from the pouch."
+        "Serve over 1 whole grain rice pouch, cold, straight from the pouch."
       ],
       "prepAhead": null,
       "tags": [
@@ -2512,15 +2490,15 @@
       ],
       "macros": {
         "kcal": 850,
-        "protein": 78,
-        "carbs": 107,
-        "fat": 14
+        "protein": 79,
+        "carbs": 102,
+        "fat": 15
       },
       "batchCookedOn": "wed"
     },
     {
       "id": "turkey-chilli-brown",
-      "name": "Turkey chilli with brown rice",
+      "name": "Turkey chilli with whole grain rice",
       "meal": "dinner",
       "servingsCooked": 1,
       "cookMinutes": 5,
@@ -2584,7 +2562,7 @@
       ],
       "method": [
         "Batch-cook the chilli this evening: brown 500g turkey mince, add 1 chopped onion, ¾ pepper, 2 garlic cloves, cumin, paprika, chilli, 1 tin kidney beans and 1 tin tomatoes; simmer 25 minutes. Makes 2 portions.",
-        "Eat one portion now with the other half of the brown basmati pouch, cold, straight from the pouch.",
+        "Eat one portion now with the other half of the whole grain rice pouch, cold, straight from the pouch.",
         "Cool the second portion quickly and fridge it for Thursday lunch."
       ],
       "prepAhead": null,
@@ -2615,7 +2593,7 @@
           "unit": "tin"
         },
         {
-          "ingredient": "riceW",
+          "ingredient": "riceB",
           "qty": 1,
           "unit": "pouch"
         },
@@ -2642,7 +2620,7 @@
       ],
       "method": [
         "Steam 200g chicken breast for 20 to 25 minutes until cooked through; slice.",
-        "Drain and rinse 1 tin butter beans. Tip 1 white basmati pouch into a bowl, cold, straight from the pouch.",
+        "Drain and rinse 1 tin butter beans. Tip 1 whole grain rice pouch into a bowl, cold, straight from the pouch.",
         "Toss with the chicken, beans, 50g mixed leaves, a little chopped red onion, 1 tsp olive oil and lemon juice."
       ],
       "prepAhead": null,
@@ -2650,8 +2628,8 @@
       "macros": {
         "kcal": 826,
         "protein": 71,
-        "carbs": 106,
-        "fat": 13
+        "carbs": 101,
+        "fat": 14
       }
     },
     {
@@ -3016,9 +2994,9 @@
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 642,
+        "kcal": 670,
         "protein": 54,
-        "carbs": 52,
+        "carbs": 57,
         "fat": 23
       }
     },
@@ -3136,9 +3114,9 @@
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 720,
+        "kcal": 734,
         "protein": 60,
-        "carbs": 34,
+        "carbs": 37,
         "fat": 36
       }
     },
@@ -3176,7 +3154,7 @@
         },
         {
           "ingredient": "rye",
-          "qty": 2,
+          "qty": 1,
           "unit": "slice"
         },
         {
@@ -3191,16 +3169,16 @@
         }
       ],
       "method": [
-        "Same as the feta omelette, with 2 slices of rye and an orange instead of kefir."
+        "Same as the feta omelette, with an orange instead of kefir."
       ],
       "prepAhead": null,
       "tags": [
         "post-run"
       ],
       "macros": {
-        "kcal": 756,
-        "protein": 56,
-        "carbs": 54,
+        "kcal": 670,
+        "protein": 53,
+        "carbs": 37,
         "fat": 32
       }
     },
@@ -3272,7 +3250,7 @@
       "ingredients": [
         {
           "ingredient": "chicken",
-          "qty": 162,
+          "qty": 150,
           "unit": "g",
           "note": "steamed on Monday"
         },
@@ -3315,23 +3293,23 @@
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 597,
-        "protein": 55,
+        "kcal": 585,
+        "protein": 53,
         "carbs": 80,
-        "fat": 7
+        "fat": 6
       },
       "batchCookedOn": "mon"
     },
     {
       "id": "souvlaki-brown",
-      "name": "Lemon-oregano chicken, brown rice & sauerkraut",
+      "name": "Lemon-oregano chicken, whole grain rice & sauerkraut",
       "meal": "lunch",
       "servingsCooked": 1,
       "cookMinutes": 5,
       "ingredients": [
         {
           "ingredient": "chicken",
-          "qty": 163,
+          "qty": 150,
           "unit": "g",
           "note": "steamed on Monday"
         },
@@ -3368,14 +3346,14 @@
       ],
       "method": [
         "Uses chicken steamed on Monday evening with lemon, oregano and garlic.",
-        "Tip half a brown basmati pouch into a bowl (the other half is for tonight's dinner), cold, straight from the pouch.",
+        "Tip half a whole grain rice pouch into a bowl (the other half is for tonight's dinner), cold, straight from the pouch.",
         "Add the chicken, 80g sauerkraut and a dollop of skyr (75g)."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 417,
-        "protein": 52,
+        "kcal": 404,
+        "protein": 49,
         "carbs": 40,
         "fat": 5
       },
@@ -3383,7 +3361,7 @@
     },
     {
       "id": "burrito-white",
-      "name": "Beef & black bean bowl with white rice & kimchi",
+      "name": "Beef & black bean bowl with whole grain rice & kimchi",
       "meal": "lunch",
       "servingsCooked": 1,
       "cookMinutes": 5,
@@ -3410,7 +3388,7 @@
           "unit": "tsp"
         },
         {
-          "ingredient": "riceW",
+          "ingredient": "riceB",
           "qty": 1,
           "unit": "pouch"
         },
@@ -3423,7 +3401,7 @@
       "method": [
         "Uses the second portion, batch-cooked on Wednesday evening.",
         "Reheat the beef in a pan until piping hot.",
-        "Serve over 1 white basmati pouch (cold, straight from the pouch) with 80g kimchi on top."
+        "Serve over 1 whole grain rice pouch (cold, straight from the pouch) with 80g kimchi on top."
       ],
       "prepAhead": null,
       "tags": [
@@ -3431,15 +3409,15 @@
       ],
       "macros": {
         "kcal": 698,
-        "protein": 49,
-        "carbs": 96,
-        "fat": 12
+        "protein": 50,
+        "carbs": 91,
+        "fat": 13
       },
       "batchCookedOn": "wed"
     },
     {
       "id": "burrito-brown",
-      "name": "Beef & black bean bowl with brown rice & kimchi",
+      "name": "Beef & black bean bowl with whole grain rice & kimchi",
       "meal": "dinner",
       "servingsCooked": 1,
       "cookMinutes": 20,
@@ -3478,7 +3456,7 @@
       ],
       "method": [
         "Batch-cook the beef this evening: mix 300g beef mince with cumin and paprika and steam it in a shallow dish for 15 to 20 minutes; break it up, pour off any fat and stir in 1 tin black beans. Makes 2 portions.",
-        "Eat one portion now with the other half of the brown basmati pouch, cold, straight from the pouch, and 80g kimchi on top.",
+        "Eat one portion now with the other half of the whole grain rice pouch, cold, straight from the pouch, and 80g kimchi on top.",
         "Cool the second portion quickly and fridge it for Thursday lunch."
       ],
       "prepAhead": null,
@@ -3492,16 +3470,17 @@
       "batchCookedOn": "wed"
     },
     {
-      "id": "lemon-trout",
-      "name": "Lemon trout with crushed potatoes",
+      "id": "lemon-salmon",
+      "name": "Lemon salmon with crushed potatoes",
       "meal": "dinner",
       "servingsCooked": 1,
       "cookMinutes": 25,
       "ingredients": [
         {
-          "ingredient": "trout",
-          "qty": 250,
-          "unit": "g"
+          "ingredient": "salmon",
+          "qty": 200,
+          "unit": "g",
+          "note": "frozen"
         },
         {
           "ingredient": "potatoes",
@@ -3525,17 +3504,17 @@
         }
       ],
       "method": [
-        "Steam 200g baby potatoes for 15 minutes.",
-        "Add 2 trout fillets and 200g green beans for the last 8–10 minutes.",
+        "Steam 200g baby potatoes and 2 frozen salmon fillets (200g), straight from frozen, for 15 to 18 minutes.",
+        "Add 200g green beans for the last 6 to 7 minutes.",
         "Lightly crush the potatoes with 1 tsp olive oil, lemon juice and salt."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 585,
-        "protein": 57,
+        "kcal": 651,
+        "protein": 47,
         "carbs": 37,
-        "fat": 22
+        "fat": 33
       }
     },
     {
@@ -3618,7 +3597,7 @@
       "ingredients": [
         {
           "ingredient": "porkloin",
-          "qty": 250,
+          "qty": 240,
           "unit": "g"
         },
         {
@@ -3645,16 +3624,16 @@
       "method": [
         "Heat the oven to 200°C (180°C fan).",
         "Roast 200g sweet potato chunks with 1 tsp oil for 30 minutes.",
-        "Season the pork loin steaks with paprika and pan-fry for 4 to 5 minutes each side, until cooked through.",
+        "Season 2 pork loin steaks (240g) with paprika and pan-fry for 4 to 5 minutes each side, until cooked through.",
         "Serve with 80g sauerkraut."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 581,
-        "protein": 59,
+        "kcal": 567,
+        "protein": 57,
         "carbs": 38,
-        "fat": 19
+        "fat": 18
       }
     },
     {
@@ -3743,7 +3722,7 @@
           "unit": "clove"
         },
         {
-          "ingredient": "rasel",
+          "ingredient": "garammasala",
           "qty": 2,
           "unit": "tsp"
         },
@@ -3755,7 +3734,7 @@
       ],
       "method": [
         "Trim 300g chicken thighs and cut into chunks.",
-        "Brown the chicken in a dry non-stick pan; add chopped onion, garlic and 2 tsp ras el hanout.",
+        "Brown the chicken in a dry non-stick pan; add chopped onion, garlic and 2 tsp garam masala.",
         "Add 1 tin chickpeas and 1 tin tomatoes; simmer 25 minutes.",
         "Pour boiling water over 60g couscous, cover 5 minutes, fluff and serve."
       ],
@@ -4232,7 +4211,7 @@
     },
     {
       "id": "larb-white",
-      "name": "Beef larb with white rice",
+      "name": "Beef larb with whole grain rice",
       "meal": "lunch",
       "servingsCooked": 1,
       "cookMinutes": 5,
@@ -4284,7 +4263,7 @@
           "unit": "head"
         },
         {
-          "ingredient": "riceW",
+          "ingredient": "riceB",
           "qty": 1,
           "unit": "pouch"
         }
@@ -4292,7 +4271,7 @@
       "method": [
         "Uses the second larb portion, batch-cooked on Wednesday evening.",
         "Reheat in a pan until piping hot; stir through fresh mint, coriander and spring onion.",
-        "Serve in little gem leaves with 1 white basmati pouch, cold, straight from the pouch."
+        "Serve in little gem leaves with 1 whole grain rice pouch, cold, straight from the pouch."
       ],
       "prepAhead": null,
       "tags": [
@@ -4301,14 +4280,14 @@
       "macros": {
         "kcal": 696,
         "protein": 63,
-        "carbs": 78,
-        "fat": 16
+        "carbs": 73,
+        "fat": 17
       },
       "batchCookedOn": "wed"
     },
     {
       "id": "larb-brown",
-      "name": "Beef larb with brown rice",
+      "name": "Beef larb with whole grain rice",
       "meal": "dinner",
       "servingsCooked": 1,
       "cookMinutes": 20,
@@ -4367,7 +4346,7 @@
       ],
       "method": [
         "Batch-cook the larb this evening: steam 500g beef mince with garlic and chilli in a shallow dish for 15 to 20 minutes; break it up, pour off any fat, and finish with fish sauce and lime. Makes 2 portions.",
-        "Eat one portion now with fresh mint, coriander and spring onion, in little gem leaves, with 1 brown basmati pouch, cold, straight from the pouch.",
+        "Eat one portion now with fresh mint, coriander and spring onion, in little gem leaves, with 1 whole grain rice pouch, cold, straight from the pouch.",
         "Cool the second portion quickly and fridge it for Thursday lunch."
       ],
       "prepAhead": null,
@@ -4813,7 +4792,7 @@
       "ingredients": [
         {
           "ingredient": "chicken",
-          "qty": 325,
+          "qty": 300,
           "unit": "g"
         },
         {
@@ -4837,7 +4816,7 @@
       "method": [
         "Toss the chicken with the lemon juice, oregano, garlic and a pinch of salt.",
         "Steam for 20 to 25 minutes, until there's no pink in the middle. If your steamer has room, put it in with tonight's dinner.",
-        "Let it cool, slice it, split it into 2 tubs and fridge them for Tuesday and Wednesday lunch."
+        "Let it cool, slice it, split it into 2 tubs (150g each) and fridge them for Tuesday and Wednesday lunch."
       ],
       "prepAhead": null,
       "tags": [
@@ -5112,7 +5091,7 @@
           "unit": "pouch"
         },
         {
-          "ingredient": "riceW",
+          "ingredient": "riceB",
           "qty": 1,
           "unit": "pouch"
         },
@@ -5145,7 +5124,7 @@
       ],
       "method": [
         "Boil 2 eggs for 9 minutes; cool and quarter.",
-        "Tip 1 lentil pouch and 1 white basmati pouch into a bowl, cold, straight from the pouch.",
+        "Tip 1 lentil pouch and 1 whole grain rice pouch into a bowl, cold, straight from the pouch.",
         "Add 50g mixed leaves and a chopped tomato.",
         "Dress with 1 tsp olive oil and lemon juice."
       ],
@@ -5154,8 +5133,8 @@
       "macros": {
         "kcal": 889,
         "protein": 46,
-        "carbs": 119,
-        "fat": 24
+        "carbs": 114,
+        "fat": 25
       }
     }
   ],
@@ -5299,8 +5278,8 @@
           "totals": {
             "kcal": 2205,
             "protein": 202,
-            "carbs": 185,
-            "fat": 70
+            "carbs": 180,
+            "fat": 71
           },
           "note": null
         },
@@ -5486,13 +5465,14 @@
             }
           ],
           "prep": [
-            "Evening: boil 2 eggs for tomorrow's breakfast"
+            "Evening: boil 2 eggs for tomorrow's breakfast",
+            "Evening: take the 2 frozen pork loin steaks out and put them in the fridge for tomorrow, if you froze them last time"
           ],
           "totals": {
             "kcal": 2249,
-            "protein": 180,
-            "carbs": 241,
-            "fat": 62
+            "protein": 181,
+            "carbs": 236,
+            "fat": 63
           },
           "note": null
         }
@@ -5945,15 +5925,17 @@
         },
         {
           "ingredient": "riceB",
-          "name": "Brown basmati rice pouch",
+          "name": "Whole grain rice pouch",
           "category": "pantry",
-          "totalQty": 1,
+          "totalQty": 3,
           "unit": "pouch",
           "packSize": 1,
           "packUnit": "pouch",
           "stockTracked": false,
           "usedOnDays": [
-            "wed"
+            "sun",
+            "wed",
+            "thu"
           ]
         },
         {
@@ -6136,15 +6118,13 @@
           "ingredient": "riceW",
           "name": "White basmati rice pouch",
           "category": "pantry",
-          "totalQty": 4,
+          "totalQty": 2,
           "unit": "pouch",
           "packSize": 1,
           "packUnit": "pouch",
           "stockTracked": false,
           "usedOnDays": [
-            "sun",
-            "tue",
-            "thu"
+            "tue"
           ]
         },
         {
@@ -6263,12 +6243,14 @@
               "free": false
             }
           ],
-          "prep": [],
+          "prep": [
+            "After shopping: freeze 2 of the 4 pork loin steaks for next time"
+          ],
           "totals": {
-            "kcal": 2490,
-            "protein": 206,
-            "carbs": 189,
-            "fat": 92
+            "kcal": 2504,
+            "protein": 204,
+            "carbs": 194,
+            "fat": 91
           },
           "note": null
         },
@@ -6314,9 +6296,9 @@
           ],
           "prep": [],
           "totals": {
-            "kcal": 1049,
-            "protein": 63,
-            "carbs": 81,
+            "kcal": 963,
+            "protein": 60,
+            "carbs": 64,
             "fat": 48
           },
           "note": "Lunch and dinner free"
@@ -6359,10 +6341,10 @@
             "Evening: boil 2 eggs for Monday's breakfast"
           ],
           "totals": {
-            "kcal": 2384,
+            "kcal": 2398,
             "protein": 170,
-            "carbs": 200,
-            "fat": 95
+            "carbs": 198,
+            "fat": 96
           },
           "note": null
         },
@@ -6396,22 +6378,22 @@
             {
               "time": "17:00",
               "slot": "dinner",
-              "recipe": "lemon-trout",
+              "recipe": "lemon-salmon",
               "free": false
             }
           ],
           "prep": [
             {
-              "text": "Evening: steam ~325g chicken breast with lemon, oregano and garlic for Tue/Wed lunches",
+              "text": "Evening: steam 300g chicken breast with lemon, oregano and garlic for Tue/Wed lunches",
               "recipe": "batch-souvlaki-chicken"
             },
             "Evening: mix 60g steel-cut oats, 250ml kefir, a splash of water, 1 grated apple and 1 tsp cinnamon; fridge it for tomorrow's apple & cinnamon overnight oats"
           ],
           "totals": {
-            "kcal": 2126,
-            "protein": 168,
-            "carbs": 137,
-            "fat": 95
+            "kcal": 2220,
+            "protein": 158,
+            "carbs": 142,
+            "fat": 106
           },
           "note": "Long run: go first thing, before breakfast. Intervals: eat breakfast first, then go about 2 hours later."
         },
@@ -6457,10 +6439,10 @@
           ],
           "prep": [],
           "totals": {
-            "kcal": 2620,
-            "protein": 181,
+            "kcal": 2608,
+            "protein": 179,
             "carbs": 281,
-            "fat": 82
+            "fat": 81
           },
           "note": null
         },
@@ -6506,9 +6488,9 @@
             "Evening: mix 60g steel-cut oats, 250ml kefir, a splash of water, 1 grated apple and 1 tsp cinnamon; fridge it for tomorrow's apple & cinnamon overnight oats"
           ],
           "totals": {
-            "kcal": 1840,
-            "protein": 164,
-            "carbs": 133,
+            "kcal": 1841,
+            "protein": 161,
+            "carbs": 136,
             "fat": 67
           },
           "note": null
@@ -6552,9 +6534,9 @@
           ],
           "totals": {
             "kcal": 2219,
-            "protein": 154,
-            "carbs": 238,
-            "fat": 66
+            "protein": 155,
+            "carbs": 233,
+            "fat": 67
           },
           "note": null
         }
@@ -6696,7 +6678,7 @@
           "ingredient": "chicken",
           "name": "Chicken breast fillets",
           "category": "fresh",
-          "totalQty": 325,
+          "totalQty": 300,
           "unit": "g",
           "packSize": null,
           "packUnit": "g",
@@ -6705,7 +6687,7 @@
             "tue",
             "wed"
           ],
-          "buy": "1 × ~325g pack (2 fillets)"
+          "buy": "1 × 300g pack (2 fillets)"
         },
         {
           "ingredient": "thigh",
@@ -6777,9 +6759,9 @@
           "ingredient": "rye",
           "name": "German-style rye bread",
           "category": "fresh",
-          "totalQty": 8,
+          "totalQty": 7,
           "unit": "slice",
-          "packSize": 500,
+          "packSize": 400,
           "packUnit": "g",
           "stockTracked": false,
           "usedOnDays": [
@@ -6789,7 +6771,7 @@
             "mon",
             "wed"
           ],
-          "buy": "1 × 500g pack (8 slices used; keeps)"
+          "buy": "1 × 400g pack (7 slices)"
         },
         {
           "ingredient": "greenbeans",
@@ -6904,15 +6886,15 @@
           "ingredient": "porkloin",
           "name": "Pork loin steaks, fat trimmed",
           "category": "fresh",
-          "totalQty": 250,
+          "totalQty": 240,
           "unit": "g",
-          "packSize": 250,
+          "packSize": 480,
           "packUnit": "g",
-          "stockTracked": false,
+          "stockTracked": true,
           "usedOnDays": [
             "fri"
           ],
-          "buy": "1 × 250g"
+          "buy": "1 × 480g pack (if running low)"
         },
         {
           "ingredient": "sirloin",
@@ -6975,20 +6957,6 @@
           "buy": "4 loose"
         },
         {
-          "ingredient": "trout",
-          "name": "Trout fillets, boneless",
-          "category": "fresh",
-          "totalQty": 250,
-          "unit": "g",
-          "packSize": 250,
-          "packUnit": "g",
-          "stockTracked": false,
-          "usedOnDays": [
-            "mon"
-          ],
-          "buy": "1 × 250g"
-        },
-        {
           "ingredient": "spinach",
           "name": "Spinach (fresh)",
           "category": "fresh",
@@ -7021,15 +6989,17 @@
         },
         {
           "ingredient": "riceB",
-          "name": "Brown basmati rice pouch",
+          "name": "Whole grain rice pouch",
           "category": "pantry",
-          "totalQty": 1,
+          "totalQty": 3,
           "unit": "pouch",
           "packSize": 1,
           "packUnit": "pouch",
           "stockTracked": false,
           "usedOnDays": [
-            "wed"
+            "sun",
+            "wed",
+            "thu"
           ]
         },
         {
@@ -7160,8 +7130,8 @@
           ]
         },
         {
-          "ingredient": "rasel",
-          "name": "Ras el hanout",
+          "ingredient": "garammasala",
+          "name": "Garam masala",
           "category": "pantry",
           "totalQty": 2,
           "unit": "tsp",
@@ -7219,15 +7189,13 @@
           "ingredient": "riceW",
           "name": "White basmati rice pouch",
           "category": "pantry",
-          "totalQty": 4,
+          "totalQty": 2,
           "unit": "pouch",
           "packSize": 1,
           "packUnit": "pouch",
           "stockTracked": false,
           "usedOnDays": [
-            "sun",
-            "tue",
-            "thu"
+            "tue"
           ]
         },
         {
@@ -7320,6 +7288,20 @@
             "wed",
             "thu"
           ]
+        },
+        {
+          "ingredient": "salmon",
+          "name": "Salmon fillets (frozen)",
+          "category": "frozen",
+          "totalQty": 200,
+          "unit": "g",
+          "packSize": 400,
+          "packUnit": "g",
+          "stockTracked": true,
+          "usedOnDays": [
+            "mon"
+          ],
+          "buy": "1 × 400g pack (if running low)"
         }
       ]
     },
@@ -7658,8 +7640,8 @@
           "totals": {
             "kcal": 2273,
             "protein": 181,
-            "carbs": 198,
-            "fat": 80
+            "carbs": 193,
+            "fat": 81
           },
           "note": null
         }
@@ -8173,15 +8155,16 @@
         },
         {
           "ingredient": "riceB",
-          "name": "Brown basmati rice pouch",
+          "name": "Whole grain rice pouch",
           "category": "pantry",
-          "totalQty": 1,
+          "totalQty": 2,
           "unit": "pouch",
           "packSize": 1,
           "packUnit": "pouch",
           "stockTracked": false,
           "usedOnDays": [
-            "wed"
+            "wed",
+            "thu"
           ]
         },
         {
@@ -8397,14 +8380,13 @@
           "ingredient": "riceW",
           "name": "White basmati rice pouch",
           "category": "pantry",
-          "totalQty": 2,
+          "totalQty": 1,
           "unit": "pouch",
           "packSize": 1,
           "packUnit": "pouch",
           "stockTracked": false,
           "usedOnDays": [
-            "tue",
-            "thu"
+            "tue"
           ]
         },
         {
@@ -8600,6 +8582,7 @@
     "Meat & fish",
     "Frozen",
     "Cupboard",
+    "Eggs & oil",
     "Sainsbury's"
   ]
 }
