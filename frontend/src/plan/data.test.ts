@@ -116,3 +116,12 @@ describe('recipe methods', () => {
     }
   })
 })
+
+describe('boiled eggs', () => {
+  it('are boiled on the day, never as prep the night before', () => {
+    for (const w of plan.weeks) for (const d of w.days) for (const p of d.prep) {
+      expect(typeof p === 'string' ? p : p.text, `W${w.week} ${d.day}`).not.toMatch(/boil \d+ eggs?/i)
+    }
+    for (const r of plan.recipes) expect(r.method.join(' '), r.id).not.toMatch(/night before to save time|boiled the night before/i)
+  })
+})

@@ -2107,7 +2107,7 @@
       "method": [
         "The night before: mix 60g steel-cut oats with 284ml milk (half a pint) in a jar and refrigerate.",
         "In the morning, stir, top with sliced banana, 150g skyr and 15g pumpkin seeds.",
-        "Boil 1 egg for 9 minutes (or use one boiled the night before) and eat on the side."
+        "Boil 1 egg for 9 minutes and eat on the side."
       ],
       "prepAhead": "Soak oats in milk the night before",
       "tags": [],
@@ -2989,7 +2989,7 @@
       "method": [
         "Toast 2 slices of rye bread in a dry frying pan, about 3 minutes each side (from frozen is fine).",
         "Top with 300g cottage cheese and a sliced tomato; season with black pepper.",
-        "2 boiled eggs on the side (boil the night before to save time)."
+        "Boil 2 eggs for 9 minutes and eat on the side."
       ],
       "prepAhead": null,
       "tags": [],
@@ -3047,7 +3047,7 @@
       "method": [
         "The night before: mix 60g steel-cut oats, 250ml kefir, a splash of water, 1 grated apple and cinnamon. Refrigerate.",
         "In the morning, top with 150g skyr and 15g walnuts.",
-        "1 boiled egg on the side."
+        "Boil 1 egg for 9 minutes and eat on the side."
       ],
       "prepAhead": "Soak oats the night before",
       "tags": [],
@@ -5466,7 +5466,6 @@
             }
           ],
           "prep": [
-            "Evening: boil 2 eggs for tomorrow's breakfast",
             "Evening: take the 2 frozen pork loin steaks out and put them in the fridge for tomorrow, if you froze them last time"
           ],
           "totals": {
@@ -6379,9 +6378,7 @@
               "free": false
             }
           ],
-          "prep": [
-            "Evening: boil 2 eggs for Monday's breakfast"
-          ],
+          "prep": [],
           "totals": {
             "kcal": 2398,
             "protein": 170,
