@@ -4816,9 +4816,10 @@
         }
       ],
       "method": [
-        "Toss the chicken with the lemon juice, oregano, garlic and a pinch of salt.",
-        "Steam for 20 to 25 minutes, until there's no pink in the middle. If your steamer has room, put it in with tonight's dinner.",
-        "Let it cool, slice it, split it into 2 tubs (150g each) and fridge them for Tuesday and Wednesday lunch."
+        "Steam the chicken breasts plain for 20 to 25 minutes, until there's no pink in the middle. If your steamer has room, put them in with tonight's dinner.",
+        "While it steams, mix the lemon juice, oregano, crushed garlic and a pinch of salt in a bowl.",
+        "Slice the hot chicken straight into the bowl and toss it in the dressing; warm chicken soaks up the flavour.",
+        "Let it cool, split it into 2 tubs (150g each) and fridge them for Tuesday and Wednesday lunch."
       ],
       "prepAhead": null,
       "tags": [
@@ -4949,10 +4950,10 @@
         }
       ],
       "method": [
-        "Toss the chicken with the lemon juice, oregano and a pinch of salt.",
-        "Steam for 20 to 25 minutes, until there's no pink in the middle. If your steamer has room, put it in with tonight's dinner.",
+        "Steam the chicken breasts plain for 20 to 25 minutes, until there's no pink in the middle. If your steamer has room, put them in with tonight's dinner.",
         "Meanwhile put the bulgur in a pan with 300ml boiling water, cover and simmer gently for 10 minutes, then leave it covered off the heat for 5 minutes.",
-        "Let it cool and split it into 2 tubs: half the chicken in each, with a slightly bigger share of bulgur in Tuesday's. Fridge them."
+        "Mix the lemon juice, oregano and a pinch of salt in a bowl. Slice the hot chicken straight into it and toss to coat.",
+        "Let it all cool and split it into 2 tubs: half the chicken in each, with a slightly bigger share of bulgur in Tuesday's. Fridge them."
       ],
       "prepAhead": null,
       "tags": [
@@ -6424,7 +6425,7 @@
           ],
           "prep": [
             {
-              "text": "Evening: steam 300g chicken breast with lemon, oregano and garlic for Tue/Wed lunches",
+              "text": "Evening: steam 300g chicken breast, then toss it in lemon, oregano and garlic, for Tue/Wed lunches",
               "recipe": "batch-souvlaki-chicken"
             },
             "Evening: mix 60g steel-cut oats, 250ml kefir, a splash of water, 1 grated apple and 1 tsp cinnamon; fridge it for tomorrow's apple & cinnamon overnight oats"
@@ -7571,7 +7572,7 @@
           ],
           "prep": [
             {
-              "text": "Evening: steam 300g chicken breast with lemon and oregano, and cook 150g bulgur, for Tue/Wed lunches",
+              "text": "Evening: steam 300g chicken breast and cook 150g bulgur, then toss the chicken in lemon and oregano, for Tue/Wed lunches",
               "recipe": "batch-chicken-bulgur"
             }
           ],
