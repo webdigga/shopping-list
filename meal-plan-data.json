@@ -3748,7 +3748,7 @@
     },
     {
       "id": "sirloin",
-      "name": "Steamed sirloin steak with potatoes & veg",
+      "name": "Sirloin steak with steamed potatoes & veg",
       "meal": "dinner",
       "servingsCooked": 1,
       "cookMinutes": 35,
@@ -3775,8 +3775,8 @@
         }
       ],
       "method": [
-        "Halve 250g baby potatoes and steam them for 15 minutes.",
-        "Add the sliced pepper and courgette and lay the sirloin on top; steam for 8 to 10 minutes more for medium (a little less for pink, a little more for well done).",
+        "Halve 250g baby potatoes and steam them for 15 minutes, adding the sliced pepper and courgette for the last 8.",
+        "Meanwhile, heat a non-stick frying pan until very hot and fry the sirloin for 2 to 4 minutes each side (2 for pink, 4 for well done). No oil needed.",
         "Rest the steak for 5 minutes before slicing."
       ],
       "prepAhead": null,
@@ -4631,7 +4631,7 @@
     },
     {
       "id": "rump-steak",
-      "name": "Steamed rump steak with chimichurri",
+      "name": "Rump steak with chimichurri",
       "meal": "dinner",
       "servingsCooked": 1,
       "cookMinutes": 25,
@@ -4678,8 +4678,9 @@
         }
       ],
       "method": [
-        "Steam 400g baby potatoes for 15 minutes. Lay the rump steak on top for the last 8 to 10 minutes (medium), and add 200g green beans for the last 6.",
+        "Steam 400g baby potatoes for 15 minutes, adding 200g green beans for the last 6.",
         "Chimichurri: finely chop 15g parsley and 1 garlic clove; mix with 1 tsp olive oil, 2 tsp vinegar and chilli.",
+        "Meanwhile, heat a non-stick frying pan until very hot and fry the rump steak for 2 to 4 minutes each side (2 for pink, 4 for well done). No oil needed.",
         "Rest the steak for 5 minutes, slice it and spoon over the chimichurri."
       ],
       "prepAhead": null,
