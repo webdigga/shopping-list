@@ -1340,24 +1340,24 @@
     },
     {
       "id": "greenbeans",
-      "name": "Green beans",
-      "category": "fresh",
+      "name": "Frozen green beans",
+      "category": "frozen",
       "per100g": {
         "kcal": 25,
         "protein": 1.8,
         "carbs": 3.5,
         "fat": 0.2
       },
-      "packSize": 200,
+      "packSize": null,
       "packUnit": "g",
       "store": "Lidl",
       "unit": "g",
       "unitWeight": null,
-      "fridgeDays": 7,
+      "fridgeDays": null,
       "openedDays": null,
-      "note": null,
+      "note": "Ready trimmed; steam from frozen and take out only what you need",
       "stockTracked": false,
-      "aisle": "Fruit & veg",
+      "aisle": "Frozen",
       "aisleRank": 50
     },
     {
@@ -2735,7 +2735,7 @@
       ],
       "method": [
         "Mix 250g beef mince with 2 crushed garlic cloves, the grated ginger and the chilli flakes; spread it in a shallow heatproof dish and steam for 15 to 20 minutes, until no pink remains.",
-        "Add the sliced onion, pepper and 100g green beans to the steamer for the last 6 to 7 minutes.",
+        "Add the sliced onion, pepper and 100g frozen green beans to the steamer for the last 6 to 7 minutes.",
         "Break it up with a fork and pour off any fat. Toss everything with 1 tbsp soy sauce and the lime juice.",
         "Serve over 1 white basmati pouch, cold, straight from the pouch."
       ],
@@ -2945,7 +2945,7 @@
       ],
       "method": [
         "Halve 250g baby potatoes and steam them with the 250g chicken breast for 20 to 25 minutes, until the chicken has no pink in the middle.",
-        "Add 100g tenderstem broccoli and 100g green beans for the last 6 to 7 minutes.",
+        "Add 100g tenderstem broccoli and 100g frozen green beans for the last 6 to 7 minutes.",
         "Season and serve."
       ],
       "prepAhead": null,
@@ -3492,7 +3492,7 @@
         },
         {
           "ingredient": "greenbeans",
-          "qty": 200,
+          "qty": 100,
           "unit": "g"
         },
         {
@@ -3508,15 +3508,15 @@
       ],
       "method": [
         "Steam 200g baby potatoes and 2 frozen salmon fillets (200g), straight from frozen, for 15 to 18 minutes.",
-        "Add 200g green beans for the last 6 to 7 minutes.",
+        "Add 100g frozen green beans for the last 6 to 7 minutes.",
         "Lightly crush the potatoes with 1 tsp olive oil, lemon juice and salt."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 651,
-        "protein": 47,
-        "carbs": 37,
+        "kcal": 626,
+        "protein": 45,
+        "carbs": 34,
         "fat": 33
       }
     },
@@ -4648,7 +4648,7 @@
         },
         {
           "ingredient": "greenbeans",
-          "qty": 200,
+          "qty": 100,
           "unit": "g"
         },
         {
@@ -4678,7 +4678,7 @@
         }
       ],
       "method": [
-        "Steam 400g baby potatoes for 15 minutes, adding 200g green beans for the last 6.",
+        "Steam 400g baby potatoes for 15 minutes, adding 100g frozen green beans for the last 6 to 7.",
         "Chimichurri: finely chop 15g parsley and 1 garlic clove; mix with 1 tsp olive oil, 2 tsp vinegar and chilli.",
         "Meanwhile, heat a non-stick frying pan until very hot and fry the rump steak for 2 to 4 minutes each side (2 for pink, 4 for well done). No oil needed.",
         "Rest the steak for 5 minutes, slice it and spoon over the chimichurri."
@@ -4686,9 +4686,9 @@
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 692,
-        "protein": 60,
-        "carbs": 67,
+        "kcal": 667,
+        "protein": 58,
+        "carbs": 64,
         "fat": 19
       }
     },
@@ -5691,18 +5691,17 @@
         },
         {
           "ingredient": "greenbeans",
-          "name": "Green beans",
-          "category": "fresh",
+          "name": "Frozen green beans",
+          "category": "frozen",
           "totalQty": 200,
           "unit": "g",
-          "packSize": 200,
+          "packSize": null,
           "packUnit": "g",
           "stockTracked": false,
           "usedOnDays": [
             "sun",
             "tue"
           ],
-          "buy": "1 × 200g",
           "lastNeededOn": "tue"
         },
         {
@@ -6431,9 +6430,9 @@
             "Evening: mix 60g steel-cut oats, 250ml kefir, a splash of water, 1 grated apple and 1 tsp cinnamon; fridge it for tomorrow's apple & cinnamon overnight oats"
           ],
           "totals": {
-            "kcal": 2220,
-            "protein": 158,
-            "carbs": 142,
+            "kcal": 2195,
+            "protein": 156,
+            "carbs": 139,
             "fat": 106
           },
           "note": "Long run: go first thing, before breakfast. Intervals: eat breakfast first, then go about 2 hours later."
@@ -6826,17 +6825,16 @@
         },
         {
           "ingredient": "greenbeans",
-          "name": "Green beans",
-          "category": "fresh",
-          "totalQty": 200,
+          "name": "Frozen green beans",
+          "category": "frozen",
+          "totalQty": 100,
           "unit": "g",
-          "packSize": 200,
+          "packSize": null,
           "packUnit": "g",
           "stockTracked": false,
           "usedOnDays": [
             "mon"
           ],
-          "buy": "1 × 200g",
           "lastNeededOn": "mon"
         },
         {
@@ -7529,9 +7527,9 @@
             "Evening: soak 30g oats in a splash of water in the fridge, with 100g frozen raspberries on top, for tomorrow's quark bowl"
           ],
           "totals": {
-            "kcal": 2369,
-            "protein": 180,
-            "carbs": 186,
+            "kcal": 2344,
+            "protein": 178,
+            "carbs": 183,
             "fat": 91
           },
           "note": null
@@ -7954,17 +7952,16 @@
         },
         {
           "ingredient": "greenbeans",
-          "name": "Green beans",
-          "category": "fresh",
-          "totalQty": 200,
+          "name": "Frozen green beans",
+          "category": "frozen",
+          "totalQty": 100,
           "unit": "g",
-          "packSize": 200,
+          "packSize": null,
           "packUnit": "g",
           "stockTracked": false,
           "usedOnDays": [
             "sun"
           ],
-          "buy": "1 × 200g",
           "lastNeededOn": "sun"
         },
         {
