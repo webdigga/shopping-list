@@ -4463,27 +4463,23 @@
           "ingredient": "broccoli",
           "qty": 200,
           "unit": "g"
-        },
-        {
-          "ingredient": "oil",
-          "qty": 5,
-          "unit": "g"
         }
       ],
       "method": [
-        "Cut 200g chicken breast into chunks; fry in 1 tsp oil for 8 minutes.",
-        "Add 2 crushed garlic cloves, 15g honey and 1 tbsp soy; bubble 2 minutes until sticky.",
-        "Steam 200g tenderstem broccoli. Serve with 1 white basmati pouch, cold, straight from the pouch."
+        "Cut 200g chicken breast into chunks and steam for 12 minutes, until white all the way through with no pink.",
+        "Add 200g tenderstem broccoli to the steamer for the last 5 minutes.",
+        "Meanwhile, put 2 crushed garlic cloves, 15g honey and 1 tbsp soy sauce in a small pan and bubble for 2 minutes until sticky.",
+        "Toss the chicken in the glaze. Serve with the broccoli and 1 white basmati pouch, cold, straight from the pouch."
       ],
       "prepAhead": null,
       "tags": [
         "post-session"
       ],
       "macros": {
-        "kcal": 742,
+        "kcal": 697,
         "protein": 64,
         "carbs": 94,
-        "fat": 13
+        "fat": 8
       }
     },
     {
@@ -4509,27 +4505,23 @@
           "unit": "g"
         },
         {
-          "ingredient": "oil",
-          "qty": 5,
-          "unit": "g"
-        },
-        {
           "ingredient": "paprika",
           "qty": 1,
           "unit": "tsp"
         }
       ],
       "method": [
-        "Steam 250g sweet potato chunks for 15 minutes; add 250g shredded greens for the last 5.",
-        "Season the turkey steaks with paprika; pan-fry in 1 tsp oil 4–5 minutes each side until cooked through."
+        "Rub the turkey steaks all over with 1 tsp paprika.",
+        "Steam 250g sweet potato chunks for 3 minutes, then add the turkey steaks in a single layer and steam for 12 minutes more, until the turkey is white all the way through with no pink.",
+        "Add 250g shredded greens to the steamer for the last 5 minutes."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 595,
+        "kcal": 550,
         "protein": 70,
         "carbs": 55,
-        "fat": 9
+        "fat": 4
       }
     },
     {
@@ -4625,9 +4617,10 @@
         }
       ],
       "method": [
-        "Fry 150g chicken chunks in 1 tsp oil for 6 minutes; remove.",
-        "Soften onion and garlic; add chilli flakes and 1 tin tomatoes; simmer 15 minutes.",
-        "Return the chicken; cook 5 minutes. Toss with 100g cooked wholewheat fusilli."
+        "Soften the chopped onion and 2 crushed garlic cloves in 1 tsp oil for 5 minutes. Add 1 tsp chilli flakes and 1 tin tomatoes and simmer for 15 minutes.",
+        "While the sauce simmers, steam 150g chicken chunks for 12 minutes, until white all the way through with no pink.",
+        "At the same time, cook 100g wholewheat fusilli in boiling water as per the packet, then drain.",
+        "Stir the chicken into the sauce for 2 minutes, then toss with the fusilli."
       ],
       "prepAhead": null,
       "tags": [
@@ -7447,10 +7440,10 @@
             }
           ],
           "totals": {
-            "kcal": 1911,
+            "kcal": 1866,
             "protein": 175,
             "carbs": 175,
-            "fat": 50
+            "fat": 45
           },
           "note": null
         },
@@ -7643,10 +7636,10 @@
             }
           ],
           "totals": {
-            "kcal": 2351,
+            "kcal": 2306,
             "protein": 180,
             "carbs": 259,
-            "fat": 61
+            "fat": 56
           },
           "note": null
         },
@@ -8426,7 +8419,7 @@
           "ingredient": "oil",
           "name": "Olive oil",
           "category": "pantry",
-          "totalQty": 66,
+          "totalQty": 56,
           "unit": "g",
           "packSize": 1000,
           "packUnit": "ml",
