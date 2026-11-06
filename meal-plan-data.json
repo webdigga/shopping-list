@@ -72,16 +72,16 @@
         "carbs": 4,
         "fat": 0.2
       },
-      "packSize": 250,
+      "packSize": 500,
       "packUnit": "g",
-      "store": "Lidl",
+      "store": "Sainsbury's",
       "unit": "g",
       "unitWeight": null,
       "fridgeDays": 10,
       "openedDays": 3,
-      "note": null,
+      "note": "Sold in 500g and 250g tubs; the 500g is cheaper",
       "stockTracked": false,
-      "aisle": "Dairy",
+      "aisle": "Sainsbury's",
       "aisleRank": 50
     },
     {
@@ -636,7 +636,7 @@
     },
     {
       "id": "pasta",
-      "name": "Wholewheat penne",
+      "name": "Wholewheat fusilli",
       "category": "pantry",
       "per100g": {
         "kcal": 350,
@@ -690,14 +690,14 @@
       },
       "packSize": 500,
       "packUnit": "g",
-      "store": "Lidl",
+      "store": "Sainsbury's",
       "unit": "g",
       "unitWeight": null,
       "fridgeDays": null,
       "openedDays": null,
       "note": null,
       "stockTracked": false,
-      "aisle": "Cupboard",
+      "aisle": "Sainsbury's",
       "aisleRank": 50
     },
     {
@@ -710,16 +710,16 @@
         "carbs": 63,
         "fat": 2.5
       },
-      "packSize": 250,
+      "packSize": 225,
       "packUnit": "g",
-      "store": "Lidl",
+      "store": "Sainsbury's",
       "unit": "g",
       "unitWeight": null,
       "fridgeDays": null,
       "openedDays": null,
-      "note": null,
+      "note": "225g pack of 5 nests, about 45g each",
       "stockTracked": false,
-      "aisle": "Cupboard",
+      "aisle": "Sainsbury's",
       "aisleRank": 50
     },
     {
@@ -1340,24 +1340,24 @@
     },
     {
       "id": "greenbeans",
-      "name": "Frozen green beans",
-      "category": "frozen",
+      "name": "Extra fine green beans (trimmed)",
+      "category": "fresh",
       "per100g": {
         "kcal": 25,
         "protein": 1.8,
         "carbs": 3.5,
         "fat": 0.2
       },
-      "packSize": null,
+      "packSize": 200,
       "packUnit": "g",
       "store": "Lidl",
       "unit": "g",
       "unitWeight": null,
-      "fridgeDays": null,
+      "fridgeDays": 7,
       "openedDays": null,
-      "note": "Ready trimmed; steam from frozen and take out only what you need",
+      "note": "Lidl, ends already trimmed",
       "stockTracked": false,
-      "aisle": "Frozen",
+      "aisle": "Fruit & veg",
       "aisleRank": 50
     },
     {
@@ -2735,7 +2735,7 @@
       ],
       "method": [
         "Mix 250g beef mince with 2 crushed garlic cloves, the grated ginger and the chilli flakes; spread it in a shallow heatproof dish and steam for 15 to 20 minutes, until no pink remains.",
-        "Add the sliced onion, pepper and 100g frozen green beans to the steamer for the last 6 to 7 minutes.",
+        "Add the sliced onion, pepper and 100g green beans to the steamer for the last 5 minutes.",
         "Break it up with a fork and pour off any fat. Toss everything with 1 tbsp soy sauce and the lime juice.",
         "Serve over 1 white basmati pouch, cold, straight from the pouch."
       ],
@@ -2945,7 +2945,7 @@
       ],
       "method": [
         "Halve 250g baby potatoes and steam them with the 250g chicken breast for 20 to 25 minutes, until the chicken has no pink in the middle.",
-        "Add 100g tenderstem broccoli and 100g frozen green beans for the last 6 to 7 minutes.",
+        "Add 100g tenderstem broccoli and 100g green beans for the last 5 minutes.",
         "Season and serve."
       ],
       "prepAhead": null,
@@ -3508,7 +3508,7 @@
       ],
       "method": [
         "Steam 200g baby potatoes and 2 frozen salmon fillets (200g), straight from frozen, for 15 to 18 minutes.",
-        "Add 100g frozen green beans for the last 6 to 7 minutes.",
+        "Add 100g green beans for the last 5 minutes.",
         "Lightly crush the potatoes with 1 tsp olive oil, lemon juice and salt."
       ],
       "prepAhead": null,
@@ -3571,22 +3571,27 @@
           "ingredient": "riceW",
           "qty": 1,
           "unit": "pouch"
+        },
+        {
+          "ingredient": "greenbeans",
+          "qty": 100,
+          "unit": "g"
         }
       ],
       "method": [
         "Cut 300g chicken thighs into chunks and steam for 15 to 20 minutes, until there's no pink in the middle.",
         "Meanwhile, cook the chopped onion gently in a splash of water for 5 minutes, then add the garlic, ginger and 2 tsp curry powder for 1 minute.",
         "Add the sliced pepper, 1 tin tomatoes and the steamed chicken; simmer for 15 minutes.",
-        "Stir in 240g spinach until wilted. Serve with 1 white basmati pouch, cold, straight from the pouch."
+        "Stir in 240g spinach until wilted. Serve with 1 white basmati pouch, cold, straight from the pouch. Steam 100g green beans for 5 minutes and serve them on the side."
       ],
       "prepAhead": null,
       "tags": [
         "post-session"
       ],
       "macros": {
-        "kcal": 1026,
-        "protein": 78,
-        "carbs": 102,
+        "kcal": 1051,
+        "protein": 80,
+        "carbs": 106,
         "fat": 33
       }
     },
@@ -4400,19 +4405,25 @@
           "ingredient": "oil",
           "qty": 5,
           "unit": "g"
+        },
+        {
+          "ingredient": "greenbeans",
+          "qty": 100,
+          "unit": "g"
         }
       ],
       "method": [
         "Steam 200g baby potatoes for 10 minutes.",
         "Lay 2 sea bass fillets on top with shredded ginger and spring onion; add 80g edamame. Steam 8–10 minutes.",
+        "Add 100g green beans to the steamer for the last 5 minutes.",
         "Drizzle with 2 tsp soy sauce and 1 tsp oil."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 533,
-        "protein": 53,
-        "carbs": 36,
+        "kcal": 558,
+        "protein": 55,
+        "carbs": 39,
         "fat": 19
       }
     },
@@ -4536,8 +4547,9 @@
         },
         {
           "ingredient": "noodles",
-          "qty": 60,
-          "unit": "g"
+          "qty": 90,
+          "unit": "g",
+          "note": "2 nests"
         },
         {
           "ingredient": "kimchi",
@@ -4557,16 +4569,16 @@
       ],
       "method": [
         "Steam 2 frozen salmon fillets (200g), straight from frozen, for 15 to 18 minutes, then flake.",
-        "Cook 60g wholewheat noodles and drain.",
+        "Cook 2 nests (90g) of wholewheat noodles and drain.",
         "Toss the noodles with 80g kimchi, 1 tbsp soy sauce, the salmon and sliced spring onion."
       ],
       "prepAhead": null,
       "tags": [],
       "macros": {
-        "kcal": 659,
-        "protein": 51,
-        "carbs": 43,
-        "fat": 29
+        "kcal": 761,
+        "protein": 54,
+        "carbs": 62,
+        "fat": 30
       }
     },
     {
@@ -4615,7 +4627,7 @@
       "method": [
         "Fry 150g chicken chunks in 1 tsp oil for 6 minutes; remove.",
         "Soften onion and garlic; add chilli flakes and 1 tin tomatoes; simmer 15 minutes.",
-        "Return the chicken; cook 5 minutes. Toss with 100g cooked wholewheat penne."
+        "Return the chicken; cook 5 minutes. Toss with 100g cooked wholewheat fusilli."
       ],
       "prepAhead": null,
       "tags": [
@@ -4677,7 +4689,7 @@
         }
       ],
       "method": [
-        "Steam 400g baby potatoes for 15 minutes, adding 100g frozen green beans for the last 6 to 7.",
+        "Steam 400g baby potatoes for 15 minutes, adding 100g green beans for the last 5.",
         "Chimichurri: finely chop 15g parsley and 1 garlic clove; mix with 1 tsp olive oil, 2 tsp vinegar and chilli.",
         "Meanwhile, heat a non-stick frying pan until very hot and fry the rump steak for 2 to 4 minutes each side (2 for pink, 4 for well done). No oil needed.",
         "Rest the steak for 5 minutes, slice it and spoon over the chimichurri."
@@ -5690,17 +5702,18 @@
         },
         {
           "ingredient": "greenbeans",
-          "name": "Frozen green beans",
-          "category": "frozen",
+          "name": "Extra fine green beans (trimmed)",
+          "category": "fresh",
           "totalQty": 200,
           "unit": "g",
-          "packSize": null,
+          "packSize": 200,
           "packUnit": "g",
           "stockTracked": false,
           "usedOnDays": [
             "sun",
             "tue"
           ],
+          "buy": "1 × 200g",
           "lastNeededOn": "tue"
         },
         {
@@ -6478,9 +6491,9 @@
           ],
           "prep": [],
           "totals": {
-            "kcal": 2608,
-            "protein": 179,
-            "carbs": 281,
+            "kcal": 2633,
+            "protein": 181,
+            "carbs": 285,
             "fat": 81
           },
           "note": null
@@ -6824,17 +6837,19 @@
         },
         {
           "ingredient": "greenbeans",
-          "name": "Frozen green beans",
-          "category": "frozen",
-          "totalQty": 100,
+          "name": "Extra fine green beans (trimmed)",
+          "category": "fresh",
+          "totalQty": 200,
           "unit": "g",
-          "packSize": null,
+          "packSize": 200,
           "packUnit": "g",
           "stockTracked": false,
           "usedOnDays": [
-            "mon"
+            "mon",
+            "tue"
           ],
-          "lastNeededOn": "mon"
+          "buy": "1 × 200g",
+          "lastNeededOn": "tue"
         },
         {
           "ingredient": "kefir",
@@ -7574,9 +7589,9 @@
             }
           ],
           "totals": {
-            "kcal": 1959,
-            "protein": 159,
-            "carbs": 144,
+            "kcal": 1984,
+            "protein": 161,
+            "carbs": 147,
             "fat": 75
           },
           "note": "Long run: go first thing, before breakfast. Intervals: eat breakfast first, then go about 2 hours later."
@@ -7721,10 +7736,10 @@
             "Evening: soak 40g oats in a splash of water in the fridge, with 100g frozen berries on top, for tomorrow's skyr bowl"
           ],
           "totals": {
-            "kcal": 2273,
-            "protein": 181,
-            "carbs": 193,
-            "fat": 81
+            "kcal": 2375,
+            "protein": 184,
+            "carbs": 212,
+            "fat": 82
           },
           "note": null
         }
@@ -7951,17 +7966,19 @@
         },
         {
           "ingredient": "greenbeans",
-          "name": "Frozen green beans",
-          "category": "frozen",
-          "totalQty": 100,
+          "name": "Extra fine green beans (trimmed)",
+          "category": "fresh",
+          "totalQty": 200,
           "unit": "g",
-          "packSize": null,
+          "packSize": 200,
           "packUnit": "g",
           "stockTracked": false,
           "usedOnDays": [
-            "sun"
+            "sun",
+            "mon"
           ],
-          "lastNeededOn": "sun"
+          "buy": "1 × 200g",
+          "lastNeededOn": "mon"
         },
         {
           "ingredient": "kefir",
@@ -8085,7 +8102,7 @@
           "category": "fresh",
           "totalQty": 1250,
           "unit": "g",
-          "packSize": 250,
+          "packSize": 500,
           "packUnit": "g",
           "stockTracked": false,
           "usedOnDays": [
@@ -8094,7 +8111,7 @@
             "tue",
             "thu"
           ],
-          "buy": "5 × 250g",
+          "buy": "2 × 500g + 1 × 250g",
           "lastNeededOn": "thu"
         },
         {
@@ -8522,19 +8539,20 @@
           "ingredient": "noodles",
           "name": "Wholewheat noodles",
           "category": "pantry",
-          "totalQty": 60,
+          "totalQty": 90,
           "unit": "g",
-          "packSize": 250,
+          "packSize": 225,
           "packUnit": "g",
           "stockTracked": false,
           "usedOnDays": [
             "thu"
           ],
+          "buy": "1 × 225g pack (5 nests)",
           "lastNeededOn": "thu"
         },
         {
           "ingredient": "pasta",
-          "name": "Wholewheat penne",
+          "name": "Wholewheat fusilli",
           "category": "pantry",
           "totalQty": 100,
           "unit": "g",
