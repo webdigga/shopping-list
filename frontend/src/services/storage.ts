@@ -1,0 +1,18 @@
+// localStorage that never throws: blocked or full storage falls back, and the app keeps working.
+
+export function readJson<T>(key: string, fallback: T): T {
+  try {
+    const raw = localStorage.getItem(key)
+    return raw ? (JSON.parse(raw) as T) : fallback
+  } catch {
+    return fallback
+  }
+}
+
+export function writeJson(key: string, value: unknown) {
+  try {
+    localStorage.setItem(key, JSON.stringify(value))
+  } catch {
+    // Storage full or blocked: the in-memory state still works for this session.
+  }
+}

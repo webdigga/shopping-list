@@ -50,6 +50,8 @@ export interface Recipe {
   method: string[]
   prepAhead?: string | null
   batchCookedOn?: DayKey | null
+  /** On the day the batch is cooked: the batch recipe to cook first. Its own ingredients marked "batch-cooked" are this portion's share. */
+  cooksBatch?: string
   /** Left out on batch-cook recipes, which are eaten through other meals. */
   macros?: Macros
   tags: string[]

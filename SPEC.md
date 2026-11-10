@@ -76,7 +76,8 @@ Shows as soon as the app opens.
 - Greeting: **"Welcome, David. It's Monday — Week 2, day 3."**
 - **Training** card for today (`days[].training.label`).
 - **Meals timeline**: time, meal name, protein/carbs/kcal; tap opens the recipe. Free meals show "Free — try to include some protein".
-- **Prep tonight / today**: from `days[].prep`, as tickable items (ticks stored per date).
+- **Prep today and tonight**: from `days[].prep`, one job per row with a job count; batch cooks link to their recipe.
+- The first time the app opens each day, a pop-up lists that day's prep jobs until "Got it" is tapped (dismissal stored on the device, per date). Days with no prep show nothing.
 - **Day totals** vs targets (`meta.targets`): protein, carbs, fat, kcal. Show as simple bars; carbs target uses `training.carbTarget` (low/medium/high).
 - On Thursday evening and Friday morning: a prominent **"Shopping — Week N list"** button linking to the list for the week that starts Friday.
 - If paused: banner + Resume.
@@ -103,7 +104,8 @@ Nothing on the list is editable in the app: every addition goes through Claude s
 
 ### 4.4 Recipe
 - Name, meal type, cook time, macros.
-- If `batchCookedOn` is set: note "Batch-cooked on <day> evening".
+- If `batchCookedOn` is set: note "Batch-cooked on <day>".
+- If `cooksBatch` is set (the meal eaten on the day its batch is cooked): a "Double batch today" banner, then the batch recipe's ingredients and method, then any other ingredients for this meal and a "To serve" method. The meal's own ingredients marked `batch-cooked` are its share of the batch, for macros and shopping.
 - If `prepAhead` is set: show it at the top.
 - Ingredients with exact quantities and notes.
 - Method as numbered steps.

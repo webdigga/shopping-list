@@ -117,6 +117,32 @@ describe('recipe methods', () => {
   })
 })
 
+describe('batch-cook days', () => {
+  it('lead with the batch recipe when the meal eaten that day cooks it', () => {
+    for (const w of plan.weeks) for (const d of w.days) {
+      const linked = d.prep.flatMap(p => (typeof p === 'string' ? [] : [p.recipe]))
+      for (const m of d.meals) {
+        const r = m.recipe ? getRecipe(m.recipe)! : null
+        if (!r || r.batchCookedOn !== d.day) continue
+        expect(r.cooksBatch, `${r.id} on W${w.week} ${d.day}`).toBeDefined()
+        expect(linked, `${r.id} on W${w.week} ${d.day}`).toContain(r.cooksBatch)
+      }
+    }
+  })
+
+  it('mark only ingredients the batch recipe uses as batch-cooked', () => {
+    for (const r of plan.recipes) {
+      if (!r.cooksBatch) continue
+      const batch = getRecipe(r.cooksBatch)!
+      expect(batch.meal, r.id).toBe('batch')
+      const inBatch = new Set(batch.ingredients.map(i => i.ingredient))
+      for (const i of r.ingredients) {
+        if (i.note === 'batch-cooked') expect(inBatch, `${r.id} ${i.ingredient}`).toContain(i.ingredient)
+      }
+    }
+  })
+})
+
 describe('boiled eggs', () => {
   it('are boiled on the day, never as prep the night before', () => {
     for (const w of plan.weeks) for (const d of w.days) for (const p of d.prep) {

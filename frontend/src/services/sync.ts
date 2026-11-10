@@ -1,6 +1,7 @@
 // Offline-friendly writes. Every write is idempotent (PUT a value, or DELETE), so a queue keyed
 // by path, last write wins, is safe to replay. Reads are cached so the app opens without signal.
 import { ApiError, request } from './api'
+import { readJson, writeJson } from './storage'
 
 export interface QueuedWrite {
   method: 'PUT' | 'DELETE'
@@ -10,23 +11,6 @@ export interface QueuedWrite {
 
 const QUEUE_KEY = 'mp-write-queue'
 const CACHE_PREFIX = 'mp-cache:'
-
-function readJson<T>(key: string, fallback: T): T {
-  try {
-    const raw = localStorage.getItem(key)
-    return raw ? (JSON.parse(raw) as T) : fallback
-  } catch {
-    return fallback
-  }
-}
-
-function writeJson(key: string, value: unknown) {
-  try {
-    localStorage.setItem(key, JSON.stringify(value))
-  } catch {
-    // Storage full or blocked: the in-memory state still works for this session.
-  }
-}
 
 export function readCache<T>(path: string, fallback: T): T {
   return readJson(CACHE_PREFIX + path, fallback)

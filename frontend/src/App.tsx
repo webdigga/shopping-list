@@ -7,6 +7,7 @@ import { flush } from '@/services/sync'
 import { PinEntry } from '@/components/PinEntry/PinEntry'
 import { OfflineIndicator } from '@/components/OfflineIndicator/OfflineIndicator'
 import { TabBar } from '@/components/TabBar/TabBar'
+import { PrepReminder } from '@/components/PrepReminder/PrepReminder'
 import { Today } from '@/screens/Today'
 import { WeekScreen } from '@/screens/WeekScreen'
 import { DayScreen } from '@/screens/DayScreen'
@@ -34,6 +35,7 @@ function MealPlan() {
       {route.name === 'recipe' && <RecipeScreen id={route.id} />}
       {route.name === 'settings' && <Settings />}
       <TabBar route={route} />
+      <PrepReminder />
     </div>
   )
 }

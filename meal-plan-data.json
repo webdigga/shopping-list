@@ -2431,47 +2431,56 @@
         {
           "ingredient": "kidneybeans",
           "qty": 0.5,
-          "unit": "tin"
+          "unit": "tin",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "tomatoestin",
           "qty": 0.5,
-          "unit": "tin"
+          "unit": "tin",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "onion",
           "qty": 0.33,
-          "unit": "each"
+          "unit": "each",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "pepper",
           "qty": 0.4,
-          "unit": "each"
+          "unit": "each",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "garlic",
           "qty": 1,
-          "unit": "clove"
+          "unit": "clove",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "cumin",
           "qty": 1,
-          "unit": "tsp"
+          "unit": "tsp",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "paprika",
           "qty": 1,
-          "unit": "tsp"
+          "unit": "tsp",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "chilli",
           "qty": 0.5,
-          "unit": "tsp"
+          "unit": "tsp",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "oil",
           "qty": 3,
-          "unit": "g"
+          "unit": "g",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "riceB",
@@ -2512,47 +2521,56 @@
         {
           "ingredient": "kidneybeans",
           "qty": 0.5,
-          "unit": "tin"
+          "unit": "tin",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "tomatoestin",
           "qty": 0.5,
-          "unit": "tin"
+          "unit": "tin",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "onion",
           "qty": 0.33,
-          "unit": "each"
+          "unit": "each",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "pepper",
           "qty": 0.4,
-          "unit": "each"
+          "unit": "each",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "garlic",
           "qty": 1,
-          "unit": "clove"
+          "unit": "clove",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "cumin",
           "qty": 1,
-          "unit": "tsp"
+          "unit": "tsp",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "paprika",
           "qty": 1,
-          "unit": "tsp"
+          "unit": "tsp",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "chilli",
           "qty": 0.5,
-          "unit": "tsp"
+          "unit": "tsp",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "oil",
           "qty": 3,
-          "unit": "g"
+          "unit": "g",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "riceB",
@@ -2561,9 +2579,7 @@
         }
       ],
       "method": [
-        "Batch-cook the chilli this evening: brown 500g turkey mince, add 1 chopped onion, ¾ pepper, 2 garlic cloves, cumin, paprika, chilli, 1 tin kidney beans and 1 tin tomatoes; simmer 25 minutes. Makes 2 portions.",
-        "Eat one portion now with the other half of the whole grain rice pouch, cold, straight from the pouch.",
-        "Cool the second portion quickly and fridge it for Thursday lunch."
+        "Serve one portion with the other half of the whole grain rice pouch, cold, straight from the pouch."
       ],
       "prepAhead": null,
       "tags": [],
@@ -2573,7 +2589,8 @@
         "carbs": 67,
         "fat": 12
       },
-      "batchCookedOn": "wed"
+      "batchCookedOn": "wed",
+      "cooksBatch": "batch-turkey-chilli"
     },
     {
       "id": "chicken-bean-salad",
@@ -3378,17 +3395,20 @@
         {
           "ingredient": "blackbeans",
           "qty": 0.5,
-          "unit": "tin"
+          "unit": "tin",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "cumin",
           "qty": 1,
-          "unit": "tsp"
+          "unit": "tsp",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "paprika",
           "qty": 1,
-          "unit": "tsp"
+          "unit": "tsp",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "riceB",
@@ -3434,17 +3454,20 @@
         {
           "ingredient": "blackbeans",
           "qty": 0.5,
-          "unit": "tin"
+          "unit": "tin",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "cumin",
           "qty": 1,
-          "unit": "tsp"
+          "unit": "tsp",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "paprika",
           "qty": 1,
-          "unit": "tsp"
+          "unit": "tsp",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "riceB",
@@ -3458,9 +3481,7 @@
         }
       ],
       "method": [
-        "Batch-cook the beef this evening: mix 300g beef mince with cumin and paprika and steam it in a shallow dish for 15 to 20 minutes; break it up, pour off any fat and stir in 1 tin black beans. Makes 2 portions.",
-        "Eat one portion now with the other half of the whole grain rice pouch, cold, straight from the pouch, and 80g kimchi on top.",
-        "Cool the second portion quickly and fridge it for Thursday lunch."
+        "Serve one portion with the other half of the whole grain rice pouch, cold, straight from the pouch, and 80g kimchi on top."
       ],
       "prepAhead": null,
       "tags": [],
@@ -3470,7 +3491,8 @@
         "carbs": 56,
         "fat": 10
       },
-      "batchCookedOn": "wed"
+      "batchCookedOn": "wed",
+      "cooksBatch": "batch-burrito-beef"
     },
     {
       "id": "lemon-salmon",
@@ -3843,23 +3865,26 @@
         {
           "ingredient": "oats",
           "qty": 60,
-          "unit": "g"
+          "unit": "g",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "eggs",
           "qty": 2,
-          "unit": "each"
+          "unit": "each",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "quark",
           "qty": 200,
           "unit": "g",
-          "note": "in the batter"
+          "note": "batch-cooked"
         },
         {
           "ingredient": "banana",
           "qty": 1,
-          "unit": "each"
+          "unit": "each",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "quark",
@@ -3870,19 +3895,18 @@
         {
           "ingredient": "cinnamon",
           "qty": 0.5,
-          "unit": "tsp"
+          "unit": "tsp",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "oil",
           "qty": 3,
-          "unit": "g"
+          "unit": "g",
+          "note": "batch-cooked"
         }
       ],
       "method": [
-        "Blitz 60g steel-cut oats to a flour.",
-        "Blend with 2 eggs, 200g quark, 1 banana and cinnamon.",
-        "Cook small pancakes in a non-stick pan with a little oil, 2 minutes each side.",
-        "Top with 125g quark. On Tuesday cook both days' batches and fridge Thursday's."
+        "Top one portion of pancakes with 125g quark."
       ],
       "prepAhead": null,
       "tags": [
@@ -3893,7 +3917,76 @@
         "protein": 61,
         "carbs": 74,
         "fat": 19
-      }
+      },
+      "batchCookedOn": "tue",
+      "cooksBatch": "batch-pancakes"
+    },
+    {
+      "id": "pancakes-reheat",
+      "name": "Banana oat pancakes",
+      "meal": "breakfast",
+      "servingsCooked": 1,
+      "cookMinutes": 15,
+      "ingredients": [
+        {
+          "ingredient": "oats",
+          "qty": 60,
+          "unit": "g",
+          "note": "batch-cooked"
+        },
+        {
+          "ingredient": "eggs",
+          "qty": 2,
+          "unit": "each",
+          "note": "batch-cooked"
+        },
+        {
+          "ingredient": "quark",
+          "qty": 200,
+          "unit": "g",
+          "note": "batch-cooked"
+        },
+        {
+          "ingredient": "banana",
+          "qty": 1,
+          "unit": "each",
+          "note": "batch-cooked"
+        },
+        {
+          "ingredient": "quark",
+          "qty": 125,
+          "unit": "g",
+          "note": "on top"
+        },
+        {
+          "ingredient": "cinnamon",
+          "qty": 0.5,
+          "unit": "tsp",
+          "note": "batch-cooked"
+        },
+        {
+          "ingredient": "oil",
+          "qty": 3,
+          "unit": "g",
+          "note": "batch-cooked"
+        }
+      ],
+      "method": [
+        "Uses the second portion of pancakes, cooked on Tuesday morning.",
+        "Warm the pancakes in a dry non-stick pan for 1 minute each side.",
+        "Top with 125g quark."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "pre-run"
+      ],
+      "macros": {
+        "kcal": 732,
+        "protein": 61,
+        "carbs": 74,
+        "fat": 19
+      },
+      "batchCookedOn": "tue"
     },
     {
       "id": "shakshuka",
@@ -4230,7 +4323,8 @@
         {
           "ingredient": "lime",
           "qty": 1,
-          "unit": "each"
+          "unit": "each",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "mint",
@@ -4250,17 +4344,20 @@
         {
           "ingredient": "chilli",
           "qty": 0.5,
-          "unit": "tsp"
+          "unit": "tsp",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "garlic",
           "qty": 1,
-          "unit": "clove"
+          "unit": "clove",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "fishsauce",
           "qty": 10,
-          "unit": "ml"
+          "unit": "ml",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "littlegem",
@@ -4306,7 +4403,8 @@
         {
           "ingredient": "lime",
           "qty": 1,
-          "unit": "each"
+          "unit": "each",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "mint",
@@ -4326,17 +4424,20 @@
         {
           "ingredient": "chilli",
           "qty": 0.5,
-          "unit": "tsp"
+          "unit": "tsp",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "garlic",
           "qty": 1,
-          "unit": "clove"
+          "unit": "clove",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "fishsauce",
           "qty": 10,
-          "unit": "ml"
+          "unit": "ml",
+          "note": "batch-cooked"
         },
         {
           "ingredient": "littlegem",
@@ -4350,9 +4451,8 @@
         }
       ],
       "method": [
-        "Batch-cook the larb this evening: steam 500g beef mince with garlic and chilli in a shallow dish for 15 to 20 minutes; break it up, pour off any fat, and finish with fish sauce and lime. Makes 2 portions.",
-        "Eat one portion now with fresh mint, coriander and spring onion, in little gem leaves, with 1 whole grain rice pouch, cold, straight from the pouch.",
-        "Cool the second portion quickly and fridge it for Thursday lunch."
+        "Stir fresh mint, coriander and spring onion through one portion.",
+        "Serve in little gem leaves with 1 whole grain rice pouch, cold, straight from the pouch."
       ],
       "prepAhead": null,
       "tags": [],
@@ -4362,7 +4462,8 @@
         "carbs": 73,
         "fat": 17
       },
-      "batchCookedOn": "wed"
+      "batchCookedOn": "wed",
+      "cooksBatch": "batch-beef-larb"
     },
     {
       "id": "sea-bass",
@@ -4782,7 +4883,7 @@
         "Add the chopped onion, pepper and crushed garlic and cook for 5 minutes.",
         "Stir in the cumin, paprika and chilli flakes, then the kidney beans and tomatoes.",
         "Simmer for 25 minutes, stirring now and then.",
-        "Eat one portion tonight. Cool the other quickly and fridge it for Thursday lunch."
+        "Keep one portion for tonight. Cool the other quickly and fridge it for Thursday lunch."
       ],
       "prepAhead": null,
       "tags": [
@@ -4863,7 +4964,7 @@
         "Mix the beef mince with the cumin and paprika, then spread it in a shallow heatproof dish and steam for 15 to 20 minutes, until no pink remains.",
         "Break it up with a fork and pour off any fat.",
         "Stir in the drained black beans; put the dish back in the steamer for 3 minutes to warm them through.",
-        "Eat one portion tonight. Cool the other quickly and fridge it for Thursday lunch."
+        "Keep one portion for tonight. Cool the other quickly and fridge it for Thursday lunch."
       ],
       "prepAhead": null,
       "tags": [
@@ -5004,10 +5105,10 @@
         }
       ],
       "method": [
-        "Blitz the oats to a flour.",
-        "Blend with the eggs, quark, bananas and cinnamon.",
+        "Blitz 120g steel-cut oats to a flour in the blender.",
+        "Add 4 eggs, 400g quark, 2 bananas and 1 tsp cinnamon to the blender and blend until smooth. If it will not all fit, blend half at a time.",
         "Cook small pancakes in a non-stick pan with a little oil, 2 minutes each side.",
-        "Eat half now, topped with 125g quark. Cool the rest and fridge it for Thursday."
+        "Keep half for now. Cool the rest and fridge it for Thursday."
       ],
       "prepAhead": null,
       "tags": [
@@ -5053,7 +5154,7 @@
         "Mix the beef mince with the garlic and chilli flakes, then spread it in a shallow heatproof dish and steam for 15 to 20 minutes, until no pink remains.",
         "Break it up with a fork and pour off any fat.",
         "Stir in the fish sauce and lime juice.",
-        "Eat one portion tonight. Cool the other quickly and fridge it for Thursday lunch."
+        "Keep one portion for tonight. Cool the other quickly and fridge it for Thursday lunch."
       ],
       "prepAhead": null,
       "tags": [
@@ -7703,7 +7804,7 @@
             {
               "time": "08:00",
               "slot": "breakfast",
-              "recipe": "pancakes",
+              "recipe": "pancakes-reheat",
               "free": false
             },
             {
@@ -7769,7 +7870,7 @@
             "thu"
           ],
           "buy": "4 loose",
-          "lastNeededOn": "thu"
+          "lastNeededOn": "tue"
         },
         {
           "ingredient": "eggs",
@@ -7788,7 +7889,7 @@
             "thu"
           ],
           "buy": "16 loose",
-          "lastNeededOn": "thu"
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "ginger",
@@ -8105,7 +8206,7 @@
             "thu"
           ],
           "buy": "2 × 500g + 1 × 250g",
-          "lastNeededOn": "thu"
+          "lastNeededOn": "tue"
         },
         {
           "ingredient": "rump",
@@ -8383,7 +8484,7 @@
             "tue",
             "thu"
           ],
-          "lastNeededOn": "thu"
+          "lastNeededOn": "tue"
         },
         {
           "ingredient": "cumin",
@@ -8433,7 +8534,7 @@
             "wed",
             "thu"
           ],
-          "lastNeededOn": "thu"
+          "lastNeededOn": "wed"
         },
         {
           "ingredient": "quinoa",
@@ -8512,7 +8613,7 @@
             "tue",
             "thu"
           ],
-          "lastNeededOn": "thu"
+          "lastNeededOn": "tue"
         },
         {
           "ingredient": "riceW",

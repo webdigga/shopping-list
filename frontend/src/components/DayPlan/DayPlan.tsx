@@ -1,5 +1,5 @@
 import { ChevronRight, Dumbbell } from 'lucide-react'
-import type { Day } from '@shared/planTypes'
+import type { Day, PrepTask } from '@shared/planTypes'
 import { getRecipe, plan } from '@/plan/data'
 import { slotLabel } from '@/plan/format'
 import ui from '@/styles/ui.module.css'
@@ -69,25 +69,32 @@ export function DayPlan({ day, prepTitle = 'Prep' }: DayPlanProps) {
           <h2 id={`prep-${day.day}`} className={ui.sectionTitle}>
             {prepTitle} ({day.prep.length} {day.prep.length === 1 ? 'job' : 'jobs'})
           </h2>
-          <ul className={ui.list}>
-            {day.prep.map(task =>
-              typeof task === 'string' ? (
-                <li key={task} className={styles.prep}><span>{task}</span></li>
-              ) : (
-                <li key={task.text}>
-                  <a href={`#/recipe/${task.recipe}`} className={`${styles.prep} ${styles.prepLink}`}>
-                    <span>{task.text}</span>
-                    <ChevronRight size={20} className={styles.chevron} aria-hidden />
-                  </a>
-                </li>
-              )
-            )}
-          </ul>
+          <PrepList prep={day.prep} />
         </section>
       )}
 
       <DayTotals day={day} />
     </>
+  )
+}
+
+/** The day's prep jobs, one per row; batch cooks link to their recipe. */
+export function PrepList({ prep, onNavigate }: { prep: PrepTask[]; onNavigate?: () => void }) {
+  return (
+    <ul className={ui.list}>
+      {prep.map(task =>
+        typeof task === 'string' ? (
+          <li key={task} className={styles.prep}><span>{task}</span></li>
+        ) : (
+          <li key={task.text}>
+            <a href={`#/recipe/${task.recipe}`} className={`${styles.prep} ${styles.prepLink}`} onClick={onNavigate}>
+              <span>{task.text}</span>
+              <ChevronRight size={20} className={styles.chevron} aria-hidden />
+            </a>
+          </li>
+        )
+      )}
+    </ul>
   )
 }
 
