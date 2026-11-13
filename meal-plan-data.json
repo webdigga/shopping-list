@@ -1229,6 +1229,28 @@
       "aisleRank": 50
     },
     {
+      "id": "beetroot",
+      "name": "Cooked beetroot, vacuum packed",
+      "category": "fresh",
+      "unit": "g",
+      "unitWeight": null,
+      "packSize": 500,
+      "packUnit": "g",
+      "per100g": {
+        "kcal": 46,
+        "protein": 2.3,
+        "carbs": 9.5,
+        "fat": 0.1
+      },
+      "fridgeDays": null,
+      "openedDays": null,
+      "stockTracked": false,
+      "store": "Lidl",
+      "aisle": "Fruit & veg",
+      "aisleRank": 50,
+      "note": null
+    },
+    {
       "id": "apple",
       "name": "Apples",
       "category": "fresh",
@@ -2222,6 +2244,35 @@
         "protein": 54,
         "carbs": 50,
         "fat": 33
+      }
+    },
+    {
+      "id": "beetroot-juice",
+      "name": "Beetroot juice",
+      "meal": "pre-run",
+      "servingsCooked": 1,
+      "cookMinutes": 2,
+      "ingredients": [
+        {
+          "ingredient": "beetroot",
+          "qty": 250,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Blend 250g cooked beetroot with about 200ml cold water in the NutriBullet until smooth.",
+        "Drink it as soon as you wake up. Skip antibacterial mouthwash this morning, as it stops the beetroot working.",
+        "On Saturday, seal the other half of the pack tightly and keep it in the fridge for Monday."
+      ],
+      "prepAhead": null,
+      "tags": [
+        "pre-run"
+      ],
+      "macros": {
+        "kcal": 115,
+        "protein": 6,
+        "carbs": 24,
+        "fat": 0
       }
     },
     {
@@ -5307,6 +5358,12 @@
           },
           "meals": [
             {
+              "time": "Wake",
+              "slot": "pre-run",
+              "recipe": "beetroot-juice",
+              "free": false
+            },
+            {
               "time": "07:30",
               "slot": "pre-run",
               "recipe": "prerun-banana",
@@ -5339,9 +5396,9 @@
           ],
           "prep": [],
           "totals": {
-            "kcal": 1028,
-            "protein": 61,
-            "carbs": 77,
+            "kcal": 1143,
+            "protein": 67,
+            "carbs": 101,
             "fat": 49
           },
           "note": "Lunch and dinner free"
@@ -5401,6 +5458,12 @@
           },
           "meals": [
             {
+              "time": "Wake",
+              "slot": "pre-run",
+              "recipe": "beetroot-juice",
+              "free": false
+            },
+            {
               "time": "08:00",
               "slot": "breakfast",
               "recipe": "skyr-bowl",
@@ -5433,9 +5496,9 @@
             "Evening: mix 60g steel-cut oats with 284ml milk (half a pint) in a jar and fridge it, for tomorrow's overnight oats with banana"
           ],
           "totals": {
-            "kcal": 1866,
-            "protein": 156,
-            "carbs": 113,
+            "kcal": 1981,
+            "protein": 162,
+            "carbs": 137,
             "fat": 81
           },
           "note": "Long run: go first thing, before breakfast. Intervals: eat breakfast first, then go about 2 hours later."
@@ -6351,6 +6414,25 @@
             "thu"
           ],
           "lastNeededOn": "thu"
+        },
+        {
+          "ingredient": "beetroot",
+          "name": "Cooked beetroot, vacuum packed",
+          "category": "fresh",
+          "totalQty": 500,
+          "unit": "g",
+          "packSize": 500,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat",
+            "mon"
+          ],
+          "buy": "1 × 500g",
+          "lastNeededOn": "mon",
+          "openedPack": {
+            "openedOn": "sat"
+          }
         }
       ]
     },
@@ -6412,6 +6494,12 @@
           },
           "meals": [
             {
+              "time": "Wake",
+              "slot": "pre-run",
+              "recipe": "beetroot-juice",
+              "free": false
+            },
+            {
               "time": "07:30",
               "slot": "pre-run",
               "recipe": "prerun-banana",
@@ -6444,9 +6532,9 @@
           ],
           "prep": [],
           "totals": {
-            "kcal": 963,
-            "protein": 60,
-            "carbs": 64,
+            "kcal": 1078,
+            "protein": 66,
+            "carbs": 88,
             "fat": 48
           },
           "note": "Lunch and dinner free"
@@ -6504,6 +6592,12 @@
           },
           "meals": [
             {
+              "time": "Wake",
+              "slot": "pre-run",
+              "recipe": "beetroot-juice",
+              "free": false
+            },
+            {
               "time": "08:00",
               "slot": "breakfast",
               "recipe": "cottage-rye",
@@ -6536,9 +6630,9 @@
             "Evening: mix 60g steel-cut oats, 250ml kefir, a splash of water, 1 grated apple and 1 tsp cinnamon; fridge it for tomorrow's apple & cinnamon overnight oats"
           ],
           "totals": {
-            "kcal": 2195,
-            "protein": 156,
-            "carbs": 139,
+            "kcal": 2310,
+            "protein": 162,
+            "carbs": 163,
             "fat": 106
           },
           "note": "Long run: go first thing, before breakfast. Intervals: eat breakfast first, then go about 2 hours later."
@@ -7494,6 +7588,25 @@
           ],
           "buy": "1 × 400g pack (if running low)",
           "lastNeededOn": "mon"
+        },
+        {
+          "ingredient": "beetroot",
+          "name": "Cooked beetroot, vacuum packed",
+          "category": "fresh",
+          "totalQty": 500,
+          "unit": "g",
+          "packSize": 500,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat",
+            "mon"
+          ],
+          "buy": "1 × 500g",
+          "lastNeededOn": "mon",
+          "openedPack": {
+            "openedOn": "sat"
+          }
         }
       ]
     },
@@ -7558,6 +7671,12 @@
           },
           "meals": [
             {
+              "time": "Wake",
+              "slot": "pre-run",
+              "recipe": "beetroot-juice",
+              "free": false
+            },
+            {
               "time": "07:30",
               "slot": "pre-run",
               "recipe": "prerun-banana",
@@ -7590,9 +7709,9 @@
           ],
           "prep": [],
           "totals": {
-            "kcal": 1169,
-            "protein": 71,
-            "carbs": 104,
+            "kcal": 1284,
+            "protein": 77,
+            "carbs": 128,
             "fat": 48
           },
           "note": "Lunch and dinner free"
@@ -7652,6 +7771,12 @@
           },
           "meals": [
             {
+              "time": "Wake",
+              "slot": "pre-run",
+              "recipe": "beetroot-juice",
+              "free": false
+            },
+            {
               "time": "08:00",
               "slot": "breakfast",
               "recipe": "quark-bowl",
@@ -7683,9 +7808,9 @@
             }
           ],
           "totals": {
-            "kcal": 1984,
-            "protein": 161,
-            "carbs": 147,
+            "kcal": 2099,
+            "protein": 167,
+            "carbs": 171,
             "fat": 75
           },
           "note": "Long run: go first thing, before breakfast. Intervals: eat breakfast first, then go about 2 hours later."
@@ -8724,6 +8849,25 @@
           ],
           "buy": "1 × 500g",
           "lastNeededOn": "wed"
+        },
+        {
+          "ingredient": "beetroot",
+          "name": "Cooked beetroot, vacuum packed",
+          "category": "fresh",
+          "totalQty": 500,
+          "unit": "g",
+          "packSize": 500,
+          "packUnit": "g",
+          "stockTracked": false,
+          "usedOnDays": [
+            "sat",
+            "mon"
+          ],
+          "buy": "1 × 500g",
+          "lastNeededOn": "mon",
+          "openedPack": {
+            "openedOn": "sat"
+          }
         }
       ]
     }

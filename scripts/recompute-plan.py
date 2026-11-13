@@ -10,8 +10,8 @@ import json
 import math
 import sys
 
-# Raw packs that get a "keep it sealed" note when cooked on more than one day.
-RAW_SHARED = {'chicken', 'thigh', 'beefmince', 'turkeymince', 'smokedsalmon'}
+# Packs that get a "keep it sealed" note when opened on one day and used on another (raw meat and fish, cooked beetroot).
+RAW_SHARED = {'chicken', 'thigh', 'beefmince', 'turkeymince', 'smokedsalmon', 'beetroot'}
 MACROS = ('kcal', 'protein', 'carbs', 'fat')
 
 
